@@ -1,0 +1,212 @@
+hal(64): 23.09-s006: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+hal: Options:   -rulefile Lint.def -NCB_ENVIRONMENT ncbrowse.ncb -f filelist.f -gui.
+hal: Workspace: /home/mmarando/dcid1-tps/practico_1/hal.
+hal: Date: Mon Aug 31 18:33:54 -03 2026.
+
+hal: Running on design source files.....
+hal: Snapshot:  worklib.i2cSlave:v.
+
+  ==========================================================================
+Compiling design 
+
+
+	Top level design units:
+		i2cSlave
+assign rstSyncToClk = rstPipe[2];
+                            |
+xmelab: *W,BNDWRN (../rtl/i2cSlave.v,108|28): Bit-select or part-select index out of declared bounds.
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 23.09-s006: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+visadev(64): 23.09-s006: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+inout sda;
+|
+halcheck: *W,IOPNTA (../rtl/i2cSlave.v,65|0): Port 'sda' is of type inout.
+assign rstSyncToClk = rstPipe[2];
+|
+halcheck: *W,IMPNET (../rtl/i2cSlave.v,108|0): Net 'rstSyncToClk' has an implicit declaration of type 'wire'.
+    sdaDeb = 1'b1;
+|
+halcheck: *W,BLKSQB (../rtl/i2cSlave.v,114|0): Blocking assignment encountered in a sequential block.
+    sclDeb = 1'b1;
+|
+halcheck: *W,BLKSQB (../rtl/i2cSlave.v,116|0): Blocking assignment encountered in a sequential block.
+      sclDeb = 1'b1;
+|
+halcheck: *W,BLKSQB (../rtl/i2cSlave.v,122|0): Blocking assignment encountered in a sequential block.
+      sclDeb = 1'b0;
+|
+halcheck: *W,BLKSQB (../rtl/i2cSlave.v,124|0): Blocking assignment encountered in a sequential block.
+      sdaDeb = 1'b1;
+|
+halcheck: *W,BLKSQB (../rtl/i2cSlave.v,126|0): Blocking assignment encountered in a sequential block.
+      sdaDeb = 1'b0;
+|
+halcheck: *W,BLKSQB (../rtl/i2cSlave.v,128|0): Blocking assignment encountered in a sequential block.
+  if (clearStartStopDet == 1'b1)
+|
+halcheck: *W,MICAWS (../rtl/i2cSlave.v,163|0): Multiple if/case statements present in a single always construct.
+assign sda = (sdaOut == 1'b0) ? 1'b0 : 1'bz;
+|
+halcheck: *W,SYNTXZ (../rtl/i2cSlave.v,97|0): Synthesizing 'x'/'z' values in module 'i2cSlave'.
+    8'hxx: dataOut <= 8'hxx;  
+|
+halcheck: *W,METACX (../rtl/registerInterface.v,98|0): In module 'registerInterface', case item expressions evaluating to 'x' are ignored.
+    8'hxx: dataOut <= 8'hxx;  
+|
+halcheck: *W,SYNTXZ (../rtl/registerInterface.v,98|0): Synthesizing 'x'/'z' values in module 'registerInterface'.
+wire write_done;
+|
+halcheck: *W,URAWIR (../rtl/registerInterface.v,85|0): Wire 'write_done' defined in module 'registerInterface' is unused (neither read nor assigned).
+      next_txData = 12'h00;
+|
+halcheck: *W,TRUNCZ (../rtl/serialInterface.v,127|0): Truncation in constant conversion without a loss of bits in module/design-unit u_serialInterface.
+        next_regAddr = regAddr + 8'b1;
+|
+halcheck: *W,POIASG (../rtl/serialInterface.v,141|0): The result of addition operation may lead to a potential overflow in module/design-unit u_serialInterface.
+halcheck: (../rtl/serialInterface.v,141): LHS operand 'next_regAddr' is 8 bit(s), RHS operand 'regAddr + 8'b1' is 9 bit(s).
+halcheck: (../rtl/serialInterface.v,141): Increase the size of LHS by 1 bit(s).
+        next_bitCnt = bitCnt + 3'b1;
+|
+halcheck: *W,POIASG (../rtl/serialInterface.v,190|0): The result of addition operation may lead to a potential overflow in module/design-unit u_serialInterface.
+halcheck: (../rtl/serialInterface.v,190): LHS operand 'next_bitCnt' is 3 bit(s), RHS operand 'bitCnt + 3'b1' is 4 bit(s).
+halcheck: (../rtl/serialInterface.v,190): Increase the size of LHS by 1 bit(s).
+          next_bitCnt = bitCnt + 3'b1;
+|
+halcheck: *W,POIASG (../rtl/serialInterface.v,243|0): The result of addition operation may lead to a potential overflow in module/design-unit u_serialInterface.
+halcheck: (../rtl/serialInterface.v,243): LHS operand 'next_bitCnt' is 3 bit(s), RHS operand 'bitCnt + 3'b1' is 4 bit(s).
+halcheck: (../rtl/serialInterface.v,243): Increase the size of LHS by 1 bit(s).
+          next_bitCnt = bitCnt + 3'b1;
+|
+halcheck: *W,POIASG (../rtl/serialInterface.v,257|0): The result of addition operation may lead to a potential overflow in module/design-unit u_serialInterface.
+halcheck: (../rtl/serialInterface.v,257): LHS operand 'next_bitCnt' is 3 bit(s), RHS operand 'bitCnt + 3'b1' is 4 bit(s).
+halcheck: (../rtl/serialInterface.v,257): Increase the size of LHS by 1 bit(s).
+            next_bitCnt = bitCnt + 3'b1;
+|
+halcheck: *W,POIASG (../rtl/serialInterface.v,329|0): The result of addition operation may lead to a potential overflow in module/design-unit u_serialInterface.
+halcheck: (../rtl/serialInterface.v,329): LHS operand 'next_bitCnt' is 3 bit(s), RHS operand 'bitCnt + 3'b1' is 4 bit(s).
+halcheck: (../rtl/serialInterface.v,329): Increase the size of LHS by 1 bit(s).
+        next_regAddr = regAddr + 8'b1;
+|
+halcheck: *W,POIASG (../rtl/serialInterface.v,404|0): The result of addition operation may lead to a potential overflow in module/design-unit u_serialInterface.
+halcheck: (../rtl/serialInterface.v,404): LHS operand 'next_regAddr' is 8 bit(s), RHS operand 'regAddr + 8'b1' is 9 bit(s).
+halcheck: (../rtl/serialInterface.v,404): Increase the size of LHS by 1 bit(s).
+      next_txData = 12'h00;
+|
+halcheck: *W,TRUNCZ (../rtl/serialInterface.v,432|0): Truncation in constant conversion without a loss of bits in module/design-unit u_serialInterface.
+reg [1:0] rstPipe;
+|
+halcheck: *W,URDREG (../rtl/i2cSlave.v,93|0): Local register variable 'rstPipe[1]' is not read, but is assigned at least once in module 'i2cSlave'.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 22.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe64(64): 23.09-s006: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+always @(*) begin
+|
+halsynth: *W,LATBAS (../rtl/serialInterface.v,113|0): In module/design-unit serialInterface, latch is assigned by blocking assignments.
+    CurrState_SISt <= NextState_SISt;
+|
+halsynth: *N,FSMIDN (../rtl/serialInterface.v,463|0): In module/design-unit 'serialInterface', FSM for state register 'CurrState_SISt' has been recognized.
+  case (CurrState_SISt)
+|
+halsynth: *W,UNRCHS (../rtl/serialInterface.v,124|0): In module/design-unit 'serialInterface', FSM for state register 'CurrState_SISt' has unreachable states 31.
+    END: begin
+|
+halsynth: (../rtl/serialInterface.v,430|0): Source HDL information for the error/warning mentioned above.
+assign rstSyncToClk = rstPipe[2];
+|
+halsynth: *W,OUTRNG (../rtl/i2cSlave.v,108|0): Bit/part select 'rstPipe[2]' is outside the defined range [1:0].
+always @(rstSyncToClk) begin
+|
+halsynth: *W,SENCMW (../rtl/i2cSlave.v,191|0): Sensitivity list incomplete for node rst_serial_interface[0:0] in module i2cSlave. Missing signal(s): startEdgeDet.
+  rst_serial_interface = rstSyncToClk | startEdgeDet;
+|
+halsynth: (../rtl/i2cSlave.v,192|0): Source HDL information for the error/warning mentioned above.
+inout sda;
+|
+halsynth: *W,MULWIR (../rtl/i2cSlave.v,65|0): Module 'i2cSlave' has wire 'sda' multi-driven.
+inout sda;
+|
+halsynth: (../rtl/i2cSlave.v,65|0): Source HDL information for the error/warning mentioned above.
+halsynth: *W,MUDREG: In module 'i2cSlave', register 'startStopDetState' is driven in more than one block or process.
+    startStopDetState <= `NULL_DET;
+|
+halsynth: (../rtl/i2cSlave.v,164|0): Source HDL information for the error/warning mentioned above.
+      startStopDetState <= `STOP_DET;
+|
+halsynth: (../rtl/i2cSlave.v,167|0): Source HDL information for the error/warning mentioned above.
+      startStopDetState <= `START_DET;
+|
+halsynth: (../rtl/i2cSlave.v,169|0): Source HDL information for the error/warning mentioned above.
+    startStopDetState <= `NULL_DET;
+|
+halsynth: (../rtl/i2cSlave.v,153|0): Source HDL information for the error/warning mentioned above.
+halsynth: *W,MUDREG: In module 'i2cSlave', register 'startEdgeDet' is driven in more than one block or process.
+    startEdgeDet <= 1'b1;
+|
+halsynth: (../rtl/i2cSlave.v,160|0): Source HDL information for the error/warning mentioned above.
+    startEdgeDet <= 1'b0;
+|
+halsynth: (../rtl/i2cSlave.v,162|0): Source HDL information for the error/warning mentioned above.
+    startEdgeDet <= 1'b0;
+|
+halsynth: (../rtl/i2cSlave.v,154|0): Source HDL information for the error/warning mentioned above.
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 7.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct(64): 23.09-s006: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+visadev(64): 23.09-s006: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+  if (rstSyncToClk == 1'b1) begin
+|
+halstruct: *W,IFXZWC (../rtl/i2cSlave.v,112|0): Conditional expression evaluates to 'x' or 'z'.
+  if (rstSyncToClk == 1'b1) begin
+|
+halstruct: *W,IFXZWC (../rtl/i2cSlave.v,140|0): Conditional expression evaluates to 'x' or 'z'.
+  if (rstSyncToClk == 1'b1) begin
+|
+halstruct: *W,IFXZWC (../rtl/i2cSlave.v,152|0): Conditional expression evaluates to 'x' or 'z'.
+      next_writeEn = 1'b0;
+|
+halstruct: *W,FFNMOD (../rtl/serialInterface.v,448|0): 'Latch' type flip-flop/latch 'i2cSlave.u_serialInterface.next_writeEn' should have a separate level of hierarchy.
+  if (rst == 1'b1)
+|
+halstruct: *W,IFXZWC (../rtl/serialInterface.v,460|0): Conditional expression evaluates to 'x' or 'z'.
+  if (rst == 1'b1)
+|
+halstruct: *W,IFXZWC (../rtl/serialInterface.v,469|0): Conditional expression evaluates to 'x' or 'z'.
+module i2cSlave (
+|
+halstruct: *W,TSMHOL (../rtl/i2cSlave.v,48|0): Tri-state module 'i2cSlave' contains other logic.
+halstruct: (../rtl/i2cSlave.v,192): Additional logic used.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 0.
+halstruct: Total warnings = 7.
+
+  ==========================================================================
+
+Analysis summary :
+
+ Warnings : (37)
+  BLKSQB (6)      BNDWRN (1)      FFNMOD (1)      IFXZWC (5)     
+  IMPNET (1)      IOPNTA (1)      LATBAS (1)      METACX (1)     
+  MICAWS (1)      MUDREG (2)      MULWIR (1)      OUTRNG (1)     
+  POIASG (6)      SENCMW (1)      SYNTXZ (2)      TRUNCZ (2)     
+  TSMHOL (1)      UNRCHS (1)      URAWIR (1)      URDREG (1)     
+
+ Notes    : (1)
+  FSMIDN (1)     
+
+Analysis complete.
+
+ ==========================================================================
+
