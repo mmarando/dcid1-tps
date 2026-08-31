@@ -1,0 +1,849 @@
+               //**************************************************
+               //***     CUSTOMIZED HAL DEFINITIONS FILE       ****
+               //***     FOR CODINGSTYLE/LINT CHECKS           ****
+               //**************************************************
+
+// Each category definition contains the name and description of
+// checks (or other categories) that make up the body of the category.
+//
+// Optionally, the category may contain keywords 'synth_only', 'default_on'
+// or 'default_off' after the description.  These keywords, if present,
+// control which categories are checked by default (default_off/default_on)
+// and whether or not the category is affected by the synthesis_off/on
+// pragmas in the HDL source (synth_only).
+
+
+
+//***************************************************************************
+//** Following is the description of the category hierarchy                **
+//***************************************************************************
+
+// Only the categories which have or can have language specific checks are 
+// further classified into sub-categories on the basis of language. Those
+// which are not classified, by default have checks which are applicable
+// to both Verilog and VHDL designs. 
+
+
+
+
+
+category RTL_CODINGSTYLE "Category of all the RTL coding style checks" default_on
+{
+ RTL_CODINGSTYLE_VERILOG        //Category of all the Verilog only Coding style checks
+ RTL_CODINGSTYLE_MIXED          //Category of all the Coding style checks for Verilog & VHDL
+}
+
+category RTL_SIMRACE "Category of all the simulation race condition checks" default_on
+{
+ RTL_SIMRACE_VERILOG //Category of all the Verilog only race condition checks
+ // Simulation race conditions do not exist in VHDL designs
+}
+
+
+category RTL_SIMSYNTH "Category of pre and post-synthesis simulation mismatch checks" default_on 
+{
+ RTL_SIMSYNTH_VERILOG //Verilog only pre and post-synthesis simulation mismatch checks
+ RTL_SIMSYNTH_MIXED   //Verilog and VHDL pre and post-synthesis simulation mismatch checks
+}
+
+
+category RTL_SYNTH "Category of all the synthesizability checks" default_on synth_only
+{
+ RTL_SYNTH_VERILOG  //Category of all the Verilog only synthesizability checks
+ RTL_SYNTH_MIXED    //Category of all the synthesizability checks for Verilog and VHDL
+}
+
+
+//***************************************************************************
+//** Following is the detail of the checks present in each category in HAL **
+//***************************************************************************
+
+
+
+
+category RTL_CODINGSTYLE_VERILOG "Verilog only coding style checks" default_on
+{
+  WRGSNS {level=0}  // "In module %s, Posedge and Negedge of the same signal present in the sensitivity list of an always block"
+  NEGIDX {level=1} // "Negative or enumeration value used as an array index at '%s'"
+  NBCOMB {level=1}  // "Non-blocking assignment encountered in a combinational block"
+  IFDDEF {level=1}  // "Macro '%s' is defined using `define statement in the same verilog file"
+  DBCASX {level=1}  // "Dont care value specified for discontinuous bits in casex item '%s'"
+  BLKSQB {level=1}  // "Blocking assignment encountered in a sequential block"
+  CDEFCV {level=1}  // "The case items of the case statement in module/design-unit %s cover all the numerical values of the case expression. The default clause is not required"
+  BLNBLK {level=1}  // "Signal '%s' is assigned via both blocking and non-blocking assignments"
+  EVUNTR {level=1}  // "Event variable '%s' is never triggered"
+  LOGAND {level=1}  // "Bit-wise AND in a conditional expression. Logical AND may have been intended"
+  LOGORP {level=1}  // "Bit-wise OR in a conditional expression. Logical OR may have been intended"
+  LOGNEG {level=1}  // "Bit-wise negation in a conditional expression. Logical NOT may have been intended"
+  MULOPR {level=1}  // "Logical %s operator applied to multi-bit operand%s in module/design-unit %s"
+  INCMPC {level=1}  // "Not all cases are covered in the parallel case (%d of possible %d covered)"
+  CASEZX {level=1}  // "Case item expression contains 'x' for a casez statement (useful only in casex statements)"
+  OBMEMI {level=1}  // "Memory word '%s[%s]' has an index of size %d, which may reference a memory word, which is outside the defined range of the memory (%d words) in module/design-unit %s"
+  DIFRNG {level=1}  // "Port '%s' with range (%d to %d) is re-declared with a different range (%d to %d)"
+  CONSLC {level=1}  // "Module '%s' contains a loop with a constant conditional expression"
+  OOMCAL {level=1}  // "Use of an out-of-module task call to %s"
+  INPOUT {level=1}  // "Primary input port %s of module %s may be driven inside the module"
+  SIZMIS {level=1}  // "Port '%s' has size mismatch between module instantiation and declaration"
+  PRTSYN {level=1}  // "Port '%s' is declared using a mix of VLOG95 and VLOG2001 declaration styles"
+  UEASPD {level=1}  // "Unequal length operands in assignment in module/design-unit '%s'. Length of RHS is less than LHS"
+  UEASTR {level=1}  // "Unequal length operands in assignment in module/design-unit '%s'. Length of RHS is greater than LHS"
+  OPRNUM {level=1}  // "Expression uses '%d' operators, which exceeds the recommended limit of operators"
+  CONDSZ {level=1}  // "Expression in condition does not result in a single bit value in module/design-unit %s"
+  OPLVNC {level=1}  // "'%s' operation between loop variable '%s' and non constant value '%s'"
+  PRMVAL {level=1}  // "Bit width not specified for parameter '%s'"
+  CSTBWD {level=1}  // "Bit width not specified for constant '%s'"
+  CSWDXZ {level=1}  // "Bit width not specified for constant '%s' with 'x/z' as msb"
+  PRMBSE {level=1}  // "Base not specified for parameter '%s'"
+  MULCAS {level=1}  // "Overlapping case item %s in module/design-unit %s"
+  PTYSIG {level=1}  // "Signed %s '%s'  has separate port and type declarations"
+  FNAVPC {level=1} // "Function '%s' is not assigned a value in some of the branches of conditional statement(s)"
+  NEGCLK {level=1} // "Clock signal '%s' of '%s' is derived from an inverter"
+  DTEVST {level=1}  // "Edge specified for data event '%s' in system task '%s'"
+  NBFUNC {level=2}  // "Non-blocking assignment encountered in function '%s'"
+  BADSYS {level=2}  // "System task '%s' in module '%s' is ignored" 
+  RTLNOG {level=2}  // "Gate instances are not expected in an RTL design"
+  RTLNOP {level=2}  // "Primitive instances are not expected in an RTL design"
+  RTLINI {level=2}  // "A variable/signal '%s' in an RTL description is initialized in its declaration"
+  PLIFTN {level=2}  // "PLI 1.0 function %s in module '%s' is ignored"
+  EMPSTM {level=2}  // "Module '%s' contains an empty statement"
+  EMPBLK {level=2}  // "Module '%s' contains an empty begin/end block"
+  IGNSTR {level=2}  // "Strength values are ignored"
+  LIBIMP {level=2}  // "'%s' is supported only in library cells"
+  NOSPEC {level=2}  // "%s mentioned in the specify block of module %s is ignored. Use -CONNECT_SPECIFY_BLOCK to preserve connections in the design"
+  INIMEM {level=2}  // "Initialization of memory '%s' in module '%s' is ignored"
+  NOGATE {level=2} // "Module %s contains unsupported gate type %s" 
+  NOSWTC {level=2}  // "Module %s contains non-synthesizable switch type %s"
+  NOWIRE {level=2}  // "Module %s contains node %s of unsupported trireg type"
+  FSETGV {level=2}  // "Function '%s' in module '%s' assigns a value to global variable '%s'"
+  FTNNAS {level=2}  // "Last statement in function '%s' in module '%s' does not assign any value to the function"
+  FUSEGV {level=2}  // "Function '%s' in module '%s' uses global variable '%s'"
+  TSETGV {level=2}  // "Task '%s' in module '%s' assigns a value to global variable '%s'"
+  TUSEGV {level=2}  // "Task '%s' in module '%s' uses global variable '%s'"
+  USEPAR {level=2}  // "Parameter '%s' is unused"
+  USEENM {level=2}  // "Enum variable '%s' defined in %s '%s' is unused"
+  USEWIR {level=2}  // "Wire '%s' defined in module '%s' is unused"
+  USEREG {level=2}  // "Local register variable '%s' defined in %s '%s' is unused"
+  CONSTD {level=2}  // "Delay is not a constant expression"
+  DLNBLK {level=2}  // "Delay in non-blocking assignment; delay will be ignored"
+  NULPRT {level=2}  // "Module '%s' has null formal port(s)"
+  UASWIR {level=2}  // "Wire '%s' defined in module '%s' is unassigned, but drives at least an object"
+  UASREG {level=2}  // "Local register variable '%s' is unassigned, but is read at least once in %s %s"
+  UASINT {level=2}  // "Integer variable '%s' is unassigned, but is read at least once in %s %s"
+  URDWIR {level=2}  // "Wire '%s' defined in module '%s' does not drive any object, but is assigned at least once"
+  URDREG {level=2}  // "Local register variable '%s' is not read, but is assigned at least once in %s '%s'"
+  URDINT {level=2}  // "integer variable '%s' is not read, but is assigned at least once in %s '%s'"
+  URAWIR {level=2}  // "Wire '%s' defined in module '%s' is unused (neither read nor assigned)"
+  URAINT {level=2}  // "integer '%s' defined in module '%s' is unused (neither read nor assigned)"
+  URAREG {level=2}  // "Local register variable '%s' defined in %s '%s' is unused (neither read nor assigned)"
+  IMPNET {level=2}  // "Net '%s' has an implicit declaration of type '%s'"
+  IMPDTC {level=2}  //  "Expression '%s' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit %s"
+  IMPTYP {level=2}  //  "Expression '%s' implicitly converted to type '%s' from type '%s'"
+  IPUFSE {level=2}  //  "Expression '%s' implicitly converted to type 'signed' from type 'unsigned' in module/design-unit %s"
+  IPSFOU {level=2}  //  "Signal/Constant '%s' implicitly converted to type 'signed' from type 'unsigned'"
+  MXUANS {level=2}  //  "Expression '%s' in module/design-unit %s has both signed and unsigned variables/constants"
+  RDBFAS {level=2}  // "Register '%s', assigned using blocking assignment, is being read before getting assigned"
+  REVROP {level=2}  // "Register '%s' is being read/assigned outside the process in which it was assigned using a blocking assignment"
+  PRMNAM {level=2}  // "Passing of parameters to instance '%s' of module '%s' should be done by name rather than by position"
+  EXPIPC {level=2}  // "Formal port %s of instance '%s' is connected to an expression"
+  FORINT {level=2}  // "Variable '%s' is not initialized before being incremented/decremented in the for loop"
+  FINBLK {level=2}  // "The final block of module '%s' does not contain any display statement"
+  STRREL {level=2}  // "String %s is used in the relational operation '%s' in module/design-unit %s"
+  PRMSZM {level=2}  // "Parameter '%s' has a size mismatch between module instantiation and declaration"
+  FCWDEF {level=2}  // "Redundant case expression -- full_case has a default case"
+  SGNUSG {level=2}  // "Negative value '%s' assigned to an unsigned variable '%s' in module/design-unit %s"
+  OVRDRT {level=2}  // "The return statement will override the value assigned to the function name"
+  CAFDEF {level=2} // "'default' is not the last item of case statement"
+  BSINTT {level=2}  // "Bit/part select of %s variable '%s' encountered"
+  REDOPR {level=2} // "Reduction '%s' operation performed on '%d' bits expression '%s'"
+  USEMAC {level=2} // "Macro '%s' is unused
+  DUPMCR {level=2}  // "Macro '%s' is defined at multiple places with same definition"
+  MLPSGS {level=2}  // "Multiple %s signals used in flip-flop '%s'"
+  NSTIFD {level=2}  // "The ifdef directive has exceeded three levels of nesting"
+  CDWARN {level=2}  // "The compiler directive '%s' is used in the RTL."
+  CDNOTE {level=2}  // "The compiler directive '%s' is used in the RTL."
+  SNOROP {level=2}  // "Operator other than 'or' or ',' used in sensitivity list"
+  IGSPEC {level=2}  // "%s mentioned in the specify block of module %s is ignored"
+  INDXOP {level=2}  // "A/An '%s' operator used in the index of the array '%s'"
+  LMULOP {level=2}  // "The result of the multiplication operation exceeds '%d' bits in module/design-unit %s"
+  TMSMIS {level=2}  // "Timescale is missing for the module '%s'"
+  LRGOPR {level=2}  // "Arithmetic or relational operation performed on large operands in module/design-unit %s"
+  PIMBIT {level=2}  // "Primitive input port (port index : %d ) is connected to signal/expression with multiple bits. Reduction OR logic is being applied"
+  IFMULT {level=2}  // "Conditional expression '%s' completely overlaps one or more branches of the 'if-else' block in module/design-unit %s"
+  CSTEXP {level=2}  // "A variable/Expression is used for items of a case statement"
+  DNSTIF {level=2}  // "Deep nesting of If/else-if statements results in the synthesis of complicated logic by synthesis tool"
+  RPTVAR {level=2} // "Variable '%s' is used repetitively in the statement inside loop body"
+  IFESLV {level=2}  // "If/If-else statement nested to %d levels"
+  CSTLOA {level=2}  // "Case selector '%s' is an expression"
+  LOPIDX {level=2}  // "Loop variable '%s' of the 'for' loop is not of recommended data type(s) (%s)"
+  CONSBS {level=2} // "Base ('d, 'b, 'h, 'o) not specified for %s %s in module/design-unit %s"
+  IFSMCD {level=2} // "Condition '%s' is present in all the branches of if/if-else statement"
+  INDNES {level=2} // "Two or more variables are used in nested index part select"
+  MULTMS {level=2} // "Multiple timescales exist in the design"
+  HLBINP {level=2} // "Input port '%s' of physical block '%s' is connected to 2 or more flip-flops or latches."
+  NMODPT {level=2} // "The interface does not contain a modport"
+  TDOPKG {level=2} // "Typedef definition '%s' is not declared in any of the SystemVerilog packages, it is declared in scope '%s'."
+  VARUAW {level=2} // "Output port '%s' is defined as '%s', but is used as wire"
+  PKGICU {level=2} // "Package '%s' is imported into the compilation unit scope"
+  ENUMAW {level=2} // "Incorrect data type assigned to the enum variable in packed structures"
+  RDNTCX {level=3} // "Casex usage is redundant as none of the case item expression contains 'x', 'z', or '?' in module/design-unit %s"
+  RDNTCZ {level=3} // "Casez usage is redundant as none of the case item expression contains 'z' or '?' in module/design-unit %s"
+  NOINCD {level=3}  // "Compiler directive `include should not be used" 
+  RDOPND {level=3}  // "Expression contains redundant %s"
+  BVDDAB {level=3}  // "Bits of variable '%s' are driven in different %s always blocks"
+  NCASEX {level=3}  // "'casex' statement used in module '%s'"
+  NFCASE {level=3}  // "'full_case' synthesis directive used in module '%s'"
+  NOUNDF {level=3}  // "Macro defined using `define statement is not undefined using `undef statement in module '%s'"  
+  NODEFD {level=3}  // "Compiler directive `define should not be used"
+  NETDCL {level=3}  // "<Signal/Constant> '%s' is not declared prior to non-declarative statement(s) or does not follow the recommended declaration sequence"
+  ENMNFU {level=2}  // "The enumeration type '%s' is not fully used"
+  NAUTOF {level=2}  // "The SystemVerilog function '%s' without the automatic keyword may be unsynthesizable"
+  UDTRWI {level=2}  // "Data type '%s', other than reg, wire and integer, is used for '%s'"
+  CLKFST {level=2}  // "For flip-flop, the clock '%s' should be the first element in the sensitivity list"
+  BUSREV {level=3}  // "Formal port '%s[%d:%d]' is connected in opposite order with the actual port(s)."
+  MLTEQU {level=3}  // "An expression in the design contains more than one successive equal/non-equal operator with two constants"
+  INCLDR {level=4}  // "Absolute or relative path specified with the `include compiler directive"
+  OLDALW {level=2}  // "Old coding style for always block found in module '%s', use '%s' instead"
+  FTNEST {level=1} // "Function/Task '%s' has been nested"
+  TPRUSD {level=2}  // "Tool specific '%s' pragma is used in RTL"
+  NSCOLL {level=2}  // "Name space collision detected between objects imported from packages in the %s '%s'"
+}
+
+
+category RTL_CODINGSTYLE_MIXED "coding style checks for Verilog and VHDL" default_on
+{
+  DFLDER {level=0} // "Parameters specified are incorrect, check LDFFPI will be ignored"
+  TFARGT {level=1}  // "Task/function call argument %d is of wrong type (%s vs. %s)"
+  TFARGN {level=1}  // "Task/function call has wrong number of arguments"
+  UNCONN {level=1}  // "%s port '%s' defined in design-unit '%s' is not connected in its instance '%s'"
+  UNCONI {level=1}  // "Input port '%s' of entity/module '%s' is being used inside architecture/module, but not connected (either partially or completely) in its instance '%s'"
+  UNCONO {level=1}  // "Port '%s' (which is being used as an output) of entity/module ' %s' is being driven inside the design, but not connected (either partially or completely) in its instance '%s'"
+  CONSTC {level=1}  // "Constant conditional expression encountered"
+  CNSTCN {level=1}  // "Conditional expression is statically evaluated to %s"
+  SHFTNC {level=1}  // "Shift by non-constant"
+  UELCIT {level=1}  // "Unequal length in case item comparison (selector is %d bits, case tag expression is %d bits) in module/design-unit %s"
+  UELOPR {level=1}  // "Unequal length operand in bit/arithmetic operator %s in module/design-unit %s"
+  INTTOB {level=1}  // "Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit %s"
+  CNSTCI {level=1}  // "Case expression is not a constant"
+  TRUNCC {level=1}  // "Truncation of bits in a constant in module/design-unit %s.  The most significant bits are lost"
+  TRUNCZ {level=1}  // "Truncation in constant conversion without a loss of bits in module/design-unit %s"
+  TROPCC {level=1}  // "The result of the '%s' operation between constants in expression '%s' leads to truncation of bits and loss of data in module/design-unit %s""
+  TROPCZ {level=1}  // "The result of the '%s' operation between constants in expression '%s' leads to truncation of bits but without loss of data in module/design-unit %s""
+  ULRELE {level=1}  // "Unequal length operands in relational operator (padding produces incorrect result) in module/design-unit %s -- LHS operand is %d bits, RHS operand is %d bits"
+  ULCMPE {level=1}  // "Unequal length operands in equality operator encountered (padding produces incorrect result) in module/design-unit %s. LHS operand is %d bits, RHS operand is %d bits"
+  CEXPOR {level=1}  // "Case item expression out of range in module/design-unit %s"
+  CIMULT {level=1}  // "Case item expression covered more than once (covers same case item expression as in line %d) in module/design-unit %s"
+  DNGLEL {level=1}  // "Ambiguous else statement in the nested if statement. It is recommended to enclose the inner if statement in a begin/end block"
+  OOBIDX {level=1}  // "Bit/part select '%s' (%s) is outside the defined range (%d to %d)"
+  NULLRG {level=1}  // "In %s '%s', node '%s' has a null range defined"
+  IDXRNG {level=1}  // "Loop index is too small for the values it should take"
+  CNREAL {level=1}  // "Real variable '%s' is used in module '%s'. Real variables are not synthesizable"
+  CNINTB {level=1}  // "Converting integer to a single-bit constant"
+  INFLOP {level=1}  // "%s '%s' contains a possibly infinite loop"
+  MISSEL {level=1}  // "%s signal '%s' missing from sensitivity list of a sequential process/block"
+  USESEL {level=1}  // "Signal '%s' should not be used in the sensitivity list of a sequential process/block"
+  NOTECH {level=1}  // "Instance '%s' is instantiating a technology cell. Avoid using technology cells in the design"
+  POOBID {level=1}  // "Variable index/range selection of '%s' is potentially outside the defined range"
+  IDXTSM {level=1}  // "Variable index/range selection of '%s' is too small to access its defined range completely"
+  NEQPRM {level=1}  // "Size mismatch between formal %s parameters of function '%s'"
+  ASNRST {level=1}  // "%s '%s' has '<active_low/high>' asynchronous set/reset '%s' as against the recommended '<active_high/low>' style"
+  SNCRST {level=1}  // "%s '%s' has '<active_low/high>' synchronous set/reset '%s' as against the recommended '<active_high/low>' style" 
+  CBYNAM {level=1}  // "Port connections for instance '%s' of module '%s' should be made by name rather than by positional ordered list"
+  SYNPRT {level=1}  // "Output port '%s' is assigned asynchronously"
+  TSMHOL {level=1}  // "Tri-state module '%s' contains other logic"
+  CDEATF {level=1}  // "Conditional expression always evaluates to %s in module/design-unit %s"
+  ONPNSG {level=1} // "The signal '%s', defined in %s '%s', is a one pin bus in its instance '%s'"
+  LDFFPI {level=1} // "The logic depth between %s '%s' and %s '%s' is more than %s"
+  CLKUCL {level=1}  //The clock '%s' drives a combinational logic. Depth '%d' exceeded at '%s'" 
+  RSTUCL {level=1}  // "The set/reset '%s' drives a combinational logic. Depth '%d' exceeded at '%s'"
+  CDEFNC {level=1}  // "Case statement %s" 
+
+  ALOWID {level=2}  // "Signal/variable name '%s' does not follow the active-low naming convention"
+  PBYNAM {level=2}  // "Named association should be used in the parameter list for %s call '%s'"
+  TIESUP {level=2}  // "The output/inout '%s' is tied to supply0/supply1"
+  TIELOG {level=2}  // "The output/inout '%s' is assigned a constant logic value"
+  TFWARG {level=2}  // "Too few arguments passed to switch/gate"
+  BOUINC {level=2}  // "Lower bound of '%s' is not '%d' in module/design-unit %s"
+  INPASN {level=2}  // "Assignment to a module/task/function input port '%s' is not supported"
+  DCLSCP {level=2}  // "Variable '%s' defined in scope '%s' is also defined in parent scope '%s'"
+  UNDRIV {level=2}  // "Primary output/inout '%s' is not driven in the module '%s'"
+  PUNDRV {level=2}  // "Primary output/inout '%s' is not fully driven in the module '%s'"
+  CNSTLT {level=2}  // "Literal '%s' should be replaced with a constant"
+  USEFTN {level=2}  // "Function '%s' is unused"
+  USEPRT {level=2}  // "The input/inout port '%s' defined in the %s '%s' is unused (neither read nor assigned) "
+  UASPRT {level=2}  // "The input/inout port '%s' defined in the %s '%s' is unassigned, but read"
+  URDPRT {level=2}  // "The input/inout port '%s' defined in the %s '%s' is unread, but assigned"
+  SHFTOF {level=2}  // "Shift overflow in module/design-unit %s, some bits will be lost"
+  REALCM {level=2}  // "Real operand used in logical comparison"
+  EXTEND {level=2}  // "Extension of '0' bits in a constant in module/design-unit %s"
+  PADMSB {level=2}  // "Constant '%s' will be left-padded by %d '0' bits in module/design-unit %s"
+  NULCSE {level=2}  // "Null statement should not be used in 'when others' clause in the case statement"
+  REALCT {level=2}  // "Real comparison in case expression in instance/module %s"
+  WIDSEL {level=2}  // "Case statement with no default. Case is too wide to check if all cases are covered"
+  NESTIF {level=2}  // "Nested ifs. Consider using a %s statement instead"
+  USETSK {level=2}  // "Task '%s' is unused"
+  MEMSIZ {level=2}  // "Memory declaration for '%s' defines a single-bit memory word. Check for error in register declaration"
+  OUTINP {level=2}  // "Primary output port %s of module %s may be driven outside the module"
+  RDREAL {level=2}  // "Real literal is rounded to the nearest integer"
+  CNTIME {level=2}  // "Time variable '%s' is used in %s '%s'. Time variables are not synthesizable"
+  FTNEXT {level=2}  // "Function '%s' must have only one return statement, which is the last statement in the function"
+  UNRCHC {level=2}  // "Code written after the unconditional return or break is unreachable"
+  FFASMX {level=2}  // "In the specified always/process block, descriptions of flip-flops with and without asynchronous set/reset are mixed. Flip-flops without asynchronous set/reset are: %s"
+  AVDREC {level=2} // "Function '%s' is called recursively in %s '%s'" 
+  LMTSTS {level=2} // "The number of states %d should be limited to %d"
+  POIASG {level=2}  // "The result of %s operation may lead to a potential overflow in module/design-unit %s" 
+  OPRCAT {level=2}  // "Arithmetic operation performed in one or more operands of '%s' operation"
+  TRIWAR {level=2} // "Tri-state logic used within an %s block"
+  TBNNAM {level=2} // "Testbench '%s' does not follow the recommended naming convention"
+  TBNSTP {level=2} // "Testbench '%s' terminates with '$stop'"
+  IPRTEX {level=2} // "%s is used in a port expression"
+  PRMEXP {level=2} // "%s '%s' used in a port expression"
+  USEPKG {level=2} // "Package '%s' is unused"
+  IOPNTA {level=2} // "Port '%s' is of type inout"
+  IOCPIO {level=2} // "Inout '%s' is directly connected to input/output '%s'"
+  RSTDAS {level=2} // "Reset deassertion synchronizer detected at '%s'"
+  RSTDMN {level=2} // "Path from flip-flop %s to flip-flop %s is controlled by different reset domains"
+  RSTSCB {level=2} // "Reset synchronizer with combinatorial logic detected at '%s'"
+  RSTSYN {level=2} // "Reset synchronizer detected at '%s'"
+  SYNSCU {level=3} // "Embedded synthesis script used in the design"
+  MPCMPE {level=3}  // "Expression uses '%d' operands without parentheses, which exceeds the recommended limit of '%d' operands"
+  MICAWS {level=2}  // "Multiple if/case statements present in a single always construct"
+  LOOPTM {level=2}  // "Logic or Relational operation between a loop variable and a non-constant value is repeated more than %d times"
+  IFXZWC {level=3} // "Conditional expression evaluates to 'x' or 'z'"
+  SEQCOM {level=3} // "Combinational logic detected in specification of sequential block for flop '%s'"
+  FFNMOD {level=2} // "'%s' type flip-flop/latch '%s' should have a separate level of hierarchy"
+  IOCOMB {level=3} // "Combinational path detected between top-level input '%s' and top-level output '%s'"
+}
+
+
+
+category RTL_SIMRACE_VERILOG "Verilog only simulation race condition checks" default_on
+{
+  RWRACE {level=0}  // "A read/write race exists between '%s' and '%s'"
+  WWRACE {level=0}  // "'%s' is written in more than one process"
+  TRRACE {level=0}  // "A trigger-propagation race exists between '%s' and '%s'"
+  NBCOMB {level=1}  // "Non-blocking assignment encountered in a combinational block"
+  BLKSQB {level=1}  // "Blocking assignment encountered in a sequential block"
+  BLNBLK {level=1}  // "Signal '%s' is assigned via both blocking and non-blocking assignments"
+}
+
+
+category RTL_SIMSYNTH_VERILOG "Verilog only pre and post-synthesis simulation mismatch checks" default_on
+{
+  EVTRIG {level=0}  // "Always block with no event trigger at the start in module '%s'"
+  LPVRMA {level=0}  // "The loop variable '%s' is used in multiple always blocks"
+  METAEQ {level=0}  // "In module '%s', %s comparison is treated as %s"
+  METACX {level=1}  // "In module '%s', case item expressions evaluating to 'x' are ignored"
+  METACZ {level=1}  // "In module '%s', case item expressions evaluating to 'z' are ignored"
+  FNAVPC {level=1}  // "Function '%s' is not assigned a value in some of the branches of conditional statement(s)"
+  CODNCR {level=2}  // "Signal '%s' used in conditional expression has don't care value"
+  EXLTRS {level=2}  // "Expression in the conditional logic of tri-state buffer '%s'"
+  CASEZU {level=2} // "Casez statement used in the design unit '%s'"
+  RDBFAS {level=2}  // "Register '%s', assigned using blocking assignment, is being read before getting assigned"
+  NCASEX {level=3}  // "'casex' statement used in module '%s'"
+  NFCASE {level=3}  // "'full_case' synthesis directive used in module '%s'"
+  HASUPC {level=3}	// "The module '%s' contains the '%s' case"
+}
+
+
+category RTL_SIMSYNTH_MIXED "Verilog/VHDL pre and post-synthesis simulation mismatch checks" default_on
+{
+  SYNTXZ {level=0}  // "Synthesizing 'x'/'z' values in %s '%s'"
+  SYNTZZ {level=0}  // "Synthesizing 'z' values in %s '%s'"
+  METACO {level=0}  // "In module '%s', conditional expression containing 'x'/'z' is statically evaluated to false"
+  PRTMIS {level=0}  // "There is a difference of width between the Verilog Module Port '%s' and corresponding VHDL entity/component port.This may result into synthesis/simulation mismatch"
+  INTTAG {level=0}  // "In module %s, integer tags have been re-sized. This can cause a simulation mismatch"
+  SENCMW {level=0}  // "Sensitivity list incomplete for node %s[%d:%d] in %s. Missing signal(s): %s"
+  SUTHRU {level=0}  // "Possible shoot-through due to this assignment"
+  EXTENX {level=1}  // "Extension of 'x' bits in a constant"
+  EXTENZ {level=1}  // "Extension of 'z' bits in a constant"
+  SLVMOD {level=1}  // "Identifier '%s' appearing in the sensitivity list is modified inside the block"
+  SLRANG {level=1}  // "Range '%s' used in the sensitivity list is not complete. This could lead to differences in simulation/synthesis"
+  SLVUSE {level=1}  // "Variable '%s' appearing in the sensitivity list is not used in the always block"
+  MXTSBC {level=1}  // "Node '%s' has '%d' tri-state buffers connected, which exceeds the recommended limit of '%d'"
+  TSBNTH {level=1}  // "Logic driven by tri-state buffer '%s' is not in a separate module"
+  FASNSR {level=1}  // "In module/design-unit '%s', flip-flop has both asynchronous set and reset signals"
+  IGNDLY {level=2}  // "Lumped delay in %s '%s' is ignored"
+  NDLYFF {level=2}  // "No delay is set for FF inferences"
+  BITUSD {level=2}  // "The bus variable '%s' appears in the sensitivity list, but all the bits are not used within the block"
+  HASLEX {level=2}  // "The design contains 'synthesis_off/synthesis_on' pragmas"
+  MDLDCL {level=2}  // "Signal '%s' is declared as '%s'. Use of '%s' can lead to simulation/synthesis mismatch"
+  HASPGM {level=2}  // "The design contains pragma directives"
+  LEXPGM {level=2}  // "File contains lexical pragmas, however it is not compiled with pragma/lexpragma command-line option."
+  PRBULT {level=2}  // "Pragma '%s' applied to function"
+  PGMIGR {level=2}  // "Statements from lines %d to %d, in the source file \"%s\", are under \"synthesis_off/on\" pragma. The semantics of the design may differ from simulation semantics"
+  PGMCIG {level=2}  // "The design construct is under \"synthesis_off/on\" pragma. The semantics of the design may differ from simulation semantics"
+}
+
+category RTL_SYNTH_VERILOG "Verilog only synthesizability checks" default_on synth_only
+{
+  EVTINV {level=0}  // "The specified event expression cannot be synthesized"
+  EVTDCL {level=0}  // "Module %s contains non-synthesizable named event declaration %s"
+  EVTCTL {level=0}  // "Module %s contains non-synthesizable named event control %s"
+  NOFREL {level=0}  // "%s %s contains non-synthesizable force/release constructs"
+  NOWAIT {level=0}  // "%s %s contains non-synthesizable wait construct"
+  NOFKJN {level=0}  // "%s %s contains non-synthesizable fork-join constructs"  
+  NFOREV {level=0}  // "Module %s contains non-synthesizable forever construct"
+  USGTSW {level=0}  // "\"%s\" not supported"
+  PTYPUS {level=0}  // "In design-unit %s, ports of type \"%s\" are not supported"
+  NONOWF {level=0}  // "now function in design-unit %s is not synthesizable"
+  AMODNS {level=0}  // "Aliased modules are not supported by default. Module %s has duplicate input/inout ports which has effect of aliasing (shorting) two nets"
+  INIEVN {level=0}  // "Module contains non-synthesizable initial block with event control"
+  NODSBL {level=0}  // "Module %s contains unsupported disable construct"
+  NSLOOP {level=0}  // "%s %s contains a non-static loop"
+  NEVREP {level=0}  // "%s %s contains non-synthesizable repeat event specification"
+  DPRUSP {level=0}  // "Module %s has non-synthesizable defparam statement"
+  MULWIR {level=0}  // "Module %s has wire %s%s multi-driven"
+  MUDREG {level=0} // "In module %s, register %s is driven in more than one block or process"
+  PCAUSP {level=0} // "Module %s has non-synthesizable assign/deassign statements"
+  OOMRUS {level=0}  // "Module %s has unsynthesizable OOMRs (Out-Of-Module Reference)"
+  USINEV {level=0}  // "%s %s contains unsupported intra-assignment event specification"
+  INTEVN {level=0} // "Module %s contains unsupported inter-statement event specification"
+  CLKMIX {level=0} // "Always block has both level and edge sensitive nodes in its sensitivity list"
+  HDLBND {level=0}  // "Module '%s' specified through the 'bind_top' option has constructs other than bind statements specified in it. Only bind statements present in this module will be recognized and all other constructs will be ignored by the tool"
+  NOIVAL {level=0}  // "The initial value is missing in the declaration of constant '%s'"
+  UNSINI {level=0}  // "Increment/Decrement operators in the port connection of an instance are not supported by the tool. Remodel the design without using these operators"
+  VLPMWL {level=0}  // "Value of loop variable '%s' modified within the loop"
+  TCLKED {level=0}  // "%s of signal '%s' used in task '%s'"
+  CELVEC {level=1}  // "No re-timing will be done for %s cell"
+  INFREC {level=1}  // "%s %s contains possibly unbounded subprogram recursions"
+  LRGARR {level=1}  // "The given assignment has a very large variably indexed node on the left hand side, processing the statement may be very time-consuming"
+  NOASLD {level=1}  // "In module %s, asynchronous load is not inferred for node %s[%d:%d]"
+  MULNBA {level=1} // "In module '%s', register '%s' has multiple non-blocking assignments%s"
+  UCLPNS {level=1} //  "In design-unit '%s', an unconditional loop statement is encountered"
+  MULIFF {level=1}  // "Always block has multiple event controls with associated 'iff' qualifiers"
+  ASNIFF {level=1}  // "Always block has an asynchronous control with associated 'iff' qualifier"
+  NOCOMB {level=1}  // "The  node '%s' models a %s in an 'always_comb' block"
+  NLATCH {level=1}  // "The  node '%s' models a %s in an 'always_latch' block"
+  NOFLOP {level=1}  // "The  node '%s' models a %s in an 'always_ff' block"
+  MTCOND {level=1}  // "The specified case statement with a 'unique' keyword has more than one case item that matches the case expression"
+  NTCOND {level=1} // "The specified case statement with a 'unique' or 'priority' keyword does not have any case item that matches the case expression"
+  IGPRAG {level=1} // "The tool does not support unique/priority constructs in edge sensitive sequential blocks. This construct will be ignored by the tool"
+  FFLRFR {level=1}  // "Flip-flop '%s' has reset/set and logic section in the same '%s' loop"
+  FFALWR {level=1}  // "If statement specifying an asynchronous '%s' '%s' is not the first statement of the always block"
+  FFRSTV {level=1}  // "The %s signal '%s' is inferred as a vector"
+  MULBAS {level=2} // "In module '%s', register '%s' has multiple blocking assignments%s"
+  NOLOCL {level=2}  // "In module %s, local nodes of task/function %s are initialized"
+  INIUSP {level=2}  // "Module %s has an initial block or a variable declaration assignment, which is ignored by synthesis tools"
+  FINUSP {level=2}  // "Module '%s' has a final block, which is ignored by synthesis tools"
+  IGNIFF {level=2}  // "The 'iff' qualifier, associated with the event expression with no edge specification, is ignored"
+  IFFASU {level=0}   //SystemVerilog 'iff' construct is not supported in the event expression of assertions. The assertion will be ignored
+  LOCVAR {level=0}   //SVA local variables are not supported by the tool, therefore, the property will be ignored. Remodel the property without using local variables
+  LVRENM {level=0}   //SVA local variables of enumerated type are not supported by the tool. Remodel the property without using enumerated type
+  LVMULT {level=0}   //The tool does not support multi-dimensional SVA local variables.  The property will be ignored by the tool
+  PARPRP  {level=0}  //Parameterized properties are not supported by the tool. The property will be ignored. Remodel the property in non-parameterized form
+  SVFCLK {level=0}   //The tool supports SystemVerilog sampled value functions for posedge/negedge clock expressions. This expression will be ignored by the tool
+  SVFEVT {level=0}   //The tool does not support clocking of complex expressions for SystemVerilog sampled value functions. This expression will be ignored by the tool
+  UNSFLS  {level=0}  //An out of module reference or an interface reference to a structure field  %s is  not supported by the tool.Remodel your design accordingly.
+  UNSTYP {level=0}  //The data type of the variable '%s' is either not supported or not synthesizable. Remodel the design without the specified construct
+  UNSTDP {level=0}  //The data type '%s' is either not supported or not synthesizable. Remodel the design without the specified construct
+  BBXMEM {level=0}  //Memory '%s' has size more than %d. This memory will be blackboxed
+  CONFAL	{level=0}  //The tool could not find the port name `%s` in the instantiated module and therefore dropped the instance. Remodel your design
+  UNSINC {level=0}  //Increment/Decrement(++/--) operators inside case expressions are not supported by the tool. Remodel the design without using these operators
+  UNSALS  {level=0}  //The specified format of the alias module is not supported by the tool. An alias module with only empty module and one duplicate input/inout port is supported. Remodel the design accordingly
+  FULCAS {level=0}   //Fullcase pragma encountered in module %s
+  IGNGAT  {level=0}  //%s gate is being ignored
+  IGNSYS  {level=0}  //System function call is being ignored and the return value is assumed as 0
+  IGNTXZ  {level=0}  //Table row with \'X/Z\' is being ignored
+  INITBI {level=0}   //Initial block in primitive is ignored
+  TRWIRE {level=0}   //The trireg net type is unsynthesizable. The tool will treat trireg net '%s' as a wire
+  METACA  {level=0}  //In module %s, %s tags evaluating to %s are ignored
+  METACD  {level=0}  //In module %s, %s selectors with x/z is encountered"
+  PARCAS {level=0}   //Parallel Case pragma encountered in module %s 
+}
+
+category RTL_SYNTH_MIXED "Verilog and VHDL  synthesizability checks" default_on synth_only
+{
+  RECFLE {level=0} // "No combinational circuit or sequential element could be recognized for %s.%s[%d:%d]. The sensitivity list will be used as the trigger"
+  AMSDES {level=0} // "Analog constructs detected in design %s"
+  ARCONV {level=0} // "Array size/shape mismatch in explicit type conversion"
+  NULLRG {level=0} // "In %s '%s', node %s has a null range defined"
+  NLCRNG {level=0} // "Range evaluates to a null range"
+  LPNTEX {level=0} // "The loop range of the specified for loop is a null range"
+  NSLOOP {level=0} // "%s %s contains a non-static loop"
+  VARRNG {level=0} // "Left and right bounds must be constant valued expressions"
+  IMPFSM {level=0} // "%s %s contains implicit finite-state machine"
+  SENCMW {level=0} // "Sensitivity list incomplete for node %s[%d:%d] in %s. Missing signal(s): %s"
+  OUTRNG {level=0} // "Bit/part select '%s' is outside the defined range %s"
+  AWNDEL {level=0} // "%s block with no event trigger at the start in %s %s"
+  CLKASY {level=0} // "For node %s in design-unit/module %s, clock signal %s is used in asynchronous control"
+  CLKATR {level=0} // "For node %s in design-unit %s, non-synthesizable use of attribute event on %s"
+  CLKBED {level=0} // "In module/design-unit %s, clock signal %s, for node %s, is driving data on both edges. Wrong polarity specified"
+  CLKEXP {level=0} // "In module/design-unit %s, for flip-flop %s, clock is an expression"
+  CLKMUL {level=0} // "In module %s, node %s has multiple clocks specified"
+  CLKENF {level=0} // "A conditional check is expected for all edge sensitive nodes except clock"
+  CLKNED {level=0} // "In module/design-unit %s, clock signal %s for node %s does not drive any data. Wrong polarity specified"
+  CLKOUT {level=0} // "In module/design-unit '%s', for flip-flop '%s', clock signal '%s' is used as the output"
+  CLKSRD {level=0} // "In module/design-unit '%s', clock signal '%s', for flip-flop '%s', is used as %s"
+  RSTEXP {level=0} // "In module/design-unit '%s', for flip-flop '%s', reset is an expression"
+  OUTORG {level=0} // "Range constraint violation in design-unit %s"
+  PRTNLL {level=0} // "A port of this instance is considered as undriven due to the presence of unsupported construct(s)"
+  DRPBLK {level=0} // "The %s is being dropped due to the presence of unsupported construct(s)"
+  SFNUNS {level=0} // "System function calls are not synthesizable"
+  LOCOFA {level=0} // "Loop condition is always false"
+  XINASN {level=0} // "In module/design-unit '%s', asynchronous set/reset force of flip-flop has x"
+  LATBAS {level=0} // "In module/design-unit %s, latch is assigned by blocking assignments"
+  MISNOD {level=0} // "'.*' could not infer any implicit port connection corresponding to port %s. This port will be left unconnected."
+  TXTPNS {level=0} // "In design-unit %s, unsynthesizable procedure call %s from text packages encountered"
+  UNSCON {level=0} // "Unsupported declaration/construct, will be ignored: %s"
+  USATYP {level=0} // "In design-unit %s, objects of unsynthesizable access type are encountered"
+  INTTAG {level=0} // "In module %s, integer tags have been re-sized. This can cause a simulation mismatch"
+  NOACCD {level=0} // "In design-unit %s, unsynthesizable access type declaration encountered"
+  NOALLD {level=0} // "In design-unit %s, unsynthesizable allocator/deallocate is encountered"
+  NOASST {level=0} // "In design-unit %s, unsynthesizable assertion statement is encountered"
+  PHYSNS {level=0} // "Literal physical data in design-unit %s is not supported"
+  NOCASS {level=0} // "In design-unit %s, unsynthesizable concurrent assertion statement is encountered"
+  USFTYP {level=0} // "In design-unit %s, objects of unsynthesizable file type are encountered"
+  NODSCN {level=0} // "Disconnect specification in design unit %s not supported"
+  USUPTE {level=0} // "Unsupported Table Entry"
+  FILENS {level=0} // "File type declarations are not synthesizable and will be ignored"
+  FILEOP {level=0} // "In design-unit %s, file operation %s is not synthesizable"
+  BOXERR {level=0} // "Module/Design-unit %s is being blackboxed with option %s and simultaneously being glassboxed"
+  TBBERR {level=0} // "Specified top %s is not available in the design hierarchy because instance %s of module %s is blackboxed under option %s"
+  TBXERR {level=0} // "Specified top %s is also blackboxed under option %s; therefore this tool is unable to process the specified sub-design"
+  IFINST {level=0} // "SystemVerilog Interface instance '%s' is connected to instance '%s' defined as a user-defined top"
+  IGNINS {level=0} // "The instance '%s' in module/DU '%s' has been dropped because of errors on the formal ports of the module it is instantiating"
+  INVCOE {level=0} // "Expression with invalid concatenation repeat count is being ignored"
+  INVGEN {level=0} // "The specified generic/parameter does not have a valid value"
+  MNTPMX {level=0} // "The (minimum, typical, maximum) delay expression is ignored, because delays are not considered during functional verification"
+  LANERR {level=0} // "Design has wrong language construct for %s package"
+  LRGMOD {level=0} // "The total size of the module %s is greater than that can be processed by the tool"
+  NCMNOA {level=0} // "Actual argument of type attribute to nc_mirror is not supported. The nc_mirror procedure will be ignored"
+  NCMNOD {level=0} // "The %s %s you have passed to nc_mirror call does not exist. The nc_mirror procedure will be ignored"
+  NCMOMR {level=0} // "OOMR is not supported for destination in nc_mirror. The procedure will be ignored
+  NCMSLC {level=0} // "Indexed/Slice expressions are not supported as destination or source in nc_mirror"
+  NULSLC {level=0} // "Null slice range of slice expression encountered"
+  SLDIRE {level=0} // "Inconsistent direction in slice discrete range"
+  STMISM {level=0} // "There is a mismatch between the size of connecting variable and the instantiated module port. The instance with the implicit port connection will be ignored. Use explicit named or positional connection syntax"
+  UNSPTP {level=0} // "Top-level module/entity has ports of unsupported types"
+  UNSYNT {level=0} // "The statement has an unsynthesizable expression and will be ignored by the tool. Modify the design for proper functioning of the tool"
+  LHSCON {level=0} // "A constant expression has been encountered on the left hand side of an assignment. The instances of this module will be ignored"
+  USTYPE {level=0} // "In design-unit %s, \"%s\" type is not supported"     
+  LTASRT {level=0} //  "Latch '%s' has an asynchronous set/reset" 
+  ARSHMM {level=1} // "Array size/shape mismatch"
+  COMBLP {level=1} // "In %s %s, combinational loop detected for node %s"
+  PACSIG {level=1} // "In design-unit %s, read/write operation is performed on signal \"%s\" which is declared in package \"%s \""
+  FNORET {level=1} // "Function has no return value and function return type is unconstrained"
+  WNORET {level=1} // "Function has no return value"
+  ASNCLD {level=1} // "In module %s, asynchronous load is inferred for node %s[%d:%d]. A synchronous reset may also be generated, if there is an error in the polarity of the reset signal"
+  CELLOP {level=1} // "Cell %s may have combinational loops. Node %s is one of the nodes contributing to this potential loop"
+  CLKINP {level=1} // "In %s %s, clock signal %s, for flip-flop %s, is not an input"
+  CLKLST {level=1} // "For node %s in design-unit/module %s, assignment under the clock single-edge condition expression must be the last assignment at this level and there must not be any assignment when this condition is false after this assignment"
+  CLKMBT {level=1} // "In %s %s, multi-bits %s used as clock for flip-flop %s"
+  RSTINP {level=1} // "In %s '%s', reset signal '%s', for flip-flop '%s', is not an input"
+  BLKBOX {level=1} // "%s %s automatically blackboxed"
+  RLRINT {level=1} // "Real literal is rounded to the nearest integer"
+  IGNENC {level=1} // "Enum encoding of the enum type is being ignored"
+  ASYNLD {level=1} //  "Asynchronous load is inferred for node %s. A synchronous reset may also be generated, if there is an error in the polarity of the reset signal"
+  ARNSOP {level=1} // "Logic operator other than '!' or '~' used to describe asynchronous set/reset of flip-flop '%s'"
+  EMTFNC {level=2} // "Function definition has an empty body"
+  PGMENB {level=2} // "Statements from lines %d to %d, in the source file \"%s\", are under \"verification_on/off\" pragma. These statements will be processed"
+  PGMIGR {level=2} // "Statements from lines %d to %d, in the source file \"%s\", are under \"synthesis_off/on\" pragma. The semantics of the design may differ from simulation semantics"
+  PGMTSO {level=2} // "Basetype/subtype of \"%s\" has declaration under \"synthesis_off/on\" pragma"
+  PGMUSO {level=2} // "\"%s\" has declaration under \"synthesis_off/on\" pragma"
+  PGMEXP {level=2} // "Incorrect use of Expression level \"synthesis_off/on\" Pragma for \"%s\""
+  SKPSUP {level=2} // "Assignment to a supply0/supply1 net %s in module %s is ignored"
+  EMPBLK {level=2} // "Module %s has an empty block"
+  RSTOUT {level=2} // "In module/design-unit %s, for flip-flop %s, reset signal %s is used as the output"
+  EMPMOD {level=2} // "Module/Design-unit '%s' is empty"
+  IGNATP {level=2} // "Ignoring attribute parameter on attribute %s"
+  EXPBBX {level=3} // "Design contains explicitly blackboxed design units"
+  IMPBBX {level=3} // "Design contains implicitly blackboxed memories"
+  EXPGBX {level=3} // "Design contains explicitly glassboxed design units"
+  AUTOBX {level=3} // "Design contains implicitly blackboxed design units/memories"
+
+  LDSNAP	{level=0}   //Loading design snapshot
+ TDHIER {level=0}   //Traversing design hierarchy
+ TOTFSM	{level=0}   //Total FSMs extracted = %d
+ TOTERR	{level=0}   //Total errors   = %d
+ TOTWAR	{level=0}   //Total warnings = %d
+ MAXWRN {level=0}   //Maximum warning count reached (%d). All further warnings will be ignored
+ MESSG1	{level=0}   //%s
+ MESSG2	{level=0}   //%s %s
+ UNIQUE {level=0}   //%s : %s %s
+ NOSMVG {level=0}   //Errors encountered in processing
+ NOLICF {level=0}   //License initialization failed
+ ADDLIN {level=0}   //%s Source HDL information for the error/warning mentioned above
+ FTLMEM {level=0}   //Processing stopped because virtual memory limit exceeded
+ FTLWRN {level=0}   //Processing stopped because of the error/warning above
+ NOARGS {level=0}   //No argument passed for the command line option %s. Therefore, this option is being ignored
+ USBIND  {level=0}  //The tool does not support the SystemVerilog bind construct. Remodel the design without using the bind construct
+ CURREV	{level=0}   //Current revision is %03d
+ MIXLAN  {level=0}  //Mixed-language designs are not supported
+ EMULTO  {level=0}  //Multiple tops found in the design
+ MUSNAP  {level=0}  //The snapshot contains multiple top-level modules. The tool does not support designs with multiple top-level modules. Reinvoke the tool  with '-TOP' or '-inst_top' command line option to specify the top module name
+ NODSGN  {level=0}  //Design top module could not be found by the tool. Only the module(s) specified with 'bind_top' option were found in the snapshot. Specify the design modules before invoking the tool again
+ SSNINC  {level=0}  //The incremental snapshot '%s' cannot be analyzed
+ PROGBX {level=0}   //%s %s has been glassboxed by the tool as it contains protected HDL
+ BLFNUS {level=0}   //PSL built-in function '%s' is not supported by the tool
+ BPSFNA  {level=0}  //Bit-select or part-select is not allowed on a forall replicator.  Modify the property before invoking the tool again
+ DRPBLE {level=0}   //The %s is being ignored due to the presence of unsupported construct(s)
+ EVTUNS  {level=0}  // The tool does not support usage of %s in an event expression. The property will be ignored by the tool
+ IGNPTH {level=0}   //The tool has encountered error(s) in the %s, the %s is being ignored
+ IGNASN {level=0}   //Due to an error on the node '%s', all the assignments to the node will be ignored
+ LVMXSZ {level=0}   //The tool does not support %s SVA local variables of size greater than %s. The property will be ignored by the tool
+ NCMUNS  {level=0}  //The %s is not a valid source object for nc_mirror. The nc_mirror procedure will be ignored. A valid source object can be a VHDL signal, variable, port, generic, or a Verilog wire
+ NCUNPK  {level=0}  //The tool does not support indexed/sliced expressions of signals with unpacked structures in nc_mirror. This expression will be ignored by the tool
+ OMRPWR {level=0}   //OOMR %s has been used at Output/Inout port. This is not supported and will be ignored by the tool.Remodel your design
+ OMRWNS {level=0}   //OOMR write is not supported and will be ignored by the tool.Remodel your design
+ PGMCEN  {level=0}  //The design construct is under \"verification_on/off\" pragma. This construct will be processed
+ PRMIDX {level=0}   //Indexing of formal parameters of properties are not supported. The property will be ignored
+ SVFCKE {level=0}   //Specifying %s as an argument to the sampled value function is not supported. This expression will be ignored by the tool
+ SIFVIG {level=0}   //SystemVerilog '%s' construct is supported only with sysv command line option. This construct will be ignored by the tool. Specify sysv option along with the invocation to enable this support
+ SYSVLG {level=0}   //SystemVerilog constructs are not presently handled by the tool. Please run ncvlog without -SV31A option
+ UNCINE  {level=0}  //Component instance is not fully bound (%s)
+ UNKNWN  {level=0}  //The tool will always evaluate the function 'isunknown' to be false
+ UNSYNP {level=0}  //The property has an unsynthesizable expression and will be ignored by the tool. Modify the expression for proper functioning of the tool.
+ USFERO {level=0}  //'rose'/'fell' function call with argument of width more than one is not supported
+ VALRAO  {level=0} //Range of values specified to the forall operator must be in ascending order else the property will be ignored. Modify the property by specifying the range in ascending order
+ VALPOS {level=0}  //Range of values specified to the forall operator must evaluate to a positive integer or zero else the property will be ignored. Modify the property by specifying the range with a positive integer or zero
+ BBXSIG {level=0}  //The size of signal '%s' is greater than %d which is specified with BB_SIGSIZE option. Signal '%s' will be blackboxed and all assignments to the signal will be ignored
+ IGNCMB {level=0}  //Ignoring clock generation assignment \"%s = not(%s)\"
+ INFILP {level=0}  //%s %s contains loop with more than %d iterations. The loop will be blackboxed
+ LRLOOP {level=0}  //Loop has more than %d iterations. Processing of loop may take some time
+ LOPOPT  {level=0} //The given Loop is been internally optimized by %s optimization.
+ SENCME   {level=0} //Sensitivity list incomplete for node %s%s in %s. Missing signal(s): %s
+ FSMERR  {level=0}  //  FSM extraction failed due to synthesizability errors
+ FSMFND  {level=0}  //  FSM extracted for state register %s
+ FSMCLK  {level=0}  //FSM extraction for state register '%s' in design unit '%s' failed due to complex clock expression
+ FSMSTA  {level=0}  //FSM extraction for state register '%s' in design unit '%s' failed to extract reset state
+ FSMRST  {level=0}  //FSM extraction for state register '%s' in design unit '%s' failed due to complex reset expression
+ VARTRE {level=0}   //The specified HDL code does not adhere to FSM modeling style guidelines. One or more transitions are expressed as assignment of non-constant expression to state register
+ XZSTRN {level=0}   //The state transitions in the specified FSM assign values containing 'X' or 'Z' to the state register
+ OPOVFL {level=0}   //The %s expression %s has resulted in an overflow and cannot be accommodated in %s bits. This could lead to incorrect results
+ AWNDLW {level=0}   //%s block with no event trigger at the start in %s %s
+ RECFAL {level=0}   //No combinational circuit or sequential element could be recognized for %s.%s%s. The sensitivity list will be used as the trigger
+ MEMREC {level=0}   //Node '%s' has been identified as a memory element
+ DEFVAL  {level=0}  //Using explicitly defined default value at port %s of the component instance %s because it is not connected and -USEDEFVAL option is used
+ REALNS  {level=0}  //Literal real data %s in design-unit %s is not supported
+ WRRMTH {level=0}   //The function %s is a standard MATH_REAL package function. It could derive incorrect results during REAL to INTEGER conversion. View the extended help for more information
+ SIMBLS {level=0}   //\"%s\" is supported using simplistic boolean model
+ UNSVHD	{level=0}   //VHDL200X '%s' construct is not supported by the tool.This will be ignored
+ USDVAL  {level=0}  //Using explicitly defined default value at port %s of the component instance %s because it is not connected
+ WAITFR  {level=0}  //In design-unit %s, a wait statement which waits for fixed time is not supported
+ MIXUNS	{level=0}   //The tool does not support VHDL port connection of inout type with actual port in SystemVerilog of enum type. This module instance will be ignored by the tool
+ UNSYSC {level=0}   //SystemC designs are not supported by the tool
+ UNSBBC  {level=0}  //Snapshot elaborated with -BBCONNECT option is not supported. Re-invoke the tool without BBCONNECT option
+ WCONSR {level=0}   //The tool only supports constant expression in the second operand of wild card equality operator ==? and !=?. The operators ==? and !=? are treated as == and != respectively
+ COVDBP  {level=0}  //Unable to open simulation coverage database at %s. Regenerate the database
+ NDMPCV {level=0}   //Unable to create file %s. Verify the working directory for shortage of disk space and write permissions
+ UCDTST {level=0}   //Unable to access the path %s. Verify the path, shortage of disk space, and read/write permissions before invoking the tool again
+ UTORDF {level=0}   //Could not open file \"%s\" for reading
+ NOVPCB {level=0}   //%s scoring is not supported and will be ignored by the tool
+ NOCVGL {level=0}   //Design unit %s is not consistent with the simulation coverage database and will be ignored by the tool
+ NOCOVG {level=0}   //Inconsistent %s coverage option for %s between coverage database and snapshot. Provide correct coverage database or coverage option before invoking the tool again"
+ NOTSIG {level=0}   //Signal %s is not found. Toggle checks are not created for the signal during coverage unreachability analysis
+ NOUTSV {level=0}   //Toggle checks are not supported when -NXG_OFF option is enabled during coverage unreachability analysis. Remove this option or disable toggle checks before invoking the tool again
+ CNTSOP {level=0}   //The tool does not support both control and SOP expression scoring data in simulation coverage database. Disable the expression coverage unreachability check or provide a coverage database containing either control or SOP expression scoring data
+ NOCINS {level=0}  //No matching instance found in the snapshot for coverage top %s. Coverage unreachability check for %s and its subsequent hierarchies will be ignored
+ NOUNIN {level=0}  //No unique instance found in the snapshot for coverage top %s. Coverage unreachability check for %s and its subsequent hierarchies will be ignored. Re-invoke the tool with -DUTINST option to consider this as coverage top
+ MICTOP {level=0}  //For coverage unreachability flow, instance %s in snapshot is matched with coverage top %s
+ IGNEXR {level=0}  //Invalid syntax specified on line number %s of refinement file. This line will be ignored by the tool
+ CORRFL {level=0}  //%s : Invalid format specified in the refinement file. Validate the file before invoking the tool again
+ IGNENM {level=0}  //Toggle analysis of SystemVerilog enumerated type is not supported in coverage unreachability flow. Signal %s will not be analyzed
+ OLDREF {level=0}  //Ignoring the %s exclude rule for %s %s. Refinement files are not in synchronization with the coverage database. Check if some source file was changed and coverage database regenerated after the refinement files were created. In that case, update refinement files and rerun the tool
+ UNSREF {level=0}  //Refinement file %s is not in synchronization with other refinement files. Ignoring the rule specified at line %s in the refinement file. Update %s and rerun the tool
+ NODPFL  {level=0} //Unable to open .dpdata file for writing %s
+ VCCNLD	{level=0}  //Unable to load VCC API library %s
+ VCCSYM	{level=0}  //Could not find the required symbol %s in the VCC library
+ VITBBX  {level=0} //Design-unit '%s' contains unsupported VHDL VITAL constructs. As a result, this design-unit has been automatically blackboxed. The design-unit and the sub-hierarchy under this design-unit will not be processed for FSM extraction
+ LICNOF {level=0}  //The tool was unable to checkout %s license. Verify that the required %s license is available for the tools operation
+ IPNOSO {level=0}  //VIP CAT 11.1 is not supported in this release. It will be supported in future releases. Use older VIP version to continue with verification
+}
+
+category FSM "Verilog and VHDL, FSM coding style checks" default_on synth_only
+{
+  FSMIDN {level=0} // "In module/design-unit '%s', FSM for state register '%s' has been recognized"
+  TERMST {level=0} // "In module/design-unit '%s', FSM for state register '%s' has terminal states %s"
+  UNRCHS {level=0} // "In module/design-unit '%s', FSM for state register '%s' has unreachable states %s"
+  BADFSM {level=1} // "In module/design-unit '%s', FSM for state register '%s' does not adhere to modeling style guidelines
+  PTRMST {level=1} // "In module/design-unit '%s', FSM for state register '%s' has potentially terminal states %s"
+  PUNRCS {level=1} // "In module/design-unit '%s', FSM for state register '%s' has potentially unreachable states %s"
+  VARTAG {level=1} // "The specified FSM contains a variable tag in the combinatorial logic"
+  VARTRN {level=1} // "The specified FSM contains state transitions expressed as assignments of variables to the state register"
+  PRMFSM {level=1} // "Parameter is not used to encode the state of the FSM" 
+}
+
+
+//***************************************************************************
+//**    Following is the description of the default HAL parameters         **
+//***************************************************************************
+
+// **********************
+// Overall HAL parameters
+// **********************
+
+// ***********************************************************
+// ** Parameter for Allowing/Disallowing severity downgrade **
+// ***********************************************************
+// By default, HAL does not allow message severity to be downgraded (e.g.
+// by specifying a {warning} parameter for a message that was originally
+// flagged as an ERROR).  This behavior can be changed by setting the
+// 'severity_downgradable' parameter below to 'yes'.
+
+params HAL   {severity_downgradable=no}
+// params HAL {severity_downgradable=yes}
+
+
+// ***********************************************************
+// **     Parameter for controlling unclassified rules      **
+// ***********************************************************
+// By default, HAL does not report messages which are not mentioned in
+// this file.  However, there are flows in which it would be preferable
+// for unclassified messages to be be reported. The parameter below can
+// be used to change this default behavior.
+
+params HAL {disable_unclassified_rules=yes}
+//params HAL {disable_unclassified_rules=no}
+
+
+// ***********************************************************
+// **     Parameter for controlling error suppression       **
+// ***********************************************************
+// By default, HAL allows checks with severity error to be suppresssed
+// using -NOCHECK <check_name>/<category_name> command. However if the
+// requirement is such that the error severity checks are always flagged,
+// the parameter below can be used to change the behavior.
+
+params HAL   {allow_error_suppression=yes}
+//params HAL {allow_error_suppression=no}
+
+
+// ***********************************************************
+// **     Parameter for displaying lint pragma control      **
+// ***********************************************************
+// If the lint pragmas are used in the design, then by default, the
+// check/category control introduced using lint pragmas is not output
+// in the hal.log file. In case, the information is required, the
+// parameter below, can be used to display the information in the logfile.
+
+params HAL {display_rule_control=no}
+// params HAL {display_rule_control=yes}
+
+
+// ****************************
+// Category specific parameters
+// ****************************
+
+
+// ***********************************************************
+// ** Parameters for controlling the checks in the category **
+// ** BEH_CODING_STYLE_VHDL and RTL_CODING_STYLE_VHDL       **
+// ***********************************************************
+
+// The checks in the category BEH_CODING_STYLE_VHDL and 
+// RTL_CODING_STYLE_VHDL are sensitive to the architecture name
+// in the design. By default, the checks in these categories are
+// triggered when the architecture name complies to the naming 
+// convention prescribed by RMM, to name architectures at different
+// levels of abstraction i.e Behavioral and RTL. The below 
+// parameters can be used to change the architecture naming pattern
+// to which the checks in these two categories are sensitive.
+
+params RTL_ARCHNM {pattern="^(RTL|STR)" text=""}
+params BEH_ARCHNM {pattern="^(TB|SIM|BEH)" text=""}
+
+
+
+
+// ****************************
+// Check specific parameters
+// ****************************
+
+// ***********************************************************
+// **   Parameters to specify the file format conventions   **
+// ***********************************************************
+
+params MAXPRT {max_ports=25}
+params MLITNU {max_literals=20}
+params SUBPLN {max_lines=300}
+params MXPROC {max_processes=10}
+params PBYNAM {num_params=5}
+params FILSUF {suffix=.vhd}
+params DESULN {max_lines=400}
+params INSTLB {max_length=8}
+params IDLENG {min_length=4}
+params IDLENG {max_length=16}
+params ARCHID {suffix_list="rtl|^rtl_|_rtl$|beh|^beh_|_beh$|syn|^syn_|_syn$|ppr|^ppr_|_ppr$|logic|^logic_|_logic$|hls|^hls_|_hls$|vit|^vit_|_vit$|tst|^tst_|_tst$"}
+
+
+
+// ***********************************************************
+// ** Parameters to control the direction range for arrays  **
+// ***********************************************************
+
+// Default direction for range in array/vector declarations is "descending".
+// This can be changed to "ascending" below, if that is preferred.  This
+// only matters for the DIRRNG check which is a part of part of the RMM
+// guidelines as well as the RTL_FILE_FORMAT_MIXED category in HAL.
+
+params DIRRNG {direction=descending}
+// params DIRRNG {direction=ascending}
+
+
+// ***********************************************************
+// **Parameters to control the behavior of the UNCONN check **
+// ***********************************************************
+
+// By default HAL does not allow the user to leave the output ports of design
+// unconnected when connection is done by name, and generates an  UNCONN warning
+// for the same. The below parameter can be used to chenge this default 
+// behavior. 
+
+params UNCONN {allow_explicitly_unconnected=no}
+// params UNCONN {allow_explicitly_unconnected=yes}
+
+
+// ***********************************************************
+// **  Parameters to control the output of -RULES_CHECKED   **
+// ***********************************************************
+
+// The following parameters controls the output of -RULES_CHECKED option.
+// Following four RULREP parameters in the defines file allow to select
+// the kind of rules to be reported by the '-RULES_CHECKED' option:
+//  1. Rules successfully checked on the design (no violation)
+//     params RULREP {report_successfull=yes|no}
+params RULREP {report_successfull=yes}
+
+//  2. Rules violated on the design (one or more violations)
+//     params RULREP {report_violated=yes|no}
+params RULREP {report_violated=yes}
+
+// Rules not checked on the design
+//  3. Deselected or not selected rules from the defines file
+//     params RULREP {report_unchecked=yes|no}
+params RULREP {report_unchecked=yes}
+
+//  4. Unclassified rules in the definitions file
+// params RULREP {report_unclassified=yes|no}
+params RULREP {report_unclassified=no}
+
+
+// ***********************************************************
+// **  Parameters to control the behavior of CBYNAM check   **
+// ***********************************************************
+
+// The following parameter controls whether the CBYNAM messages should
+// be issued for library cells.
+// ie. modules with `celldefine statement in Verilog
+// and VITAL design units in VHDL with VITAL_LEVEL0&1 attributes.
+// By default HAL will flag this check for technology cells instantiated
+// in the design.
+
+params CBYNAM {check_tech_cells=yes}
+// params CBYNAM {check_tech_cells=no}
+
+
+// ***********************************************************
+// ********  Parameters to control the behavior of  **********
+// ********   RDBFAS/REVROP check                    *********
+// ***********************************************************
+
+// In Verilog, if a register is assigned using a blocking 
+// assignment in an always block then this register will be 
+// considered as if it was a "variable" in VHDL process
+// There are two checks for this kind of "variable" and these
+// are RDBFAS and REVROP. By default these checks will be disabled
+
+params VERILOG_VARIABLE_CHECKS {check_verilog_reg_as_vhdl_var=no}
+// params VERILOG_VARIABLE_CHECKS {check_verilog_reg_as_vhdl_var=yes}
+ 
