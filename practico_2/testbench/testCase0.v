@@ -9,6 +9,7 @@ reg [7:0] data;
 reg [15:0] dataWord;
 reg [7:0] dataRead;
 reg [7:0] dataWrite;
+reg [7:0] status;
 integer i;
 integer j;
 
@@ -49,8 +50,24 @@ begin
   check_signal(testHarness.u_i2cSlave.myReg2,8'hcd);
   check_signal(testHarness.u_i2cSlave.myReg3,8'hef);
 
-  // Ejemplo lectura
-  //multiByteReadWrite.read({`I2C_ADDRESS, 1'b0}, 8'h00, 32'h89abcdef, dataWord, `NULL);
+  // Lectura
+  multiByteReadWrite.read({`I2C_ADDRESS, 1'b0}, 8'h00, 32'h89abcdef, dataWord, `NULL);
+
+  // Otros patrones de datos
+  multiByteReadWrite.write({`I2C_ADDRESS, 1'b0}, 8'h00, 32'h00000000, `SEND_STOP); 
+  multiByteReadWrite.write({`I2C_ADDRESS, 1'b0}, 8'h00, 32'hffffffff, `SEND_STOP); 
+  multiByteReadWrite.write({`I2C_ADDRESS, 1'b0}, 8'h00, 32'hAA55AA55, `SEND_STOP);
+
+  // Acceso a registros 4-7 (solo lectura)
+  multiByteReadWrite.read({`I2C_ADDRESS, 1'b0}, 8'h04, 32'h12345678, dataWord, `NULL);
+
+  // Transferencia incorrecta
+  multiByteReadWrite.write({7'h3d, 1'b0}, 8'h00, 32'h12345678, `SEND_STOP);
+  testHarness.u_wb_master_model.wb_read(1, `SR_REG, status);
+  if (status[7] != 1'b1) begin
+      $display("ERROR: se esperaba NACK, SR = 0x%h", status);
+      $stop;
+  end
 
   $write("Finished all tests\n");
   $stop;	

@@ -1,2 +1,8 @@
 xcelium.d/
 *.history
+.simvision/
+cov_work/
+imc.log
+mdv.log
+xrun.key
+xrun.log
