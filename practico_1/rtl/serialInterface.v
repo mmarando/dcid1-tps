@@ -53,7 +53,7 @@
 //////////////////////////////////////////////////////////////////////
 //
 `include "i2cSlave_define.v"
-
+ 
 module serialInterface (
   input   clk,
   input   [7:0] dataIn,
