@@ -1,1 +1,0 @@
-s1(31Aug2026:18:33:55):  irun -c -q -nostdout -access +rwc -xmelabargs -partialdesign -log ./.hal-irun.log -incdir ../rtl/ ../rtl/i2cSlave.v ../rtl/registerInterface.v ../rtl/serialInterface.v 
