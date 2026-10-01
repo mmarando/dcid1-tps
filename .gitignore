@@ -6,3 +6,17 @@ imc.log
 mdv.log
 xrun.key
 xrun.log
+
+genus.log*
+genus.cmd*
+genus_history.*
+*.log
+*.err
+*.key
+*.history
+
+*.db
+*.g
+*.vdb
+*.tsstamp
+.cadence/
