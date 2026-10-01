@@ -1,7 +1,7 @@
 (DELAYFILE
   (SDFVERSION  "OVI 3.0")
   (DESIGN      "practico_3")
-  (DATE        "Wed Sep 30 23:09:48 -03 2026")
+  (DATE        "Wed Sep 30 23:15:32 -03 2026")
   (VENDOR      "Cadence, Inc.")
   (PROGRAM     "Genus(TM) Synthesis Solution")
   (VERSION     "23.10-p004_1")
@@ -11,70 +11,68 @@
   (TEMPERATURE ::125.0)
   (TIMESCALE   1ps)
   (CELL
-     (CELLTYPE "INVXLLVT")
-     (INSTANCE u_mux.g28)
+     (CELLTYPE "NAND2X1LVT")
+     (INSTANCE u_mux.g31__5107)
      (DELAY
         (ABSOLUTE
           (PORT A (::0.0))
-          (IOPATH A Y (::49) (::57))
+          (PORT B (::0.0))
+          (IOPATH A Y (::34) (::80))
+          (IOPATH B Y (::87) (::125))
         )
      )
   )
   (CELL
-     (CELLTYPE "OAI22XLLVT")
-     (INSTANCE u_mux.g93__2398)
+     (CELLTYPE "AO21XLLVT")
+     (INSTANCE u_mux.g82__6260)
      (DELAY
         (ABSOLUTE
           (PORT A0 (::0.0))
           (PORT A1 (::0.0))
           (PORT B0 (::0.0))
-          (PORT B1 (::0.0))
-          (IOPATH A0 Y (::36) (::56))
-          (IOPATH B0 Y (::66) (::88))
-          (IOPATH A1 Y (::153) (::137))
-          (IOPATH B1 Y (::140) (::131))
+          (IOPATH A0 Y (::72) (::62))
+          (IOPATH B0 Y (::100) (::127))
+          (IOPATH A1 Y (::88) (::76))
         )
      )
   )
   (CELL
-     (CELLTYPE "AOI22XLLVT")
-     (INSTANCE u_mux.g94__5107)
+     (CELLTYPE "AOI21XLLVT")
+     (INSTANCE u_mux.g83__4319)
      (DELAY
         (ABSOLUTE
           (PORT A0 (::0.0))
           (PORT A1 (::0.0))
           (PORT B0 (::0.0))
-          (PORT B1 (::0.0))
-          (IOPATH A0 Y (::132) (::160))
-          (IOPATH B0 Y (::118) (::135))
-          (IOPATH A1 Y (::182) (::208))
-          (IOPATH B1 Y (::112) (::130))
+          (IOPATH A0 Y (::176) (::179))
+          (IOPATH B0 Y (::108) (::59))
+          (IOPATH A1 Y (::205) (::186))
         )
      )
   )
   (CELL
-     (CELLTYPE "AOI22XLLVT")
-     (INSTANCE u_mux.g95__6260)
+     (CELLTYPE "NAND2BXLLVT")
+     (INSTANCE u_mux.g85__5526)
      (DELAY
         (ABSOLUTE
-          (PORT A0 (::0.0))
-          (PORT A1 (::0.0))
-          (PORT B0 (::0.0))
-          (PORT B1 (::0.0))
-          (IOPATH A0 Y (::132) (::160))
-          (IOPATH B0 Y (::118) (::135))
-          (IOPATH A1 Y (::182) (::208))
-          (IOPATH B1 Y (::112) (::130))
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::51) (::126))
+          (IOPATH AN Y (::72) (::148))
         )
      )
   )
   (CELL
-     (CELLTYPE "INVX1")
-     (INSTANCE u_mux.g96)
+     (CELLTYPE "MX2X1LVT")
+     (INSTANCE u_mux.g2)
      (DELAY
         (ABSOLUTE
           (PORT A (::0.0))
-          (IOPATH A Y (::63) (::74))
+          (PORT B (::0.0))
+          (PORT S0 (::0.0))
+          (IOPATH A Y (::144) (::134))
+          (IOPATH B Y (::113) (::105))
+          (IOPATH S0 Y (::117) (::110))
         )
      )
   )
@@ -95,13 +93,13 @@
   )
   (CELL
      (CELLTYPE "CLKXOR2X1LVT")
-     (INSTANCE g28__4319)
+     (INSTANCE g24__6783)
      (DELAY
         (ABSOLUTE
           (PORT A (::0.0))
           (PORT B (::0.0))
-          (IOPATH A Y (::135) (::130))
-          (IOPATH B Y (::131) (::136))
+          (IOPATH A Y (::161) (::157))
+          (IOPATH B Y (::141) (::144))
         )
      )
   )
@@ -112,46 +110,21 @@
         (ABSOLUTE
           (PORT CK (::0.0))
           (PORT D (::0.0))
-          (IOPATH CK Q (::145) (::165))
+          (IOPATH CK Q (::162) (::182))
         )
      )
      (TIMINGCHECK
-        (SETUPHOLD (negedge D) (posedge CK) (::48) (::-3))
-        (SETUPHOLD (posedge D) (posedge CK) (::80) (::-55))
-     )
-  )
-  (CELL
-     (CELLTYPE "DFFHQX1LVT")
-     (INSTANCE u_div4_r_count_reg\[0\])
-     (DELAY
-        (ABSOLUTE
-          (PORT CK (::0.0))
-          (PORT D (::0.0))
-          (IOPATH CK Q (::148) (::167))
-        )
-     )
-     (TIMINGCHECK
-        (SETUPHOLD (negedge D) (posedge CK) (::53) (::-6))
-        (SETUPHOLD (posedge D) (posedge CK) (::85) (::-60))
+        (SETUPHOLD (negedge D) (posedge CK) (::54) (::-7))
+        (SETUPHOLD (posedge D) (posedge CK) (::86) (::-62))
      )
   )
   (CELL
      (CELLTYPE "INVX1LVT")
-     (INSTANCE g31)
+     (INSTANCE g26)
      (DELAY
         (ABSOLUTE
           (PORT A (::0.0))
-          (IOPATH A Y (::73) (::74))
-        )
-     )
-  )
-  (CELL
-     (CELLTYPE "INVX1LVT")
-     (INSTANCE g32)
-     (DELAY
-        (ABSOLUTE
-          (PORT A (::0.0))
-          (IOPATH A Y (::31) (::35))
+          (IOPATH A Y (::86) (::87))
         )
      )
   )

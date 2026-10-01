@@ -16,7 +16,6 @@ add mapped point o_data o_data -type PO PO
 //Sequential Pins
 add mapped point u_div4/r_count[1]/q u_div4_r_count_reg[1]/Q -type DFF DFF
 add mapped point u_div2/r_div/q u_div2_r_div_reg/Q -type DFF DFF
-add mapped point u_div4/r_count[0]/q u_div4_r_count_reg[0]/Q -type DFF DFF
 add mapped point r_ff2/q r_ff2_reg/Q -type DFF DFF
 add mapped point r_ff1/q r_ff1_reg/Q -type DFF DFF
 
