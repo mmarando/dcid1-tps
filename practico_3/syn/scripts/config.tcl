@@ -1,0 +1,23 @@
+
+# name of design
+set design "practico_3"
+
+# path to rtl and sdc containers, where the rtl code and sdc will be placed
+set rtlpath "/home/mmarando/dcid1-tps"
+set codepath "${rtlpath}/${design}/code"
+set sdcpath  "${rtlpath}/${design}/sdc"
+
+# create verilog file list and sdc lists
+set vlist "practico_3.v"
+set sdclist "practico_3.sdc"
+
+# libraries
+#set libpath "/home/amslib/PDKs/gpdk045v6"
+#set hvt_lib_slow "${libpath}/gsclib045_hvt/timing/slow_vdd1v0_basicCells_hvt.lib"
+#set svt_lib_slow "${libpath}/gsclib045/timing/slow_vdd1v0_basicCells.lib"
+#set lvt_lib_slow "${libpath}/gsclib045_lvt/timing/slow_vdd1v0_basicCells_lvt.lib"
+
+# syn settings
+
+set gen_eff     "medium"
+set map_opt_eff "high"
