@@ -1,0 +1,188 @@
+(DELAYFILE
+  (SDFVERSION  "OVI 3.0")
+  (DESIGN      "practico_3")
+  (DATE        "Wed Sep 30 23:09:48 -03 2026")
+  (VENDOR      "Cadence, Inc.")
+  (PROGRAM     "Genus(TM) Synthesis Solution")
+  (VERSION     "23.10-p004_1")
+  (DIVIDER     .)
+  (VOLTAGE     ::0.9)
+  (PROCESS     "::1.0")
+  (TEMPERATURE ::125.0)
+  (TIMESCALE   1ps)
+  (CELL
+     (CELLTYPE "INVXLLVT")
+     (INSTANCE u_mux.g28)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::49) (::57))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI22XLLVT")
+     (INSTANCE u_mux.g93__2398)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (PORT B1 (::0.0))
+          (IOPATH A0 Y (::36) (::56))
+          (IOPATH B0 Y (::66) (::88))
+          (IOPATH A1 Y (::153) (::137))
+          (IOPATH B1 Y (::140) (::131))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI22XLLVT")
+     (INSTANCE u_mux.g94__5107)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (PORT B1 (::0.0))
+          (IOPATH A0 Y (::132) (::160))
+          (IOPATH B0 Y (::118) (::135))
+          (IOPATH A1 Y (::182) (::208))
+          (IOPATH B1 Y (::112) (::130))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI22XLLVT")
+     (INSTANCE u_mux.g95__6260)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (PORT B1 (::0.0))
+          (IOPATH A0 Y (::132) (::160))
+          (IOPATH B0 Y (::118) (::135))
+          (IOPATH A1 Y (::182) (::208))
+          (IOPATH B1 Y (::112) (::130))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX1")
+     (INSTANCE u_mux.g96)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::63) (::74))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE u_div4_r_count_reg\[1\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::144) (::163))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::51) (::-4))
+        (SETUPHOLD (posedge D) (posedge CK) (::83) (::-58))
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKXOR2X1LVT")
+     (INSTANCE g28__4319)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::135) (::130))
+          (IOPATH B Y (::131) (::136))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE u_div2_r_div_reg)
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::145) (::165))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::48) (::-3))
+        (SETUPHOLD (posedge D) (posedge CK) (::80) (::-55))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE u_div4_r_count_reg\[0\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::148) (::167))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::53) (::-6))
+        (SETUPHOLD (posedge D) (posedge CK) (::85) (::-60))
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX1LVT")
+     (INSTANCE g31)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::73) (::74))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX1LVT")
+     (INSTANCE g32)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::31) (::35))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE r_ff2_reg)
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::129) (::147))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::49) (::-3))
+        (SETUPHOLD (posedge D) (posedge CK) (::81) (::-56))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE r_ff1_reg)
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::131) (::149))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::29) (::14))
+        (SETUPHOLD (posedge D) (posedge CK) (::61) (::-38))
+     )
+  )
+)
