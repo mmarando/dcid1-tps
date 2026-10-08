@@ -3,7 +3,7 @@
 set design "fir_pipe_reg"
 
 # path to rtl and sdc containers, where the rtl code and sdc will be placed
-set rtlpath "/home/finsaurralde/Escritorio/vlsi_course/modulo3"
+set rtlpath "/home/mmarando/dcid1-tps/unidad3"
 set codepath "${rtlpath}/${design}/rtl"
 set sdcpath  "${rtlpath}/${design}/sdc"
 

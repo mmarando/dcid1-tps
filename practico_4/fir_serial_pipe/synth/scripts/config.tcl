@@ -1,15 +1,15 @@
 
 # name of design
-set design "fir_pipe_reg"
+set design "fir_serial_pipe"
 
 # path to rtl and sdc containers, where the rtl code and sdc will be placed
-set rtlpath "/home/finsaurralde/Escritorio/vlsi_course/modulo3"
+set rtlpath "/home/mmarando/dcid1-tps/practico_4/fir_serial_pipe"
 set codepath "${rtlpath}/${design}/rtl"
 set sdcpath  "${rtlpath}/${design}/sdc"
 
 # create verilog file list and sdc lists
-set vlist "fir_pipe_reg.sv"
-set sdclist "fir_pipe_reg.sdc"
+set vlist "fir_serial_pipe.sv"
+set sdclist "fir_serial_pipe.sdc"
 
 # libraries
 #set libpath "/home/amslib/PDKs/gpdk045v6"

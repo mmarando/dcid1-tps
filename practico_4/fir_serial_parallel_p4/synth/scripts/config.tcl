@@ -1,15 +1,15 @@
 
 # name of design
-set design "fir_serial"
+set design "fir_serial_parallel"
 
 # path to rtl and sdc containers, where the rtl code and sdc will be placed
-set rtlpath "/home/mmarando/dcid1-tps/unidad3"
+set rtlpath "/home/mmarando/dcid1-tps/practico_4/fir_serial_parallel"
 set codepath "${rtlpath}/${design}/rtl"
 set sdcpath  "${rtlpath}/${design}/sdc"
 
 # create verilog file list and sdc lists
-set vlist "fir_serial.sv"
-set sdclist "fir_serial.sdc"
+set vlist "fir_serial_parallel.sv"
+set sdclist "fir_serial_parallel.sdc"
 
 # libraries
 #set libpath "/home/amslib/PDKs/gpdk045v6"
