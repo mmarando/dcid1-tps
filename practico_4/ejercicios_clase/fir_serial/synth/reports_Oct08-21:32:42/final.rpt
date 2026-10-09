@@ -1,0 +1,51 @@
+
+
+Working Directory = /home/mmarando/dcid1-tps/practico_4/ejercicios_clase/fir_serial/synth
+QoS Summary for fir_serial
+==========================================================================================
+Metric                          generic         map             syn_opt         final          
+==========================================================================================
+Slack (ps):                      -104               0               0               0
+  R2R (ps):                      -104               0               0               0
+  I2R (ps):                     1,231           1,233           1,233           1,233
+  R2O (ps):                     1,122           1,116           1,116           1,116
+  I2O (ps):                  no_value        no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value        no_value
+TNS (ps):                        -341               0               0               0
+  R2R (ps):                      -341               0               0               0
+  I2R (ps):                         0               0               0               0
+  R2O (ps):                         0               0               0               0
+  I2O (ps):                  no_value        no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value        no_value
+Failing Paths:                      4               0               0               0
+Cell Area:                      3,824           1,528           1,478           1,478
+Total Cell Area:                3,824           1,528           1,478           1,478
+Leaf Instances:                 1,227             326             287             287
+Total Instances:                1,227             326             287             287
+Utilization (%):                 0.00            0.00            0.00            0.00
+Tot. Net Length (um):        no_value        no_value        no_value        no_value
+Avg. Net Length (um):        no_value        no_value        no_value        no_value
+Route Overflow H (%):        no_value        no_value        no_value        no_value
+Route Overflow V (%):        no_value        no_value        no_value        no_value
+MBCI(%) (bits/gate) :            0.00            0.00            0.00            0.00
+Norm Cong Hotspot Area:
+  Max Cong:                  no_value        no_value        no_value        no_value
+  Tot Cong:                  no_value        no_value        no_value        no_value
+==========================================================================================
+CPU  Runtime (h:m:s):        00:00:41        00:00:20        00:00:03        00:00:00
+Real Runtime (h:m:s):        00:00:35        00:00:14        00:00:03        00:00:01
+CPU  Elapsed (h:m:s):        00:00:43        00:01:03        00:01:06        00:01:06
+Real Elapsed (h:m:s):        00:00:35        00:00:49        00:00:52        00:00:53
+Memory (MB):                  1952.02         1939.30         1958.12         1966.13
+==========================================================================================
+==========================================================================================
+Flow Settings:
+==========================================================================================
+Total Runtime (h:m:s): 00:00:54
+Total Memory (MB):     1966.13
+Executable Version:    23.10-p004_1
+==========================================================================================
+Total Cell Area =  Cell Area + Physical Cell Area
+Total Instances =  Leaf Instances + Physical Instances
+
+

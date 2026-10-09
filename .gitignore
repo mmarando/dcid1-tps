@@ -6,6 +6,7 @@ imc.log
 mdv.log
 xrun.key
 xrun.log
+waves.shm/
 
 genus.log*
 genus.cmd*
@@ -14,9 +15,14 @@ genus_history.*
 *.err
 *.key
 *.history
+*.tstamp
 
 *.db
 *.g
 *.vdb
 *.tsstamp
 .cadence/
+
+.symbolnamelist
+.symbolportinfomap
+*~

@@ -3,7 +3,7 @@
 set design "fir_serial_pipe"
 
 # path to rtl and sdc containers, where the rtl code and sdc will be placed
-set rtlpath "/home/mmarando/dcid1-tps/practico_4/fir_serial_pipe"
+set rtlpath "/home/mmarando/dcid1-tps/practico_4"
 set codepath "${rtlpath}/${design}/rtl"
 set sdcpath  "${rtlpath}/${design}/sdc"
 

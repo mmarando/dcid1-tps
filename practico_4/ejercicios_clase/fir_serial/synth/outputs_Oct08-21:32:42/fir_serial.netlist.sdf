@@ -1,0 +1,4239 @@
+(DELAYFILE
+  (SDFVERSION  "OVI 3.0")
+  (DESIGN      "fir_serial")
+  (DATE        "Thu Oct 08 21:33:21 -03 2026")
+  (VENDOR      "Cadence, Inc.")
+  (PROGRAM     "Genus(TM) Synthesis Solution")
+  (VERSION     "23.10-p004_1")
+  (DIVIDER     .)
+  (VOLTAGE     ::0.9)
+  (PROCESS     "::1.0")
+  (TEMPERATURE ::125.0)
+  (TIMESCALE   1ps)
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE data_out_reg_reg\[12\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::129) (::147))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::51) (::-4))
+        (SETUPHOLD (posedge D) (posedge CK) (::83) (::-58))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE data_out_reg_reg\[2\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::129) (::147))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::53) (::-6))
+        (SETUPHOLD (posedge D) (posedge CK) (::86) (::-61))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE data_out_reg_reg\[1\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::129) (::147))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::53) (::-6))
+        (SETUPHOLD (posedge D) (posedge CK) (::86) (::-61))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE data_out_reg_reg\[14\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::129) (::147))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::51) (::-4))
+        (SETUPHOLD (posedge D) (posedge CK) (::83) (::-58))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE data_out_reg_reg\[0\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::129) (::147))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::51) (::-4))
+        (SETUPHOLD (posedge D) (posedge CK) (::83) (::-58))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE data_out_reg_reg\[8\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::129) (::147))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::51) (::-4))
+        (SETUPHOLD (posedge D) (posedge CK) (::83) (::-58))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE data_out_reg_reg\[6\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::129) (::147))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::51) (::-4))
+        (SETUPHOLD (posedge D) (posedge CK) (::83) (::-58))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE data_out_reg_reg\[7\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::129) (::147))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::51) (::-4))
+        (SETUPHOLD (posedge D) (posedge CK) (::83) (::-58))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE data_out_reg_reg\[10\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::129) (::147))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::51) (::-4))
+        (SETUPHOLD (posedge D) (posedge CK) (::83) (::-58))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE data_out_reg_reg\[9\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::129) (::147))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::51) (::-4))
+        (SETUPHOLD (posedge D) (posedge CK) (::83) (::-58))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE data_out_reg_reg\[3\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::129) (::147))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::53) (::-6))
+        (SETUPHOLD (posedge D) (posedge CK) (::86) (::-61))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE data_out_reg_reg\[13\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::129) (::147))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::51) (::-4))
+        (SETUPHOLD (posedge D) (posedge CK) (::83) (::-58))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE data_out_reg_reg\[11\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::129) (::147))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::51) (::-4))
+        (SETUPHOLD (posedge D) (posedge CK) (::83) (::-58))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE data_out_reg_reg\[4\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::129) (::147))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::47) (::-1))
+        (SETUPHOLD (posedge D) (posedge CK) (::80) (::-56))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE data_out_reg_reg\[5\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::129) (::147))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::47) (::-1))
+        (SETUPHOLD (posedge D) (posedge CK) (::80) (::-56))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE data_out_reg_reg\[15\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::162) (::184))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::59) (::-11))
+        (SETUPHOLD (posedge D) (posedge CK) (::90) (::-65))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX2LVT")
+     (INSTANCE shift_reg_reg\[6\]\[2\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::152) (::165))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::72) (::-19))
+        (SETUPHOLD (posedge D) (posedge CK) (::98) (::-68))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX2LVT")
+     (INSTANCE shift_reg_reg\[6\]\[5\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::134) (::147))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::60) (::-10))
+        (SETUPHOLD (posedge D) (posedge CK) (::87) (::-57))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX4LVT")
+     (INSTANCE shift_reg_reg\[6\]\[3\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::144) (::157))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::74) (::-18))
+        (SETUPHOLD (posedge D) (posedge CK) (::99) (::-66))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE shift_reg_reg\[5\]\[7\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::185) (::207))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::61) (::-13))
+        (SETUPHOLD (posedge D) (posedge CK) (::92) (::-67))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX2LVT")
+     (INSTANCE shift_reg_reg\[5\]\[4\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::144) (::158))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::55) (::-6))
+        (SETUPHOLD (posedge D) (posedge CK) (::82) (::-52))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX4LVT")
+     (INSTANCE shift_reg_reg\[5\]\[1\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::149) (::162))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::66) (::-12))
+        (SETUPHOLD (posedge D) (posedge CK) (::92) (::-59))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX2LVT")
+     (INSTANCE shift_reg_reg\[4\]\[6\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::146) (::160))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::73) (::-20))
+        (SETUPHOLD (posedge D) (posedge CK) (::100) (::-69))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX4LVT")
+     (INSTANCE shift_reg_reg\[4\]\[4\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::147) (::161))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::74) (::-18))
+        (SETUPHOLD (posedge D) (posedge CK) (::99) (::-66))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX2LVT")
+     (INSTANCE shift_reg_reg\[4\]\[5\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::145) (::159))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::58) (::-8))
+        (SETUPHOLD (posedge D) (posedge CK) (::85) (::-55))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX2LVT")
+     (INSTANCE shift_reg_reg\[4\]\[0\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::146) (::160))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::51) (::-3))
+        (SETUPHOLD (posedge D) (posedge CK) (::78) (::-48))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX2LVT")
+     (INSTANCE shift_reg_reg\[4\]\[1\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::146) (::160))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::73) (::-20))
+        (SETUPHOLD (posedge D) (posedge CK) (::100) (::-69))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX2LVT")
+     (INSTANCE shift_reg_reg\[4\]\[3\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::145) (::159))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::60) (::-10))
+        (SETUPHOLD (posedge D) (posedge CK) (::87) (::-57))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX4LVT")
+     (INSTANCE shift_reg_reg\[4\]\[2\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::146) (::160))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::61) (::-9))
+        (SETUPHOLD (posedge D) (posedge CK) (::88) (::-55))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE shift_reg_reg\[3\]\[7\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::161) (::182))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::71) (::-21))
+        (SETUPHOLD (posedge D) (posedge CK) (::102) (::-76))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX4LVT")
+     (INSTANCE shift_reg_reg\[2\]\[2\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::149) (::163))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::57) (::-5))
+        (SETUPHOLD (posedge D) (posedge CK) (::83) (::-50))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE shift_reg_reg\[2\]\[7\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::162) (::183))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::50) (::-4))
+        (SETUPHOLD (posedge D) (posedge CK) (::81) (::-57))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX2LVT")
+     (INSTANCE shift_reg_reg\[1\]\[3\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::146) (::160))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::73) (::-20))
+        (SETUPHOLD (posedge D) (posedge CK) (::100) (::-69))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE shift_reg_reg\[1\]\[0\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::167) (::187))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::54) (::-7))
+        (SETUPHOLD (posedge D) (posedge CK) (::86) (::-61))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX2LVT")
+     (INSTANCE shift_reg_reg\[1\]\[5\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::146) (::160))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::73) (::-20))
+        (SETUPHOLD (posedge D) (posedge CK) (::100) (::-69))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX4LVT")
+     (INSTANCE shift_reg_reg\[1\]\[4\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::147) (::160))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::75) (::-19))
+        (SETUPHOLD (posedge D) (posedge CK) (::101) (::-67))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX2LVT")
+     (INSTANCE shift_reg_reg\[1\]\[1\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::146) (::160))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::73) (::-20))
+        (SETUPHOLD (posedge D) (posedge CK) (::100) (::-69))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX4LVT")
+     (INSTANCE shift_reg_reg\[1\]\[6\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::146) (::160))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::77) (::-21))
+        (SETUPHOLD (posedge D) (posedge CK) (::103) (::-69))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX4LVT")
+     (INSTANCE shift_reg_reg\[1\]\[2\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::147) (::161))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::75) (::-19))
+        (SETUPHOLD (posedge D) (posedge CK) (::101) (::-67))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX4LVT")
+     (INSTANCE shift_reg_reg\[0\]\[7\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::145) (::158))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::75) (::-19))
+        (SETUPHOLD (posedge D) (posedge CK) (::101) (::-67))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX2LVT")
+     (INSTANCE shift_reg_reg\[0\]\[0\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::147) (::160))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::81) (::-26))
+        (SETUPHOLD (posedge D) (posedge CK) (::108) (::-76))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFHQX1LVT")
+     (INSTANCE data_in_reg_reg\[3\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::163) (::184))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::29) (::14))
+        (SETUPHOLD (posedge D) (posedge CK) (::61) (::-38))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1LVT")
+     (INSTANCE data_in_reg_reg\[0\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::161) (::177))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::37) (::5))
+        (SETUPHOLD (posedge D) (posedge CK) (::64) (::-39))
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_001_0__2398)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::161) (::156))
+          (IOPATH A CO (::162) (::150))
+          (IOPATH B CO (::163) (::150))
+          (IOPATH CI S (::227) (::216))
+          (IOPATH A S (::216) (::227))
+          (IOPATH B S (::223) (::225))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_002_0__5107)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::163) (::158))
+          (IOPATH A CO (::175) (::162))
+          (IOPATH B CO (::187) (::173))
+          (IOPATH CI S (::230) (::218))
+          (IOPATH A S (::228) (::238))
+          (IOPATH B S (::247) (::248))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_002_1__6260)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::155) (::150))
+          (IOPATH A CO (::163) (::151))
+          (IOPATH B CO (::163) (::150))
+          (IOPATH CI S (::221) (::210))
+          (IOPATH A S (::216) (::228))
+          (IOPATH B S (::223) (::226))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_003_0__4319)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::159) (::153))
+          (IOPATH A CO (::166) (::152))
+          (IOPATH B CO (::184) (::171))
+          (IOPATH CI S (::222) (::212))
+          (IOPATH A S (::216) (::228))
+          (IOPATH B S (::242) (::244))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_003_1__8428)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::163) (::158))
+          (IOPATH A CO (::153) (::140))
+          (IOPATH B CO (::174) (::161))
+          (IOPATH CI S (::230) (::218))
+          (IOPATH A S (::207) (::218))
+          (IOPATH B S (::234) (::235))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_003_2__5526)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::148) (::138))
+          (IOPATH A CO (::155) (::141))
+          (IOPATH B CO (::165) (::152))
+          (IOPATH CI S (::210) (::203))
+          (IOPATH A S (::208) (::219))
+          (IOPATH B S (::225) (::227))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_003_3__6783)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::158) (::152))
+          (IOPATH A CO (::166) (::152))
+          (IOPATH B CO (::168) (::154))
+          (IOPATH CI S (::223) (::213))
+          (IOPATH A S (::218) (::230))
+          (IOPATH B S (::228) (::230))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_003_4__3680)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::155) (::150))
+          (IOPATH A CO (::167) (::153))
+          (IOPATH B CO (::166) (::152))
+          (IOPATH CI S (::221) (::210))
+          (IOPATH A S (::219) (::232))
+          (IOPATH B S (::225) (::229))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_004_0__1617)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::157) (::152))
+          (IOPATH A CO (::158) (::145))
+          (IOPATH B CO (::167) (::154))
+          (IOPATH CI S (::220) (::208))
+          (IOPATH A S (::208) (::219))
+          (IOPATH B S (::224) (::226))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_004_1__2802)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::145) (::140))
+          (IOPATH A CO (::165) (::151))
+          (IOPATH B CO (::155) (::142))
+          (IOPATH CI S (::209) (::198))
+          (IOPATH A S (::216) (::227))
+          (IOPATH B S (::213) (::215))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_004_2__1705)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::161) (::156))
+          (IOPATH A CO (::185) (::173))
+          (IOPATH B CO (::171) (::159))
+          (IOPATH CI S (::227) (::216))
+          (IOPATH A S (::239) (::250))
+          (IOPATH B S (::232) (::234))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_004_3__5122)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::157) (::152))
+          (IOPATH A CO (::161) (::146))
+          (IOPATH B CO (::169) (::155))
+          (IOPATH CI S (::220) (::208))
+          (IOPATH A S (::210) (::221))
+          (IOPATH B S (::225) (::227))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_004_4__8246)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::157) (::141))
+          (IOPATH A CO (::175) (::162))
+          (IOPATH B CO (::164) (::151))
+          (IOPATH CI S (::213) (::212))
+          (IOPATH A S (::228) (::238))
+          (IOPATH B S (::224) (::226))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_004_5__7098)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::158) (::152))
+          (IOPATH A CO (::169) (::155))
+          (IOPATH B CO (::168) (::154))
+          (IOPATH CI S (::221) (::211))
+          (IOPATH A S (::219) (::231))
+          (IOPATH B S (::225) (::228))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_004_6__6131)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::158) (::152))
+          (IOPATH A CO (::169) (::155))
+          (IOPATH B CO (::169) (::154))
+          (IOPATH CI S (::223) (::213))
+          (IOPATH A S (::221) (::233))
+          (IOPATH B S (::228) (::230))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_004_7__1881)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::162) (::155))
+          (IOPATH A CO (::173) (::158))
+          (IOPATH B CO (::172) (::158))
+          (IOPATH CI S (::227) (::216))
+          (IOPATH A S (::225) (::237))
+          (IOPATH B S (::232) (::233))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_004_8__5115)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::162) (::155))
+          (IOPATH A CO (::173) (::158))
+          (IOPATH B CO (::173) (::158))
+          (IOPATH CI S (::226) (::216))
+          (IOPATH A S (::224) (::236))
+          (IOPATH B S (::231) (::234))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_005_0__7482)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::148) (::143))
+          (IOPATH A CO (::140) (::128))
+          (IOPATH B CO (::139) (::127))
+          (IOPATH CI S (::224) (::212))
+          (IOPATH A S (::204) (::212))
+          (IOPATH B S (::211) (::210))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_005_1__4733)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::146) (::140))
+          (IOPATH A CO (::168) (::155))
+          (IOPATH B CO (::168) (::155))
+          (IOPATH CI S (::208) (::198))
+          (IOPATH A S (::218) (::229))
+          (IOPATH B S (::225) (::227))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_005_2__6161)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::153) (::149))
+          (IOPATH A CO (::164) (::152))
+          (IOPATH B CO (::165) (::152))
+          (IOPATH CI S (::217) (::206))
+          (IOPATH A S (::215) (::227))
+          (IOPATH B S (::223) (::225))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_005_3__9315)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::157) (::152))
+          (IOPATH A CO (::178) (::165))
+          (IOPATH B CO (::158) (::144))
+          (IOPATH CI S (::220) (::209))
+          (IOPATH A S (::228) (::239))
+          (IOPATH B S (::214) (::217))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_005_4__9945)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::161) (::155))
+          (IOPATH A CO (::175) (::165))
+          (IOPATH B CO (::171) (::158))
+          (IOPATH CI S (::223) (::212))
+          (IOPATH A S (::228) (::236))
+          (IOPATH B S (::228) (::230))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_005_5__2883)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::151) (::150))
+          (IOPATH A CO (::162) (::153))
+          (IOPATH B CO (::161) (::153))
+          (IOPATH CI S (::202) (::194))
+          (IOPATH A S (::202) (::214))
+          (IOPATH B S (::207) (::210))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_005_6__2346)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::162) (::155))
+          (IOPATH A CO (::166) (::151))
+          (IOPATH B CO (::173) (::158))
+          (IOPATH CI S (::221) (::211))
+          (IOPATH A S (::211) (::224))
+          (IOPATH B S (::225) (::229))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_005_7__1666)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::157) (::152))
+          (IOPATH A CO (::169) (::156))
+          (IOPATH B CO (::168) (::155))
+          (IOPATH CI S (::222) (::212))
+          (IOPATH A S (::221) (::234))
+          (IOPATH B S (::228) (::231))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_005_8__7410)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::162) (::155))
+          (IOPATH A CO (::172) (::158))
+          (IOPATH B CO (::172) (::158))
+          (IOPATH CI S (::226) (::216))
+          (IOPATH A S (::224) (::236))
+          (IOPATH B S (::231) (::234))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_005_9__6417)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::175) (::176))
+          (IOPATH A CO (::186) (::180))
+          (IOPATH B CO (::186) (::180))
+          (IOPATH CI S (::204) (::196))
+          (IOPATH A S (::204) (::216))
+          (IOPATH B S (::210) (::214))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_006_1__5477)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::143) (::143))
+          (IOPATH A CO (::142) (::135))
+          (IOPATH B CO (::154) (::147))
+          (IOPATH CI S (::201) (::192))
+          (IOPATH A S (::189) (::200))
+          (IOPATH B S (::206) (::209))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_006_2__2398)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::138) (::136))
+          (IOPATH A CO (::152) (::143))
+          (IOPATH B CO (::147) (::138))
+          (IOPATH CI S (::194) (::185))
+          (IOPATH A S (::197) (::209))
+          (IOPATH B S (::199) (::201))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_006_3__5107)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::134) (::132))
+          (IOPATH A CO (::143) (::135))
+          (IOPATH B CO (::148) (::140))
+          (IOPATH CI S (::194) (::185))
+          (IOPATH A S (::192) (::203))
+          (IOPATH B S (::204) (::206))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_006_4__6260)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::134) (::132))
+          (IOPATH A CO (::143) (::135))
+          (IOPATH B CO (::148) (::140))
+          (IOPATH CI S (::195) (::185))
+          (IOPATH A S (::194) (::204))
+          (IOPATH B S (::204) (::206))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_006_5__4319)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::159) (::146))
+          (IOPATH A CO (::174) (::160))
+          (IOPATH B CO (::177) (::164))
+          (IOPATH CI S (::218) (::214))
+          (IOPATH A S (::227) (::238))
+          (IOPATH B S (::238) (::239))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_006_6__8428)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::147) (::147))
+          (IOPATH A CO (::149) (::141))
+          (IOPATH B CO (::158) (::150))
+          (IOPATH CI S (::204) (::196))
+          (IOPATH A S (::195) (::207))
+          (IOPATH B S (::210) (::213))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_006_7__5526)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::149) (::145))
+          (IOPATH A CO (::162) (::150))
+          (IOPATH B CO (::160) (::148))
+          (IOPATH CI S (::228) (::216))
+          (IOPATH A S (::228) (::236))
+          (IOPATH B S (::233) (::233))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_006_8__6783)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::144) (::149))
+          (IOPATH A CO (::161) (::149))
+          (IOPATH B CO (::160) (::148))
+          (IOPATH CI S (::231) (::210))
+          (IOPATH A S (::225) (::234))
+          (IOPATH B S (::231) (::232))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_006_9__3680)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::150) (::149))
+          (IOPATH A CO (::163) (::153))
+          (IOPATH B CO (::162) (::153))
+          (IOPATH CI S (::206) (::197))
+          (IOPATH A S (::207) (::220))
+          (IOPATH B S (::213) (::216))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_006_10__1617)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::143) (::137))
+          (IOPATH A CO (::162) (::150))
+          (IOPATH B CO (::160) (::148))
+          (IOPATH CI S (::221) (::210))
+          (IOPATH A S (::228) (::236))
+          (IOPATH B S (::233) (::232))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_006_11__2802)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::150) (::149))
+          (IOPATH A CO (::154) (::144))
+          (IOPATH B CO (::160) (::152))
+          (IOPATH CI S (::204) (::196))
+          (IOPATH A S (::195) (::208))
+          (IOPATH B S (::209) (::212))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_006_12__1705)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::155) (::151))
+          (IOPATH A CO (::159) (::147))
+          (IOPATH B CO (::166) (::154))
+          (IOPATH CI S (::240) (::230))
+          (IOPATH A S (::231) (::242))
+          (IOPATH B S (::246) (::247))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_007_0__5122)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::153) (::148))
+          (IOPATH A CO (::165) (::151))
+          (IOPATH B CO (::174) (::161))
+          (IOPATH CI S (::217) (::206))
+          (IOPATH A S (::216) (::227))
+          (IOPATH B S (::232) (::234))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_007_1__8246)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::161) (::156))
+          (IOPATH A CO (::162) (::150))
+          (IOPATH B CO (::162) (::149))
+          (IOPATH CI S (::230) (::218))
+          (IOPATH A S (::218) (::229))
+          (IOPATH B S (::225) (::226))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_007_2__7098)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::156) (::150))
+          (IOPATH A CO (::166) (::152))
+          (IOPATH B CO (::174) (::161))
+          (IOPATH CI S (::219) (::208))
+          (IOPATH A S (::216) (::228))
+          (IOPATH B S (::232) (::234))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_007_3__6131)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::153) (::148))
+          (IOPATH A CO (::166) (::153))
+          (IOPATH B CO (::164) (::151))
+          (IOPATH CI S (::220) (::208))
+          (IOPATH A S (::219) (::230))
+          (IOPATH B S (::224) (::226))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_007_4__1881)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::135) (::127))
+          (IOPATH A CO (::156) (::145))
+          (IOPATH B CO (::165) (::154))
+          (IOPATH CI S (::212) (::204))
+          (IOPATH A S (::224) (::232))
+          (IOPATH B S (::240) (::239))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_007_5__5115)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::146) (::145))
+          (IOPATH A CO (::157) (::149))
+          (IOPATH B CO (::152) (::166))
+          (IOPATH CI S (::204) (::194))
+          (IOPATH A S (::203) (::215))
+          (IOPATH B S (::226) (::208))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_007_6__7482)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::162) (::155))
+          (IOPATH A CO (::171) (::158))
+          (IOPATH B CO (::170) (::157))
+          (IOPATH CI S (::227) (::216))
+          (IOPATH A S (::225) (::235))
+          (IOPATH B S (::231) (::232))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_007_7__4733)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::162) (::155))
+          (IOPATH A CO (::173) (::158))
+          (IOPATH B CO (::173) (::158))
+          (IOPATH CI S (::226) (::216))
+          (IOPATH A S (::225) (::237))
+          (IOPATH B S (::231) (::234))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_007_8__6161)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::149) (::149))
+          (IOPATH A CO (::154) (::144))
+          (IOPATH B CO (::161) (::153))
+          (IOPATH CI S (::204) (::194))
+          (IOPATH A S (::195) (::208))
+          (IOPATH B S (::210) (::213))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_007_9__9315)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::146) (::146))
+          (IOPATH A CO (::149) (::141))
+          (IOPATH B CO (::149) (::141))
+          (IOPATH CI S (::203) (::195))
+          (IOPATH A S (::195) (::207))
+          (IOPATH B S (::201) (::204))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_007_10__9945)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::148) (::143))
+          (IOPATH A CO (::161) (::149))
+          (IOPATH B CO (::160) (::147))
+          (IOPATH CI S (::228) (::216))
+          (IOPATH A S (::228) (::237))
+          (IOPATH B S (::234) (::234))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_007_11__2883)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::150) (::149))
+          (IOPATH A CO (::161) (::152))
+          (IOPATH B CO (::152) (::144))
+          (IOPATH CI S (::203) (::195))
+          (IOPATH A S (::203) (::215))
+          (IOPATH B S (::201) (::204))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_007_12__2346)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::174) (::176))
+          (IOPATH A CO (::178) (::171))
+          (IOPATH B CO (::184) (::179))
+          (IOPATH CI S (::218) (::210))
+          (IOPATH A S (::209) (::223))
+          (IOPATH B S (::223) (::227))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_008_0__1666)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::152) (::145))
+          (IOPATH A CO (::170) (::156))
+          (IOPATH B CO (::168) (::154))
+          (IOPATH CI S (::211) (::201))
+          (IOPATH A S (::216) (::228))
+          (IOPATH B S (::222) (::224))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_008_1__7410)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::149) (::144))
+          (IOPATH A CO (::159) (::146))
+          (IOPATH B CO (::157) (::145))
+          (IOPATH CI S (::215) (::204))
+          (IOPATH A S (::212) (::223))
+          (IOPATH B S (::218) (::220))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_008_2__6417)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::129) (::128))
+          (IOPATH A CO (::148) (::140))
+          (IOPATH B CO (::143) (::136))
+          (IOPATH CI S (::190) (::181))
+          (IOPATH A S (::198) (::209))
+          (IOPATH B S (::200) (::201))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_008_3__5477)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::146) (::142))
+          (IOPATH A CO (::140) (::130))
+          (IOPATH B CO (::143) (::132))
+          (IOPATH CI S (::224) (::211))
+          (IOPATH A S (::206) (::214))
+          (IOPATH B S (::215) (::214))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_008_4__2398)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::164) (::146))
+          (IOPATH A CO (::171) (::157))
+          (IOPATH B CO (::204) (::190))
+          (IOPATH CI S (::214) (::214))
+          (IOPATH A S (::220) (::231))
+          (IOPATH B S (::260) (::262))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_008_5__5107)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::161) (::155))
+          (IOPATH A CO (::172) (::158))
+          (IOPATH B CO (::171) (::158))
+          (IOPATH CI S (::221) (::210))
+          (IOPATH A S (::219) (::231))
+          (IOPATH B S (::225) (::228))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_008_6__6260)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::158) (::152))
+          (IOPATH A CO (::169) (::155))
+          (IOPATH B CO (::161) (::146))
+          (IOPATH CI S (::227) (::216))
+          (IOPATH A S (::225) (::236))
+          (IOPATH B S (::224) (::226))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_008_7__4319)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::139) (::137))
+          (IOPATH A CO (::158) (::149))
+          (IOPATH B CO (::158) (::149))
+          (IOPATH CI S (::196) (::188))
+          (IOPATH A S (::203) (::216))
+          (IOPATH B S (::210) (::214))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_008_8__8428)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::158) (::152))
+          (IOPATH A CO (::170) (::155))
+          (IOPATH B CO (::167) (::154))
+          (IOPATH CI S (::227) (::216))
+          (IOPATH A S (::226) (::237))
+          (IOPATH B S (::231) (::232))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_008_9__5526)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::150) (::149))
+          (IOPATH A CO (::163) (::153))
+          (IOPATH B CO (::162) (::153))
+          (IOPATH CI S (::206) (::197))
+          (IOPATH A S (::207) (::219))
+          (IOPATH B S (::213) (::216))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_008_10__6783)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::147) (::144))
+          (IOPATH A CO (::161) (::149))
+          (IOPATH B CO (::158) (::146))
+          (IOPATH CI S (::228) (::215))
+          (IOPATH A S (::228) (::237))
+          (IOPATH B S (::233) (::232))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_008_11__3680)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::142) (::141))
+          (IOPATH A CO (::162) (::153))
+          (IOPATH B CO (::160) (::152))
+          (IOPATH CI S (::196) (::188))
+          (IOPATH A S (::204) (::217))
+          (IOPATH B S (::209) (::212))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_008_12__1617)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::163) (::159))
+          (IOPATH A CO (::167) (::155))
+          (IOPATH B CO (::174) (::162))
+          (IOPATH CI S (::240) (::230))
+          (IOPATH A S (::231) (::242))
+          (IOPATH B S (::245) (::246))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_009_0__2802)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::156) (::150))
+          (IOPATH A CO (::162) (::148))
+          (IOPATH B CO (::154) (::140))
+          (IOPATH CI S (::221) (::210))
+          (IOPATH A S (::214) (::226))
+          (IOPATH B S (::214) (::216))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_009_1__1705)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::151) (::146))
+          (IOPATH A CO (::157) (::144))
+          (IOPATH B CO (::176) (::162))
+          (IOPATH CI S (::217) (::206))
+          (IOPATH A S (::210) (::222))
+          (IOPATH B S (::235) (::238))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_009_2__5122)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::166) (::161))
+          (IOPATH A CO (::166) (::152))
+          (IOPATH B CO (::154) (::140))
+          (IOPATH CI S (::232) (::220))
+          (IOPATH A S (::219) (::230))
+          (IOPATH B S (::214) (::216))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_009_3__8246)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::143) (::142))
+          (IOPATH A CO (::148) (::140))
+          (IOPATH B CO (::154) (::146))
+          (IOPATH CI S (::201) (::192))
+          (IOPATH A S (::194) (::206))
+          (IOPATH B S (::206) (::209))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_009_4__7098)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::146) (::146))
+          (IOPATH A CO (::152) (::143))
+          (IOPATH B CO (::149) (::141))
+          (IOPATH CI S (::203) (::194))
+          (IOPATH A S (::196) (::210))
+          (IOPATH B S (::201) (::204))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_009_5__6131)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::146) (::145))
+          (IOPATH A CO (::159) (::150))
+          (IOPATH B CO (::158) (::149))
+          (IOPATH CI S (::201) (::192))
+          (IOPATH A S (::202) (::214))
+          (IOPATH B S (::207) (::210))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_009_6__1881)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::158) (::152))
+          (IOPATH A CO (::170) (::155))
+          (IOPATH B CO (::169) (::154))
+          (IOPATH CI S (::223) (::213))
+          (IOPATH A S (::222) (::234))
+          (IOPATH B S (::228) (::230))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_009_7__5115)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::149) (::145))
+          (IOPATH A CO (::162) (::150))
+          (IOPATH B CO (::161) (::148))
+          (IOPATH CI S (::225) (::213))
+          (IOPATH A S (::225) (::234))
+          (IOPATH B S (::231) (::231))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_009_8__7482)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::160) (::154))
+          (IOPATH A CO (::171) (::158))
+          (IOPATH B CO (::171) (::158))
+          (IOPATH CI S (::225) (::215))
+          (IOPATH A S (::224) (::235))
+          (IOPATH B S (::231) (::233))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_009_9__4733)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::156) (::148))
+          (IOPATH A CO (::173) (::158))
+          (IOPATH B CO (::172) (::158))
+          (IOPATH CI S (::220) (::210))
+          (IOPATH A S (::225) (::237))
+          (IOPATH B S (::232) (::233))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_009_10__6161)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::142) (::141))
+          (IOPATH A CO (::161) (::152))
+          (IOPATH B CO (::162) (::153))
+          (IOPATH CI S (::196) (::188))
+          (IOPATH A S (::203) (::215))
+          (IOPATH B S (::210) (::214))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_009_11__9315)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::182) (::178))
+          (IOPATH A CO (::195) (::183))
+          (IOPATH B CO (::192) (::181))
+          (IOPATH CI S (::241) (::230))
+          (IOPATH A S (::241) (::252))
+          (IOPATH B S (::246) (::247))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_010_0__9945)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::174) (::169))
+          (IOPATH A CO (::154) (::141))
+          (IOPATH B CO (::164) (::151))
+          (IOPATH CI S (::243) (::231))
+          (IOPATH A S (::211) (::222))
+          (IOPATH B S (::227) (::229))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_010_1__2883)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::163) (::158))
+          (IOPATH A CO (::155) (::142))
+          (IOPATH B CO (::174) (::161))
+          (IOPATH CI S (::227) (::216))
+          (IOPATH A S (::206) (::217))
+          (IOPATH B S (::232) (::234))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_010_2__2346)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::172) (::168))
+          (IOPATH A CO (::162) (::150))
+          (IOPATH B CO (::163) (::150))
+          (IOPATH CI S (::244) (::231))
+          (IOPATH A S (::222) (::232))
+          (IOPATH B S (::229) (::230))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_010_3__1666)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::155) (::150))
+          (IOPATH A CO (::172) (::160))
+          (IOPATH B CO (::166) (::152))
+          (IOPATH CI S (::227) (::216))
+          (IOPATH A S (::232) (::242))
+          (IOPATH B S (::232) (::233))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_010_4__7410)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::162) (::155))
+          (IOPATH A CO (::173) (::158))
+          (IOPATH B CO (::170) (::157))
+          (IOPATH CI S (::221) (::211))
+          (IOPATH A S (::219) (::231))
+          (IOPATH B S (::225) (::227))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_010_5__6417)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::146) (::146))
+          (IOPATH A CO (::159) (::151))
+          (IOPATH B CO (::158) (::150))
+          (IOPATH CI S (::204) (::194))
+          (IOPATH A S (::204) (::217))
+          (IOPATH B S (::210) (::214))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_010_6__5477)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::162) (::155))
+          (IOPATH A CO (::172) (::158))
+          (IOPATH B CO (::170) (::157))
+          (IOPATH CI S (::227) (::216))
+          (IOPATH A S (::225) (::236))
+          (IOPATH B S (::231) (::232))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_010_7__2398)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::150) (::149))
+          (IOPATH A CO (::163) (::153))
+          (IOPATH B CO (::153) (::144))
+          (IOPATH CI S (::203) (::195))
+          (IOPATH A S (::204) (::217))
+          (IOPATH B S (::201) (::204))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_010_8__5107)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::146) (::146))
+          (IOPATH A CO (::159) (::150))
+          (IOPATH B CO (::158) (::150))
+          (IOPATH CI S (::203) (::195))
+          (IOPATH A S (::204) (::217))
+          (IOPATH B S (::210) (::213))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_010_9__6260)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::161) (::157))
+          (IOPATH A CO (::173) (::162))
+          (IOPATH B CO (::171) (::160))
+          (IOPATH CI S (::260) (::249))
+          (IOPATH A S (::260) (::270))
+          (IOPATH B S (::265) (::266))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_011_0__4319)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::149) (::143))
+          (IOPATH A CO (::175) (::162))
+          (IOPATH B CO (::178) (::164))
+          (IOPATH CI S (::215) (::204))
+          (IOPATH A S (::228) (::238))
+          (IOPATH B S (::238) (::240))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_011_1__8428)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::164) (::159))
+          (IOPATH A CO (::165) (::152))
+          (IOPATH B CO (::200) (::186))
+          (IOPATH CI S (::230) (::218))
+          (IOPATH A S (::218) (::229))
+          (IOPATH B S (::260) (::262))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_011_2__5526)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::158) (::152))
+          (IOPATH A CO (::169) (::155))
+          (IOPATH B CO (::168) (::154))
+          (IOPATH CI S (::226) (::216))
+          (IOPATH A S (::225) (::236))
+          (IOPATH B S (::231) (::233))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_011_3__6783)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::158) (::152))
+          (IOPATH A CO (::170) (::155))
+          (IOPATH B CO (::169) (::154))
+          (IOPATH CI S (::227) (::216))
+          (IOPATH A S (::226) (::237))
+          (IOPATH B S (::232) (::234))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_011_4__3680)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::146) (::145))
+          (IOPATH A CO (::159) (::150))
+          (IOPATH B CO (::158) (::149))
+          (IOPATH CI S (::204) (::194))
+          (IOPATH A S (::204) (::216))
+          (IOPATH B S (::210) (::214))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_011_5__1617)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::144) (::143))
+          (IOPATH A CO (::157) (::148))
+          (IOPATH B CO (::155) (::147))
+          (IOPATH CI S (::206) (::197))
+          (IOPATH A S (::207) (::220))
+          (IOPATH B S (::213) (::216))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_011_6__2802)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::172) (::172))
+          (IOPATH A CO (::183) (::176))
+          (IOPATH B CO (::183) (::175))
+          (IOPATH CI S (::217) (::208))
+          (IOPATH A S (::217) (::229))
+          (IOPATH B S (::222) (::226))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_012_0__1705)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::163) (::159))
+          (IOPATH A CO (::172) (::160))
+          (IOPATH B CO (::171) (::159))
+          (IOPATH CI S (::229) (::218))
+          (IOPATH A S (::226) (::237))
+          (IOPATH B S (::232) (::234))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_012_1__5122)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::158) (::152))
+          (IOPATH A CO (::169) (::155))
+          (IOPATH B CO (::168) (::154))
+          (IOPATH CI S (::221) (::211))
+          (IOPATH A S (::219) (::231))
+          (IOPATH B S (::226) (::228))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_012_2__8246)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::156) (::150))
+          (IOPATH A CO (::166) (::153))
+          (IOPATH B CO (::166) (::152))
+          (IOPATH CI S (::223) (::213))
+          (IOPATH A S (::221) (::233))
+          (IOPATH B S (::228) (::230))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_012_3__7098)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::171) (::168))
+          (IOPATH A CO (::182) (::171))
+          (IOPATH B CO (::184) (::171))
+          (IOPATH CI S (::248) (::238))
+          (IOPATH A S (::247) (::258))
+          (IOPATH B S (::254) (::257))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_013_0__6131)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::166) (::161))
+          (IOPATH A CO (::178) (::166))
+          (IOPATH B CO (::177) (::165))
+          (IOPATH CI S (::223) (::212))
+          (IOPATH A S (::223) (::234))
+          (IOPATH B S (::229) (::231))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_cdnfadd_013_1__1881)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::166) (::161))
+          (IOPATH A CO (::177) (::164))
+          (IOPATH B CO (::176) (::164))
+          (IOPATH CI S (::238) (::229))
+          (IOPATH A S (::236) (::249))
+          (IOPATH B S (::243) (::247))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKXOR2X1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2014__5115)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::161) (::171))
+          (IOPATH B Y (::120) (::127))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI21X2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2015__7482)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::92) (::99))
+          (IOPATH B0 Y (::84) (::62))
+          (IOPATH A1 Y (::71) (::73))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKXOR2X1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2016__4733)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::160) (::171))
+          (IOPATH B Y (::113) (::121))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "XNOR2X1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2017__6161)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::161) (::168))
+          (IOPATH B Y (::141) (::124))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKXOR2X1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2018__9315)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::158) (::170))
+          (IOPATH B Y (::119) (::126))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2X8LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2019__9945)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (PORT B (::0.1))
+          (IOPATH A Y (::42) (::53))
+          (IOPATH B Y (::41) (::59))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI21X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2020__2883)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.1))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.1))
+          (IOPATH A0 Y (::76) (::70))
+          (IOPATH B0 Y (::40) (::68))
+          (IOPATH A1 Y (::49) (::56))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI21X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2021__2346)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.1))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::80) (::88))
+          (IOPATH B0 Y (::61) (::47))
+          (IOPATH A1 Y (::67) (::69))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI21X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2022__1666)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.1))
+          (IOPATH A0 Y (::59) (::69))
+          (IOPATH B0 Y (::45) (::75))
+          (IOPATH A1 Y (::49) (::56))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI221X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2023__7410)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.1))
+          (PORT B0 (::0.0))
+          (PORT B1 (::0.1))
+          (PORT C0 (::0.0))
+          (IOPATH A0 Y (::106) (::100))
+          (IOPATH B0 Y (::94) (::84))
+          (IOPATH A1 Y (::98) (::85))
+          (IOPATH C0 Y (::82) (::35))
+          (IOPATH B1 Y (::83) (::67))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI21X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2024__6417)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.1))
+          (IOPATH A0 Y (::76) (::88))
+          (IOPATH B0 Y (::85) (::63))
+          (IOPATH A1 Y (::74) (::76))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "XNOR2X1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2025__5477)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::149) (::152))
+          (IOPATH B Y (::128) (::110))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2026__2398)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (PORT B (::0.0))
+          (IOPATH A Y (::39) (::73))
+          (IOPATH B Y (::44) (::64))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKXOR2X1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2027__5107)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::157) (::169))
+          (IOPATH B Y (::130) (::135))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKINVX6LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2028)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::41) (::38))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2X8LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2029__6260)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::53) (::76))
+          (IOPATH B Y (::38) (::52))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2030__4319)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (PORT B (::0.0))
+          (IOPATH A Y (::60) (::38))
+          (IOPATH B Y (::53) (::51))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2X8LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2031__8428)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.1))
+          (IOPATH A Y (::52) (::69))
+          (IOPATH B Y (::48) (::61))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "XNOR2X1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2032__5526)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::155) (::147))
+          (IOPATH B Y (::136) (::116))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2033__6783)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::43) (::69))
+          (IOPATH B Y (::36) (::56))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2034)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::51) (::43))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2X8LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2035__3680)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (PORT B (::0.0))
+          (IOPATH A Y (::37) (::68))
+          (IOPATH B Y (::40) (::54))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI21X2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2036__1617)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::82) (::101))
+          (IOPATH B0 Y (::66) (::97))
+          (IOPATH A1 Y (::78) (::83))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2037)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::67) (::64))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI21X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2038__2802)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::76) (::87))
+          (IOPATH B0 Y (::70) (::44))
+          (IOPATH A1 Y (::71) (::81))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI21X2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2039__1705)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::106) (::146))
+          (IOPATH B0 Y (::113) (::113))
+          (IOPATH A1 Y (::113) (::96))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND3X8LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2040__5122)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::61) (::110))
+          (IOPATH B Y (::59) (::108))
+          (IOPATH C Y (::34) (::71))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2X2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2041__8246)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::49) (::84))
+          (IOPATH B Y (::50) (::78))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2042__7098)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::84) (::56))
+          (IOPATH AN Y (::105) (::73))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OR2X1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2043__6131)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::98) (::112))
+          (IOPATH B Y (::70) (::94))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2X6LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2044__1881)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::75) (::87))
+          (IOPATH B Y (::61) (::63))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2045__5115)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::69) (::62))
+          (IOPATH B Y (::56) (::49))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2046__7482)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::108) (::116))
+          (IOPATH AN Y (::132) (::127))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2047__4733)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::63) (::69))
+          (IOPATH B Y (::51) (::40))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2X1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2048__6161)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::104) (::99))
+          (IOPATH B Y (::94) (::70))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2049__9315)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::74) (::54))
+          (IOPATH B Y (::67) (::58))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2050__9945)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::92) (::64))
+          (IOPATH AN Y (::114) (::90))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2X2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2051__2883)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::64) (::47))
+          (IOPATH B Y (::61) (::44))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX1")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2052)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::72) (::80))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2053)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::81) (::104))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX3LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2054)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::46) (::46))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX3LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2055)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::46) (::60))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKAND2X3LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2056__2346)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::96) (::101))
+          (IOPATH B Y (::91) (::94))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2X1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2057__1666)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::103) (::167))
+          (IOPATH B Y (::100) (::163))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2X2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2058__7410)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::142) (::98))
+          (IOPATH B Y (::137) (::92))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKAND2X6LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2059__6417)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::102) (::112))
+          (IOPATH B Y (::83) (::86))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2060__5477)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::114) (::88))
+          (IOPATH B Y (::107) (::80))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2X6LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2061__2398)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::88) (::71))
+          (IOPATH B Y (::80) (::65))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2062)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::69) (::71))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2063)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::86) (::67))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKINVX6LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2064)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::31) (::42))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX3LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2065)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::52) (::52))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2066__5107)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.1))
+          (IOPATH A Y (::55) (::89))
+          (IOPATH B Y (::41) (::72))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKAND2X2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2067__6260)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::119) (::125))
+          (IOPATH B Y (::114) (::118))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2068__4319)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::100) (::79))
+          (IOPATH B Y (::78) (::58))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2X2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2069__8428)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::88) (::127))
+          (IOPATH B Y (::84) (::121))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2X6LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2070__5526)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::72) (::56))
+          (IOPATH B Y (::65) (::51))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OR2X6LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2071__6783)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::91) (::121))
+          (IOPATH B Y (::92) (::123))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "BUFX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2072)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::101) (::98))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "XNOR2X1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2074__3680)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::175) (::153))
+          (IOPATH B Y (::134) (::115))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2075)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::68) (::60))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2X8LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2076__1617)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (PORT B (::0.1))
+          (IOPATH A Y (::49) (::74))
+          (IOPATH B Y (::39) (::54))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKXOR2X1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2077__2802)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::157) (::154))
+          (IOPATH B Y (::144) (::147))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2X6LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2079__1705)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::36) (::57))
+          (IOPATH B Y (::31) (::58))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI21X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2080__5122)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::66) (::76))
+          (IOPATH B0 Y (::66) (::44))
+          (IOPATH A1 Y (::66) (::74))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2X6LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2082__8246)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (PORT B (::0.0))
+          (IOPATH A Y (::55) (::40))
+          (IOPATH B Y (::53) (::47))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2BX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2083__7098)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::55) (::93))
+          (IOPATH AN Y (::80) (::120))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2X1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2084__6131)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::101) (::80))
+          (IOPATH B Y (::85) (::53))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2085__1881)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::107) (::79))
+          (IOPATH AN Y (::126) (::92))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX3LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2086)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::48) (::50))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2087__5115)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::156) (::152))
+          (IOPATH A CO (::168) (::157))
+          (IOPATH B CO (::158) (::146))
+          (IOPATH CI S (::224) (::212))
+          (IOPATH A S (::224) (::232))
+          (IOPATH B S (::220) (::220))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AND2X1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2088__7482)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::141) (::113))
+          (IOPATH B Y (::147) (::118))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKAND2X2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2089__4733)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::104) (::108))
+          (IOPATH B Y (::109) (::114))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKAND2X6LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2091__6161)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::102) (::112))
+          (IOPATH B Y (::83) (::86))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OR2X6LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2092__9315)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::84) (::115))
+          (IOPATH B Y (::90) (::121))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OR2X1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2093__9945)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::117) (::142))
+          (IOPATH B Y (::108) (::133))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2094__2883)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::96) (::76))
+          (IOPATH B Y (::73) (::56))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFHX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2095__2346)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::150) (::146))
+          (IOPATH A CO (::162) (::150))
+          (IOPATH B CO (::162) (::148))
+          (IOPATH CI S (::225) (::213))
+          (IOPATH A S (::224) (::233))
+          (IOPATH B S (::230) (::230))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2096__1666)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::158) (::152))
+          (IOPATH A CO (::170) (::156))
+          (IOPATH B CO (::168) (::155))
+          (IOPATH CI S (::218) (::208))
+          (IOPATH A S (::217) (::229))
+          (IOPATH B S (::223) (::225))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2097__7410)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::158) (::152))
+          (IOPATH A CO (::170) (::155))
+          (IOPATH B CO (::168) (::154))
+          (IOPATH CI S (::218) (::208))
+          (IOPATH A S (::217) (::229))
+          (IOPATH B S (::223) (::225))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDFX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2098__6417)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT CI (::0.0))
+          (IOPATH CI CO (::158) (::152))
+          (IOPATH A CO (::175) (::162))
+          (IOPATH B CO (::165) (::151))
+          (IOPATH CI S (::218) (::208))
+          (IOPATH A S (::223) (::234))
+          (IOPATH B S (::220) (::222))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2099__5477)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A CO (::116) (::84))
+          (IOPATH B CO (::122) (::91))
+          (IOPATH A S (::154) (::150))
+          (IOPATH B S (::133) (::138))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "ADDHX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2100__2398)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A CO (::140) (::109))
+          (IOPATH B CO (::108) (::78))
+          (IOPATH A S (::172) (::168))
+          (IOPATH B S (::113) (::122))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI2BB1X2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2101__5107)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0N (::0.0))
+          (PORT A1N (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A1N Y (::121) (::99))
+          (IOPATH B0 Y (::80) (::86))
+          (IOPATH A0N Y (::125) (::102))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2X6LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2102__6260)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (PORT B (::0.0))
+          (IOPATH A Y (::41) (::36))
+          (IOPATH B Y (::39) (::40))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI2BB1X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2103__4319)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0N (::0.0))
+          (PORT A1N (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A1N Y (::73) (::102))
+          (IOPATH B0 Y (::51) (::48))
+          (IOPATH A0N Y (::83) (::113))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI21X2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2104__8428)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::90) (::99))
+          (IOPATH B0 Y (::69) (::52))
+          (IOPATH A1 Y (::72) (::82))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2105__5526)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::64) (::44))
+          (IOPATH B Y (::58) (::40))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2106__6783)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::71) (::56))
+          (IOPATH B Y (::53) (::38))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2X6LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2107__3680)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (PORT B (::0.1))
+          (IOPATH A Y (::46) (::34))
+          (IOPATH B Y (::39) (::29))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2X4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2108__1617)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::61) (::43))
+          (IOPATH B Y (::54) (::38))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2X2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2109__2802)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::52) (::95))
+          (IOPATH B Y (::58) (::99))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2122)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::92) (::92))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2123)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::91) (::90))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2129)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::92) (::91))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2130)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::66) (::68))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKINVX6LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2133)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::28) (::29))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKINVX4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2134)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::35) (::37))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2137)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::91) (::90))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX2LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2148)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::50) (::51))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2152)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::49) (::52))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKINVX6LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2153)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::28) (::30))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKINVX6LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2157)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::28) (::29))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "BUFX3LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2158)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::70) (::70))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKINVX4LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2159)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH A Y (::34) (::37))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2160)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::87) (::88))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OR2X1LVT")
+     (INSTANCE csa_tree_ADD_TC_OP_13_groupi_g2__1705)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::79) (::103))
+          (IOPATH B Y (::82) (::98))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE data_in_reg_reg\[4\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::160) (::173))
+          (IOPATH CK QN (::181) (::170))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::37) (::5))
+        (SETUPHOLD (posedge D) (posedge CK) (::64) (::-39))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE shift_reg_reg\[2\]\[1\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::157) (::172))
+          (IOPATH CK QN (::177) (::167))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::62) (::-15))
+        (SETUPHOLD (posedge D) (posedge CK) (::89) (::-63))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE shift_reg_reg\[2\]\[4\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::160) (::173))
+          (IOPATH CK QN (::177) (::167))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::52) (::-8))
+        (SETUPHOLD (posedge D) (posedge CK) (::79) (::-54))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE shift_reg_reg\[3\]\[4\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::157) (::172))
+          (IOPATH CK QN (::174) (::165))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::70) (::-22))
+        (SETUPHOLD (posedge D) (posedge CK) (::97) (::-71))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX2LVT")
+     (INSTANCE shift_reg_reg\[5\]\[5\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::145) (::158))
+          (IOPATH CK QN (::184) (::170))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::63) (::-13))
+        (SETUPHOLD (posedge D) (posedge CK) (::91) (::-61))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE shift_reg_reg\[0\]\[1\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::160) (::173))
+          (IOPATH CK QN (::174) (::165))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::69) (::-21))
+        (SETUPHOLD (posedge D) (posedge CK) (::96) (::-69))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX2LVT")
+     (INSTANCE shift_reg_reg\[3\]\[2\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::145) (::158))
+          (IOPATH CK QN (::184) (::170))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::56) (::-8))
+        (SETUPHOLD (posedge D) (posedge CK) (::84) (::-54))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE data_in_reg_reg\[2\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::157) (::172))
+          (IOPATH CK QN (::174) (::165))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::37) (::5))
+        (SETUPHOLD (posedge D) (posedge CK) (::64) (::-39))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE shift_reg_reg\[0\]\[3\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::160) (::173))
+          (IOPATH CK QN (::174) (::165))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::80) (::-30))
+        (SETUPHOLD (posedge D) (posedge CK) (::107) (::-80))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE data_in_reg_reg\[1\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::157) (::172))
+          (IOPATH CK QN (::174) (::165))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::37) (::5))
+        (SETUPHOLD (posedge D) (posedge CK) (::64) (::-39))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX2LVT")
+     (INSTANCE data_in_reg_reg\[6\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::145) (::158))
+          (IOPATH CK QN (::184) (::170))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::39) (::6))
+        (SETUPHOLD (posedge D) (posedge CK) (::66) (::-38))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE shift_reg_reg\[5\]\[2\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::157) (::172))
+          (IOPATH CK QN (::177) (::168))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::52) (::-7))
+        (SETUPHOLD (posedge D) (posedge CK) (::78) (::-53))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE shift_reg_reg\[0\]\[5\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::160) (::173))
+          (IOPATH CK QN (::180) (::170))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::49) (::-5))
+        (SETUPHOLD (posedge D) (posedge CK) (::76) (::-50))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE shift_reg_reg\[0\]\[2\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::160) (::173))
+          (IOPATH CK QN (::180) (::170))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::69) (::-21))
+        (SETUPHOLD (posedge D) (posedge CK) (::96) (::-69))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX2LVT")
+     (INSTANCE shift_reg_reg\[3\]\[3\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::145) (::158))
+          (IOPATH CK QN (::184) (::171))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::58) (::-9))
+        (SETUPHOLD (posedge D) (posedge CK) (::86) (::-56))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE shift_reg_reg\[5\]\[6\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::160) (::173))
+          (IOPATH CK QN (::177) (::167))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::62) (::-15))
+        (SETUPHOLD (posedge D) (posedge CK) (::89) (::-63))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE data_in_reg_reg\[7\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::160) (::173))
+          (IOPATH CK QN (::177) (::167))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::37) (::5))
+        (SETUPHOLD (posedge D) (posedge CK) (::64) (::-39))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE shift_reg_reg\[0\]\[4\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::160) (::173))
+          (IOPATH CK QN (::177) (::168))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::70) (::-22))
+        (SETUPHOLD (posedge D) (posedge CK) (::97) (::-71))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE shift_reg_reg\[5\]\[0\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::160) (::173))
+          (IOPATH CK QN (::174) (::165))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::62) (::-15))
+        (SETUPHOLD (posedge D) (posedge CK) (::89) (::-63))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX2LVT")
+     (INSTANCE shift_reg_reg\[6\]\[6\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::134) (::146))
+          (IOPATH CK QN (::193) (::180))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::73) (::-20))
+        (SETUPHOLD (posedge D) (posedge CK) (::100) (::-70))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX4LVT")
+     (INSTANCE shift_reg_reg\[3\]\[0\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::146) (::159))
+          (IOPATH CK QN (::198) (::188))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::61) (::-9))
+        (SETUPHOLD (posedge D) (posedge CK) (::88) (::-55))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX4LVT")
+     (INSTANCE data_in_reg_reg\[5\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::146) (::160))
+          (IOPATH CK QN (::193) (::183))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::41) (::6))
+        (SETUPHOLD (posedge D) (posedge CK) (::67) (::-36))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE shift_reg_reg\[3\]\[6\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::160) (::173))
+          (IOPATH CK QN (::174) (::165))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::70) (::-22))
+        (SETUPHOLD (posedge D) (posedge CK) (::97) (::-71))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE shift_reg_reg\[3\]\[1\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::160) (::173))
+          (IOPATH CK QN (::177) (::167))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::69) (::-21))
+        (SETUPHOLD (posedge D) (posedge CK) (::96) (::-69))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE shift_reg_reg\[2\]\[6\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::160) (::173))
+          (IOPATH CK QN (::177) (::168))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::52) (::-7))
+        (SETUPHOLD (posedge D) (posedge CK) (::79) (::-53))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX2LVT")
+     (INSTANCE shift_reg_reg\[3\]\[5\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::142) (::155))
+          (IOPATH CK QN (::185) (::172))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::73) (::-20))
+        (SETUPHOLD (posedge D) (posedge CK) (::100) (::-70))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE shift_reg_reg\[2\]\[5\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::160) (::173))
+          (IOPATH CK QN (::177) (::167))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::62) (::-15))
+        (SETUPHOLD (posedge D) (posedge CK) (::89) (::-63))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE shift_reg_reg\[1\]\[7\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::141) (::154))
+          (IOPATH CK QN (::196) (::187))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::51) (::-7))
+        (SETUPHOLD (posedge D) (posedge CK) (::78) (::-53))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX2LVT")
+     (INSTANCE shift_reg_reg\[2\]\[3\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::143) (::156))
+          (IOPATH CK QN (::184) (::171))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::64) (::-14))
+        (SETUPHOLD (posedge D) (posedge CK) (::92) (::-62))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX2LVT")
+     (INSTANCE shift_reg_reg\[2\]\[0\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::145) (::158))
+          (IOPATH CK QN (::184) (::170))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::85) (::-30))
+        (SETUPHOLD (posedge D) (posedge CK) (::112) (::-81))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE shift_reg_reg\[5\]\[3\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::157) (::172))
+          (IOPATH CK QN (::177) (::167))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::61) (::-15))
+        (SETUPHOLD (posedge D) (posedge CK) (::88) (::-62))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE shift_reg_reg\[0\]\[6\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::163) (::177))
+          (IOPATH CK QN (::177) (::167))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::57) (::-11))
+        (SETUPHOLD (posedge D) (posedge CK) (::84) (::-58))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE shift_reg_reg\[6\]\[1\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::146) (::159))
+          (IOPATH CK QN (::177) (::167))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::53) (::-9))
+        (SETUPHOLD (posedge D) (posedge CK) (::81) (::-55))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX4LVT")
+     (INSTANCE shift_reg_reg\[6\]\[4\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::150) (::163))
+          (IOPATH CK QN (::197) (::186))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::64) (::-12))
+        (SETUPHOLD (posedge D) (posedge CK) (::91) (::-58))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX1LVT")
+     (INSTANCE shift_reg_reg\[4\]\[7\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::158) (::172))
+          (IOPATH CK QN (::191) (::183))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::79) (::-29))
+        (SETUPHOLD (posedge D) (posedge CK) (::106) (::-78))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX4LVT")
+     (INSTANCE shift_reg_reg\[6\]\[7\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::150) (::163))
+          (IOPATH CK QN (::197) (::186))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::99) (::-38))
+        (SETUPHOLD (posedge D) (posedge CK) (::126) (::-91))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFX4LVT")
+     (INSTANCE shift_reg_reg\[6\]\[0\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::150) (::163))
+          (IOPATH CK QN (::192) (::182))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::74) (::-19))
+        (SETUPHOLD (posedge D) (posedge CK) (::100) (::-67))
+     )
+  )
+)
