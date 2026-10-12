@@ -7,6 +7,9 @@ mdv.log
 xrun.key
 xrun.log
 waves.shm/
+xcelium.shm/
+*.dsn
+*.trn
 
 genus.log*
 genus.cmd*
