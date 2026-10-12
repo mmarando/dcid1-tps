@@ -1,0 +1,11 @@
+#!/bin/bash
+
+xrun -f filelist.f -timescale 1ns/1ps \
+    -access +rwc \
+    -input actividad.tcl
+
+if [ -f waves.vcd ]; then
+    echo "OK: Actividad guardada en waves.vcd"
+else
+    echo "Revisa simulacion.log para detectar errores."
+fi

@@ -1,0 +1,3 @@
+xrun -access +rwc -timescale 1ns/1ps \
+   -f filelist.f \
+   -gui 

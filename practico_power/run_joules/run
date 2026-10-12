@@ -1,0 +1,12 @@
+#!/bin/bash
+
+cd "$HOME/RAK"
+
+# Cargar entorno de Cadence
+csh 
+source SCRIPTS/setup.csh
+
+# Iniciar Joules
+cd "$HOME/dcid1-tps/practico_power"
+
+joules -gui

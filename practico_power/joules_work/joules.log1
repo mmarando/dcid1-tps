@@ -1,0 +1,593 @@
+Cadence Joules(TM) RTL Power Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Joules is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[16:11:13.249705] Configured Lic search path (23.02-s003): 5280@fiubarh01
+
+Version: 23.10-p104_1, built Thu Feb 01 20:14:08 PST 2024
+Options: 
+Date:    Mon Oct 12 16:11:13 2026
+Host:    fiubarh01 (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (20cores*80cpus*2physical cpus*Intel(R) Xeon(R) Gold 6138 CPU @ 2.00GHz 28160KB) (230702044KB)
+User:    mmarando
+PID:     162087
+OS:      Red Hat Enterprise Linux Server release 7.9 (Maipo)
+DISPLAY: :37.0
+CWD:     /home/mmarando/dcid1-tps/practico_power
+RTLSCORE_ROOT: /home/cds-installs/DDI231/JSTUDIO231/tools.lnx86
+
+Checking out license: Joules_RTL_Power
+Checking out license: Joules_XL
+[16:11:13.380952] Periodic Lic check successful
+[16:11:13.905258] Feature usage summary:
+[16:11:13.905259] Joules_XL
+
+
+Finished executable startup (0 seconds elapsed).
+
+Loading tool scripts...
+Finished loading tool scripts (19 seconds elapsed).
+
+WARNING: This version of the tool is 983 days old.
+::legacy::set_attribute lef_library { ../../RAK/DATA/LIBRARIES/gsclib045_v3.5/lef/gsclib045_tech.lef } 
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_HV' has no resistance value.
+        : If this is the expected behavior, this message can be ignored.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_2x1_HV_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_2x1_HV_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_1x2_HV_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_1x2_HV_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_M_NH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_M_SH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_2x1_VH_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_2x1_VH_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_1x2_VH_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_1x2_VH_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_VV' has no resistance value.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'PHYS-129'.
+
+  According to lef_library, there are total 11 routing layers [ V(5) / H(6) ]
+
+Warning : None of the loaded LEF files have MACRO statements. [PHYS-20]
+        : Make sure the LEF file containing MACRO statement was not missed.
+        : The LEF file containing the cell specific information was not loaded. The LEF MACRO construct is used to set the physical data on cells in the timing library. It is likely that only the technology LEF file was loaded. Load all the associated LEF files.
+  Setting attribute of root '/': 'lef_library' = /home/mmarando/dcid1-tps/practico_power/../../RAK/DATA/LIBRARIES/gsclib045_v3.5/lef/gsclib045_tech.lef
+@joules:root: 1> 
+::legacy::set_attribute cap_table_file {/home/mmarando/RAK/DATA/CAPTABLE/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl} 
+
+  According to cap_table_file, there are total 11 routing layers [ V(5) / H(6) ]
+
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'M1' in lef is '0.054', minimum width of layer 'M1' in cap table is '0.045'.
+        : Compare the layer MinWidth of the cap_table_file with the MinWidth (WIDTH) of the corresponding layer in LEF. Set the attribute 'shrink_factor' to adjust the MinWidth layer value in the captable file
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'M2' in lef is '0.072', minimum width of layer 'M2' in cap table is '0.045'.
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'M3' in lef is '0.072', minimum width of layer 'M3' in cap table is '0.045'.
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'M4' in lef is '0.072', minimum width of layer 'M4' in cap table is '0.045'.
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'M5' in lef is '0.072', minimum width of layer 'M5' in cap table is '0.045'.
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'M6' in lef is '0.072', minimum width of layer 'M6' in cap table is '0.045'.
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'M7' in lef is '0.072', minimum width of layer 'M7' in cap table is '0.09'.
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'M8' in lef is '0.072', minimum width of layer 'M8' in cap table is '0.09'.
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'M9' in lef is '0.072', minimum width of layer 'M9' in cap table is '0.18'.
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'M11' in lef is '0.198', minimum width of layer 'M11' in cap table is '1.8'.
+  Setting attribute of root '/': 'cap_table_file' = /home/mmarando/RAK/DATA/CAPTABLE/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl
+@joules:root: 1> 
+read_hdl multiplicador.v -language v2001
+            Reading Verilog file 'multiplicador.v'
+@joules:root: 1> 
+::legacy::set_attribute hdl_track_filename_row_col true /
+Info   : Enabled hdl_track_filename_row_col attribute.
+       : Setting this attribute to 'true' can have an impact on the run time. Use this attribute only when filename, line number, and column information are needed in reports.
+  Setting attribute of root '/': 'hdl_track_filename_row_col' = true
+@joules:root: 1> 
+elaborate multiplicador
+Error   : Failed to execute command. [LBR-163] [elaborate]
+        : No target technology library was loaded.
+        : Specify libraries using read_libs or read_mmmc.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+ 1
+@joules:root: 1> 
+read_hdl multiplicador.v -language v2001
+            Reading Verilog file 'multiplicador.v'
+module multiplicador #(
+                   |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'multiplicador' with Verilog module in file 'multiplicador.v' on line 3, column 20.
+        : A Verilog description is replaced when a new description of the same name and same library is read again.
+    Verilog descriptions are:
+       module
+       macromodule
+       configuration
+    SystemVerilog adds the following descriptions:
+       interface
+       program
+       package.
+module scm_mult #(
+              |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'scm_mult' with Verilog module in file 'multiplicador.v' on line 65, column 15.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'multiplicador' in library 'default' with newly read Verilog module 'multiplicador' in the same library in file 'multiplicador.v' on line 3.
+        : A newly read VHDL entity replaces any previously read Verilog module or VHDL entity in the same library if its name matches (case-insensitively) the existing module or entity.
+    For instance:
+        VHDL 'foo'                  replaces  VHDL {'FOO' or 'foo' or 'Foo' or ...} in the same library
+        VHDL 'foo' (in any library) replaces  Verilog {'FOO' or 'foo' or 'Foo' or ...} in the same library
+ 
+A newly read Verilog module replaces any previously read Verilog module if its name matches (case-sensitively) that module.  Further, it replaces any previously read VHDL entity in the same library if its name matches (case -insensitively) that entity.
+    For instance:
+        Verilog 'foo' replaces    VHDL {'FOO' or 'foo' or 'Foo' or ...} in the same library
+        Verilog 'foo' replaces    Verilog 'foo' only
+    In addition:
+        Verilog 'foo' does not replace Verilog 'FOO' and the two remain as distinct modules.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'scm_mult' in library 'default' with newly read Verilog module 'scm_mult' in the same library in file 'multiplicador.v' on line 65.
+@joules:root: 1> 
+::legacy::set_attribute hdl_track_filename_row_col true /
+Info   : Enabled hdl_track_filename_row_col attribute.
+       : Setting this attribute to 'true' can have an impact on the run time. Use this attribute only when filename, line number, and column information are needed in reports.
+  Setting attribute of root '/': 'hdl_track_filename_row_col' = true
+@joules:root: 1> 
+elaborate multiplicador
+Error   : Failed to execute command. [LBR-163] [elaborate]
+        : No target technology library was loaded.
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+ 1
+@joules:root: 1> 
+read_hdl multiplicador.v -language v2001
+            Reading Verilog file 'multiplicador.v'
+module multiplicador #(
+                   |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'multiplicador' with Verilog module in file 'multiplicador.v' on line 3, column 20.
+module scm_mult #(
+              |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'scm_mult' with Verilog module in file 'multiplicador.v' on line 65, column 15.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'multiplicador' in library 'default' with newly read Verilog module 'multiplicador' in the same library in file 'multiplicador.v' on line 3.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'scm_mult' in library 'default' with newly read Verilog module 'scm_mult' in the same library in file 'multiplicador.v' on line 65.
+@joules:root: 1> 
+::legacy::set_attribute hdl_track_filename_row_col true /
+Info   : Enabled hdl_track_filename_row_col attribute.
+       : Setting this attribute to 'true' can have an impact on the run time. Use this attribute only when filename, line number, and column information are needed in reports.
+  Setting attribute of root '/': 'hdl_track_filename_row_col' = true
+@joules:root: 1> 
+elaborate multiplicador
+Error   : Failed to execute command. [LBR-163] [elaborate]
+        : No target technology library was loaded.
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+ 1
+@joules:root: 1> 
+::legacy::set_attribute init_hdl_search_path {.}
+  Setting attribute of root '/': 'init_hdl_search_path' = .
+@joules:root: 1> 
+read_hdl multiplicador.v -language v2001
+            Reading Verilog file 'multiplicador.v'
+module multiplicador #(
+                   |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'multiplicador' with Verilog module in file 'multiplicador.v' on line 3, column 20.
+module scm_mult #(
+              |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'scm_mult' with Verilog module in file 'multiplicador.v' on line 65, column 15.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'multiplicador' in library 'default' with newly read Verilog module 'multiplicador' in the same library in file 'multiplicador.v' on line 3.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'scm_mult' in library 'default' with newly read Verilog module 'scm_mult' in the same library in file 'multiplicador.v' on line 65.
+@joules:root: 1> 
+::legacy::set_attribute hdl_track_filename_row_col true /
+Info   : Enabled hdl_track_filename_row_col attribute.
+       : Setting this attribute to 'true' can have an impact on the run time. Use this attribute only when filename, line number, and column information are needed in reports.
+  Setting attribute of root '/': 'hdl_track_filename_row_col' = true
+@joules:root: 1> 
+elaborate multiplicador
+Error   : Failed to execute command. [LBR-163] [elaborate]
+        : No target technology library was loaded.
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+ 1
+@joules:root: 1> 
+@joules:root: 1> read_libs /home/mmarando/RAK/DATA/LIBRARIES/typical.lib
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATNX1' (File /home/mmarando/RAK/DATA/LIBRARIES/typical.lib, Line 147265)
+        : Sequential timing checks, such as 'setup_rising' or 'hold_rising', on flop and latch cells require a clock pin. Verify that the 'clock' attribute of the clock pin is set to 'true' or that the clock pin has a 'clocked_on' attribute.
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATNX2' (File /home/mmarando/RAK/DATA/LIBRARIES/typical.lib, Line 147568)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATNX4' (File /home/mmarando/RAK/DATA/LIBRARIES/typical.lib, Line 147871)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATNXL' (File /home/mmarando/RAK/DATA/LIBRARIES/typical.lib, Line 148174)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATX1' (File /home/mmarando/RAK/DATA/LIBRARIES/typical.lib, Line 148477)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATX2' (File /home/mmarando/RAK/DATA/LIBRARIES/typical.lib, Line 148841)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATX4' (File /home/mmarando/RAK/DATA/LIBRARIES/typical.lib, Line 149205)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATXL' (File /home/mmarando/RAK/DATA/LIBRARIES/typical.lib, Line 149569)
+
+  Message Summary for Library typical.lib:
+  ****************************************
+  Missing clock pin in the sequential cell. [LBR-525]: 8
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  ****************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.800000, 25.000000) in library 'typical.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'ADDFHX1' was marked 'avoid' because there was no physical data in the LEF file.
+        : To prevent the library cell from being set to 'avoid', set attribute 'lib_lef_consistency_check_enable' to 'false'.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'ADDFHX2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'ADDFHX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'ADDFHXL' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'ADDFX1' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'ADDFX2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'ADDFX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'ADDFXL' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'ADDHX1' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'ADDHX2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'ADDHX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'ADDHXL' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'AFCSHCINX2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'AFCSHCINX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'AFCSHCONX2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'AFCSHCONX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'AFHCINX2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'AFHCINX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'AFHCONX2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'AFHCONX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'PHYS-103'.
+  Library has 0 usable logic and 0 usable sequential lib-cells.
+Info: Bucketizing cells in library typical
+Warning: LBSR-0001 Could not determine cell type for typical/AFCSHCINX2
+Warning: LBSR-0001 Could not determine cell type for typical/AFCSHCINX4
+Warning: LBSR-0001 Could not determine cell type for typical/AFHCINX2
+Warning: LBSR-0001 Could not determine cell type for typical/AFHCINX4
+  Setting attribute of root '/': 'library' = /home/mmarando/RAK/DATA/LIBRARIES/typical.lib
+0
+read_hdl multiplicador.v -language v2001
+            Reading Verilog file 'multiplicador.v'
+module multiplicador #(
+                   |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'multiplicador' with Verilog module in file 'multiplicador.v' on line 3, column 20.
+module scm_mult #(
+              |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'scm_mult' with Verilog module in file 'multiplicador.v' on line 65, column 15.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'multiplicador' in library 'default' with newly read Verilog module 'multiplicador' in the same library in file 'multiplicador.v' on line 3.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'scm_mult' in library 'default' with newly read Verilog module 'scm_mult' in the same library in file 'multiplicador.v' on line 65.
+@joules:root: 2> 
+read_hdl multiplicador.v -language v2001
+            Reading Verilog file 'multiplicador.v'
+module multiplicador #(
+                   |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'multiplicador' with Verilog module in file 'multiplicador.v' on line 3, column 20.
+module scm_mult #(
+              |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'scm_mult' with Verilog module in file 'multiplicador.v' on line 65, column 15.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'multiplicador' in library 'default' with newly read Verilog module 'multiplicador' in the same library in file 'multiplicador.v' on line 3.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'scm_mult' in library 'default' with newly read Verilog module 'scm_mult' in the same library in file 'multiplicador.v' on line 65.
+@joules:root: 2> 
+::legacy::set_attribute hdl_track_filename_row_col true /
+Info   : Enabled hdl_track_filename_row_col attribute.
+       : Setting this attribute to 'true' can have an impact on the run time. Use this attribute only when filename, line number, and column information are needed in reports.
+  Setting attribute of root '/': 'hdl_track_filename_row_col' = true
+@joules:root: 2> 
+elaborate multiplicador
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'multiplicador' from file 'multiplicador.v'.
+Warning : Using default parameter value for module elaboration. [CDFG-818]
+        : Elaborating block 'multiplicador' with default parameters value.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'multiplicador'.
+Checking for analog nets...
+Check completed for analog nets.
+Info: Design state 'hdl': initializing rtlstim2gate
+# Info: Building RTLScore cache for /multiplicador
+# Info: 1. marking memories .. done.
+# Info: 2. marking sequentials .. done.
+# Info: 3. marking macros .. done.
+# Info: 4. caching sequentials, macros, .. done.
+# Info: Cache for /multiplicador completed.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: post_elab
+-------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (s) | 
+-------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |        0.00 | 
+| ume_merge         |       0 |       0 |        0.00 | 
+| ume_ssm           |       0 |       0 |        0.00 | 
+| ume_cse           |       1 |       0 |        0.01 | 
+| ume_shrink        |       0 |       0 |        0.00 | 
+| ume_sweep         |       0 |       0 |        0.00 | 
+| ume_constant_bmux |       0 |       0 |        0.00 | 
+| ume_merge         |       0 |       0 |        0.00 | 
+| ume_ssm           |       0 |       0 |        0.00 | 
+| ume_cse           |       0 |       0 |        0.00 | 
+| ume_shrink        |       0 |       0 |        0.00 | 
+| ume_sweep         |       0 |       0 |        0.00 | 
+-------------------------------------------------------
+Starting optimize datapath shifters [v1.0] (stage: post_elab, startdef: multiplicador, recur: true)
+Completed optimize datapath shifters (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: multiplicador, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: multiplicador, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting basic netlist cleanup [v1.0] (stage: post_elab, startdef: multiplicador, recur: true)
+Completed basic netlist cleanup (accepts: 0, rejects: 0, runtime: 0.000s)
+
+Stage: post_elab
+--------------------------------------------------------------------
+| Transform                      | Accepts | Rejects | Runtime (s) | 
+--------------------------------------------------------------------
+| hlo_optimize_datapath_shifters |       0 |       0 |        0.00 | 
+| hlo_clip_mux_input             |       0 |       0 |        0.00 | 
+| hlo_clip                       |       0 |       0 |        0.00 | 
+| hlo_cleanup                    |       0 |       0 |        0.00 | 
+--------------------------------------------------------------------
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@joules:root: 2> 
+::legacy::set_attribute hdl_track_filename_row_col true /
+Info   : Enabled hdl_track_filename_row_col attribute.
+       : Setting this attribute to 'true' can have an impact on the run time. Use this attribute only when filename, line number, and column information are needed in reports.
+  Setting attribute of root '/': 'hdl_track_filename_row_col' = true
+@joules:root: 2> 
+elaborate multiplicador
+Error   : Could not find an HDL design. [CDFG-210] [elaborate]
+        : The design is 'multiplicador'.
+        : This error may happen if you read a set of files, and you try to elaborate a design which description is not part of the files read. To fix this, check the name of the design you want to elaborate, or check if you have read all the expected RTL files.
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+ 1
+@joules:root: 2> 
+::legacy::set_attribute hdl_track_filename_row_col true /
+Info   : Enabled hdl_track_filename_row_col attribute.
+       : Setting this attribute to 'true' can have an impact on the run time. Use this attribute only when filename, line number, and column information are needed in reports.
+  Setting attribute of root '/': 'hdl_track_filename_row_col' = true
+@joules:root: 2> 
+elaborate multiplicador
+Error   : Could not find an HDL design. [CDFG-210] [elaborate]
+        : The design is 'multiplicador'.
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+ 1
+@joules:root: 2> 
+@joules:root: 2> read_hdl multiplicador.v
+@joules:root: 3> elaborate multiplicador
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'multiplicador' from file 'multiplicador.v'.
+Warning : Using default parameter value for module elaboration. [CDFG-818]
+        : Elaborating block 'multiplicador' with default parameters value.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'multiplicador'.
+Checking for analog nets...
+Check completed for analog nets.
+Warning: Multiple designs found: design:multiplicador design:multiplicador_1, skipping rtls_init.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: post_elab
+-------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (s) | 
+-------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |        0.00 | 
+| ume_merge         |       0 |       0 |        0.00 | 
+| ume_ssm           |       0 |       0 |        0.00 | 
+| ume_cse           |       1 |       0 |        0.00 | 
+| ume_shrink        |       0 |       0 |        0.00 | 
+| ume_sweep         |       0 |       0 |        0.00 | 
+| ume_constant_bmux |       0 |       0 |        0.00 | 
+| ume_merge         |       0 |       0 |        0.00 | 
+| ume_ssm           |       0 |       0 |        0.00 | 
+| ume_cse           |       0 |       0 |        0.00 | 
+| ume_shrink        |       0 |       0 |        0.00 | 
+| ume_sweep         |       0 |       0 |        0.00 | 
+-------------------------------------------------------
+Starting optimize datapath shifters [v1.0] (stage: post_elab, startdef: multiplicador_1, recur: true)
+Completed optimize datapath shifters (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: multiplicador_1, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: multiplicador_1, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting basic netlist cleanup [v1.0] (stage: post_elab, startdef: multiplicador_1, recur: true)
+Completed basic netlist cleanup (accepts: 0, rejects: 0, runtime: 0.000s)
+
+Stage: post_elab
+--------------------------------------------------------------------
+| Transform                      | Accepts | Rejects | Runtime (s) | 
+--------------------------------------------------------------------
+| hlo_optimize_datapath_shifters |       0 |       0 |        0.00 | 
+| hlo_clip_mux_input             |       0 |       0 |        0.00 | 
+| hlo_clip                       |       0 |       0 |        0.00 | 
+| hlo_cleanup                    |       0 |       0 |        0.00 | 
+--------------------------------------------------------------------
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+design:multiplicador_1
+Error   : Multiple designs are available. Specify the design you want to use. [TUI-17] [mesg_send]
+        : There is no unique design here.
+        : Specify a design by using the cd command to change to that design's directory or specify the design as an argument for the command.
+Error   : Multiple designs are available. Specify the design you want to use. [TUI-17] [mesg_send]
+        : There is no unique design here.
+Error   : Multiple designs are available. Specify the design you want to use. [TUI-17] [mesg_send]
+        : There is no unique design here.
+Error   : Multiple designs are available. Specify the design you want to use. [TUI-17] [mesg_send]
+        : There is no unique design here.
+read_hdl multiplicador.v -language v2001
+            Reading Verilog file 'multiplicador.v'
+@joules:root: 4> 
+Error   : Multiple designs are available. Specify the design you want to use. [TUI-17] [mesg_send]
+        : There is no unique design here.
+::legacy::set_attribute hdl_track_filename_row_col true /
+Info   : Enabled hdl_track_filename_row_col attribute.
+       : Setting this attribute to 'true' can have an impact on the run time. Use this attribute only when filename, line number, and column information are needed in reports.
+  Setting attribute of root '/': 'hdl_track_filename_row_col' = true
+@joules:root: 4> 
+elaborate multiplicador
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'multiplicador' from file 'multiplicador.v'.
+Warning : Using default parameter value for module elaboration. [CDFG-818]
+        : Elaborating block 'multiplicador' with default parameters value.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'multiplicador'.
+Checking for analog nets...
+Check completed for analog nets.
+Warning: Multiple designs found: design:multiplicador design:multiplicador_1 design:multiplicador_2, skipping rtls_init.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: post_elab
+-------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (s) | 
+-------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |        0.00 | 
+| ume_merge         |       0 |       0 |        0.00 | 
+| ume_ssm           |       0 |       0 |        0.00 | 
+| ume_cse           |       1 |       0 |        0.00 | 
+| ume_shrink        |       0 |       0 |        0.00 | 
+| ume_sweep         |       0 |       0 |        0.00 | 
+| ume_constant_bmux |       0 |       0 |        0.00 | 
+| ume_merge         |       0 |       0 |        0.00 | 
+| ume_ssm           |       0 |       0 |        0.00 | 
+| ume_cse           |       0 |       0 |        0.00 | 
+| ume_shrink        |       0 |       0 |        0.00 | 
+| ume_sweep         |       0 |       0 |        0.00 | 
+-------------------------------------------------------
+Starting optimize datapath shifters [v1.0] (stage: post_elab, startdef: multiplicador_2, recur: true)
+Completed optimize datapath shifters (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: multiplicador_2, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: multiplicador_2, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting basic netlist cleanup [v1.0] (stage: post_elab, startdef: multiplicador_2, recur: true)
+Completed basic netlist cleanup (accepts: 0, rejects: 0, runtime: 0.000s)
+
+Stage: post_elab
+--------------------------------------------------------------------
+| Transform                      | Accepts | Rejects | Runtime (s) | 
+--------------------------------------------------------------------
+| hlo_optimize_datapath_shifters |       0 |       0 |        0.00 | 
+| hlo_clip_mux_input             |       0 |       0 |        0.00 | 
+| hlo_clip                       |       0 |       0 |        0.00 | 
+| hlo_cleanup                    |       0 |       0 |        0.00 | 
+--------------------------------------------------------------------
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@joules:root: 4> 
+Error   : Multiple designs are available. Specify the design you want to use. [TUI-17] [mesg_send]
+        : There is no unique design here.
+Error   : Multiple designs are available. Specify the design you want to use. [TUI-17] [mesg_send]
+        : There is no unique design here.
+::legacy::set_attribute init_hdl_search_path {.}
+  Setting attribute of root '/': 'init_hdl_search_path' = .
+@joules:root: 4> 
+read_hdl multiplicador.v -language v2001
+            Reading Verilog file 'multiplicador.v'
+@joules:root: 4> 
+@joules:root: 4> help elaborate
+Error   : An invalid option was specified. [TUI-204] [commands_populate]
+        : Command "report_icg_efficiency -help" failed.
+        : Run 'command_name -help' to check all valid options. To correct the option and rerun the command.
+Error   : An invalid option was specified. [TUI-204] [commands_populate]
+        : Command "report_icg_efficiency -help" failed.
+Commands:
+  elaborate: elaborates previously read HDL files and creates corresponding design and subdesigns 
+
+Usage: elaborate [-parameters <string>] [-lib_path <string>]+ [-lib_extension <string>]+ [<string>+]
+
+    [-parameters <string>]:
+        specifies a list of parameter/value pairs for top-level Verilog module or VHDL entity. For example, elab -parameters {{width 5} {depth 10}} 
+    [-lib_path <string>]:
+        defines Verilog library search path 
+    [-lib_extension <string>]:
+        defines Verilog library file extension 
+    [<string>+]:
+        the top-level Verilog modules or VHDL architectures to elaborate 
+
+
+
+Lic Summary:
+[16:30:18.320224] Cdslmd servers: fiubarh01
+[16:30:18.320243] Feature usage summary:
+[16:30:18.320243] Joules_XL
+
+Normal exit.

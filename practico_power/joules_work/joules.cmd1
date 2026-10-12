@@ -1,0 +1,39 @@
+# Cadence Joules(TM) RTL Power Solution, Version 23.10-p104_1, built Feb  2 2024 01:14:08
+
+# Date: Mon Oct 12 16:11:13 2026
+# User:    mmarando (162087)
+# Host: fiubarh01 (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (20cores*80cpus*2physical cpus*Intel(R) Xeon(R) Gold 6138 CPU @ 2.00GHz 28160KB)
+# OS:   Red Hat Enterprise Linux Server release 7.9 (Maipo)
+
+::legacy::set_attribute lef_library { ../../RAK/DATA/LIBRARIES/gsclib045_v3.5/lef/gsclib045_tech.lef } 
+::legacy::set_attribute cap_table_file {/home/mmarando/RAK/DATA/CAPTABLE/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl} 
+read_hdl multiplicador.v -language v2001
+::legacy::set_attribute hdl_track_filename_row_col true /
+elaborate multiplicador
+read_hdl multiplicador.v -language v2001
+::legacy::set_attribute hdl_track_filename_row_col true /
+elaborate multiplicador
+read_hdl multiplicador.v -language v2001
+::legacy::set_attribute hdl_track_filename_row_col true /
+elaborate multiplicador
+::legacy::set_attribute init_hdl_search_path {.}
+read_hdl multiplicador.v -language v2001
+::legacy::set_attribute hdl_track_filename_row_col true /
+elaborate multiplicador
+read_libs /home/mmarando/RAK/DATA/LIBRARIES/typical.lib
+read_hdl multiplicador.v -language v2001
+read_hdl multiplicador.v -language v2001
+::legacy::set_attribute hdl_track_filename_row_col true /
+elaborate multiplicador
+::legacy::set_attribute hdl_track_filename_row_col true /
+elaborate multiplicador
+::legacy::set_attribute hdl_track_filename_row_col true /
+elaborate multiplicador
+read_hdl multiplicador.v
+elaborate multiplicador
+read_hdl multiplicador.v -language v2001
+::legacy::set_attribute hdl_track_filename_row_col true /
+elaborate multiplicador
+::legacy::set_attribute init_hdl_search_path {.}
+read_hdl multiplicador.v -language v2001
+help elaborate

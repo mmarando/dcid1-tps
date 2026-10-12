@@ -1,0 +1,23 @@
+# Cadence Joules(TM) RTL Power Solution, Version 23.10-p104_1, built Feb  2 2024 01:14:08
+
+# Date: Mon Oct 12 16:43:13 2026
+# User:    mmarando (213794)
+# Host: fiubarh01 (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (20cores*80cpus*2physical cpus*Intel(R) Xeon(R) Gold 6138 CPU @ 2.00GHz 28160KB)
+# OS:   Red Hat Enterprise Linux Server release 7.9 (Maipo)
+
+read_mmmc /home/mmarando/dcid1-tps/practico_power/mmmc.tcl
+read_hdl multiplicador.v -language v2001
+::legacy::set_attribute lef_library { ../../RAK/DATA/LIBRARIES/gsclib045_v3.5/lef/gsclib045_tech.lef } 
+::legacy::set_attribute cap_table_file {/home/mmarando/RAK/DATA/CAPTABLE/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl} 
+::legacy::set_attribute hdl_track_filename_row_col true /
+elaborate
+init_design
+init_design
+power_map -effort medium
+read_stimulus -file /home/mmarando/dcid1-tps/practico_power/run_actividad/waves.vcd -format vcd -dut_instance tb_multuplicador_dut -design_root multiplicador -frame_count 10 -append
+read_stimulus -file /home/mmarando/dcid1-tps/practico_power/run_actividad/waves.vcd -format vcd -dut_instance tb_multiplicador_dut -design_root multiplicador -frame_count 10 -append
+read_stimulus -file /home/mmarando/dcid1-tps/practico_power/run_actividad/waves.vcd -format vcd -dut_instance tb_multiplicador.dut -design_root multiplicador -frame_count 10 -append
+compute_power -frequency_scale_factor 1 -mode time_based
+report_power -widget -collate frames -format %0.3f -unit mW -by_category
+tcl_source $::env(RTLSCORE_ROOT)/lib/cdn/cdn_tools/ae_ware/sort_frames_by_power.tcl
+::rtls::sort_frames_by_power -stims {all} -root -1 -max_count all -widget
