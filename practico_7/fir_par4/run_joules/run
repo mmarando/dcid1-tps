@@ -1,0 +1,5 @@
+#!/bin/bash
+# Estimacion RTL con Joules. Ejecutar en la VM con RAK cargado.
+cd "$(dirname "$0")"
+joules -files power.tcl -batch -overwrite > joules.stdout 2>&1
+echo "exit=$?  reporte en joules.stdout"

@@ -1,0 +1,4 @@
+#!/bin/bash
+# Simulacion Xcelium que genera waves.vcd (actividad para Joules).
+cd "$(dirname "$0")"
+xrun -f filelist.f -timescale 1ns/1ps -access +rwc -input actividad.tcl -l simulacion.log
