@@ -25,6 +25,8 @@ genus_history.*
 *.vdb
 *.tsstamp
 .cadence/
+*.jdb
+*.gz
 
 .symbolnamelist
 .symbolportinfomap

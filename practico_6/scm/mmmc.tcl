@@ -96,7 +96,7 @@ create_delay_corner -name delay_corner_1 \
 
 ## constraint_mode
 create_constraint_mode -name constraint_mode_1 \
-    -sdc_files "/usr/share/cem-dcid/practico_power/multiplicador.sdc"
+    -sdc_files "../multiplicador.sdc"
 
 ## analysis_view
 create_analysis_view -name view1 \

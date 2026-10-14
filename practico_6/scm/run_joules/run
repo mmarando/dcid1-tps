@@ -1,5 +1,5 @@
 #!/bin/bash
-# Estimacion de potencia RTL con Joules. Ejecutar en el entorno con RAK cargado.
 cd "$(dirname "$0")"
+export DATA_DIR="${DATA_DIR:-$HOME/RAK/DATA}"
 joules -files power.tcl -batch -overwrite > joules.stdout 2>&1
 echo "exit=$?  reporte en joules.stdout"
