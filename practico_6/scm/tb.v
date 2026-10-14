@@ -43,7 +43,7 @@ module tb_multiplicador;
   // Generación del reloj
   initial begin
     clk = 0;
-    forever #(CLK_PERIOD/2) clk = ~clk;
+    forever #(CLK_PERIOD/2.0) clk = ~clk;
   end
 
   // Proceso de estímulo y verificación
@@ -76,7 +76,7 @@ module tb_multiplicador;
       ref_o_imag = mul_input_imag + mul_twiddle;
 
       // Esperar medio ciclo para capturar salidas estables
-      #(CLK_PERIOD/2);
+      #(CLK_PERIOD/2.0);
 
       // Mostrar entradas, salidas del DUT y del modelo de referencia
       $display("Time: %0t ns | i_real: %0d (%.4f) | i_imag: %0d (%.4f) | o_real: %0d (%.4f) | o_imag: %0d (%.4f) | ref_o_real: %.4f | ref_o_imag: %.4f",
@@ -90,7 +90,7 @@ module tb_multiplicador;
       end
 
       // Completar el ciclo
-      #(CLK_PERIOD/2);
+      #(CLK_PERIOD/2.0);
     end
 
     // Finalizar simulación

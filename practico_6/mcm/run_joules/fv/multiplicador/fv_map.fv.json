@@ -292,20 +292,20 @@
 "object":"/designs/multiplicador/instances_hier/csa_tree_SUB_TC_OP_groupi/pins_out/out_0[1]",
 "type":"pin"},
 {"index": "1", 
- "date": "Wed Oct 14 01:28:30 UTC 2026",
- "seconds": 1791941310.049808,
+ "date": "Wed Oct 14 20:40:29 UTC 2026",
+ "seconds": 1792010429.476635,
  "netlist": "fv/multiplicador/fv_map.v.gz", 
  "netlist_exists": "1", 
  "netlist_normalize": "/home/mmarando/dcid1-tps/practico_6/mcm/run_joules/fv/multiplicador/fv_map.v.gz", 
- "netlist_mtime": "1791941308", 
- "netlist_timestamp": "Wed Oct 14 01:28:28 UTC 2026", 
- "netlist_size": "3042", 
- "netlist_cksum": "2610540546", 
+ "netlist_mtime": "1792010428", 
+ "netlist_timestamp": "Wed Oct 14 20:40:28 UTC 2026", 
+ "netlist_size": "3040", 
+ "netlist_cksum": "3526021844", 
  "design_name": "multiplicador", 
  "synth_workdir": "/home/mmarando/dcid1-tps/practico_6/mcm/run_joules", 
  "synthesis_command":"",
  "current_label": "fv_map", 
  "previous_label": "rtl", 
- "write_verif_file_runtime": 1.432971 
+ "write_verif_file_runtime": 1.401633 
  }
 ]
