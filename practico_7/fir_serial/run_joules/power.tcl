@@ -8,4 +8,5 @@ init_design
 power_map -effort medium
 read_stimulus -file ../run_actividad/waves.vcd -format vcd -dut_instance tb_fir_serial.dut -design_root fir_serial -frame_count 10 -append
 compute_power -frequency_scale_factor 1 -mode time_based
-report_power -widget -collate frames -format %0.3f -unit mW -by_category
+report_power -frames {/stim#1/frame#[0:9]} -collate frames -format %0.3f -unit mW -by_category
+report_power -frames {/stim#1/frame#[0:9]} -collate none -format %0.3f -unit mW -by_category -out frames.rpt
