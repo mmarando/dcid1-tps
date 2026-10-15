@@ -1138,20 +1138,20 @@
 "object":"/designs/fir_par4_top/instances_seq/cnt_reg[0]",
 "type":"instance"},
 {"index": "1", 
- "date": "Wed Oct 14 20:48:35 UTC 2026",
- "seconds": 1792010915.714377,
+ "date": "Thu Oct 15 23:34:31 UTC 2026",
+ "seconds": 1792107271.697824,
  "netlist": "fv/fir_par4_top/fv_map.v.gz", 
  "netlist_exists": "1", 
  "netlist_normalize": "/home/mmarando/dcid1-tps/practico_7/fir_par4/run_joules/fv/fir_par4_top/fv_map.v.gz", 
- "netlist_mtime": "1792010913", 
- "netlist_timestamp": "Wed Oct 14 20:48:33 UTC 2026", 
- "netlist_size": "21345", 
- "netlist_cksum": "3350697260", 
+ "netlist_mtime": "1792107268", 
+ "netlist_timestamp": "Thu Oct 15 23:34:28 UTC 2026", 
+ "netlist_size": "21344", 
+ "netlist_cksum": "900785751", 
  "design_name": "fir_par4_top", 
  "synth_workdir": "/home/mmarando/dcid1-tps/practico_7/fir_par4/run_joules", 
  "synthesis_command":"",
  "current_label": "fv_map", 
  "previous_label": "rtl", 
- "write_verif_file_runtime": 2.623986 
+ "write_verif_file_runtime": 3.2409649999999997 
  }
 ]

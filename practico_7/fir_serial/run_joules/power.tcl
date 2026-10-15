@@ -10,3 +10,6 @@ read_stimulus -file ../run_actividad/waves.vcd -format vcd -dut_instance tb_fir_
 compute_power -frequency_scale_factor 1 -mode time_based
 report_power -frames {/stim#1/frame#[0:9]} -collate frames -format %0.3f -unit mW -by_category
 report_power -frames {/stim#1/frame#[0:9]} -collate none -format %0.3f -unit mW -by_category -out frames.rpt
+report_power -frames {/stim#1/frame#[0:9]} -collate frames -format %0.3f -unit mW -by_leaf_instance -max 30 -out inst_frames.rpt
+report_power -frames {/stim#1/frame#[0:9]} -collate frames -format %0.3f -unit mW -by_libcell -out libcell_frames.rpt
+report_power -frames {/stim#1/frame#[0:9]} -collate frames -format %0.3f -unit mW -by_hierarchy -levels 2 -out hier_frames.rpt
