@@ -14,7 +14,6 @@ xcelium.shm/
 genus.log*
 genus.cmd*
 genus_history.*
-*.log
 *.err
 *.key
 *.history

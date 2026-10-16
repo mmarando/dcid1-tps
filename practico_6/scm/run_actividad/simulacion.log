@@ -1,0 +1,258 @@
+xrun(64): 23.09-s006: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	23.09-s006: Started on Oct 14, 2026 at 17:37:20 -03
+xrun
+	-f filelist.f
+		../multiplicador.v
+		../tb.v
+	-timescale 1ns/1ps
+	-access +rwc
+	-input actividad.tcl
+	-l simulacion.log
+Recompiling... reason: file '../tb.v' is newer than expected.
+	expected: Tue Oct 13 22:06:46 2026
+	actual:   Wed Oct 14 17:36:57 2026
+file: ../tb.v
+	module worklib.tb_multiplicador:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_multiplicador
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.tb_multiplicador:v <0x4a66d72e>
+			streams:   6, words:  8349
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 3       3
+		Registers:              15      15
+		Vectored wires:          8       -
+		Initial blocks:          4       4
+		Cont. assignments:       6       6
+		Pseudo assignments:      2       -
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.tb_multiplicador:v
+Loading snapshot worklib.tb_multiplicador:v .................... Done
+xcelium> source /home/cds-installs/XCELIUM2309/tools/xcelium/files/xmsimrc
+xcelium> # Abrir base de datos VCD
+xcelium> database -open -vcd waves -into waves.vcd -default
+Created default VCD database waves
+xcelium> 
+xcelium> # Capturar señales del testbench
+xcelium> probe -create tb_multiplicador \
+>     -depth all \
+>     -all \
+>     -database waves
+Created probe 1
+xcelium> 
+xcelium> # Ejecutar simulacion
+xcelium> run
+Time: 8000 ns | i_real: 36 (0.2812) | i_imag: -127 (-0.9922) | o_real: -16714 (-1.0201) | o_imag: 1848 (0.1128) | ref_o_real: -1.0201 | ref_o_imag: 0.1128
+Time: 13000 ns | i_real: -247 (-1.9297) | i_imag: -157 (-1.2266) | o_real: -6670 (-0.4071) | o_imag: 36682 (2.2389) | ref_o_real: -0.4071 | ref_o_imag: 2.2389
+Time: 18000 ns | i_real: 13 (0.1016) | i_imag: 141 (1.1016) | o_real: 16014 (0.9774) | o_imag: -8302 (-0.5067) | ref_o_real: 0.9774 | ref_o_imag: -0.5067
+Time: 23000 ns | i_real: -155 (-1.2109) | i_imag: -238 (-1.8594) | o_real: -20644 (-1.2600) | o_imag: 29714 (1.8136) | ref_o_real: -1.2600 | ref_o_imag: 1.8136
+Time: 28000 ns | i_real: 1 (0.0078) | i_imag: 13 (0.1016) | o_real: 1486 (0.0907) | o_imag: -742 (-0.0453) | ref_o_real: 0.0907 | ref_o_imag: -0.0453
+Time: 33000 ns | i_real: 118 (0.9219) | i_imag: 61 (0.4766) | o_real: 1534 (0.0936) | o_imag: -16852 (-1.0286) | ref_o_real: 0.0936 | ref_o_imag: -1.0286
+Time: 38000 ns | i_real: 237 (1.8516) | i_imag: 140 (1.0938) | o_real: 5144 (0.3140) | o_imag: -34686 (-2.1171) | ref_o_real: 0.3140 | ref_o_imag: -2.1171
+Time: 43000 ns | i_real: 249 (1.9453) | i_imag: -58 (-0.4531) | o_real: -18796 (-1.1472) | o_imag: -26598 (-1.6234) | ref_o_real: -1.1472 | ref_o_imag: -1.6234
+Time: 48000 ns | i_real: -59 (-0.4609) | i_imag: -86 (-0.6719) | o_real: -7316 (-0.4465) | o_imag: 11090 (0.6769) | ref_o_real: -0.4465 | ref_o_imag: 0.6769
+Time: 53000 ns | i_real: 229 (1.7891) | i_imag: -137 (-1.0703) | o_real: -27158 (-1.6576) | o_imag: -20446 (-1.2479) | ref_o_real: -1.6576 | ref_o_imag: -1.2479
+Time: 58000 ns | i_real: -238 (-1.8594) | i_imag: 143 (1.1172) | o_real: 28298 (1.7272) | o_imag: 21220 (1.2952) | ref_o_real: 1.7272 | ref_o_imag: 1.2952
+Time: 63000 ns | i_real: 242 (1.8906) | i_imag: -50 (-0.3906) | o_real: -17516 (-1.0691) | o_imag: -26156 (-1.5964) | ref_o_real: -1.0691 | ref_o_imag: -1.5964
+Time: 68000 ns | i_real: -24 (-0.1875) | i_imag: -59 (-0.4609) | o_real: -5810 (-0.3546) | o_imag: 5664 (0.3457) | ref_o_real: -0.3546 | ref_o_imag: 0.3457
+Time: 73000 ns | i_real: 92 (0.7188) | i_imag: -67 (-0.5234) | o_real: -12322 (-0.7521) | o_imag: -7640 (-0.4663) | ref_o_real: -0.7521 | ref_o_imag: -0.4663
+Time: 78000 ns | i_real: -211 (-1.6484) | i_imag: -155 (-1.2109) | o_real: -8162 (-0.4982) | o_imag: 32338 (1.9738) | ref_o_real: -0.4982 | ref_o_imag: 1.9738
+Time: 83000 ns | i_real: -157 (-1.2266) | i_imag: 10 (0.0781) | o_real: 8716 (0.5320) | o_imag: 18046 (1.1014) | ref_o_real: 0.5320 | ref_o_imag: 1.1014
+Time: 88000 ns | i_real: -128 (-1.0000) | i_imag: 32 (0.2500) | o_real: 9920 (0.6055) | o_imag: 13568 (0.8281) | ref_o_real: 0.6055 | ref_o_imag: 0.8281
+Time: 93000 ns | i_real: 170 (1.3281) | i_imag: -99 (-0.7734) | o_real: -19842 (-1.2111) | o_imag: -15308 (-0.9343) | ref_o_real: -1.2111 | ref_o_imag: -0.9343
+Time: 98000 ns | i_real: -106 (-0.8281) | i_imag: -237 (-1.8516) | o_real: -22878 (-1.3964) | o_imag: 23884 (1.4578) | ref_o_real: -1.3964 | ref_o_imag: 1.4578
+Time: 103000 ns | i_real: -243 (-1.8984) | i_imag: -173 (-1.3516) | o_real: -8750 (-0.5341) | o_imag: 36978 (2.2570) | ref_o_real: -0.5341 | ref_o_imag: 2.2570
+Time: 108000 ns | i_real: 107 (0.8359) | i_imag: -43 (-0.3359) | o_real: -10210 (-0.6232) | o_imag: -10562 (-0.6447) | ref_o_real: -0.6232 | ref_o_imag: -0.6447
+Time: 113000 ns | i_real: -254 (-1.9844) | i_imag: -82 (-0.6406) | o_real: 2516 (0.1536) | o_imag: 33908 (2.0696) | ref_o_real: 0.1536 | ref_o_imag: 2.0696
+Time: 118000 ns | i_real: 29 (0.2266) | i_imag: -49 (-0.3828) | o_real: -7174 (-0.4379) | o_imag: -1070 (-0.0653) | ref_o_real: -0.4379 | ref_o_imag: -0.0653
+Time: 123000 ns | i_real: 35 (0.2734) | i_imag: 10 (0.0781) | o_real: -500 (-0.0305) | o_imag: -4610 (-0.2814) | ref_o_real: -0.0305 | ref_o_imag: -0.2814
+Time: 128000 ns | i_real: -54 (-0.4219) | i_imag: -196 (-1.5312) | o_real: -20536 (-1.2534) | o_imag: 15780 (0.9631) | ref_o_real: -1.2534 | ref_o_imag: 0.9631
+Time: 133000 ns | i_real: 242 (1.8906) | i_imag: 138 (1.0781) | o_real: 4668 (0.2849) | o_imag: -35180 (-2.1472) | ref_o_real: 0.2849 | ref_o_imag: -2.1472
+Time: 138000 ns | i_real: 65 (0.5078) | i_imag: -40 (-0.3125) | o_real: -7840 (-0.4785) | o_imag: -5750 (-0.3510) | ref_o_real: -0.4785 | ref_o_imag: -0.3510
+Time: 143000 ns | i_real: 120 (0.9375) | i_imag: -119 (-0.9297) | o_real: -19802 (-1.2086) | o_imag: -8448 (-0.5156) | ref_o_real: -1.2086 | ref_o_imag: -0.5156
+Time: 148000 ns | i_real: 235 (1.8359) | i_imag: 182 (1.4219) | o_real: 10196 (0.6223) | o_imag: -36466 (-2.2257) | ref_o_real: 0.6223 | ref_o_imag: -2.2257
+Time: 153000 ns | i_real: 198 (1.5469) | i_imag: 174 (1.3594) | o_real: 11028 (0.6731) | o_imag: -31716 (-1.9358) | ref_o_real: 0.6731 | ref_o_imag: -1.9358
+Time: 158000 ns | i_real: -68 (-0.5312) | i_imag: 42 (0.3281) | o_real: 8220 (0.5017) | o_imag: 6008 (0.3667) | ref_o_real: 0.5017 | ref_o_imag: 0.3667
+Time: 163000 ns | i_real: -245 (-1.9141) | i_imag: -143 (-1.1172) | o_real: -5114 (-0.3121) | o_imag: 35774 (2.1835) | ref_o_real: -0.3121 | ref_o_imag: 2.1835
+Time: 168000 ns | i_real: 133 (1.0391) | i_imag: 79 (0.6172) | o_real: 2938 (0.1793) | o_imag: -19486 (-1.1893) | ref_o_real: 0.1793 | ref_o_imag: -1.1893
+Time: 173000 ns | i_real: -197 (-1.5391) | i_imag: 58 (0.4531) | o_real: 16300 (0.9949) | o_imag: 20462 (1.2489) | ref_o_real: 0.9949 | ref_o_imag: 1.2489
+Time: 178000 ns | i_real: -130 (-1.0156) | i_imag: 21 (0.1641) | o_real: 8718 (0.5321) | o_imag: 14332 (0.8748) | ref_o_real: 0.5321 | ref_o_imag: 0.8748
+Time: 183000 ns | i_real: 241 (1.8828) | i_imag: 217 (1.6953) | o_real: 14038 (0.8568) | o_imag: -38854 (-2.3715) | ref_o_real: 0.8568 | ref_o_imag: -2.3715
+Time: 188000 ns | i_real: 98 (0.7656) | i_imag: 76 (0.5938) | o_real: 4264 (0.2603) | o_imag: -15212 (-0.9285) | ref_o_real: 0.2603 | ref_o_imag: -0.9285
+Time: 193000 ns | i_real: 159 (1.2422) | i_imag: 143 (1.1172) | o_real: 9242 (0.5641) | o_imag: -25626 (-1.5641) | ref_o_real: 0.5641 | ref_o_imag: -1.5641
+Time: 198000 ns | i_real: 248 (1.9375) | i_imag: -73 (-0.5703) | o_real: -20518 (-1.2523) | o_imag: -25760 (-1.5723) | ref_o_real: -1.2523 | ref_o_imag: -1.5723
+Time: 203000 ns | i_real: -97 (-0.7578) | i_imag: -164 (-1.2812) | o_real: -14696 (-0.8970) | o_imag: 19318 (1.1791) | ref_o_real: -0.8970 | ref_o_imag: 1.1791
+Time: 208000 ns | i_real: -165 (-1.2891) | i_imag: 137 (1.0703) | o_real: 24086 (1.4701) | o_imag: 12894 (0.7870) | ref_o_real: 1.4701 | ref_o_imag: 0.7870
+Time: 213000 ns | i_real: -183 (-1.4297) | i_imag: -48 (-0.3750) | o_real: 3120 (0.1904) | o_imag: 23898 (1.4586) | ref_o_real: 0.1904 | ref_o_imag: 1.4586
+Time: 218000 ns | i_real: -41 (-0.3203) | i_imag: -175 (-1.3672) | o_real: -18682 (-1.1403) | o_imag: 13238 (0.8080) | ref_o_real: -1.1403 | ref_o_imag: 0.8080
+Time: 223000 ns | i_real: 150 (1.1719) | i_imag: 12 (0.0938) | o_real: -5784 (-0.3530) | o_imag: -18276 (-1.1155) | ref_o_real: -0.3530 | ref_o_imag: -1.1155
+Time: 228000 ns | i_real: -62 (-0.4844) | i_imag: 200 (1.5625) | o_real: 26576 (1.6221) | o_imag: -2284 (-0.1394) | ref_o_real: 1.6221 | ref_o_imag: -0.1394
+Time: 233000 ns | i_real: -137 (-1.0703) | i_imag: 61 (0.4766) | o_real: 13774 (0.8407) | o_imag: 13238 (0.8080) | ref_o_real: 0.8407 | ref_o_imag: 0.8080
+Time: 238000 ns | i_real: 18 (0.1406) | i_imag: -130 (-1.0156) | o_real: -16204 (-0.9890) | o_imag: 4116 (0.2512) | ref_o_real: -0.9890 | ref_o_imag: 0.2512
+Time: 243000 ns | i_real: 109 (0.8516) | i_imag: 57 (0.4453) | o_real: 1494 (0.0912) | o_imag: -15598 (-0.9520) | ref_o_real: 0.0912 | ref_o_imag: -0.9520
+Time: 248000 ns | i_real: 31 (0.2422) | i_imag: -45 (-0.3516) | o_real: -6798 (-0.4149) | o_imag: -1498 (-0.0914) | ref_o_real: -0.4149 | ref_o_imag: -0.0914
+Time: 253000 ns | i_real: 133 (1.0391) | i_imag: -136 (-1.0625) | o_real: -22432 (-1.3691) | o_imag: -9166 (-0.5594) | ref_o_real: -1.3691 | ref_o_imag: -0.5594
+Time: 258000 ns | i_real: 91 (0.7109) | i_imag: 73 (0.5703) | o_real: 4246 (0.2592) | o_imag: -14242 (-0.8693) | ref_o_real: 0.2592 | ref_o_imag: -0.8693
+Time: 263000 ns | i_real: -193 (-1.5078) | i_imag: 42 (0.3281) | o_real: 14220 (0.8679) | o_imag: 20758 (1.2670) | ref_o_real: 0.8679 | ref_o_imag: 1.2670
+Time: 268000 ns | i_real: 88 (0.6875) | i_imag: -122 (-0.9531) | o_real: -18620 (-1.1365) | o_imag: -4528 (-0.2764) | ref_o_real: -1.1365 | ref_o_imag: -0.2764
+Time: 273000 ns | i_real: -114 (-0.8906) | i_imag: -100 (-0.7812) | o_real: -6328 (-0.3862) | o_imag: 18252 (1.1140) | ref_o_real: -0.3862 | ref_o_imag: 1.1140
+Time: 278000 ns | i_real: 250 (1.9531) | i_imag: -218 (-1.7031) | o_real: -37724 (-2.3025) | o_imag: -19036 (-1.1619) | ref_o_real: -2.3025 | ref_o_imag: -1.1619
+Time: 283000 ns | i_real: 115 (0.8984) | i_imag: -93 (-0.7266) | o_real: -16494 (-1.0067) | o_imag: -9106 (-0.5558) | ref_o_real: -1.0067 | ref_o_imag: -0.5558
+Time: 288000 ns | i_real: -209 (-1.6328) | i_imag: -77 (-0.6016) | o_real: 946 (0.0577) | o_imag: 28358 (1.7308) | ref_o_real: 0.0577 | ref_o_imag: 1.7308
+Time: 293000 ns | i_real: -161 (-1.2578) | i_imag: 68 (0.5312) | o_real: 15752 (0.9614) | o_imag: 15734 (0.9603) | ref_o_real: 0.9614 | ref_o_imag: 0.9603
+Time: 298000 ns | i_real: 247 (1.9297) | i_imag: -53 (-0.4141) | o_real: -18110 (-1.1053) | o_imag: -26602 (-1.6237) | ref_o_real: -1.1053 | ref_o_imag: -1.6237
+Time: 303000 ns | i_real: -26 (-0.2031) | i_imag: 90 (0.7031) | o_real: 11868 (0.7244) | o_imag: -1252 (-0.0764) | ref_o_real: 0.7244 | ref_o_imag: -0.0764
+Time: 308000 ns | i_real: 41 (0.3203) | i_imag: -19 (-0.1484) | o_real: -4210 (-0.2570) | o_imag: -3926 (-0.2396) | ref_o_real: -0.2570 | ref_o_imag: -0.2396
+Time: 313000 ns | i_real: -38 (-0.2969) | i_imag: -155 (-1.2109) | o_real: -16466 (-1.0050) | o_imag: 11924 (0.7278) | ref_o_real: -1.0050 | ref_o_imag: 0.7278
+Time: 318000 ns | i_real: -75 (-0.5859) | i_imag: -33 (-0.2578) | o_real: -294 (-0.0179) | o_imag: 10434 (0.6368) | ref_o_real: -0.0179 | ref_o_imag: 0.6368
+Time: 323000 ns | i_real: 121 (0.9453) | i_imag: 68 (0.5312) | o_real: 2216 (0.1353) | o_imag: -17542 (-1.0707) | ref_o_real: 0.1353 | ref_o_imag: -1.0707
+Time: 328000 ns | i_real: -48 (-0.3750) | i_imag: 42 (0.3281) | o_real: 7260 (0.4431) | o_imag: 3648 (0.2227) | ref_o_real: 0.4431 | ref_o_imag: 0.2227
+Time: 333000 ns | i_real: 171 (1.3359) | i_imag: 14 (0.1094) | o_real: -6556 (-0.4001) | o_imag: -20850 (-1.2726) | ref_o_real: -0.4001 | ref_o_imag: -1.2726
+Time: 338000 ns | i_real: 220 (1.7188) | i_imag: -102 (-0.7969) | o_real: -22596 (-1.3792) | o_imag: -21064 (-1.2856) | ref_o_real: -1.3792 | ref_o_imag: -1.2856
+Time: 343000 ns | i_real: -3 (-0.0234) | i_imag: -61 (-0.4766) | o_real: -7054 (-0.4305) | o_imag: 3282 (0.2003) | ref_o_real: -0.4305 | ref_o_imag: 0.2003
+Time: 348000 ns | i_real: 86 (0.6719) | i_imag: 78 (0.6094) | o_real: 5076 (0.3098) | o_imag: -13892 (-0.8479) | ref_o_real: 0.3098 | ref_o_imag: -0.8479
+Time: 353000 ns | i_real: -153 (-1.1953) | i_imag: -246 (-1.9219) | o_real: -21684 (-1.3235) | o_imag: 29862 (1.8226) | ref_o_real: -1.3235 | ref_o_imag: 1.8226
+Time: 358000 ns | i_real: 182 (1.4219) | i_imag: -200 (-1.5625) | o_real: -32336 (-1.9736) | o_imag: -11876 (-0.7249) | ref_o_real: -1.9736 | ref_o_imag: -0.7249
+Time: 363000 ns | i_real: 121 (0.9453) | i_imag: -72 (-0.5625) | o_real: -14304 (-0.8730) | o_imag: -10822 (-0.6605) | ref_o_real: -0.8730 | ref_o_imag: -0.6605
+Time: 368000 ns | i_real: 148 (1.1562) | i_imag: 147 (1.1484) | o_real: 10242 (0.6251) | o_imag: -24520 (-1.4966) | ref_o_real: 0.6251 | ref_o_imag: -1.4966
+Time: 373000 ns | i_real: -252 (-1.9688) | i_imag: -167 (-1.3047) | o_real: -7610 (-0.4645) | o_imag: 37752 (2.3042) | ref_o_real: -0.4645 | ref_o_imag: 2.3042
+Time: 378000 ns | i_real: 219 (1.7109) | i_imag: -179 (-1.3984) | o_real: -31634 (-1.9308) | o_imag: -17250 (-1.0529) | ref_o_real: -1.9308 | ref_o_imag: -1.0529
+Time: 383000 ns | i_real: 217 (1.6953) | i_imag: -147 (-1.1484) | o_real: -27762 (-1.6945) | o_imag: -18550 (-1.1322) | ref_o_real: -1.6945 | ref_o_imag: -1.1322
+Time: 388000 ns | i_real: -138 (-1.0781) | i_imag: 202 (1.5781) | o_real: 30460 (1.8591) | o_imag: 6588 (0.4021) | ref_o_real: 1.8591 | ref_o_imag: 0.4021
+Time: 393000 ns | i_real: 182 (1.4219) | i_imag: 149 (1.1641) | o_real: 8846 (0.5399) | o_imag: -28628 (-1.7473) | ref_o_real: 0.5399 | ref_o_imag: -1.7473
+Time: 398000 ns | i_real: -186 (-1.4531) | i_imag: 4 (0.0312) | o_real: 9400 (0.5737) | o_imag: 21756 (1.3279) | ref_o_real: 0.5737 | ref_o_imag: 1.3279
+Time: 403000 ns | i_real: 247 (1.9297) | i_imag: 105 (0.8203) | o_real: 534 (0.0326) | o_imag: -34186 (-2.0865) | ref_o_real: 0.0326 | ref_o_imag: -2.0865
+Time: 408000 ns | i_real: -76 (-0.5938) | i_imag: 136 (1.0625) | o_real: 19696 (1.2021) | o_imag: 2440 (0.1489) | ref_o_real: 1.2021 | ref_o_imag: 0.1489
+Time: 413000 ns | i_real: 40 (0.3125) | i_imag: -211 (-1.6484) | o_real: -26818 (-1.6368) | o_imag: 5408 (0.3301) | ref_o_real: -1.6368 | ref_o_imag: 0.3301
+Time: 418000 ns | i_real: -57 (-0.4453) | i_imag: -210 (-1.6406) | o_real: -22044 (-1.3455) | o_imag: 16806 (1.0258) | ref_o_real: -1.3455 | ref_o_imag: 1.0258
+Time: 423000 ns | i_real: -248 (-1.9375) | i_imag: 28 (0.2188) | o_real: 15208 (0.9282) | o_imag: 27920 (1.7041) | ref_o_real: 0.9282 | ref_o_imag: 1.7041
+Time: 428000 ns | i_real: -3 (-0.0234) | i_imag: 41 (0.3203) | o_real: 4982 (0.3041) | o_imag: -1614 (-0.0985) | ref_o_real: 0.3041 | ref_o_imag: -0.0985
+Time: 433000 ns | i_real: -228 (-1.7812) | i_imag: 134 (1.0469) | o_real: 26756 (1.6331) | o_imag: 20472 (1.2495) | ref_o_real: 1.6331 | ref_o_imag: 1.2495
+Time: 438000 ns | i_real: -38 (-0.2969) | i_imag: -195 (-1.5234) | o_real: -21186 (-1.2931) | o_imag: 13844 (0.8450) | ref_o_real: -1.2931 | ref_o_imag: 0.8450
+Time: 443000 ns | i_real: 102 (0.7969) | i_imag: -144 (-1.1250) | o_real: -21888 (-1.3359) | o_imag: -5124 (-0.3127) | ref_o_real: -1.3359 | ref_o_imag: -0.3127
+Time: 448000 ns | i_real: -141 (-1.1016) | i_imag: 186 (1.4531) | o_real: 28716 (1.7527) | o_imag: 7710 (0.4706) | ref_o_real: 1.7527 | ref_o_imag: 0.4706
+Time: 453000 ns | i_real: 94 (0.7344) | i_imag: 250 (1.9531) | o_real: 24988 (1.5251) | o_imag: -23092 (-1.4094) | ref_o_real: 1.5251 | ref_o_imag: -1.4094
+Time: 458000 ns | i_real: 213 (1.6641) | i_imag: -230 (-1.7969) | o_real: -37364 (-2.2805) | o_imag: -14094 (-0.8602) | ref_o_real: -2.2805 | ref_o_imag: -0.8602
+Time: 463000 ns | i_real: -71 (-0.5547) | i_imag: 55 (0.4297) | o_real: 9898 (0.6041) | o_imag: 5738 (0.3502) | ref_o_real: 0.6041 | ref_o_imag: 0.3502
+Time: 468000 ns | i_real: 150 (1.1719) | i_imag: 192 (1.5000) | o_real: 15456 (0.9434) | o_imag: -26916 (-1.6428) | ref_o_real: 0.9434 | ref_o_imag: -1.6428
+Time: 473000 ns | i_real: 38 (0.2969) | i_imag: -74 (-0.5781) | o_real: -10556 (-0.6443) | o_imag: -932 (-0.0569) | ref_o_real: -0.6443 | ref_o_imag: -0.0569
+Time: 478000 ns | i_real: 125 (0.9766) | i_imag: 220 (1.7188) | o_real: 19960 (1.2183) | o_imag: -25310 (-1.5448) | ref_o_real: 1.2183 | ref_o_imag: -1.5448
+Time: 483000 ns | i_real: 134 (1.0469) | i_imag: 120 (0.9375) | o_real: 7728 (0.4717) | o_imag: -21572 (-1.3167) | ref_o_real: 0.4717 | ref_o_imag: -1.3167
+Time: 488000 ns | i_real: 126 (0.9844) | i_imag: -37 (-0.2891) | o_real: -10414 (-0.6356) | o_imag: -13092 (-0.7991) | ref_o_real: -0.6356 | ref_o_imag: -0.7991
+Time: 493000 ns | i_real: -49 (-0.3828) | i_imag: 121 (0.9453) | o_real: 16630 (1.0150) | o_imag: -26 (-0.0016) | ref_o_real: 1.0150 | ref_o_imag: -0.0016
+Time: 498000 ns | i_real: -6 (-0.0469) | i_imag: -159 (-1.2422) | o_real: -18474 (-1.1276) | o_imag: 8340 (0.5090) | ref_o_real: -1.1276 | ref_o_imag: 0.5090
+Time: 503000 ns | i_real: 23 (0.1797) | i_imag: -95 (-0.7422) | o_real: -12314 (-0.7516) | o_imag: 1846 (0.1127) | ref_o_real: -0.7516 | ref_o_imag: 0.1127
+Time: 508000 ns | i_real: 134 (1.0469) | i_imag: -176 (-1.3750) | o_real: -27200 (-1.6602) | o_imag: -7364 (-0.4495) | ref_o_real: -1.6602 | ref_o_imag: -0.4495
+Time: 513000 ns | i_real: 245 (1.9141) | i_imag: -203 (-1.5859) | o_real: -35714 (-2.1798) | o_imag: -19166 (-1.1698) | ref_o_real: -2.1798 | ref_o_imag: -1.1698
+Time: 518000 ns | i_real: -215 (-1.6797) | i_imag: 193 (1.5078) | o_real: 33094 (2.0199) | o_imag: 16106 (0.9830) | ref_o_real: 2.0199 | ref_o_imag: 0.9830
+Time: 523000 ns | i_real: -59 (-0.4609) | i_imag: -104 (-0.8125) | o_real: -9440 (-0.5762) | o_imag: 11954 (0.7296) | ref_o_real: -0.5762 | ref_o_imag: 0.7296
+Time: 528000 ns | i_real: 75 (0.5859) | i_imag: -141 (-1.1016) | o_real: -20238 (-1.2352) | o_imag: -2082 (-0.1271) | ref_o_real: -1.2352 | ref_o_imag: -0.1271
+Time: 533000 ns | i_real: -20 (-0.1562) | i_imag: -118 (-0.9219) | o_real: -12964 (-0.7913) | o_imag: 8024 (0.4897) | ref_o_real: -0.7913 | ref_o_imag: 0.4897
+Time: 538000 ns | i_real: 78 (0.6094) | i_imag: -88 (-0.6875) | o_real: -14128 (-0.8623) | o_imag: -4980 (-0.3040) | ref_o_real: -0.8623 | ref_o_imag: -0.3040
+Time: 543000 ns | i_real: 169 (1.3203) | i_imag: -95 (-0.7422) | o_real: -19322 (-1.1793) | o_imag: -15382 (-0.9388) | ref_o_real: -1.1793 | ref_o_imag: -0.9388
+Time: 548000 ns | i_real: 14 (0.1094) | i_imag: -26 (-0.2031) | o_real: -3740 (-0.2283) | o_imag: -404 (-0.0247) | ref_o_real: -0.2283 | ref_o_imag: -0.0247
+Time: 553000 ns | i_real: -97 (-0.7578) | i_imag: 42 (0.3281) | o_real: 9612 (0.5867) | o_imag: 9430 (0.5756) | ref_o_real: 0.5867 | ref_o_imag: 0.5756
+Time: 558000 ns | i_real: 42 (0.3281) | i_imag: -115 (-0.8984) | o_real: -15586 (-0.9513) | o_imag: 564 (0.0344) | ref_o_real: -0.9513 | ref_o_imag: 0.0344
+Time: 563000 ns | i_real: 158 (1.2344) | i_imag: -200 (-1.5625) | o_real: -31184 (-1.9033) | o_imag: -9044 (-0.5520) | ref_o_real: -1.9033 | ref_o_imag: -0.5520
+Time: 568000 ns | i_real: -135 (-1.0547) | i_imag: 200 (1.5625) | o_real: 30080 (1.8359) | o_imag: 6330 (0.3864) | ref_o_real: 1.8359 | ref_o_imag: 0.3864
+Time: 573000 ns | i_real: 202 (1.5781) | i_imag: 19 (0.1484) | o_real: -7454 (-0.4550) | o_imag: -24748 (-1.5105) | ref_o_real: -0.4550 | ref_o_imag: -1.5105
+Time: 578000 ns | i_real: 107 (0.8359) | i_imag: -57 (-0.4453) | o_real: -11862 (-0.7240) | o_imag: -9890 (-0.6036) | ref_o_real: -0.7240 | ref_o_imag: -0.6036
+Time: 583000 ns | i_real: 182 (1.4219) | i_imag: 186 (1.4531) | o_real: 13212 (0.8064) | o_imag: -30404 (-1.8557) | ref_o_real: 0.8064 | ref_o_imag: -1.8557
+Time: 588000 ns | i_real: 196 (1.5312) | i_imag: 185 (1.4453) | o_real: 12422 (0.7582) | o_imag: -32008 (-1.9536) | ref_o_real: 0.7582 | ref_o_imag: -1.9536
+Time: 593000 ns | i_real: 146 (1.1406) | i_imag: -76 (-0.5938) | o_real: -15976 (-0.9751) | o_imag: -13580 (-0.8289) | ref_o_real: -0.9751 | ref_o_imag: -0.8289
+Time: 598000 ns | i_real: 127 (0.9922) | i_imag: -122 (-0.9531) | o_real: -20492 (-1.2507) | o_imag: -9130 (-0.5573) | ref_o_real: -1.2507 | ref_o_imag: -0.5573
+Time: 603000 ns | i_real: 250 (1.9531) | i_imag: -14 (-0.1094) | o_real: -13652 (-0.8333) | o_imag: -28828 (-1.7595) | ref_o_real: -0.8333 | ref_o_imag: -1.7595
+Time: 608000 ns | i_real: 50 (0.3906) | i_imag: -67 (-0.5234) | o_real: -10306 (-0.6290) | o_imag: -2684 (-0.1638) | ref_o_real: -0.6290 | ref_o_imag: -0.1638
+Time: 613000 ns | i_real: 132 (1.0312) | i_imag: -28 (-0.2188) | o_real: -9640 (-0.5884) | o_imag: -14232 (-0.8687) | ref_o_real: -0.5884 | ref_o_imag: -0.8687
+Time: 618000 ns | i_real: 202 (1.5781) | i_imag: 169 (1.3203) | o_real: 10246 (0.6254) | o_imag: -31948 (-1.9500) | ref_o_real: 0.6254 | ref_o_imag: -1.9500
+Time: 623000 ns | i_real: -95 (-0.7422) | i_imag: 142 (1.1094) | o_real: 21316 (1.3010) | o_imag: 4394 (0.2682) | ref_o_real: 1.3010 | ref_o_imag: 0.2682
+Time: 628000 ns | i_real: -5 (-0.0391) | i_imag: -245 (-1.9141) | o_real: -28670 (-1.7499) | o_imag: 12350 (0.7538) | ref_o_real: -1.7499 | ref_o_imag: 0.7538
+Time: 633000 ns | i_real: -17 (-0.1328) | i_imag: 201 (1.5703) | o_real: 24534 (1.4974) | o_imag: -7642 (-0.4664) | ref_o_real: 1.4974 | ref_o_imag: -0.4664
+Time: 638000 ns | i_real: 54 (0.4219) | i_imag: -139 (-1.0859) | o_real: -18994 (-1.1593) | o_imag: 300 (0.0183) | ref_o_real: -1.1593 | ref_o_imag: 0.0183
+Time: 643000 ns | i_real: -113 (-0.8828) | i_imag: 107 (0.8359) | o_real: 18050 (1.1017) | o_imag: 8198 (0.5004) | ref_o_real: 1.1017 | ref_o_imag: 0.5004
+Time: 648000 ns | i_real: 136 (1.0625) | i_imag: -82 (-0.6406) | o_real: -16204 (-0.9890) | o_imag: -12112 (-0.7393) | ref_o_real: -0.9890 | ref_o_imag: -0.7393
+Time: 653000 ns | i_real: 155 (1.2109) | i_imag: 146 (1.1406) | o_real: 9788 (0.5974) | o_imag: -25298 (-1.5441) | ref_o_real: 0.5974 | ref_o_imag: -1.5441
+Time: 658000 ns | i_real: 40 (0.3125) | i_imag: -211 (-1.6484) | o_real: -26818 (-1.6368) | o_imag: 5408 (0.3301) | ref_o_real: -1.6368 | ref_o_imag: 0.3301
+Time: 663000 ns | i_real: 75 (0.5859) | i_imag: -62 (-0.4844) | o_real: -10916 (-0.6663) | o_imag: -5874 (-0.3585) | ref_o_real: -0.6663 | ref_o_imag: -0.3585
+Time: 668000 ns | i_real: -226 (-1.7656) | i_imag: 13 (0.1016) | o_real: 12382 (0.7557) | o_imag: 26044 (1.5896) | ref_o_real: 0.7557 | ref_o_imag: 1.5896
+Time: 673000 ns | i_real: 236 (1.8438) | i_imag: 24 (0.1875) | o_real: -8496 (-0.5186) | o_imag: -29000 (-1.7700) | ref_o_real: -0.5186 | ref_o_imag: -1.7700
+Time: 678000 ns | i_real: 209 (1.6328) | i_imag: -122 (-0.9531) | o_real: -24428 (-1.4910) | o_imag: -18806 (-1.1478) | ref_o_real: -1.4910 | ref_o_imag: -1.1478
+Time: 683000 ns | i_real: -191 (-1.4922) | i_imag: -197 (-1.5391) | o_real: -14078 (-0.8593) | o_imag: 31994 (1.9528) | ref_o_real: -0.8593 | ref_o_imag: 1.9528
+Time: 688000 ns | i_real: 216 (1.6875) | i_imag: 83 (0.6484) | o_real: -574 (-0.0350) | o_imag: -29472 (-1.7988) | ref_o_real: -0.0350 | ref_o_imag: -1.7988
+Time: 693000 ns | i_real: -170 (-1.3281) | i_imag: -165 (-1.2891) | o_real: -11310 (-0.6903) | o_imag: 27980 (1.7078) | ref_o_real: -0.6903 | ref_o_imag: 1.7078
+Time: 698000 ns | i_real: -30 (-0.2344) | i_imag: -252 (-1.9688) | o_real: -28296 (-1.7271) | o_imag: 15636 (0.9543) | ref_o_real: -1.7271 | ref_o_imag: 0.9543
+Time: 703000 ns | i_real: 115 (0.8984) | i_imag: -40 (-0.3125) | o_real: -10240 (-0.6250) | o_imag: -11650 (-0.7111) | ref_o_real: -0.6250 | ref_o_imag: -0.7111
+Time: 708000 ns | i_real: 18 (0.1406) | i_imag: -72 (-0.5625) | o_real: -9360 (-0.5713) | o_imag: 1332 (0.0813) | ref_o_real: -0.5713 | ref_o_imag: 0.0813
+Time: 713000 ns | i_real: -199 (-1.5547) | i_imag: -27 (-0.2109) | o_real: 6366 (0.3885) | o_imag: 24778 (1.5123) | ref_o_real: 0.3885 | ref_o_imag: 1.5123
+Time: 718000 ns | i_real: -95 (-0.7422) | i_imag: 43 (0.3359) | o_real: 9634 (0.5880) | o_imag: 9146 (0.5582) | ref_o_real: 0.5880 | ref_o_imag: 0.5582
+Time: 723000 ns | i_real: 129 (1.0078) | i_imag: 200 (1.5625) | o_real: 17408 (1.0625) | o_imag: -24822 (-1.5150) | ref_o_real: 1.0625 | ref_o_imag: -1.5150
+Time: 728000 ns | i_real: 39 (0.3047) | i_imag: 161 (1.2578) | o_real: 17126 (1.0453) | o_imag: -12330 (-0.7526) | ref_o_real: 1.0453 | ref_o_imag: -0.7526
+Time: 733000 ns | i_real: -225 (-1.7578) | i_imag: -252 (-1.9688) | o_real: -18936 (-1.1558) | o_imag: 38646 (2.3588) | ref_o_real: -1.1558 | ref_o_imag: 2.3588
+Time: 738000 ns | i_real: 88 (0.6875) | i_imag: -106 (-0.8281) | o_real: -16732 (-1.0212) | o_imag: -5296 (-0.3232) | ref_o_real: -1.0212 | ref_o_imag: -0.3232
+Time: 743000 ns | i_real: 20 (0.1562) | i_imag: -238 (-1.8594) | o_real: -29044 (-1.7727) | o_imag: 9064 (0.5532) | ref_o_real: -1.7727 | ref_o_imag: 0.5532
+Time: 748000 ns | i_real: -106 (-0.8281) | i_imag: -79 (-0.6172) | o_real: -4234 (-0.2584) | o_imag: 16300 (0.9949) | ref_o_real: -0.2584 | ref_o_imag: 0.9949
+Time: 753000 ns | i_real: 85 (0.6641) | i_imag: -19 (-0.1484) | o_real: -6322 (-0.3859) | o_imag: -9118 (-0.5565) | ref_o_real: -0.3859 | ref_o_imag: -0.5565
+Time: 758000 ns | i_real: 43 (0.3359) | i_imag: 245 (1.9141) | o_real: 26846 (1.6385) | o_imag: -16834 (-1.0275) | ref_o_real: 1.6385 | ref_o_imag: -1.0275
+Time: 763000 ns | i_real: 173 (1.3516) | i_imag: -217 (-1.6953) | o_real: -33910 (-2.0697) | o_imag: -9998 (-0.6102) | ref_o_real: -2.0697 | ref_o_imag: -0.6102
+Time: 768000 ns | i_real: 132 (1.0312) | i_imag: -89 (-0.6953) | o_real: -16838 (-1.0277) | o_imag: -11304 (-0.6899) | ref_o_real: -1.0277 | ref_o_imag: -0.6899
+Time: 773000 ns | i_real: -25 (-0.1953) | i_imag: -71 (-0.5547) | o_real: -7178 (-0.4381) | o_imag: 6358 (0.3881) | ref_o_real: -0.4381 | ref_o_imag: 0.3881
+Time: 778000 ns | i_real: -183 (-1.4297) | i_imag: 219 (1.7109) | o_real: 34626 (2.1134) | o_imag: 11082 (0.6764) | ref_o_real: 2.1134 | ref_o_imag: 0.6764
+Time: 783000 ns | i_real: 201 (1.5703) | i_imag: 81 (0.6328) | o_real: -90 (-0.0055) | o_imag: -27606 (-1.6849) | ref_o_real: -0.0055 | ref_o_imag: -1.6849
+Time: 788000 ns | i_real: -95 (-0.7422) | i_imag: 42 (0.3281) | o_real: 9516 (0.5808) | o_imag: 9194 (0.5612) | ref_o_real: 0.5808 | ref_o_imag: 0.5612
+Time: 793000 ns | i_real: 250 (1.9531) | i_imag: -187 (-1.4609) | o_real: -34066 (-2.0792) | o_imag: -20524 (-1.2527) | ref_o_real: -2.0792 | ref_o_imag: -1.2527
+Time: 798000 ns | i_real: 131 (1.0234) | i_imag: -132 (-1.0312) | o_real: -21864 (-1.3345) | o_imag: -9122 (-0.5568) | ref_o_real: -1.3345 | ref_o_imag: -0.5568
+Time: 803000 ns | i_real: -142 (-1.1094) | i_imag: -2 (-0.0156) | o_real: 6580 (0.4016) | o_imag: 16852 (1.0286) | ref_o_real: 0.4016 | ref_o_imag: 1.0286
+Time: 808000 ns | i_real: -152 (-1.1875) | i_imag: -145 (-1.1328) | o_real: -9814 (-0.5990) | o_imag: 24896 (1.5195) | ref_o_real: -0.5990 | ref_o_imag: 1.5195
+Time: 813000 ns | i_real: 134 (1.0469) | i_imag: 240 (1.8750) | o_real: 21888 (1.3359) | o_imag: -27332 (-1.6682) | ref_o_real: 1.3359 | ref_o_imag: -1.6682
+Time: 818000 ns | i_real: 56 (0.4375) | i_imag: 64 (0.5000) | o_real: 4864 (0.2969) | o_imag: -9680 (-0.5908) | ref_o_real: 0.2969 | ref_o_imag: -0.5908
+Time: 823000 ns | i_real: -216 (-1.6875) | i_imag: 246 (1.9219) | o_real: 39396 (2.4045) | o_imag: 13680 (0.8350) | ref_o_real: 2.4045 | ref_o_imag: 0.8350
+Time: 828000 ns | i_real: -59 (-0.4609) | i_imag: 192 (1.5000) | o_real: 25488 (1.5557) | o_imag: -2254 (-0.1376) | ref_o_real: 1.5557 | ref_o_imag: -0.1376
+Time: 833000 ns | i_real: 116 (0.9062) | i_imag: 57 (0.4453) | o_real: 1158 (0.0707) | o_imag: -16424 (-1.0024) | ref_o_real: 0.0707 | ref_o_imag: -1.0024
+Time: 838000 ns | i_real: -80 (-0.6250) | i_imag: 60 (0.4688) | o_real: 10920 (0.6665) | o_imag: 6560 (0.4004) | ref_o_real: 0.6665 | ref_o_imag: 0.4004
+Time: 843000 ns | i_real: 42 (0.3281) | i_imag: 98 (0.7656) | o_real: 9548 (0.5828) | o_imag: -9660 (-0.5896) | ref_o_real: 0.5828 | ref_o_imag: -0.5896
+Time: 848000 ns | i_real: 21 (0.1641) | i_imag: -31 (-0.2422) | o_real: -4666 (-0.2848) | o_imag: -990 (-0.0604) | ref_o_real: -0.2848 | ref_o_imag: -0.0604
+Time: 853000 ns | i_real: 23 (0.1797) | i_imag: -189 (-1.4766) | o_real: -23406 (-1.4286) | o_imag: 6358 (0.3881) | ref_o_real: -1.4286 | ref_o_imag: 0.3881
+Time: 858000 ns | i_real: 201 (1.5703) | i_imag: -122 (-0.9531) | o_real: -24044 (-1.4675) | o_imag: -17862 (-1.0902) | ref_o_real: -1.4675 | ref_o_imag: -1.0902
+Time: 863000 ns | i_real: 37 (0.2891) | i_imag: 193 (1.5078) | o_real: 20998 (1.2816) | o_imag: -13630 (-0.8319) | ref_o_real: 1.2816 | ref_o_imag: -0.8319
+Time: 868000 ns | i_real: -115 (-0.8984) | i_imag: -166 (-1.2969) | o_real: -14068 (-0.8586) | o_imag: 21538 (1.3146) | ref_o_real: -0.8586 | ref_o_imag: 1.3146
+Time: 873000 ns | i_real: 7 (0.0547) | i_imag: 44 (0.3438) | o_real: 4856 (0.2964) | o_imag: -2938 (-0.1793) | ref_o_real: 0.2964 | ref_o_imag: -0.1793
+Time: 878000 ns | i_real: 12 (0.0938) | i_imag: -143 (-1.1172) | o_real: -17450 (-1.0651) | o_imag: 5448 (0.3325) | ref_o_real: -1.0651 | ref_o_imag: 0.3325
+Time: 883000 ns | i_real: -197 (-1.5391) | i_imag: 182 (1.4219) | o_real: 30932 (1.8879) | o_imag: 14510 (0.8856) | ref_o_real: 1.8879 | ref_o_imag: 0.8856
+Time: 888000 ns | i_real: -9 (-0.0703) | i_imag: -98 (-0.7656) | o_real: -11132 (-0.6794) | o_imag: 5766 (0.3519) | ref_o_real: -0.6794 | ref_o_imag: 0.3519
+Time: 893000 ns | i_real: -164 (-1.2812) | i_imag: 85 (0.6641) | o_real: 17902 (1.0927) | o_imag: 15272 (0.9321) | ref_o_real: 1.0927 | ref_o_imag: 0.9321
+Time: 898000 ns | i_real: -224 (-1.7500) | i_imag: -96 (-0.7500) | o_real: -576 (-0.0352) | o_imag: 31040 (1.8945) | ref_o_real: -0.0352 | ref_o_imag: 1.8945
+Time: 903000 ns | i_real: 114 (0.8906) | i_imag: -76 (-0.5938) | o_real: -14440 (-0.8813) | o_imag: -9804 (-0.5984) | ref_o_real: -0.8813 | ref_o_imag: -0.5984
+Time: 908000 ns | i_real: 221 (1.7266) | i_imag: -243 (-1.8984) | o_real: -39282 (-2.3976) | o_imag: -14414 (-0.8798) | ref_o_real: -2.3976 | ref_o_imag: -0.8798
+Time: 913000 ns | i_real: 75 (0.5859) | i_imag: -135 (-1.0547) | o_real: -19530 (-1.1920) | o_imag: -2370 (-0.1447) | ref_o_real: -1.1920 | ref_o_imag: -0.1447
+Time: 918000 ns | i_real: -98 (-0.7656) | i_imag: -3 (-0.0234) | o_real: 4350 (0.2655) | o_imag: 11708 (0.7146) | ref_o_real: 0.2655 | ref_o_imag: 0.7146
+Time: 923000 ns | i_real: -133 (-1.0391) | i_imag: 143 (1.1172) | o_real: 23258 (1.4196) | o_imag: 8830 (0.5389) | ref_o_real: 1.4196 | ref_o_imag: 0.5389
+Time: 928000 ns | i_real: -253 (-1.9766) | i_imag: 227 (1.7734) | o_real: 38930 (2.3761) | o_imag: 18958 (1.1571) | ref_o_real: 2.3761 | ref_o_imag: 1.1571
+Time: 933000 ns | i_real: 29 (0.2266) | i_imag: 177 (1.3828) | o_real: 19494 (1.1898) | o_imag: -11918 (-0.7274) | ref_o_real: 1.1898 | ref_o_imag: -0.7274
+Time: 938000 ns | i_real: 68 (0.5312) | i_imag: -107 (-0.8359) | o_real: -15890 (-0.9698) | o_imag: -2888 (-0.1763) | ref_o_real: -0.9698 | ref_o_imag: -0.1763
+Time: 943000 ns | i_real: -32 (-0.2500) | i_imag: -19 (-0.1484) | o_real: -706 (-0.0431) | o_imag: 4688 (0.2861) | ref_o_real: -0.0431 | ref_o_imag: 0.2861
+Time: 948000 ns | i_real: 82 (0.6406) | i_imag: 248 (1.9375) | o_real: 25328 (1.5459) | o_imag: -21580 (-1.3171) | ref_o_real: 1.5459 | ref_o_imag: -1.3171
+Time: 953000 ns | i_real: 141 (1.1016) | i_imag: -174 (-1.3594) | o_real: -27300 (-1.6663) | o_imag: -8286 (-0.5057) | ref_o_real: -1.6663 | ref_o_imag: -0.5057
+Time: 958000 ns | i_real: 132 (1.0312) | i_imag: 70 (0.5469) | o_real: 1924 (0.1174) | o_imag: -18936 (-1.1558) | ref_o_real: 0.1174 | ref_o_imag: -1.1558
+Time: 963000 ns | i_real: -116 (-0.9062) | i_imag: 144 (1.1250) | o_real: 22560 (1.3770) | o_imag: 6776 (0.4136) | ref_o_real: 1.3770 | ref_o_imag: 0.4136
+Time: 968000 ns | i_real: 23 (0.1797) | i_imag: 106 (0.8281) | o_real: 11404 (0.6960) | o_imag: -7802 (-0.4762) | ref_o_real: 0.6960 | ref_o_imag: -0.4762
+Time: 973000 ns | i_real: 132 (1.0312) | i_imag: -86 (-0.6719) | o_real: -16484 (-1.0061) | o_imag: -11448 (-0.6987) | ref_o_real: -1.0061 | ref_o_imag: -0.6987
+Time: 978000 ns | i_real: 124 (0.9688) | i_imag: -160 (-1.2500) | o_real: -24832 (-1.5156) | o_imag: -6952 (-0.4243) | ref_o_real: -1.5156 | ref_o_imag: -0.4243
+Time: 983000 ns | i_real: 186 (1.4531) | i_imag: -117 (-0.9141) | o_real: -22734 (-1.3876) | o_imag: -16332 (-0.9968) | ref_o_real: -1.3876 | ref_o_imag: -0.9968
+Time: 988000 ns | i_real: -90 (-0.7031) | i_imag: -219 (-1.7109) | o_real: -21522 (-1.3136) | o_imag: 21132 (1.2898) | ref_o_real: -1.3136 | ref_o_imag: 1.2898
+Time: 993000 ns | i_real: 50 (0.3906) | i_imag: -94 (-0.7344) | o_real: -13492 (-0.8235) | o_imag: -1388 (-0.0847) | ref_o_real: -0.8235 | ref_o_imag: -0.0847
+Time: 998000 ns | i_real: -183 (-1.4297) | i_imag: -236 (-1.8438) | o_real: -19064 (-1.1636) | o_imag: 32922 (2.0094) | ref_o_real: -1.1636 | ref_o_imag: 2.0094
+Time: 1003000 ns | i_real: -195 (-1.5234) | i_imag: 75 (0.5859) | o_real: 18210 (1.1115) | o_imag: 19410 (1.1847) | ref_o_real: 1.1115 | ref_o_imag: 1.1847
+Simulación finalizada. 20 pruebas completadas.
+Simulation complete via $finish(1) at time 1015 NS + 0
+../tb.v:99     $finish;
+xcelium> 
+xcelium> # Finalizar
+xcelium> exit
+TOOL:	xrun(64)	23.09-s006: Exiting on Oct 14, 2026 at 17:37:21 -03  (total: 00:00:01)

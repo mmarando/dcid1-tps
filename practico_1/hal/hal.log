@@ -1,0 +1,108 @@
+hal(64): 23.09-s006: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+hal: Options:   -rulefile Lint.def -NCB_ENVIRONMENT ncbrowse.ncb -f filelist.f -gui.
+hal: Workspace: /home/mmarando/dcid1-tps/practico_1/hal.
+hal: Date: Sat Sep 05 20:31:05 -03 2026.
+
+hal: Running on design source files.....
+hal: Snapshot:  worklib.i2cSlave:v.
+
+  ==========================================================================
+Compiling design 
+
+
+	Top level design units:
+		i2cSlave
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 23.09-s006: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+visadev(64): 23.09-s006: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+inout sda;
+|
+halcheck: *W,IOPNTA (../rtl/i2cSlave.v,65|0): Port 'sda' is of type inout.
+assign sda = (sdaOut == 1'b0) ? 1'b0 : 1'bz;
+|
+halcheck: *W,SYNTXZ (../rtl/i2cSlave.v,98|0): Synthesizing 'x'/'z' values in module 'i2cSlave'.
+  case (CurrState_SISt)
+|
+halcheck: *W,CDEFCV (../rtl/serialInterface.v,124|0): The case items of the case statement in module/design-unit u_serialInterface cover all the numerical values of the case expression. The default clause is not required.
+        next_regAddr = regAddr + 8'b1;
+|
+halcheck: *W,POIASG (../rtl/serialInterface.v,141|0): The result of addition operation may lead to a potential overflow in module/design-unit u_serialInterface.
+halcheck: (../rtl/serialInterface.v,141): LHS operand 'next_regAddr' is 8 bit(s), RHS operand 'regAddr + 8'b1' is 9 bit(s).
+halcheck: (../rtl/serialInterface.v,141): Increase the size of LHS by 1 bit(s).
+        next_bitCnt = bitCnt + 3'b1;
+|
+halcheck: *W,POIASG (../rtl/serialInterface.v,190|0): The result of addition operation may lead to a potential overflow in module/design-unit u_serialInterface.
+halcheck: (../rtl/serialInterface.v,190): LHS operand 'next_bitCnt' is 3 bit(s), RHS operand 'bitCnt + 3'b1' is 4 bit(s).
+halcheck: (../rtl/serialInterface.v,190): Increase the size of LHS by 1 bit(s).
+          next_bitCnt = bitCnt + 3'b1;
+|
+halcheck: *W,POIASG (../rtl/serialInterface.v,243|0): The result of addition operation may lead to a potential overflow in module/design-unit u_serialInterface.
+halcheck: (../rtl/serialInterface.v,243): LHS operand 'next_bitCnt' is 3 bit(s), RHS operand 'bitCnt + 3'b1' is 4 bit(s).
+halcheck: (../rtl/serialInterface.v,243): Increase the size of LHS by 1 bit(s).
+          next_bitCnt = bitCnt + 3'b1;
+|
+halcheck: *W,POIASG (../rtl/serialInterface.v,257|0): The result of addition operation may lead to a potential overflow in module/design-unit u_serialInterface.
+halcheck: (../rtl/serialInterface.v,257): LHS operand 'next_bitCnt' is 3 bit(s), RHS operand 'bitCnt + 3'b1' is 4 bit(s).
+halcheck: (../rtl/serialInterface.v,257): Increase the size of LHS by 1 bit(s).
+            next_bitCnt = bitCnt + 3'b1;
+|
+halcheck: *W,POIASG (../rtl/serialInterface.v,329|0): The result of addition operation may lead to a potential overflow in module/design-unit u_serialInterface.
+halcheck: (../rtl/serialInterface.v,329): LHS operand 'next_bitCnt' is 3 bit(s), RHS operand 'bitCnt + 3'b1' is 4 bit(s).
+halcheck: (../rtl/serialInterface.v,329): Increase the size of LHS by 1 bit(s).
+        next_regAddr = regAddr + 8'b1;
+|
+halcheck: *W,POIASG (../rtl/serialInterface.v,404|0): The result of addition operation may lead to a potential overflow in module/design-unit u_serialInterface.
+halcheck: (../rtl/serialInterface.v,404): LHS operand 'next_regAddr' is 8 bit(s), RHS operand 'regAddr + 8'b1' is 9 bit(s).
+halcheck: (../rtl/serialInterface.v,404): Increase the size of LHS by 1 bit(s).
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 9.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe64(64): 23.09-s006: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+    CurrState_SISt <= NextState_SISt;
+|
+halsynth: *N,FSMIDN (../rtl/serialInterface.v,451|0): In module/design-unit 'serialInterface', FSM for state register 'CurrState_SISt' has been recognized.
+inout sda;
+|
+halsynth: *W,MULWIR (../rtl/i2cSlave.v,65|0): Module 'i2cSlave' has wire 'sda' multi-driven.
+inout sda;
+|
+halsynth: (../rtl/i2cSlave.v,65|0): Source HDL information for the error/warning mentioned above.
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 1.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct(64): 23.09-s006: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+visadev(64): 23.09-s006: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+module i2cSlave (
+|
+halstruct: *W,TSMHOL (../rtl/i2cSlave.v,48|0): Tri-state module 'i2cSlave' contains other logic.
+halstruct: (../rtl/i2cSlave.v,99): Additional logic used.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 0.
+halstruct: Total warnings = 1.
+
+  ==========================================================================
+
+Analysis summary :
+
+ Warnings : (11)
+  CDEFCV (1)      IOPNTA (1)      MULWIR (1)      POIASG (6)     
+  SYNTXZ (1)      TSMHOL (1)     
+
+ Notes    : (1)
+  FSMIDN (1)     
+
+Analysis complete.
+
+ ==========================================================================
+

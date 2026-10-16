@@ -1,0 +1,38 @@
+Cadence Joules(TM) RTL Power Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Joules is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[16:08:30.249745] Configured Lic search path (23.02-s003): 5280@fiubarh01
+
+Version: 23.10-p104_1, built Thu Feb 01 20:14:08 PST 2024
+Options: 
+Date:    Mon Oct 12 16:08:30 2026
+Host:    fiubarh01 (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (20cores*80cpus*2physical cpus*Intel(R) Xeon(R) Gold 6138 CPU @ 2.00GHz 28160KB) (230702044KB)
+User:    mmarando
+PID:     158321
+OS:      Red Hat Enterprise Linux Server release 7.9 (Maipo)
+DISPLAY: :37.0
+CWD:     /home/mmarando/dcid1-tps/practico_power
+RTLSCORE_ROOT: /home/cds-installs/DDI231/JSTUDIO231/tools.lnx86
+
+Checking out license: Joules_RTL_Power
+Checking out license: Joules_XL
+[16:08:30.491208] Periodic Lic check successful
+[16:08:30.491226] Feature usage summary:
+[16:08:30.491227] Joules_XL
+
+
+Finished executable startup (1 second elapsed).
+
+Loading tool scripts...
+Finished loading tool scripts (18 seconds elapsed).
+
+WARNING: This version of the tool is 983 days old.
+
+Lic Summary:
+[16:08:50.248282] Cdslmd servers: fiubarh01
+[16:08:50.772587] Feature usage summary:
+[16:08:50.772592] Joules_XL
+
+Normal exit.
