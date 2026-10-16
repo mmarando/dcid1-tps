@@ -109,4 +109,7 @@ module tb_fir_par4;
                best_mis, best_tot, best_off, best_ph, best_lane[0], best_lane[1], best_lane[2], best_lane[3]);
     $finish;
   end
+
+  wire [NB_IN*PARALLELISM-1:0]  i_flat = {i_data[3], i_data[2], i_data[1], i_data[0]};
+  wire [NB_OUT*PARALLELISM-1:0] o_flat = {o_data[3], o_data[2], o_data[1], o_data[0]};
 endmodule

@@ -1,5 +1,5 @@
 xrun(64): 23.09-s006: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	23.09-s006: Started on Oct 15, 2026 at 21:50:35 -03
+TOOL:	xrun(64)	23.09-s006: Started on Oct 15, 2026 at 22:15:05 -03
 xrun
 	-f filelist.f
 		../rtl/fir_parallel.sv
@@ -191,9 +191,9 @@ xrun: *W,DLCPTH (/home/cds-installs/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14)
 DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
 |
 xrun: *W,DLCPTH (/home/cds-installs/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/home/cds-installs/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
-Recompiling... reason: file '../rtl/fir_parallel.sv' is newer than expected.
-	expected: Tue Oct 13 22:06:46 2026
-	actual:   Thu Oct 15 21:50:30 2026
+Recompiling... reason: file '../tb/tb_fir_par4.sv' is newer than expected.
+	expected: Thu Oct 15 21:37:28 2026
+	actual:   Thu Oct 15 22:14:57 2026
 DEFINE std       ./STD
 |
 xrun: *W,DLCPTH (/home/cds-installs/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/home/cds-installs/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
@@ -284,8 +284,8 @@ xmvlog: *W,DLCPTH (/home/cds-installs/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1
 DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
 |
 xmvlog: *W,DLCPTH (/home/cds-installs/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/home/cds-installs/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
-file: ../rtl/fir_parallel.sv
-	module worklib.fir_parallel:sv
+file: ../tb/tb_fir_par4.sv
+	module worklib.tb_fir_par4:sv
 		errors: 0, warnings: 0
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 15
@@ -475,8 +475,8 @@ xmvlog_cg: *W,DLCPTH (/home/cds-installs/XCELIUM2309/tools/inca/files/cdsvhdl.li
 DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
 |
 xmvlog_cg: *W,DLCPTH (/home/cds-installs/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/home/cds-installs/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
-		worklib.fir_parallel:sv <0x4ae09aa6>
-			streams:   7, words: 10316
+		worklib.tb_fir_par4:sv <0x1037475c>
+			streams:  12, words: 20867
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -485,10 +485,10 @@ xmvlog_cg: *W,DLCPTH (/home/cds-installs/XCELIUM2309/tools/inca/files/cdsvhdl.li
 		Registers:              61      46
 		Scalar wires:            3       -
 		Expanded wires:        275      33
-		Vectored wires:         17       -
+		Vectored wires:         19       -
 		Always blocks:           7       4
 		Initial blocks:          5       5
-		Cont. assignments:      36       3
+		Cont. assignments:      38       5
 		Pseudo assignments:     12       -
 		Process Clocks:          2       2
 		Simulation timescale:  1ps
@@ -556,4 +556,4 @@ Simulation complete via $finish(1) at time 1056 NS + 0
 xcelium> 
 xcelium> # Finalizar
 xcelium> exit
-TOOL:	xrun(64)	23.09-s006: Exiting on Oct 15, 2026 at 21:50:36 -03  (total: 00:00:01)
+TOOL:	xrun(64)	23.09-s006: Exiting on Oct 15, 2026 at 22:15:06 -03  (total: 00:00:01)
