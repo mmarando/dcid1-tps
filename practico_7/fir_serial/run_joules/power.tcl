@@ -13,3 +13,4 @@ report_power -frames {/stim#1/frame#[0:9]} -collate none -format %0.3f -unit mW 
 report_power -frames {/stim#1/frame#[0:9]} -collate frames -format %0.3f -unit mW -by_leaf_instance -max 30 -out inst_frames.rpt
 report_power -frames {/stim#1/frame#[0:9]} -collate frames -format %0.3f -unit mW -by_libcell -out libcell_frames.rpt
 report_power -frames {/stim#1/frame#[0:9]} -collate frames -format %0.3f -unit mW -by_hierarchy -levels 2 -out hier_frames.rpt
+report_power -frames {/stim#1/frame#[0:9]} -collate frames -format %0.3f -unit mW -by_category -skip_port_switching_power -out category_noport.rpt

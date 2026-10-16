@@ -681,20 +681,20 @@
 "object":"/designs/fir_serial/instances_seq/data_in_reg_reg[7]",
 "type":"instance"},
 {"index": "1", 
- "date": "Thu Oct 15 23:31:47 UTC 2026",
- "seconds": 1792107107.816464,
+ "date": "Fri Oct 16 00:09:42 UTC 2026",
+ "seconds": 1792109382.468061,
  "netlist": "fv/fir_serial/fv_map.v.gz", 
  "netlist_exists": "1", 
  "netlist_normalize": "/home/mmarando/dcid1-tps/practico_7/fir_serial/run_joules/fv/fir_serial/fv_map.v.gz", 
- "netlist_mtime": "1792107106", 
- "netlist_timestamp": "Thu Oct 15 23:31:46 UTC 2026", 
- "netlist_size": "13304", 
- "netlist_cksum": "3667245451", 
+ "netlist_mtime": "1792109380", 
+ "netlist_timestamp": "Fri Oct 16 00:09:40 UTC 2026", 
+ "netlist_size": "13308", 
+ "netlist_cksum": "2457005755", 
  "design_name": "fir_serial", 
  "synth_workdir": "/home/mmarando/dcid1-tps/practico_7/fir_serial/run_joules", 
  "synthesis_command":"",
  "current_label": "fv_map", 
  "previous_label": "rtl", 
- "write_verif_file_runtime": 1.709476 
+ "write_verif_file_runtime": 1.8235839999999999 
  }
 ]
