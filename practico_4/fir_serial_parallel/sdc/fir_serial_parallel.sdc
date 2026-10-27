@@ -1,4 +1,4 @@
-create_clock -name clock -period 0.9 [get_ports i_clock]
+create_clock -name clock -period 1.0 [get_ports i_clock]
 set_input_delay   0.5 -clock clock [all_inputs]
 set_output_delay  0.5 -clock clock [all_outputs]
 
