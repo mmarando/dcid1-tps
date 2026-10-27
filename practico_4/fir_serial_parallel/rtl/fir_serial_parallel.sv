@@ -27,10 +27,37 @@ module fir_serial_parallel #(
   assign coeffs[6] = 8'b1111_0010;
   assign coeffs[7] = 8'b1111_1001;
 
+  // Clock divider: gen_clock = i_clock / PARALLELISM
   reg [CNT_W-1 : 0] cnt;
-  reg signed [NB_IN -1 : 0] in_blk [PARALLELISM-2 : 0];
+  reg [CNT_W-1 : 0] cnt_d;
+  reg gen_clock;
+
+  always @(posedge i_clock)
+  begin
+    if (i_reset)
+    begin
+      cnt       <= 0;
+      cnt_d     <= 0;
+      gen_clock <= 1'b0;
+    end
+    else
+    begin
+      cnt   <= cnt + 1'b1;
+      cnt_d <= cnt;
+      if (cnt[0])
+        gen_clock <= ~gen_clock;  // invierte cada PARALLELISM/2 ciclos
+    end
+  end
+
+  // Entrada serial -> bloque de PARALLELISM muestras (clock rapido)
+  reg signed [NB_IN -1 : 0] in_blk [PARALLELISM-1 : 0];
+
+  always @(posedge i_clock)
+    in_blk[cnt] <= i_data;
+
+  // Nucleo paralelo (clock lento gen_clock)
   reg signed [NB_IN -1 : 0] xs [W-1 : 0];
-  reg signed [NB_OUT-1 : 0] out_sr [PARALLELISM-1 : 0];
+  reg signed [NB_OUT-1 : 0] out_blk [PARALLELISM-1 : 0];
   reg signed [NB_OUT-1 : 0] y [PARALLELISM-1 : 0];
 
   integer p, k, q;
@@ -45,42 +72,18 @@ module fir_serial_parallel #(
     end
   end
 
-  always @(posedge i_clock)
+  always @(posedge gen_clock)
   begin
-    if (i_reset)
-    begin
-      cnt <= 0;
-      for(q = 0; q < W; q = q+1)
-        xs[q] <= 0;
-      for(q = 0; q < PARALLELISM; q = q+1)
-        out_sr[q] <= 0;
-    end
-    else
-    begin
-      cnt <= cnt + 1'b1;
+    for(q = 0; q < W-PARALLELISM; q = q+1)
+      xs[q] <= xs[q+PARALLELISM];
+    for(q = 0; q < PARALLELISM; q = q+1)
+      xs[W-PARALLELISM+q] <= in_blk[q];
 
-      if (cnt != PARALLELISM-1)
-        in_blk[cnt] <= i_data;
-
-      if (cnt == PARALLELISM-1)
-      begin
-        for(q = 0; q < PARALLELISM; q = q+1)
-          out_sr[q] <= y[q];
-
-        for(q = 0; q < W-PARALLELISM; q = q+1)
-          xs[q] <= xs[q+PARALLELISM];
-        for(q = 0; q < PARALLELISM-1; q = q+1)
-          xs[W-PARALLELISM+q] <= in_blk[q];
-        xs[W-1] <= i_data;
-      end
-      else
-      begin
-        for(q = 0; q < PARALLELISM-1; q = q+1)
-          out_sr[q] <= out_sr[q+1];
-      end
-    end
+    for(q = 0; q < PARALLELISM; q = q+1)
+      out_blk[q] <= y[q];
   end
 
-  assign o_data = out_sr[0];
+  // Paralelo -> serial (clock rapido)
+  assign o_data = out_blk[cnt_d];
 
 endmodule
