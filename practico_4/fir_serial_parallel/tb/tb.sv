@@ -8,7 +8,7 @@ module tb;
     localparam N_COEFFS  = 8;
     localparam CLK_PERIOD = 10;
     localparam N_SAMPLES = 50;   // cantidad de datos de prueba
-    localparam LATENCY   = 2;    // latencia del pipeline en ciclos
+    localparam LATENCY   = 3;    // latencia del pipeline en ciclos
 
     // Señales
     reg clk;
