@@ -36,3 +36,92 @@ globalNetConnect VSS -type pgpin -pin VSS -inst * -override -verbose -autoTie
 deleteBufferTree
 checkFPlan -reportUtil
 checkFPlan -reportUtil > reports/util_25.rpt
+editPin -pin {{i_data[7]} {i_data[6]} {i_data[5]} {i_data[4]} {i_data[3]} {i_data[2]} {i_data[1]} {i_data[0]}} -side LEFT -layer Metal5 -spreadType CENTER -spacing 2 -unit TRACK -snap TRACK -fixOverlap 1 -fixedPin 1
+editPin -pin {{i_coeffs[0][7]} {i_coeffs[0][6]} {i_coeffs[0][5]} {i_coeffs[0][4]} {i_coeffs[0][3]} {i_coeffs[0][2]} {i_coeffs[0][1]} {i_coeffs[0][0]} {i_coeffs[1][7]} {i_coeffs[1][6]} {i_coeffs[1][5]} {i_coeffs[1][4]} {i_coeffs[1][3]} {i_coeffs[1][2]} {i_coeffs[1][1]} {i_coeffs[1][0]} {i_coeffs[2][7]} {i_coeffs[2][6]} {i_coeffs[2][5]} {i_coeffs[2][4]} {i_coeffs[2][3]} {i_coeffs[2][2]} {i_coeffs[2][1]} {i_coeffs[2][0]} {i_coeffs[3][7]} {i_coeffs[3][6]} {i_coeffs[3][5]} {i_coeffs[3][4]} {i_coeffs[3][3]} {i_coeffs[3][2]} {i_coeffs[3][1]} {i_coeffs[3][0]} {i_coeffs[4][7]} {i_coeffs[4][6]} {i_coeffs[4][5]} {i_coeffs[4][4]} {i_coeffs[4][3]} {i_coeffs[4][2]} {i_coeffs[4][1]} {i_coeffs[4][0]} {i_coeffs[5][7]} {i_coeffs[5][6]} {i_coeffs[5][5]} {i_coeffs[5][4]} {i_coeffs[5][3]} {i_coeffs[5][2]} {i_coeffs[5][1]} {i_coeffs[5][0]} {i_coeffs[6][7]} {i_coeffs[6][6]} {i_coeffs[6][5]} {i_coeffs[6][4]} {i_coeffs[6][3]} {i_coeffs[6][2]} {i_coeffs[6][1]} {i_coeffs[6][0]} {i_coeffs[7][7]} {i_coeffs[7][6]} {i_coeffs[7][5]} {i_coeffs[7][4]} {i_coeffs[7][3]} {i_coeffs[7][2]} {i_coeffs[7][1]} {i_coeffs[7][0]} i_reset} -side BOTTOM -layer Metal4 -spreadType CENTER -spacing 2 -unit TRACK -snap TRACK -fixOverlap 1 -fixedPin 1
+editPin -pin i_clock -side RIGHT -layer Metal5 -spreadType CENTER -spacing 2 -unit TRACK -snap TRACK -fixOverlap 1 -fixedPin 1
+editPin -pin {{o_data[18]} {o_data[17]} {o_data[16]} {o_data[15]} {o_data[14]} {o_data[13]} {o_data[12]} {o_data[11]} {o_data[10]} {o_data[9]} {o_data[8]} {o_data[7]} {o_data[6]} {o_data[5]} {o_data[4]} {o_data[3]} {o_data[2]} {o_data[1]} {o_data[0]}} -side TOP -layer Metal4 -spreadType CENTER -spacing 2 -unit TRACK -snap TRACK -fixOverlap 1 -fixedPin 1
+checkPinAssignment -outFile reports/checkPin.rpt
+savePtnPin -design scripts/pinfile
+savePtnPin -design pinfile
+setSrouteMode -connectBrokenCorePin true
+sroute -connect corePin
+setAddStripeMode -skip_via_on_pin {block cover pad physicalpin standardcell}
+setAddStripeMode -skip_via_on_wire_shape {blockring blockwire corewire fillwire followpin iowire noshape padring ring stripe}
+setAddStripeMode -stapling_shift false
+setAddStripeMode -use_exact_spacing true
+setAddStripeMode -remove_floating_stapling false
+select_obj {special_wire:0x7f5097209280 special_wire:0x7f50972092b0 special_wire:0x7f50972092e0 special_wire:0x7f5097209310 special_wire:0x7f5097209340 special_wire:0x7f5097209370 special_wire:0x7f50972093a0 special_wire:0x7f50972093d0 special_wire:0x7f5097209400 special_wire:0x7f5097209430 special_wire:0x7f5097209460 special_wire:0x7f5097209490 special_wire:0x7f50972094c0 special_wire:0x7f50972094f0 special_wire:0x7f5097209520 special_wire:0x7f5097209550 special_wire:0x7f5097209580 special_wire:0x7f50972095b0 special_wire:0x7f50972095e0 special_wire:0x7f5097209610 special_wire:0x7f5097209640 special_wire:0x7f5097209670 special_wire:0x7f50972096a0 special_wire:0x7f50972096d0 special_wire:0x7f5097209700 special_wire:0x7f5097209730 special_wire:0x7f5097209760 special_wire:0x7f5097209790 special_wire:0x7f50972097c0 special_wire:0x7f50972097f0 special_wire:0x7f5097209820 special_wire:0x7f5097209850 special_wire:0x7f5097209880 special_wire:0x7f50972098b0 special_wire:0x7f50972098e0 special_wire:0x7f5097209910 special_wire:0x7f5097209940 special_wire:0x7f5097209970 special_wire:0x7f50972099a0 special_wire:0x7f50972099d0 special_wire:0x7f5097209a00 special_wire:0x7f5097209a30 special_wire:0x7f5097209a60 special_wire:0x7f5097209a90 special_wire:0x7f5097209ac0 special_wire:0x7f5097209af0 special_wire:0x7f5097209b20 special_wire:0x7f5097209b50 special_wire:0x7f5097209b80 special_wire:0x7f5097209bb0 special_wire:0x7f5097209be0 special_wire:0x7f5097209c10 special_wire:0x7f5097209c40 special_wire:0x7f5097209c70 special_wire:0x7f5097209ca0 special_wire:0x7f5097209cd0 special_wire:0x7f5097209d00 special_wire:0x7f5097209d30 special_wire:0x7f5097209d60 special_wire:0x7f5097209d90 special_wire:0x7f5097209dc0 special_wire:0x7f5097209df0 special_wire:0x7f5097209e20 special_wire:0x7f5097209e50 special_wire:0x7f5097209e80 special_wire:0x7f5097209eb0 special_wire:0x7f5097209ee0 special_wire:0x7f5097209f10 special_wire:0x7f5097209f40 special_wire:0x7f5097209f70 special_wire:0x7f5097209fa0 special_wire:0x7f506eac8020 special_wire:0x7f506eac8050 special_wire:0x7f506eac8080}
+deleteSelectedFromFPlan
+addStripe -nets VDD -layer Metal1 -direction horizontal -width 0.12 -spacing 3.42 -start 1.65 -set_to_set_distance 3.42 -switch_layer_over_obs false -snap_wire_center_to_grid Grid -use_wire_group 1 -use_wire_group_bits 1 -stop 129.96
+addStripe -nets VSS -layer Metal1 -direction horizontal -width 0.12 -spacing 3.42 -start 3.36 -set_to_set_distance 3.42 -switch_layer_over_obs false -snap_wire_center_to_grid Grid -use_wire_group 1 -use_wire_group_bits 1 -stop 128.25
+addStripe -nets VDD -stapling {0.880 1.80 3.42:1 Metal3} -layer Metal2 -width 0.16 -set_to_set_distance 3.42 -start 2.695 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {250.0 0.0 252.0 128.25}
+addStripe -nets VSS -stapling {0.880 3.51 3.42:1 Metal3} -layer Metal2 -width 0.16 -set_to_set_distance 3.42 -start 3.36 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {250.0 0.0 252.0 128.25}
+setViaGenMode -reset
+setViaGenMode -extend_out_wire_end false
+setViaGenMode -allow_via_expansion false
+setViaGenMode -viarule_preference Via1
+editPowerVia -add_vias 1 -bottom_layer Metal1 -top_layer Metal2
+addStripe -nets VDD -stapling {0.880 2.90 3.42:1 Metal3} -layer Metal3 -direction horizontal -width 0.16 -set_to_set_distance 3.42 -start 1.45 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {250.0 0.0 252.0 126.54}
+addStripe -nets VSS -stapling {0.880 3.51 3.42:1 Metal3} -layer Metal3 -direction horizontal -width 0.16 -set_to_set_distance 3.42 -start 3.36 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {250.0 0.0 252.0 126.54}
+setViaGenMode -reset
+setViaGenMode -extend_out_wire_end false
+setViaGenMode -allow_via_expansion false
+setViaGenMode -viarule_preference Via2
+editPowerVia -add_vias 1 -bottom_layer Metal2 -top_layer Metal3
+addStripe -nets VDD -stapling {1.76 1.80 3.42:1 Metal4} -layer Metal4 -width 0.16 -set_to_set_distance 3.42 -start 2.695 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {250.0 0.0 252.0 128.25}
+addStripe -nets VSS -stapling {1.76 3.51 3.42:1 Metal4} -layer Metal4 -width 0.16 -set_to_set_distance 3.42 -start 3.36 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {250.0 0.0 252.0 128.25}
+setViaGenMode -reset
+setViaGenMode -extend_out_wire_end false
+setViaGenMode -allow_via_expansion false
+setViaGenMode -viarule_preference Via3
+editPowerVia -add_vias 1 -bottom_layer Metal3 -top_layer Metal4
+addStripe -nets VDD -layer Metal5 -direction horizontal -width 0.16 -set_to_set_distance 3.42 -start 1.45 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {250.0 0.0 252.0 128.25}
+addStripe -nets VSS -layer Metal5 -direction horizontal -width 0.16 -set_to_set_distance 3.42 -start 3.15 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {250.0 0.0 252.0 128.25}
+setViaGenMode -reset
+setViaGenMode -extend_out_wire_end false
+setViaGenMode -allow_via_expansion false
+setViaGenMode -viarule_preference Via4
+editPowerVia -add_vias 1 -bottom_layer Metal4 -top_layer Metal5
+addStripe -nets VDD -layer Metal6 -direction vertical -width 0.32 -set_to_set_distance 6.6 -start 2.5 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {250.0 0.0 252.0 128.25}
+addStripe -nets VSS -layer Metal6 -direction vertical -width 0.32 -set_to_set_distance 6.6 -start 4.2 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {250.0 0.0 252.0 128.25}
+setViaGenMode -reset
+setViaGenMode -extend_out_wire_end false
+setViaGenMode -allow_via_expansion false
+setViaGenMode -viarule_preference Via5
+editPowerVia -add_vias 1 -bottom_layer Metal5 -top_layer Metal6
+addStripe -nets VDD -layer Metal7 -direction horizontal -width 0.32 -set_to_set_distance 6.6 -start 2 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {250.0 0.0 252.0 128.25}
+addStripe -nets VSS -layer Metal7 -direction horizontal -width 0.32 -set_to_set_distance 6.6 -start 3.7 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {250.0 0.0 252.0 128.25}
+setViaGenMode -reset
+setViaGenMode -extend_out_wire_end false
+setViaGenMode -allow_via_expansion false
+setViaGenMode -viarule_preference Via6
+editPowerVia -add_vias 1 -bottom_layer Metal6 -top_layer Metal7
+addStripe -nets VDD -layer Metal8 -direction vertical -width 0.32 -set_to_set_distance 6.6 -start 2.5 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {250.0 0.0 252.0 128.25}
+addStripe -nets VSS -layer Metal8 -direction vertical -width 0.32 -set_to_set_distance 6.6 -start 4.2 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {250.0 0.0 252.0 128.25}
+setViaGenMode -reset
+setViaGenMode -extend_out_wire_end false
+setViaGenMode -allow_via_expansion false
+setViaGenMode -viarule_preference Via7
+editPowerVia -add_vias 1 -bottom_layer Metal7 -top_layer Metal8
+addStripe -nets VDD -layer Metal9 -direction horizontal -width 0.32 -set_to_set_distance 6.6 -start 2 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {250.0 0.0 252.0 128.25}
+addStripe -nets VSS -layer Metal9 -direction horizontal -width 0.32 -set_to_set_distance 6.6 -start 3.7 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {250.0 0.0 252.0 128.25}
+setViaGenMode -reset
+setViaGenMode -extend_out_wire_end false
+setViaGenMode -allow_via_expansion false
+setViaGenMode -viarule_preference Via8
+editPowerVia -add_vias 1 -bottom_layer Metal8 -top_layer Metal9
+addStripe -nets VDD -layer Metal10 -direction vertical -width 0.32 -set_to_set_distance 7 -start 5 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {250.0 0.0 252.0 128.25}
+addStripe -nets VSS -layer Metal10 -direction vertical -width 0.32 -set_to_set_distance 7 -start 6.7 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {250.0 0.0 252.0 128.25}
+setViaGenMode -reset
+setViaGenMode -extend_out_wire_end false
+setViaGenMode -allow_via_expansion false
+setViaGenMode -viarule_preference Via9
+editPowerVia -add_vias 1 -bottom_layer Metal9 -top_layer Metal10
+addStripe -nets VDD -layer Metal11 -direction horizontal -width 0.475 -set_to_set_distance 7 -start 4 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {250.0 0.0 252.0 128.25}
+addStripe -nets VSS -layer Metal11 -direction horizontal -width 0.475 -set_to_set_distance 7 -start 5.7 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {250.0 0.0 252.0 128.25}
+setViaGenMode -reset
+setViaGenMode -extend_out_wire_end false
+setViaGenMode -allow_via_expansion false
+setViaGenMode -viarule_preference Via10
+editPowerVia -add_vias 1 -bottom_layer Metal10 -top_layer Metal11
+verify_drc
