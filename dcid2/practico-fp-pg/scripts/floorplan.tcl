@@ -30,9 +30,15 @@ set fpgOddEvenSiteRowConstraint 2
 
 #initialize floorplan
 #set design_width  140
-set design_width  200
-set design_height 103.64
+#set design_width  200
+#set design_height 103.64
 #set design_height 177.84
+if {[info exists util_target]} {
+    source ./scripts/ex1_dims.tcl
+} else {
+    set design_width 200
+    set design_height 103.64
+}
 set core2edge_lr  2
 set core2edge_tb  1.71
 

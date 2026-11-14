@@ -1,0 +1,2107 @@
+[11/14 00:41:44      0s] 
+[11/14 00:41:44      0s] Cadence Innovus(TM) Implementation System.
+[11/14 00:41:44      0s] Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+[11/14 00:41:44      0s] 
+[11/14 00:41:44      0s] Version:	v23.10-p003_1, built Thu Feb 1 13:54:57 PST 2024
+[11/14 00:41:44      0s] Options:	
+[11/14 00:41:44      0s] Date:		Sat Nov 14 00:41:44 2026
+[11/14 00:41:44      0s] Host:		fiubarh01 (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (20cores*80cpus*Intel(R) Xeon(R) Gold 6138 CPU @ 2.00GHz 28160KB)
+[11/14 00:41:44      0s] OS:		Red Hat Enterprise Linux Server 7.9 (Maipo)
+[11/14 00:41:44      0s] 
+[11/14 00:41:44      0s] License:
+[11/14 00:41:44      0s] 		[00:41:44.249705] Configured Lic search path (23.02-s003): 5280@fiubarh01
+
+[11/14 00:41:44      0s] 		invs	Innovus Implementation System	23.1	checkout succeeded
+[11/14 00:41:44      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[11/14 00:41:45      1s] {{{ isCertus 0,  isCertusOrDistOptClient = 0, isInnovusCertusClient = 0}}}
+[11/14 00:42:06     22s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v23.10-p003_1 (64bit) 02/01/2024 13:54 (Linux 3.10.0-693.el7.x86_64)
+[11/14 00:42:10     26s] @(#)CDS: NanoRoute 23.10-p003_1 NR240109-1512/23_10-UB (database version 18.20.618) {superthreading v2.20}
+[11/14 00:42:10     26s] @(#)CDS: AAE 23.10-p002 (64bit) 02/01/2024 (Linux 3.10.0-693.el7.x86_64)
+[11/14 00:42:10     26s] @(#)CDS: CTE 23.10-p003_1 () Dec  5 2023 19:42:23 ( )
+[11/14 00:42:10     26s] @(#)CDS: SYNTECH 23.10-p002_1 () Nov 29 2023 02:17:21 ( )
+[11/14 00:42:10     26s] @(#)CDS: CPE v23.10-p004
+[11/14 00:42:10     26s] @(#)CDS: IQuantus/TQuantus 22.1.1-s215 (64bit) Mon Nov 20 10:05:08 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+[11/14 00:42:10     26s] @(#)CDS: OA 22.61-p007 Wed Sep 27 19:40:10 2023
+[11/14 00:42:10     26s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[11/14 00:42:10     26s] @(#)CDS: RCDB 11.15.0
+[11/14 00:42:10     26s] @(#)CDS: STYLUS 23.10-a001_1 (12/04/2023 04:39 PST)
+[11/14 00:42:10     26s] @(#)CDS: IntegrityPlanner-23.10-12651 (23.10) (2023-09-06 08:32:42+0800)
+[11/14 00:42:10     26s] @(#)CDS: SYNTHESIS_ENGINE 23.10-b027
+[11/14 00:42:10     26s] Create and set the environment variable TMPDIR to /home/mmarando/dcid-tps/dcid2/practico-fp-pg/innovus_temp_86549_fiubarh01_mmarando_VQLFVY.
+
+[11/14 00:42:11     26s] Change the soft stacksize limit to 0.2%RAM (450 mbytes). Set global soft_stack_size_limit to change the value.
+[11/14 00:42:13     28s] 
+[11/14 00:42:13     28s] **INFO:  MMMC transition support version v31-84 
+[11/14 00:42:13     28s] 
+[11/14 00:42:13     28s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[11/14 00:42:13     28s] <CMD> suppressMessage ENCEXT-2799
+[11/14 00:42:13     28s] <CMD> win
+[11/14 00:42:17     29s] <CMD> zoomBox -0.02500 -0.01700 0.13100 0.12200
+[11/14 00:42:18     29s] <CMD> zoomBox -0.01500 -0.00800 0.11700 0.11000
+[11/14 00:42:22     30s] <CMD> zoomBox -0.16500 -0.13000 0.19000 0.18700
+[11/14 00:43:24     36s] <CMD> setPreference CmdLogMode 2
+[11/14 00:43:24     36s] <CMD> set init_verilog /home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.v
+[11/14 00:43:24     36s] <CMD> set init_mmmc_file ./scripts/mmmc_invs.tcl
+[11/14 00:43:24     36s] <CMD> set init_lef_file {/home/amslib/PDKs/gpdk045v6/gsclib045_tech/lef/gsclib045_tech.lef /home/amslib/PDKs/gpdk045v6/gsclib045_hvt/lef/gsclib045_hvt_macro.lef /home/amslib/PDKs/gpdk045v6/gsclib045/lef/gsclib045_macro.lef /home/amslib/PDKs/gpdk045v6/gsclib045_lvt/lef/gsclib045_lvt_macro.lef}
+[11/14 00:43:24     36s] <CMD> set init_top_cell fir_serial_parallel
+[11/14 00:43:24     36s] <CMD> set init_gnd_net VSS
+[11/14 00:43:24     36s] <CMD> set init_pwr_net VDD
+[11/14 00:43:24     36s] <CMD> set init_design_uniquify 0
+[11/14 00:43:24     36s] <CMD> init_design
+[11/14 00:43:24     36s] #% Begin Load MMMC data ... (date=11/14 00:43:24, mem=1497.8M)
+[11/14 00:43:24     36s] #% End Load MMMC data ... (date=11/14 00:43:24, total cpu=0:00:00.1, real=0:00:00.0, peak res=1498.7M, current mem=1498.7M)
+[11/14 00:43:24     36s] 
+[11/14 00:43:24     36s] Loading LEF file /home/amslib/PDKs/gpdk045v6/gsclib045_tech/lef/gsclib045_tech.lef ...
+[11/14 00:43:24     36s] Set DBUPerIGU to M2 pitch 400.
+[11/14 00:43:24     36s] 
+[11/14 00:43:24     36s] Loading LEF file /home/amslib/PDKs/gpdk045v6/gsclib045_hvt/lef/gsclib045_hvt_macro.lef ...
+[11/14 00:43:24     37s] 
+[11/14 00:43:24     37s] Loading LEF file /home/amslib/PDKs/gpdk045v6/gsclib045/lef/gsclib045_macro.lef ...
+[11/14 00:43:25     37s] 
+[11/14 00:43:25     37s] Loading LEF file /home/amslib/PDKs/gpdk045v6/gsclib045_lvt/lef/gsclib045_lvt_macro.lef ...
+[11/14 00:43:25     37s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNALVT' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/14 00:43:25     37s] Type 'man IMPLF-200' for more detail.
+[11/14 00:43:25     37s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/14 00:43:25     37s] Type 'man IMPLF-200' for more detail.
+[11/14 00:43:25     37s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNAHVT' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/14 00:43:25     37s] Type 'man IMPLF-200' for more detail.
+[11/14 00:43:25     37s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[11/14 00:43:25     37s] Loading view definition file from ./scripts/mmmc_invs.tcl
+[11/14 00:43:25     37s] Reading slow timing library '/home/amslib/PDKs/gpdk045v6/gsclib045_hvt/timing/slow_vdd1v0_basicCells_hvt.lib' ...
+[11/14 00:43:25     38s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNAHVT'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045_hvt/timing/slow_vdd1v0_basicCells_hvt.lib)
+[11/14 00:43:26     38s] Read 480 cells in library 'slow_vdd1v0' 
+[11/14 00:43:26     38s] Reading slow timing library '/home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib' ...
+[11/14 00:43:26     39s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[11/14 00:43:26     39s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[11/14 00:43:26     39s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[11/14 00:43:26     39s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[11/14 00:43:26     39s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[11/14 00:43:26     39s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[11/14 00:43:26     39s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[11/14 00:43:26     39s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[11/14 00:43:26     39s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[11/14 00:43:26     39s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[11/14 00:43:27     39s] Read 489 cells in library 'slow_vdd1v0' 
+[11/14 00:43:27     39s] Reading slow timing library '/home/amslib/PDKs/gpdk045v6/gsclib045_lvt/timing/slow_vdd1v0_basicCells_lvt.lib' ...
+[11/14 00:43:27     40s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNALVT'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045_lvt/timing/slow_vdd1v0_basicCells_lvt.lib)
+[11/14 00:43:28     40s] Read 480 cells in library 'slow_vdd1v0' 
+[11/14 00:43:28     40s] Reading fast timing library '/home/amslib/PDKs/gpdk045v6/gsclib045_hvt/timing/fast_vdd1v0_basicCells_hvt.lib' ...
+[11/14 00:43:28     41s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNAHVT'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045_hvt/timing/fast_vdd1v0_basicCells_hvt.lib)
+[11/14 00:43:29     41s] Read 480 cells in library 'fast_vdd1v0' 
+[11/14 00:43:29     41s] Reading fast timing library '/home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib' ...
+[11/14 00:43:29     42s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[11/14 00:43:29     42s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[11/14 00:43:29     42s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[11/14 00:43:29     42s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[11/14 00:43:29     42s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[11/14 00:43:29     42s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[11/14 00:43:29     42s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[11/14 00:43:29     42s] Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[11/14 00:43:29     42s] Read 489 cells in library 'fast_vdd1v0' 
+[11/14 00:43:29     42s] Reading fast timing library '/home/amslib/PDKs/gpdk045v6/gsclib045_lvt/timing/fast_vdd1v0_basicCells_lvt.lib' ...
+[11/14 00:43:30     43s] Read 480 cells in library 'fast_vdd1v0' 
+[11/14 00:43:30     43s] Ending "PreSetAnalysisView" (total cpu=0:00:05.6, real=0:00:05.0, peak res=1611.3M, current mem=1526.3M)
+[11/14 00:43:30     43s] *** End library_loading (cpu=0.09min, real=0.08min, mem=20.5M, fe_cpu=0.74min, fe_real=1.77min, fe_mem=1782.6M) ***
+[11/14 00:43:30     43s] #% Begin Load netlist data ... (date=11/14 00:43:30, mem=1525.4M)
+[11/14 00:43:30     43s] *** Begin netlist parsing (mem=1782.6M) ***
+[11/14 00:43:30     43s] Created 1449 new cells from 6 timing libraries.
+[11/14 00:43:30     43s] Reading netlist ...
+[11/14 00:43:30     43s] Backslashed names will retain backslash and a trailing blank character.
+[11/14 00:43:30     43s] Reading verilog netlist '/home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.v'
+[11/14 00:43:30     43s] 
+[11/14 00:43:30     43s] *** Memory Usage v#2 (Current mem = 1782.637M, initial mem = 820.648M) ***
+[11/14 00:43:30     43s] *** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=1782.6M) ***
+[11/14 00:43:30     43s] #% End Load netlist data ... (date=11/14 00:43:30, total cpu=0:00:00.1, real=0:00:00.0, peak res=1550.0M, current mem=1550.0M)
+[11/14 00:43:30     43s] Set top cell to fir_serial_parallel.
+[11/14 00:43:31     44s] Hooked 2898 DB cells to tlib cells.
+[11/14 00:43:31     44s] Ending "BindLib:" (total cpu=0:00:00.3, real=0:00:00.0, peak res=1597.5M, current mem=1597.5M)
+[11/14 00:43:31     44s] Starting recursive module instantiation check.
+[11/14 00:43:31     44s] No recursion found.
+[11/14 00:43:31     44s] Building hierarchical netlist for Cell fir_serial_parallel ...
+[11/14 00:43:31     44s] ***** UseNewTieNetMode *****.
+[11/14 00:43:31     44s] *** Netlist is unique.
+[11/14 00:43:31     44s] Setting Std. cell height to 3420 DBU (smallest netlist inst).
+[11/14 00:43:31     44s] ** info: there are 3011 modules.
+[11/14 00:43:31     44s] ** info: there are 2335 stdCell insts.
+[11/14 00:43:31     44s] ** info: there are 0 insts with no signal pins.
+[11/14 00:43:31     44s] 
+[11/14 00:43:31     44s] *** Memory Usage v#2 (Current mem = 1864.062M, initial mem = 820.648M) ***
+[11/14 00:43:31     44s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[11/14 00:43:31     44s] Type 'man IMPFP-3961' for more detail.
+[11/14 00:43:31     44s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[11/14 00:43:31     44s] Type 'man IMPFP-3961' for more detail.
+[11/14 00:43:31     44s] Start create_tracks
+[11/14 00:43:32     45s] Extraction setup Started for TopCell fir_serial_parallel 
+[11/14 00:43:32     45s] Initializing multi-corner RC extraction with 4 active RC Corners ...
+[11/14 00:43:32     45s] Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+[11/14 00:43:32     45s] eee: __QRC_SADV_USE_LE__ is set 0
+[11/14 00:43:34     46s] Generating auto layer map file.
+[11/14 00:43:34     46s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[11/14 00:43:34     46s] eee:        1	  Metal1	        6	metal1_conn	Metal          
+[11/14 00:43:34     46s] eee:       34	    Via1	        7	       via1	Via            
+[11/14 00:43:34     46s] eee:        2	  Metal2	        8	metal2_conn	Metal          
+[11/14 00:43:34     46s] eee:       35	    Via2	        9	       via2	Via            
+[11/14 00:43:34     46s] eee:        3	  Metal3	       10	metal3_conn	Metal          
+[11/14 00:43:34     46s] eee:       36	    Via3	       11	       via3	Via            
+[11/14 00:43:34     46s] eee:        4	  Metal4	       12	metal4_conn	Metal          
+[11/14 00:43:34     46s] eee:       37	    Via4	       13	       via4	Via            
+[11/14 00:43:34     46s] eee:        5	  Metal5	       14	metal5_conn	Metal          
+[11/14 00:43:34     46s] eee:       38	    Via5	       15	       via5	Via            
+[11/14 00:43:34     46s] eee:        6	  Metal6	       16	metal6_conn	Metal          
+[11/14 00:43:34     46s] eee:       39	    Via6	       17	       via6	Via            
+[11/14 00:43:34     46s] eee:        7	  Metal7	       18	metal7_conn	Metal          
+[11/14 00:43:34     46s] eee:       40	    Via7	       19	       via7	Via            
+[11/14 00:43:34     46s] eee:        8	  Metal8	       20	metal8_conn	Metal          
+[11/14 00:43:34     46s] eee:       41	    Via8	       21	       via8	Via            
+[11/14 00:43:34     46s] eee:        9	  Metal9	       22	metal9_conn	Metal          
+[11/14 00:43:34     46s] eee:       42	    Via9	       23	       via9	Via            
+[11/14 00:43:34     46s] eee:       10	 Metal10	       24	metal10_conn	Metal          
+[11/14 00:43:34     46s] eee:       43	   Via10	       25	via10_nocap	Via            
+[11/14 00:43:34     46s] eee:       11	 Metal11	       27	metal11_conn	Metal          
+[11/14 00:43:34     46s] eee: TechFile: /home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile
+[11/14 00:43:34     46s] eee: HoWee  : 0 0 0 0 0 0 0 0 0 0 0 
+[11/14 00:43:34     46s] eee: Erosn  : 1 1 1 1 1 1 1 1 1 1 0 
+[11/14 00:43:34     46s] eee: nrColor: 0 0 0 0 0 0 0 0 0 0 0 
+[11/14 00:43:34     46s] eee: TechFile: /home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile
+[11/14 00:43:34     46s] eee: HoWee  : 0 0 0 0 0 0 0 0 0 0 0 
+[11/14 00:43:34     46s] eee: Erosn  : 1 1 1 1 1 1 1 1 1 1 0 
+[11/14 00:43:34     46s] eee: nrColor: 0 0 0 0 0 0 0 0 0 0 0 
+[11/14 00:43:34     46s] eee: Save / Restore of RC patterns enabled 
+[11/14 00:43:34     46s] eee: Pattern meta data file doesn't exist
+[11/14 00:43:34     46s] eee: Pattern data restore failed for 2 tech files
+[11/14 00:43:34     46s] eee: Pattern extraction started for 2 tech files
+[11/14 00:43:34     46s] Importing multi-corner technology file(s) for preRoute extraction...
+[11/14 00:43:34      0s] /home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile
+[11/14 00:43:35      0s] Generating auto layer map file.
+[11/14 00:43:35      0s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[11/14 00:43:35      0s] eee:        1	  Metal1	        6	metal1_conn	Metal          
+[11/14 00:43:35      0s] eee:       34	    Via1	        7	       via1	Via            
+[11/14 00:43:35      0s] eee:        2	  Metal2	        8	metal2_conn	Metal          
+[11/14 00:43:35      0s] eee:       35	    Via2	        9	       via2	Via            
+[11/14 00:43:35      0s] eee:        3	  Metal3	       10	metal3_conn	Metal          
+[11/14 00:43:35      0s] eee:       36	    Via3	       11	       via3	Via            
+[11/14 00:43:35      0s] eee:        4	  Metal4	       12	metal4_conn	Metal          
+[11/14 00:43:35      0s] eee:       37	    Via4	       13	       via4	Via            
+[11/14 00:43:35      0s] eee:        5	  Metal5	       14	metal5_conn	Metal          
+[11/14 00:43:35      0s] eee:       38	    Via5	       15	       via5	Via            
+[11/14 00:43:35      0s] eee:        6	  Metal6	       16	metal6_conn	Metal          
+[11/14 00:43:35      0s] eee:       39	    Via6	       17	       via6	Via            
+[11/14 00:43:35      0s] eee:        7	  Metal7	       18	metal7_conn	Metal          
+[11/14 00:43:35      0s] eee:       40	    Via7	       19	       via7	Via            
+[11/14 00:43:35      0s] eee:        8	  Metal8	       20	metal8_conn	Metal          
+[11/14 00:43:35      0s] eee:       41	    Via8	       21	       via8	Via            
+[11/14 00:43:35      0s] eee:        9	  Metal9	       22	metal9_conn	Metal          
+[11/14 00:43:35      0s] eee:       42	    Via9	       23	       via9	Via            
+[11/14 00:43:35      0s] eee:       10	 Metal10	       24	metal10_conn	Metal          
+[11/14 00:43:35      0s] eee:       43	   Via10	       25	via10_nocap	Via            
+[11/14 00:43:35      0s] eee:       11	 Metal11	       27	metal11_conn	Metal          
+
+[11/14 00:43:39      0s] /home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile
+[11/14 00:43:40      0s] Generating auto layer map file.
+[11/14 00:43:40      0s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[11/14 00:43:40      0s] eee:        1	  Metal1	        6	metal1_conn	Metal          
+[11/14 00:43:40      0s] eee:       34	    Via1	        7	       via1	Via            
+[11/14 00:43:40      0s] eee:        2	  Metal2	        8	metal2_conn	Metal          
+[11/14 00:43:40      0s] eee:       35	    Via2	        9	       via2	Via            
+[11/14 00:43:40      0s] eee:        3	  Metal3	       10	metal3_conn	Metal          
+[11/14 00:43:40      0s] eee:       36	    Via3	       11	       via3	Via            
+[11/14 00:43:40      0s] eee:        4	  Metal4	       12	metal4_conn	Metal          
+[11/14 00:43:40      0s] eee:       37	    Via4	       13	       via4	Via            
+[11/14 00:43:40      0s] eee:        5	  Metal5	       14	metal5_conn	Metal          
+[11/14 00:43:40      0s] eee:       38	    Via5	       15	       via5	Via            
+[11/14 00:43:40      0s] eee:        6	  Metal6	       16	metal6_conn	Metal          
+[11/14 00:43:40      0s] eee:       39	    Via6	       17	       via6	Via            
+[11/14 00:43:40      0s] eee:        7	  Metal7	       18	metal7_conn	Metal          
+[11/14 00:43:40      0s] eee:       40	    Via7	       19	       via7	Via            
+[11/14 00:43:40      0s] eee:        8	  Metal8	       20	metal8_conn	Metal          
+[11/14 00:43:40      0s] eee:       41	    Via8	       21	       via8	Via            
+[11/14 00:43:40      0s] eee:        9	  Metal9	       22	metal9_conn	Metal          
+[11/14 00:43:40      0s] eee:       42	    Via9	       23	       via9	Via            
+[11/14 00:43:40      0s] eee:       10	 Metal10	       24	metal10_conn	Metal          
+[11/14 00:43:40      0s] eee:       43	   Via10	       25	via10_nocap	Via            
+[11/14 00:43:40      0s] eee:       11	 Metal11	       27	metal11_conn	Metal          
+
+[11/14 00:43:44     55s] eee: Pattern extraction completed
+[11/14 00:43:44     55s] Completed (cpu: 0:00:10.0 real: 0:00:12.0)
+[11/14 00:43:44     55s] Set Shrink Factor to 1.00000
+[11/14 00:43:44     55s] Summary of Active RC-Corners : 
+[11/14 00:43:44     55s]  
+[11/14 00:43:44     55s]  Analysis View: func_setup_ss0p9v_125c_rcworst
+[11/14 00:43:44     55s]   Late RC-Corner
+[11/14 00:43:44     55s]     RC-Corner Name        : late_spef_rcworst_125
+[11/14 00:43:44     55s]     RC-Corner Index       : 0
+[11/14 00:43:44     55s]     RC-Corner Temperature : 125 Celsius
+[11/14 00:43:44     55s]     RC-Corner Cap Table   : ''
+[11/14 00:43:44     55s]     RC-Corner PreRoute Res Factor         : 0.91
+[11/14 00:43:44     55s]     RC-Corner PreRoute Cap Factor         : 1.11
+[11/14 00:43:44     55s]     RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+[11/14 00:43:44     55s]     RC-Corner PostRoute Cap Factor        : 1.06 {1.06 1.06 1}
+[11/14 00:43:44     55s]     RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+[11/14 00:43:44     55s]     RC-Corner PreRoute Clock Res Factor   : 0.985
+[11/14 00:43:44     55s]     RC-Corner PreRoute Clock Cap Factor   : 1.01
+[11/14 00:43:44     55s]     RC-Corner PostRoute Clock Cap Factor  : 0.948 {0.948 0.948 1} 
+[11/14 00:43:44     55s]     RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+[11/14 00:43:44     55s]     RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 
+[11/14 00:43:44     55s]     RC-Corner Technology file: '/home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile'
+[11/14 00:43:44     55s]  
+[11/14 00:43:44     55s]   Early RC-Corner
+[11/14 00:43:44     55s]     RC-Corner Name        : early_spef_rcworst_125
+[11/14 00:43:44     55s]     RC-Corner Index       : 1
+[11/14 00:43:44     55s]     RC-Corner Temperature : 125 Celsius
+[11/14 00:43:44     55s]     RC-Corner Cap Table   : ''
+[11/14 00:43:44     55s]     RC-Corner PreRoute Res Factor         : 0.91
+[11/14 00:43:44     55s]     RC-Corner PreRoute Cap Factor         : 1
+[11/14 00:43:44     55s]     RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+[11/14 00:43:44     55s]     RC-Corner PostRoute Cap Factor        : 0.961 {0.961 0.961 1}
+[11/14 00:43:44     55s]     RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+[11/14 00:43:44     55s]     RC-Corner PreRoute Clock Res Factor   : 0.985
+[11/14 00:43:44     55s]     RC-Corner PreRoute Clock Cap Factor   : 0.912
+[11/14 00:43:44     55s]     RC-Corner PostRoute Clock Cap Factor  : 0.857 {0.857 0.857 1} 
+[11/14 00:43:44     55s]     RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+[11/14 00:43:44     55s]     RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 
+[11/14 00:43:44     55s]     RC-Corner Technology file: '/home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile'
+[11/14 00:43:44     55s]  
+[11/14 00:43:44     55s]  Analysis View: func_hold_ff1p1v_0c_rcbest
+[11/14 00:43:44     55s]   Late RC-Corner
+[11/14 00:43:44     55s]     RC-Corner Name        : late_spef_rcbest_0
+[11/14 00:43:44     55s]     RC-Corner Index       : 2
+[11/14 00:43:44     55s]     RC-Corner Temperature : 0 Celsius
+[11/14 00:43:44     55s]     RC-Corner Cap Table   : ''
+[11/14 00:43:44     55s]     RC-Corner PreRoute Res Factor         : 0.91
+[11/14 00:43:44     55s]     RC-Corner PreRoute Cap Factor         : 1.11
+[11/14 00:43:44     55s]     RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+[11/14 00:43:44     55s]     RC-Corner PostRoute Cap Factor        : 1.06 {1.06 1.06 1}
+[11/14 00:43:44     55s]     RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+[11/14 00:43:44     55s]     RC-Corner PreRoute Clock Res Factor   : 0.985
+[11/14 00:43:44     55s]     RC-Corner PreRoute Clock Cap Factor   : 1.01
+[11/14 00:43:44     55s]     RC-Corner PostRoute Clock Cap Factor  : 0.948 {0.948 0.948 1} 
+[11/14 00:43:44     55s]     RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+[11/14 00:43:44     55s]     RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 
+[11/14 00:43:44     55s]     RC-Corner Technology file: '/home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile'
+[11/14 00:43:44     55s]  
+[11/14 00:43:44     55s]   Early RC-Corner
+[11/14 00:43:44     55s]     RC-Corner Name        : early_spef_rcbest_0
+[11/14 00:43:44     55s]     RC-Corner Index       : 3
+[11/14 00:43:44     55s]     RC-Corner Temperature : 0 Celsius
+[11/14 00:43:44     55s]     RC-Corner Cap Table   : ''
+[11/14 00:43:44     55s]     RC-Corner PreRoute Res Factor         : 0.91
+[11/14 00:43:44     55s]     RC-Corner PreRoute Cap Factor         : 1
+[11/14 00:43:44     55s]     RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+[11/14 00:43:44     55s]     RC-Corner PostRoute Cap Factor        : 0.961 {0.961 0.961 1}
+[11/14 00:43:44     55s]     RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+[11/14 00:43:44     55s]     RC-Corner PreRoute Clock Res Factor   : 0.985
+[11/14 00:43:44     55s]     RC-Corner PreRoute Clock Cap Factor   : 0.912
+[11/14 00:43:44     55s]     RC-Corner PostRoute Clock Cap Factor  : 0.857 {0.857 0.857 1} 
+[11/14 00:43:44     55s]     RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+[11/14 00:43:44     55s]     RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 
+[11/14 00:43:44     55s]     RC-Corner Technology file: '/home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile'
+[11/14 00:43:44     55s] Technology file '/home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile' associated with first view 'func_setup_ss0p9v_125c_rcworst' will be used as the primary corner for the multi-corner extraction.
+[11/14 00:43:44     55s] eee: RC Grid memory allocated = 8448 (8 X 8 X 11 X 12b)
+[11/14 00:43:44     55s] Updating RC Grid density data for preRoute extraction ...
+[11/14 00:43:44     55s] eee: pegSigSF=1.070000
+[11/14 00:43:44     55s] Initializing multi-corner resistance tables ...
+[11/14 00:43:44     55s] eee: Grid unit RC data computation started
+[11/14 00:43:44     55s] eee: Grid unit RC data computation completed
+[11/14 00:43:44     55s] eee: l=1 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/14 00:43:44     55s] eee: l=2 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/14 00:43:44     55s] eee: l=3 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/14 00:43:44     55s] eee: l=4 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/14 00:43:44     55s] eee: l=5 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/14 00:43:44     55s] eee: l=6 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/14 00:43:44     55s] eee: l=7 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/14 00:43:44     55s] eee: l=8 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/14 00:43:44     55s] eee: l=9 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/14 00:43:44     55s] eee: l=10 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/14 00:43:44     55s] eee: l=11 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/14 00:43:44     55s] {RT late_spef_rcworst_125 0 2 11  {8 0} {10 0} 2}
+[11/14 00:43:44     55s] eee: LAM-FP: thresh=1 ; dimX=554.157895 ; dimY=549.000000 ; multX=1.000000 ; multY=1.000000 ; minP=380 ; fpMult=1.000000 ;
+[11/14 00:43:44     55s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.000000 uaWl=0.000000 uaWlH=0.000000 aWlH=0.000000 lMod=0 pMax=0.850000 pMod=82 pModAss=50 wcR=0.772700 crit=0.000000 siPrev=0 newSi=0.000000 wHLS=1.931800 viaL=0.000000 shortMod=0.000000 fModUnas=0.000000 fModAs=0.000000 pDens=0.500000 
+[11/14 00:43:44     55s] eee: NetCapCache creation started. (Current Mem: 2141.254M) 
+[11/14 00:43:44     55s] eee: NetCapCache completed. (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  Curr Mem: 2141.254M) 
+[11/14 00:43:44     55s] eee: dbu = 2000, Design = [ll(0.000000, 0.000000) ur(105.290000, 104.310000)], Layers = [f(11) b(0)], Grid size = 17.100000 um, Grid Dim = (7 X 7)
+[11/14 00:43:44     55s] eee: Metal Layers Info:
+[11/14 00:43:44     55s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[11/14 00:43:44     55s] eee: |   Layer  |  Id |    W    |    S    |    P    |   uC   |   uR   | D | T | wS |
+[11/14 00:43:44     55s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[11/14 00:43:44     55s] eee: |   Metal1 |   1 |   0.060 |   0.060 |   0.190 |  0.256 |   1.04 | H | 0 |  1 |
+[11/14 00:43:44     55s] eee: |   Metal2 |   2 |   0.080 |   0.070 |   0.200 |  0.249 |   0.67 | V | 0 |  1 |
+[11/14 00:43:44     55s] eee: |   Metal3 |   3 |   0.080 |   0.070 |   0.190 |  0.263 |   0.71 | H | 0 |  1 |
+[11/14 00:43:44     55s] eee: |   Metal4 |   4 |   0.080 |   0.070 |   0.200 |  0.259 |   0.67 | V | 0 |  1 |
+[11/14 00:43:44     55s] eee: |   Metal5 |   5 |   0.080 |   0.070 |   0.190 |  0.267 |   0.71 | H | 0 |  1 |
+[11/14 00:43:44     55s] eee: |   Metal6 |   6 |   0.080 |   0.070 |   0.200 |  0.262 |   0.67 | V | 0 |  1 |
+[11/14 00:43:44     55s] eee: |   Metal7 |   7 |   0.080 |   0.070 |   0.190 |  0.270 |   0.71 | H | 0 |  1 |
+[11/14 00:43:44     55s] eee: |   Metal8 |   8 |   0.080 |   0.070 |   0.200 |  0.262 |   0.24 | V | 0 |  1 |
+[11/14 00:43:44     55s] eee: |   Metal9 |   9 |   0.080 |   0.070 |   0.190 |  1.413 |   0.26 | H | 0 |  1 |
+[11/14 00:43:44     55s] eee: |  Metal10 |  10 |   0.220 |   0.200 |   0.500 |  0.660 |   0.09 | V | 0 |  1 |
+[11/14 00:43:44     55s] eee: |  Metal11 |  11 |   0.220 |   0.200 |   0.475 |  0.638 |   0.15 | H | 0 |  1 |
+[11/14 00:43:44     55s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[11/14 00:43:44     55s] eee: uC/uR for corner late_spef_rcworst_125, min-width/min-spacing, 30 perc over/under densities.
+[11/14 00:43:44     55s] Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+[11/14 00:43:44     55s] *Info: initialize multi-corner CTS.
+[11/14 00:43:45     55s] Ending "SetAnalysisView" (total cpu=0:00:00.1, real=0:00:01.0, peak res=2078.8M, current mem=1647.6M)
+[11/14 00:43:45     56s] Reading timing constraints file '/home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.sdc' ...
+[11/14 00:43:45     56s] Current (total cpu=0:00:57.1, real=0:02:01, peak res=2078.8M, current mem=2053.8M)
+[11/14 00:43:45     56s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.sdc, Line 9).
+[11/14 00:43:45     56s] 
+[11/14 00:43:45     56s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.sdc, Line 10).
+[11/14 00:43:45     56s] 
+[11/14 00:43:45     56s] INFO (CTE): Reading of timing constraints file /home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.sdc completed, with 2 WARNING
+[11/14 00:43:45     56s] Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=2094.0M, current mem=2094.0M)
+[11/14 00:43:46     56s] Current (total cpu=0:00:57.3, real=0:02:02, peak res=2094.0M, current mem=2094.0M)
+[11/14 00:43:46     56s] **WARN: (TA-976):	Path groups asserted by the group_path constraint are considered by the software to be global in nature - they cannot be restricted to specific constraint modes. Due to this restriction, the group_path constraint is not supported directly in the constraint files which are configured in mode-specific commands such as create_constraint_mode. The current group_path entry will be ignored. You can enter the group_path constraint interactively or as part of a general command script -  where it will be interpreted as global and will be in effect for all modes.
+[11/14 00:43:46     56s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[11/14 00:43:46     56s] 
+[11/14 00:43:46     56s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRXLHVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRX4HVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRX2HVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRX1HVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRXLHVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRX4HVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRX2HVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRX1HVT complicate code: 8
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX8HVT complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX4HVT complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX2HVT complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX1HVT complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRXLHVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRX4HVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRX2HVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRX1HVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX8HVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX4HVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX2HVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX1HVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRXLHVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRX4HVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRX2HVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRX1HVT complicate code: 30.05
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRXL complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRX4 complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRX2 complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRX1 complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRXL complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRX4 complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRX2 complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRX1 complicate code: 8
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRXLLVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRX4LVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRX2LVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRX1LVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRXLLVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRX4LVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRX2LVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRX1LVT complicate code: 8
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX8LVT complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX4LVT complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX2LVT complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX1LVT complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRXLLVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRX4LVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRX2LVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRX1LVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX8LVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX4LVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX2LVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX1LVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRXLLVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRX4LVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRX2LVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRX1LVT complicate code: 30.05
+[11/14 00:43:46     56s] Summary for sequential cells identification: 
+[11/14 00:43:46     56s]   Identified SBFF number: 312
+[11/14 00:43:46     56s]   Identified MBFF number: 0
+[11/14 00:43:46     56s]   Identified SB Latch number: 24
+[11/14 00:43:46     56s]   Identified MB Latch number: 0
+[11/14 00:43:46     56s]   Not identified SBFF number: 48
+[11/14 00:43:46     56s]   Not identified MBFF number: 0
+[11/14 00:43:46     56s]   Not identified SB Latch number: 24
+[11/14 00:43:46     56s]   Not identified MB Latch number: 0
+[11/14 00:43:46     56s]   Number of sequential cells which are not FFs: 48
+[11/14 00:43:46     56s] Total number of combinational cells: 954
+[11/14 00:43:46     56s] Total number of sequential cells: 456
+[11/14 00:43:46     56s] Total number of tristate cells: 30
+[11/14 00:43:46     56s] Total number of level shifter cells: 0
+[11/14 00:43:46     56s] Total number of power gating cells: 0
+[11/14 00:43:46     56s] Total number of isolation cells: 0
+[11/14 00:43:46     56s] Total number of power switch cells: 0
+[11/14 00:43:46     56s] Total number of pulse generator cells: 0
+[11/14 00:43:46     56s] Total number of always on buffers: 0
+[11/14 00:43:46     56s] Total number of retention cells: 0
+[11/14 00:43:46     56s] Total number of physical cells: 9
+[11/14 00:43:46     56s] List of usable buffers: BUFX2LVT BUFX12LVT BUFX16LVT BUFX20LVT CLKBUFX2LVT BUFX3LVT BUFX4LVT BUFX6LVT BUFX8LVT CLKBUFX12LVT CLKBUFX16LVT CLKBUFX20LVT CLKBUFX3LVT CLKBUFX4LVT CLKBUFX6LVT CLKBUFX8LVT DLY1X1LVT DLY1X4LVT BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8 BUFX2HVT BUFX12HVT BUFX16HVT BUFX20HVT CLKBUFX2HVT BUFX3HVT BUFX4HVT BUFX6HVT BUFX8HVT CLKBUFX12HVT CLKBUFX16HVT CLKBUFX20HVT CLKBUFX3HVT CLKBUFX4HVT CLKBUFX6HVT CLKBUFX8HVT
+[11/14 00:43:46     56s] Total number of usable buffers: 50
+[11/14 00:43:46     56s] List of unusable buffers:
+[11/14 00:43:46     56s] Total number of unusable buffers: 0
+[11/14 00:43:46     56s] List of usable inverters: CLKINVX1LVT CLKINVX2LVT CLKINVX12LVT CLKINVX16LVT CLKINVX20LVT CLKINVX4LVT CLKINVX3LVT CLKINVX6LVT CLKINVX8LVT INVX1LVT INVX2LVT INVX12LVT INVX16LVT INVX20LVT INVX3LVT INVX4LVT INVX6LVT INVX8LVT INVXLLVT CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVX3 INVX4 INVX6 INVX8 INVXL CLKINVX1HVT CLKINVX2HVT CLKINVX12HVT CLKINVX16HVT CLKINVX20HVT CLKINVX4HVT CLKINVX3HVT CLKINVX6HVT CLKINVX8HVT INVX1HVT INVX2HVT INVX12HVT INVX16HVT INVX20HVT INVXLHVT INVX3HVT INVX4HVT INVX6HVT INVX8HVT
+[11/14 00:43:46     56s] Total number of usable inverters: 57
+[11/14 00:43:46     56s] List of unusable inverters:
+[11/14 00:43:46     56s] Total number of unusable inverters: 0
+[11/14 00:43:46     56s] List of identified usable delay cells: DLY2X1LVT DLY2X4LVT DLY3X1LVT DLY3X4LVT DLY4X1LVT DLY4X4LVT DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4 DLY1X1HVT DLY1X4HVT DLY2X1HVT DLY2X4HVT DLY3X1HVT DLY3X4HVT DLY4X1HVT DLY4X4HVT
+[11/14 00:43:46     56s] Total number of identified usable delay cells: 22
+[11/14 00:43:46     56s] List of identified unusable delay cells:
+[11/14 00:43:46     56s] Total number of identified unusable delay cells: 0
+[11/14 00:43:46     56s] 
+[11/14 00:43:46     56s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[11/14 00:43:46     56s] 
+[11/14 00:43:46     56s] TimeStamp Deleting Cell Server Begin ...
+[11/14 00:43:46     56s] 
+[11/14 00:43:46     56s] TimeStamp Deleting Cell Server End ...
+[11/14 00:43:46     56s] Ending "Cell type marking" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2097.4M, current mem=2097.3M)
+[11/14 00:43:46     56s] 
+[11/14 00:43:46     56s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRXLLVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRX4LVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRX2LVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRX1LVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRXLLVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRX4LVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRX2LVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRX1LVT complicate code: 8
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX8LVT complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX4LVT complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX2LVT complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX1LVT complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRXLLVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRX4LVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRX2LVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRX1LVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX8LVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX4LVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX2LVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX1LVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRXLLVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRX4LVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRX2LVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRX1LVT complicate code: 30.05
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRXL complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRX4 complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRX2 complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRX1 complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRXL complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRX4 complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRX2 complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRX1 complicate code: 8
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRXLHVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRX4HVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRX2HVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATSRX1HVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRXLHVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRX4HVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRX2HVT complicate code: 8
+[11/14 00:43:46     56s] SB Latch Setting to complicate: TLATNSRX1HVT complicate code: 8
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX8HVT complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX4HVT complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX2HVT complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SMDFFHQX1HVT complicate code: 30.1
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRXLHVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRX4HVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRX2HVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFTRX1HVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX8HVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX4HVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX2HVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: SEDFFHQX1HVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRXLHVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRX4HVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRX2HVT complicate code: 30.05
+[11/14 00:43:46     56s] SBFF Setting to complicate: EDFFTRX1HVT complicate code: 30.05
+[11/14 00:43:46     56s] Summary for sequential cells identification: 
+[11/14 00:43:46     56s]   Identified SBFF number: 312
+[11/14 00:43:46     56s]   Identified MBFF number: 0
+[11/14 00:43:46     56s]   Identified SB Latch number: 24
+[11/14 00:43:46     56s]   Identified MB Latch number: 0
+[11/14 00:43:46     56s]   Not identified SBFF number: 48
+[11/14 00:43:46     56s]   Not identified MBFF number: 0
+[11/14 00:43:46     56s]   Not identified SB Latch number: 24
+[11/14 00:43:46     56s]   Not identified MB Latch number: 0
+[11/14 00:43:46     56s]   Number of sequential cells which are not FFs: 48
+[11/14 00:43:46     56s]  Visiting view : func_setup_ss0p9v_125c_rcworst
+[11/14 00:43:46     56s]    : PowerDomain = none : Weighted F : unweighted  = 27.70 (1.000) with rcCorner = 0
+[11/14 00:43:46     56s]    : PowerDomain = none : Weighted F : unweighted  = 12.70 (1.000) with rcCorner = -1
+[11/14 00:43:46     56s]  Visiting view : func_hold_ff1p1v_0c_rcbest
+[11/14 00:43:46     56s]    : PowerDomain = none : Weighted F : unweighted  = 10.30 (1.000) with rcCorner = 3
+[11/14 00:43:46     56s]    : PowerDomain = none : Weighted F : unweighted  = 4.60 (1.000) with rcCorner = -1
+[11/14 00:43:46     56s] TLC MultiMap info (StdDelay):
+[11/14 00:43:46     56s]   : hold_rcbest + fast + 1 + no RcCorner := 4.6ps
+[11/14 00:43:46     56s]   : hold_rcbest + fast + 1 + early_spef_rcbest_0 := 10.3ps
+[11/14 00:43:46     56s]   : setup_rcworst + slow + 1 + no RcCorner := 12.7ps
+[11/14 00:43:46     56s]   : setup_rcworst + slow + 1 + late_spef_rcworst_125 := 27.7ps
+[11/14 00:43:46     56s]  Setting StdDelay to: 27.7ps
+[11/14 00:43:46     56s] 
+[11/14 00:43:46     56s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[11/14 00:43:46     56s] 
+[11/14 00:43:46     56s] TimeStamp Deleting Cell Server Begin ...
+[11/14 00:43:46     56s] 
+[11/14 00:43:46     56s] TimeStamp Deleting Cell Server End ...
+[11/14 00:43:46     56s] #% Begin Load MMMC data post ... (date=11/14 00:43:46, mem=2097.8M)
+[11/14 00:43:46     56s] #% End Load MMMC data post ... (date=11/14 00:43:46, total cpu=0:00:00.1, real=0:00:00.0, peak res=2097.8M, current mem=2097.8M)
+[11/14 00:43:46     56s] 
+[11/14 00:43:46     56s] *** Summary of all messages that are not suppressed in this session:
+[11/14 00:43:46     56s] Severity  ID               Count  Summary                                  
+[11/14 00:43:46     56s] WARNING   IMPLF-200            3  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[11/14 00:43:46     56s] WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+[11/14 00:43:46     56s] WARNING   TA-976               1  Path groups asserted by the group_path c...
+[11/14 00:43:46     56s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[11/14 00:43:46     56s] WARNING   TECHLIB-302         24  No function defined for cell '%s'. The c...
+[11/14 00:43:46     56s] *** Message Summary: 32 warning(s), 0 error(s)
+[11/14 00:43:46     56s] 
+[11/14 00:43:46     56s] <CMD> setMultiCpuUsage -localCPU 8
+[11/14 00:43:46     56s] <CMD> setDesignMode -topRoutingLayer 11
+[11/14 00:43:46     56s] <CMD> setDesignMode -bottomRoutingLayer 2
+[11/14 00:43:46     56s] <CMD> setDesignMode -flowEffort standar -process 45
+[11/14 00:43:46     56s] ##  Process: 45            (User Set)               
+[11/14 00:43:46     56s] ##     Node: (not set)                           
+[11/14 00:43:46     56s] 
+##  Check design process and node:  
+##  Design tech node is not set.
+
+[11/14 00:43:46     56s] Applying the recommended capacitance filtering threshold values for 45nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+[11/14 00:43:46     56s] 	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+[11/14 00:43:46     56s] 	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+[11/14 00:43:46     56s] 	The accuracy mode for postRoute effortLevel low extraction will be set to 'high'.
+[11/14 00:43:46     56s] 	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'medium'.
+[11/14 00:43:46     56s] <CMD> floorPlan -site CoreSite -coreMarginsBy die -d 200 103.64 2 1.71 2 1.71 -flip f
+[11/14 00:43:46     56s] The die height changes from 103.640000 to 103.550000 when snapping to grid "PlacementGrid".
+[11/14 00:43:46     56s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[11/14 00:43:46     56s] Type 'man IMPFP-3961' for more detail.
+[11/14 00:43:46     56s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[11/14 00:43:46     56s] Type 'man IMPFP-3961' for more detail.
+[11/14 00:43:46     56s] Start create_tracks
+[11/14 00:43:46     56s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[11/14 00:43:46     56s] <CMD> add_tracks -pitch_pattern {Metal1 offset 0.19 pitch 0.19 Metal3 offset 0.19 pitch 0.19 Metal5 offset 0.19 pitch 0.19} -offset {Metal1 horiz 0.095 Metal2 vert 0.095 Metal3 horiz 0.1 Metal4 vert 0.095 Metal5 horiz 0.1 Metal6 vert 0.095 Metal7 horiz 0.1 Metal8 vert 0.095 Metal9 horiz 0.1 Metal10 vert 0.95 Metal11 horiz 0.6}
+[11/14 00:43:46     56s] Start create_tracks
+[11/14 00:43:46     56s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -override -verbose -autoTie
+[11/14 00:43:46     56s] 2335 new pwr-pin connections were made to global net 'VDD'.
+[11/14 00:43:46     56s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -override -verbose -autoTie
+[11/14 00:43:46     56s] 2335 new gnd-pin connections were made to global net 'VSS'.
+[11/14 00:43:46     56s] 2 new auto-tielo connections were made to global net 'VSS'.
+[11/14 00:43:46     56s] <CMD> deleteBufferTree
+[11/14 00:43:46     56s] [oiLAM] Zs 11, 12
+[11/14 00:43:46     56s] ### Creating LA Mngr. totSessionCpu=0:00:57.8 mem=2394.4M
+[11/14 00:43:46     56s] ### Creating LA Mngr, finished. totSessionCpu=0:00:57.8 mem=2394.4M
+[11/14 00:43:46     56s] *** Start deleteBufferTree ***
+[11/14 00:43:46     57s] Multithreaded Timing Analysis is initialized with 8 threads
+[11/14 00:43:46     57s] 
+[11/14 00:43:46     57s] Using master clock 'clock' for generated clock 'clk_div2' in view 'func_setup_ss0p9v_125c_rcworst'
+[11/14 00:43:46     57s] Info: Detect buffers to remove automatically.
+[11/14 00:43:46     57s] Analyzing netlist ...
+[11/14 00:43:46     57s] Updating netlist
+[11/14 00:43:46     57s] 
+[11/14 00:43:47     57s] *summary: 0 instances (buffers/inverters) removed
+[11/14 00:43:47     57s] *** Finish deleteBufferTree (0:00:00.5) ***
+[11/14 00:43:47     57s] <CMD> loadPtnPin -file ./scripts/pinfile -all
+[11/14 00:43:47     57s] Reading partition pin assignment from the file ./scripts/pinfile.
+[11/14 00:43:47     57s] Reading pin assignment for the partition fir_serial_parallel.
+[11/14 00:43:47     57s] Partition fir_serial_parallel: 93 pins processed.
+[11/14 00:43:47     57s] <CMD> setSrouteMode -connectBrokenCorePin true
+[11/14 00:43:47     57s] <CMD> sroute -connect corePin
+[11/14 00:43:47     57s] #% Begin sroute (date=11/14 00:43:47, mem=2152.4M)
+[11/14 00:43:47     57s] 
+[11/14 00:43:47     57s] viaInitial starts at Sat Nov 14 00:43:47 2026
+viaInitial ends at Sat Nov 14 00:43:47 2026
+*** Begin SPECIAL ROUTE on Sat Nov 14 00:43:47 2026 ***
+[11/14 00:43:47     57s] SPECIAL ROUTE ran on directory: /home/mmarando/dcid-tps/dcid2/practico-fp-pg
+[11/14 00:43:47     57s] SPECIAL ROUTE ran on machine: fiubarh01 (Linux 3.10.0-1160.119.1.el7.x86_64 Xeon 2.00Ghz)
+[11/14 00:43:47     57s] 
+[11/14 00:43:47     57s] Begin option processing ...
+[11/14 00:43:47     57s] srouteConnectPowerBump set to false
+[11/14 00:43:47     57s] routeSpecial set to true
+[11/14 00:43:47     57s] srouteConnectBlockPin set to false
+[11/14 00:43:47     57s] srouteConnectBrokenFollowPin set to true
+[11/14 00:43:47     57s] srouteConnectConverterPin set to false
+[11/14 00:43:47     57s] srouteConnectPadPin set to false
+[11/14 00:43:47     57s] srouteConnectStripe set to false
+[11/14 00:43:47     57s] srouteFollowCorePinEnd set to 3
+[11/14 00:43:47     57s] srouteFollowPadPin set to false
+[11/14 00:43:47     57s] srouteJogControl set to "preferWithChanges differentLayer"
+[11/14 00:43:47     57s] sroutePadPinAllPorts set to true
+[11/14 00:43:47     57s] sroutePreserveExistingRoutes set to true
+[11/14 00:43:47     57s] srouteRoutePowerBarPortOnBothDir set to true
+[11/14 00:43:47     57s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 102.00 megs.
+[11/14 00:43:47     57s] 
+[11/14 00:43:47     57s] Reading DB technology information...
+[11/14 00:43:47     58s] Finished reading DB technology information.
+[11/14 00:43:47     58s] Reading floorplan and netlist information...
+[11/14 00:43:47     58s] Finished reading floorplan and netlist information.
+[11/14 00:43:47     58s] **WARN: (IMPSR-4302):	Cap-table/qrcTechFile is found in the design, so the same information from the technology file will be ignored.
+[11/14 00:43:48     58s] Read in 24 layers, 11 routing layers, 1 overlap layer
+[11/14 00:43:48     58s] Read in 2 nondefault rules, 0 used
+[11/14 00:43:48     58s] Read in 1559 macros, 52 used
+[11/14 00:43:48     58s] Read in 52 components
+[11/14 00:43:48     58s]   52 core components: 52 unplaced, 0 placed, 0 fixed
+[11/14 00:43:48     58s] Read in 93 physical pins
+[11/14 00:43:48     58s]   93 physical pins: 0 unplaced, 0 placed, 93 fixed
+[11/14 00:43:48     58s] Read in 93 nets
+[11/14 00:43:48     58s] Read in 2 special nets
+[11/14 00:43:48     58s] Read in 197 terminals
+[11/14 00:43:48     58s] Begin power routing ...
+[11/14 00:43:48     58s] CPU time for VDD FollowPin 0 seconds
+[11/14 00:43:48     58s] CPU time for VSS FollowPin 0 seconds
+[11/14 00:43:48     58s]   Number of Core ports routed: 0  open: 118
+[11/14 00:43:48     58s]   Number of Followpin connections: 59
+[11/14 00:43:48     58s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 109.00 megs.
+[11/14 00:43:48     58s] 
+[11/14 00:43:48     58s] 
+[11/14 00:43:48     58s] 
+[11/14 00:43:48     58s]  Begin updating DB with routing results ...
+[11/14 00:43:48     58s]  Updating DB with 93 io pins ...
+[11/14 00:43:48     58s]  Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+[11/14 00:43:48     58s] Pin and blockage extraction finished
+[11/14 00:43:48     58s] 
+[11/14 00:43:48     58s] sroute created 59 wires.
+[11/14 00:43:48     58s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:48     58s] +--------+----------------+----------------+
+[11/14 00:43:48     58s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:48     58s] +--------+----------------+----------------+
+[11/14 00:43:48     58s] | Metal1 |       59       |       NA       |
+[11/14 00:43:48     58s] +--------+----------------+----------------+
+[11/14 00:43:48     58s] #% End sroute (date=11/14 00:43:48, total cpu=0:00:01.1, real=0:00:01.0, peak res=2189.4M, current mem=2162.5M)
+[11/14 00:43:48     58s] <CMD> setAddStripeMode -skip_via_on_pin {block cover pad physicalpin standardcell}
+[11/14 00:43:48     58s] <CMD> setAddStripeMode -skip_via_on_wire_shape {blockring blockwire corewire fillwire followpin iowire noshape padring ring stripe}
+[11/14 00:43:48     58s] <CMD> setAddStripeMode -stapling_shift false
+[11/14 00:43:48     58s] <CMD> setAddStripeMode -use_exact_spacing true
+[11/14 00:43:48     58s] Stripes will break as close as possible to obstructions.
+[11/14 00:43:48     58s] <CMD> setAddStripeMode -remove_floating_stapling false
+[11/14 00:43:48     58s] <CMD> select_obj {special_wire:0x7f000eec1280 special_wire:0x7f000eec12b0 special_wire:0x7f000eec12e0 special_wire:0x7f000eec1310 special_wire:0x7f000eec1340 special_wire:0x7f000eec1370 special_wire:0x7f000eec13a0 special_wire:0x7f000eec13d0 special_wire:0x7f000eec1400 special_wire:0x7f000eec1430 special_wire:0x7f000eec1460 special_wire:0x7f000eec1490 special_wire:0x7f000eec14c0 special_wire:0x7f000eec14f0 special_wire:0x7f000eec1520 special_wire:0x7f000eec1550 special_wire:0x7f000eec1580 special_wire:0x7f000eec15b0 special_wire:0x7f000eec15e0 special_wire:0x7f000eec1610 special_wire:0x7f000eec1640 special_wire:0x7f000eec1670 special_wire:0x7f000eec16a0 special_wire:0x7f000eec16d0 special_wire:0x7f000eec1700 special_wire:0x7f000eec1730 special_wire:0x7f000eec1760 special_wire:0x7f000eec1790 special_wire:0x7f000eec17c0 special_wire:0x7f000eec17f0 special_wire:0x7f000eec1820 special_wire:0x7f000eec1850 special_wire:0x7f000eec1880 special_wire:0x7f000eec18b0 special_wire:0x7f000eec18e0 special_wire:0x7f000eec1910 special_wire:0x7f000eec1940 special_wire:0x7f000eec1970 special_wire:0x7f000eec19a0 special_wire:0x7f000eec19d0 special_wire:0x7f000eec1a00 special_wire:0x7f000eec1a30 special_wire:0x7f000eec1a60 special_wire:0x7f000eec1a90 special_wire:0x7f000eec1ac0 special_wire:0x7f000eec1af0 special_wire:0x7f000eec1b20 special_wire:0x7f000eec1b50 special_wire:0x7f000eec1b80 special_wire:0x7f000eec1bb0 special_wire:0x7f000eec1be0 special_wire:0x7f000eec1c10 special_wire:0x7f000eec1c40 special_wire:0x7f000eec1c70 special_wire:0x7f000eec1ca0 special_wire:0x7f000eec1cd0 special_wire:0x7f000eec1d00 special_wire:0x7f000eec1d30 special_wire:0x7f000eec1d60}
+[11/14 00:43:48     58s] <CMD> deleteSelectedFromFPlan
+[11/14 00:43:48     58s] <CMD> addStripe -nets VDD -layer Metal1 -direction horizontal -width 0.12 -spacing 3.42 -start 1.65 -set_to_set_distance 3.42 -switch_layer_over_obs false -snap_wire_center_to_grid Grid -use_wire_group 1 -use_wire_group_bits 1 -stop 105.26
+[11/14 00:43:48     58s] #% Begin addStripe (date=11/14 00:43:48, mem=2163.0M)
+[11/14 00:43:48     58s] 
+[11/14 00:43:48     58s] Initialize fgc environment(mem: 2486.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:43:48     58s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Starting stripe generation ...
+[11/14 00:43:48     58s] Non-Default Mode Option Settings :
+[11/14 00:43:48     58s]   -use_exact_spacing  1
+[11/14 00:43:48     58s]   -remove_floating_stapling  0
+[11/14 00:43:48     58s]   -stapling_shift  0
+[11/14 00:43:48     58s] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:43:48     58s] Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Stripe generation is complete.
+[11/14 00:43:48     58s] vias are now being generated.
+[11/14 00:43:48     58s] addStripe created 30 wires.
+[11/14 00:43:48     58s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:48     58s] +--------+----------------+----------------+
+[11/14 00:43:48     58s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:48     58s] +--------+----------------+----------------+
+[11/14 00:43:48     58s] | Metal1 |       30       |       NA       |
+[11/14 00:43:48     58s] +--------+----------------+----------------+
+[11/14 00:43:48     58s] #% End addStripe (date=11/14 00:43:48, total cpu=0:00:00.1, real=0:00:00.0, peak res=2164.5M, current mem=2164.5M)
+[11/14 00:43:48     58s] <CMD> addStripe -nets VSS -layer Metal1 -direction horizontal -width 0.12 -spacing 3.42 -start 3.36 -set_to_set_distance 3.42 -switch_layer_over_obs false -snap_wire_center_to_grid Grid -use_wire_group 1 -use_wire_group_bits 1 -stop 103.55
+[11/14 00:43:48     58s] #% Begin addStripe (date=11/14 00:43:48, mem=2164.5M)
+[11/14 00:43:48     58s] 
+[11/14 00:43:48     58s] Initialize fgc environment(mem: 2486.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:43:48     58s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Starting stripe generation ...
+[11/14 00:43:48     58s] Non-Default Mode Option Settings :
+[11/14 00:43:48     58s]   -use_exact_spacing  1
+[11/14 00:43:48     58s]   -remove_floating_stapling  0
+[11/14 00:43:48     58s]   -stapling_shift  0
+[11/14 00:43:48     58s] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:43:48     58s] Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+[11/14 00:43:48     58s] Stripe generation is complete.
+[11/14 00:43:48     58s] vias are now being generated.
+[11/14 00:43:48     58s] addStripe created 30 wires.
+[11/14 00:43:48     58s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:48     58s] +--------+----------------+----------------+
+[11/14 00:43:48     58s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:48     58s] +--------+----------------+----------------+
+[11/14 00:43:48     58s] | Metal1 |       30       |       NA       |
+[11/14 00:43:48     58s] +--------+----------------+----------------+
+[11/14 00:43:48     58s] #% End addStripe (date=11/14 00:43:48, total cpu=0:00:00.1, real=0:00:00.0, peak res=2164.5M, current mem=2164.5M)
+[11/14 00:43:48     58s] <CMD> addStripe -nets VDD -stapling {0.880 1.80 3.42:1 Metal3} -layer Metal2 -width 0.16 -set_to_set_distance 3.42 -start 2.695 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+[11/14 00:43:48     58s] #% Begin addStripe (date=11/14 00:43:48, mem=2164.5M)
+[11/14 00:43:48     58s] **WARN: (IMPPP-2034):	Option -spacing does not need to be specified and will be ignored when mode stapling_nets_style is set to end_to_end.
+[11/14 00:43:48     58s] 
+[11/14 00:43:48     58s] Initialize fgc environment(mem: 2486.3M) ... ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 inst_orient=1 via=610195162 routing_via=1 timing=1 sns=1
+[11/14 00:43:48     58s]  done(cpu: 0:00:00.1, real: 0:00:00.0, peak mem: 2624.3M)
+[11/14 00:43:48     58s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+[11/14 00:43:48     58s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:43:48     58s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+[11/14 00:43:48     58s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+[11/14 00:43:48     58s] Starting stripe generation ...
+[11/14 00:43:48     58s] Non-Default Mode Option Settings :
+[11/14 00:43:48     58s]   -use_exact_spacing  1
+[11/14 00:43:48     58s]   -remove_floating_stapling  0
+[11/14 00:43:48     58s]   -stapling_shift  0
+[11/14 00:43:48     58s] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:43:48     58s] Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+[11/14 00:43:48     58s] Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+[11/14 00:43:48     58s] Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+[11/14 00:43:48     58s] Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+[11/14 00:43:48     58s] Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+[11/14 00:43:48     58s] Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+[11/14 00:43:48     58s] Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+[11/14 00:43:48     58s] Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+[11/14 00:43:48     58s] Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+[11/14 00:43:48     58s] Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2625.3M)
+[11/14 00:43:48     58s] Stripe generation is complete.
+[11/14 00:43:48     58s] addStripe created 1740 wires.
+[11/14 00:43:48     58s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:48     58s] +--------+----------------+----------------+
+[11/14 00:43:48     58s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:48     58s] +--------+----------------+----------------+
+[11/14 00:43:48     58s] | Metal2 |      1740      |       NA       |
+[11/14 00:43:48     58s] +--------+----------------+----------------+
+[11/14 00:43:48     59s] #% End addStripe (date=11/14 00:43:48, total cpu=0:00:00.2, real=0:00:00.0, peak res=2183.4M, current mem=2183.4M)
+[11/14 00:43:48     59s] <CMD> addStripe -nets VSS -stapling {0.880 3.51 3.42:1 Metal3} -layer Metal2 -width 0.16 -set_to_set_distance 3.42 -start 3.36 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+[11/14 00:43:48     59s] #% Begin addStripe (date=11/14 00:43:48, mem=2183.4M)
+[11/14 00:43:48     59s] **WARN: (IMPPP-2034):	Option -spacing does not need to be specified and will be ignored when mode stapling_nets_style is set to end_to_end.
+[11/14 00:43:48     59s] 
+[11/14 00:43:48     59s] Initialize fgc environment(mem: 2625.3M) ...  done(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2625.3M)
+[11/14 00:43:48     59s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2625.3M)
+[11/14 00:43:48     59s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:43:48     59s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2625.3M)
+[11/14 00:43:48     59s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2625.3M)
+[11/14 00:43:48     59s] Starting stripe generation ...
+[11/14 00:43:48     59s] Non-Default Mode Option Settings :
+[11/14 00:43:48     59s]   -use_exact_spacing  1
+[11/14 00:43:48     59s]   -remove_floating_stapling  0
+[11/14 00:43:48     59s]   -stapling_shift  0
+[11/14 00:43:48     59s] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:43:48     59s] Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2626.3M)
+[11/14 00:43:48     59s] Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2626.3M)
+[11/14 00:43:48     59s] Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2627.3M)
+[11/14 00:43:48     59s] Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2627.3M)
+[11/14 00:43:48     59s] Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2628.3M)
+[11/14 00:43:48     59s] Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2629.3M)
+[11/14 00:43:48     59s] Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2629.3M)
+[11/14 00:43:48     59s] Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2630.3M)
+[11/14 00:43:48     59s] Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2630.3M)
+[11/14 00:43:48     59s] Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2632.3M)
+[11/14 00:43:48     59s] Stripe generation is complete.
+[11/14 00:43:48     59s] addStripe created 1653 wires.
+[11/14 00:43:48     59s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:48     59s] +--------+----------------+----------------+
+[11/14 00:43:48     59s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:48     59s] +--------+----------------+----------------+
+[11/14 00:43:48     59s] | Metal2 |      1653      |       NA       |
+[11/14 00:43:48     59s] +--------+----------------+----------------+
+[11/14 00:43:48     59s] #% End addStripe (date=11/14 00:43:48, total cpu=0:00:00.1, real=0:00:00.0, peak res=2190.6M, current mem=2190.6M)
+[11/14 00:43:48     59s] <CMD> setViaGenMode -reset
+[11/14 00:43:48     59s] <CMD> setViaGenMode -extend_out_wire_end false
+[11/14 00:43:48     59s] Setting -extend_out_wire_end to 0. ViaGen will not allow via extending outside of the end of the existing wires and may shift it inside.
+[11/14 00:43:48     59s] <CMD> setViaGenMode -allow_via_expansion false
+[11/14 00:43:48     59s] Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+[11/14 00:43:48     59s] <CMD> setViaGenMode -viarule_preference Via1
+[11/14 00:43:48     59s] **WARN: (IMPPP-614):	There is neither VIARULE nor via cell found with name Via1 in technology file. Correct the name if it's mis-typed, or add the corresponding VIARULE or via cell definition in technology file if it's missing.
+[11/14 00:43:48     59s] <CMD> editPowerVia -add_vias 1 -bottom_layer Metal1 -top_layer Metal2
+[11/14 00:43:48     59s] 
+[11/14 00:43:48     59s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:48     59s] Multi Thread begin for Metal1 horizontal
+[11/14 00:43:48     59s] Viagen work status, 5% finished
+[11/14 00:43:48     59s] Viagen work status, 10% finished
+[11/14 00:43:49     59s] Viagen work status, 15% finished
+[11/14 00:43:49     59s] Viagen work status, 20% finished
+[11/14 00:43:49     59s] Viagen work status, 25% finished
+[11/14 00:43:49     59s] Viagen work status, 30% finished
+[11/14 00:43:49     59s] Viagen work status, 35% finished
+[11/14 00:43:49     59s] Viagen work status, 40% finished
+[11/14 00:43:49     59s] Viagen work status, 45% finished
+[11/14 00:43:49     59s] Viagen work status, 50% finished
+[11/14 00:43:49     59s] Viagen work status, 55% finished
+[11/14 00:43:49     59s] Viagen work status, 60% finished
+[11/14 00:43:49     59s] Viagen work status, 65% finished
+[11/14 00:43:49     59s] Viagen work status, 70% finished
+[11/14 00:43:49     59s] Viagen work status, 75% finished
+[11/14 00:43:49     59s] Viagen work status, 80% finished
+[11/14 00:43:49     59s] Viagen work status, 85% finished
+[11/14 00:43:49     59s] Viagen work status, 90% finished
+[11/14 00:43:49     59s] Viagen work status, 95% finished
+[11/14 00:43:49     59s] Viagen work status, 100% finished
+[11/14 00:43:49     59s] Multi Thread begin for Metal2 vertical
+[11/14 00:43:49     59s] Viagen work status, 5% finished
+[11/14 00:43:49     59s] Viagen work status, 10% finished
+[11/14 00:43:49     59s] Viagen work status, 15% finished
+[11/14 00:43:49     59s] Viagen work status, 20% finished
+[11/14 00:43:49     59s] Viagen work status, 25% finished
+[11/14 00:43:49     59s] Viagen work status, 30% finished
+[11/14 00:43:49     59s] Viagen work status, 35% finished
+[11/14 00:43:49     59s] Viagen work status, 40% finished
+[11/14 00:43:49     59s] Viagen work status, 45% finished
+[11/14 00:43:49     59s] Viagen work status, 50% finished
+[11/14 00:43:49     59s] Viagen work status, 55% finished
+[11/14 00:43:49     59s] Viagen work status, 60% finished
+[11/14 00:43:49     59s] Viagen work status, 65% finished
+[11/14 00:43:49     59s] Viagen work status, 70% finished
+[11/14 00:43:49     59s] Viagen work status, 75% finished
+[11/14 00:43:49     59s] Viagen work status, 80% finished
+[11/14 00:43:49     59s] Viagen work status, 85% finished
+[11/14 00:43:49     59s] Viagen work status, 90% finished
+[11/14 00:43:49     59s] Viagen work status, 95% finished
+[11/14 00:43:49     59s] Viagen work status, 100% finished
+[11/14 00:43:49     59s] ViaGen created 3393 vias, deleted 0 via to avoid violation.
+[11/14 00:43:49     59s] +--------+----------------+----------------+
+[11/14 00:43:49     59s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:49     59s] +--------+----------------+----------------+
+[11/14 00:43:49     59s] |  Via1  |      3393      |        0       |
+[11/14 00:43:49     59s] +--------+----------------+----------------+
+[11/14 00:43:49     59s] <CMD> addStripe -nets VDD -stapling {0.880 2.90 3.42:1 Metal3} -layer Metal3 -direction horizontal -width 0.16 -set_to_set_distance 3.42 -start 1.45 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 101.84}
+[11/14 00:43:49     59s] #% Begin addStripe (date=11/14 00:43:49, mem=2192.4M)
+[11/14 00:43:49     59s] **WARN: (IMPPP-2034):	Option -spacing does not need to be specified and will be ignored when mode stapling_nets_style is set to end_to_end.
+[11/14 00:43:49     59s] 
+[11/14 00:43:49     59s] Initialize fgc environment(mem: 2644.3M) ...  done(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2644.3M)
+[11/14 00:43:49     59s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2644.3M)
+[11/14 00:43:49     59s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:43:49     59s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2645.3M)
+[11/14 00:43:49     59s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2645.3M)
+[11/14 00:43:49     59s] Starting stripe generation ...
+[11/14 00:43:49     59s] Non-Default Mode Option Settings :
+[11/14 00:43:49     59s]   -use_exact_spacing  1
+[11/14 00:43:49     59s]   -remove_floating_stapling  0
+[11/14 00:43:49     59s]   -stapling_shift  0
+[11/14 00:43:49     59s] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:43:49     59s] Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2647.3M)
+[11/14 00:43:49     59s] Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2647.3M)
+[11/14 00:43:49     59s] Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2647.3M)
+[11/14 00:43:49     59s] Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2647.3M)
+[11/14 00:43:49     59s] Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2647.3M)
+[11/14 00:43:49     59s] Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2648.3M)
+[11/14 00:43:49     59s] Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2648.3M)
+[11/14 00:43:49     59s] Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2648.3M)
+[11/14 00:43:49     59s] Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2648.3M)
+[11/14 00:43:49     59s] Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2649.3M)
+[11/14 00:43:49     59s] Stripe generation is complete.
+[11/14 00:43:49     59s] addStripe created 1740 wires.
+[11/14 00:43:49     59s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:49     59s] +--------+----------------+----------------+
+[11/14 00:43:49     59s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:49     59s] +--------+----------------+----------------+
+[11/14 00:43:49     59s] | Metal3 |      1740      |       NA       |
+[11/14 00:43:49     59s] +--------+----------------+----------------+
+[11/14 00:43:49     59s] #% End addStripe (date=11/14 00:43:49, total cpu=0:00:00.2, real=0:00:00.0, peak res=2193.3M, current mem=2193.3M)
+[11/14 00:43:49     59s] <CMD> addStripe -nets VSS -stapling {0.880 3.51 3.42:1 Metal3} -layer Metal3 -direction horizontal -width 0.16 -set_to_set_distance 3.42 -start 3.36 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 101.84}
+[11/14 00:43:49     59s] #% Begin addStripe (date=11/14 00:43:49, mem=2193.3M)
+[11/14 00:43:49     59s] **WARN: (IMPPP-2034):	Option -spacing does not need to be specified and will be ignored when mode stapling_nets_style is set to end_to_end.
+[11/14 00:43:49     59s] 
+[11/14 00:43:49     59s] Initialize fgc environment(mem: 2649.3M) ...  done(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2649.3M)
+[11/14 00:43:49     59s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2649.3M)
+[11/14 00:43:49     59s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:43:49     59s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2649.3M)
+[11/14 00:43:49     59s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2649.3M)
+[11/14 00:43:49     59s] Starting stripe generation ...
+[11/14 00:43:49     59s] Non-Default Mode Option Settings :
+[11/14 00:43:49     59s]   -use_exact_spacing  1
+[11/14 00:43:49     59s]   -remove_floating_stapling  0
+[11/14 00:43:49     59s]   -stapling_shift  0
+[11/14 00:43:49     59s] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:43:49     59s] Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2649.3M)
+[11/14 00:43:49     59s] Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2650.3M)
+[11/14 00:43:49     59s] Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2650.3M)
+[11/14 00:43:49     59s] Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2650.3M)
+[11/14 00:43:49     59s] Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2650.3M)
+[11/14 00:43:49     59s] Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2651.3M)
+[11/14 00:43:49     59s] Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2651.3M)
+[11/14 00:43:49     59s] Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2651.3M)
+[11/14 00:43:49     59s] Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2651.3M)
+[11/14 00:43:49     59s] Stripe generation is complete.
+[11/14 00:43:49     59s] addStripe created 1653 wires.
+[11/14 00:43:49     59s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:49     59s] +--------+----------------+----------------+
+[11/14 00:43:49     59s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:49     59s] +--------+----------------+----------------+
+[11/14 00:43:49     59s] | Metal3 |      1653      |       NA       |
+[11/14 00:43:49     59s] +--------+----------------+----------------+
+[11/14 00:43:49     60s] #% End addStripe (date=11/14 00:43:49, total cpu=0:00:00.1, real=0:00:00.0, peak res=2196.0M, current mem=2196.0M)
+[11/14 00:43:49     60s] <CMD> setViaGenMode -reset
+[11/14 00:43:49     60s] <CMD> setViaGenMode -extend_out_wire_end false
+[11/14 00:43:49     60s] Setting -extend_out_wire_end to 0. ViaGen will not allow via extending outside of the end of the existing wires and may shift it inside.
+[11/14 00:43:49     60s] <CMD> setViaGenMode -allow_via_expansion false
+[11/14 00:43:49     60s] Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+[11/14 00:43:49     60s] <CMD> setViaGenMode -viarule_preference Via2
+[11/14 00:43:49     60s] **WARN: (IMPPP-614):	There is neither VIARULE nor via cell found with name Via2 in technology file. Correct the name if it's mis-typed, or add the corresponding VIARULE or via cell definition in technology file if it's missing.
+[11/14 00:43:49     60s] <CMD> editPowerVia -add_vias 1 -bottom_layer Metal2 -top_layer Metal3
+[11/14 00:43:49     60s] 
+[11/14 00:43:49     60s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:49     60s] Multi Thread begin for Metal2 vertical
+[11/14 00:43:49     60s] Viagen work status, 5% finished
+[11/14 00:43:49     60s] Viagen work status, 10% finished
+[11/14 00:43:49     60s] Viagen work status, 15% finished
+[11/14 00:43:49     60s] Viagen work status, 20% finished
+[11/14 00:43:49     60s] Viagen work status, 25% finished
+[11/14 00:43:49     60s] Viagen work status, 30% finished
+[11/14 00:43:49     60s] Viagen work status, 35% finished
+[11/14 00:43:49     60s] Viagen work status, 40% finished
+[11/14 00:43:49     60s] Viagen work status, 45% finished
+[11/14 00:43:49     60s] Viagen work status, 50% finished
+[11/14 00:43:49     60s] Viagen work status, 55% finished
+[11/14 00:43:49     60s] Viagen work status, 60% finished
+[11/14 00:43:49     60s] Viagen work status, 65% finished
+[11/14 00:43:49     60s] Viagen work status, 70% finished
+[11/14 00:43:49     60s] Viagen work status, 75% finished
+[11/14 00:43:49     60s] Viagen work status, 80% finished
+[11/14 00:43:49     60s] Viagen work status, 85% finished
+[11/14 00:43:49     60s] Viagen work status, 90% finished
+[11/14 00:43:49     60s] Viagen work status, 95% finished
+[11/14 00:43:49     60s] Viagen work status, 100% finished
+[11/14 00:43:49     60s] Multi Thread begin for Metal3 horizontal
+[11/14 00:43:49     60s] Viagen work status, 5% finished
+[11/14 00:43:49     60s] Viagen work status, 10% finished
+[11/14 00:43:49     60s] Viagen work status, 15% finished
+[11/14 00:43:49     60s] Viagen work status, 20% finished
+[11/14 00:43:49     60s] Viagen work status, 25% finished
+[11/14 00:43:49     60s] Viagen work status, 30% finished
+[11/14 00:43:49     60s] Viagen work status, 35% finished
+[11/14 00:43:49     60s] Viagen work status, 40% finished
+[11/14 00:43:49     60s] Viagen work status, 45% finished
+[11/14 00:43:49     60s] Viagen work status, 50% finished
+[11/14 00:43:49     60s] Viagen work status, 55% finished
+[11/14 00:43:49     60s] Viagen work status, 60% finished
+[11/14 00:43:49     60s] Viagen work status, 65% finished
+[11/14 00:43:49     60s] Viagen work status, 70% finished
+[11/14 00:43:49     60s] Viagen work status, 75% finished
+[11/14 00:43:49     60s] Viagen work status, 80% finished
+[11/14 00:43:49     60s] Viagen work status, 85% finished
+[11/14 00:43:49     60s] Viagen work status, 90% finished
+[11/14 00:43:49     60s] Viagen work status, 95% finished
+[11/14 00:43:49     60s] Viagen work status, 100% finished
+[11/14 00:43:49     60s] ViaGen created 3393 vias, deleted 0 via to avoid violation.
+[11/14 00:43:49     60s] +--------+----------------+----------------+
+[11/14 00:43:49     60s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:49     60s] +--------+----------------+----------------+
+[11/14 00:43:49     60s] |  Via2  |      3393      |        0       |
+[11/14 00:43:49     60s] +--------+----------------+----------------+
+[11/14 00:43:49     60s] <CMD> addStripe -nets VDD -stapling {1.76 1.80 3.42:1 Metal4} -layer Metal4 -width 0.16 -set_to_set_distance 3.42 -start 2.695 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+[11/14 00:43:49     60s] #% Begin addStripe (date=11/14 00:43:49, mem=2200.3M)
+[11/14 00:43:49     60s] **WARN: (IMPPP-2034):	Option -spacing does not need to be specified and will be ignored when mode stapling_nets_style is set to end_to_end.
+[11/14 00:43:49     60s] 
+[11/14 00:43:49     60s] Initialize fgc environment(mem: 2655.3M) ...  done(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+[11/14 00:43:49     60s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+[11/14 00:43:49     60s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:43:49     60s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+[11/14 00:43:49     60s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+[11/14 00:43:49     60s] Starting stripe generation ...
+[11/14 00:43:49     60s] Non-Default Mode Option Settings :
+[11/14 00:43:49     60s]   -use_exact_spacing  1
+[11/14 00:43:49     60s]   -remove_floating_stapling  0
+[11/14 00:43:49     60s]   -stapling_shift  0
+[11/14 00:43:49     60s] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:43:49     60s] Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+[11/14 00:43:49     60s] Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+[11/14 00:43:49     60s] Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+[11/14 00:43:49     60s] Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+[11/14 00:43:49     60s] Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+[11/14 00:43:49     60s] Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+[11/14 00:43:49     60s] Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+[11/14 00:43:49     60s] Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2656.3M)
+[11/14 00:43:49     60s] Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2656.3M)
+[11/14 00:43:49     60s] Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2657.3M)
+[11/14 00:43:49     60s] Stripe generation is complete.
+[11/14 00:43:49     60s] addStripe created 1740 wires.
+[11/14 00:43:49     60s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:49     60s] +--------+----------------+----------------+
+[11/14 00:43:49     60s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:49     60s] +--------+----------------+----------------+
+[11/14 00:43:49     60s] | Metal4 |      1740      |       NA       |
+[11/14 00:43:49     60s] +--------+----------------+----------------+
+[11/14 00:43:50     60s] #% End addStripe (date=11/14 00:43:49, total cpu=0:00:00.1, real=0:00:01.0, peak res=2203.5M, current mem=2203.5M)
+[11/14 00:43:50     60s] <CMD> addStripe -nets VSS -stapling {1.76 3.51 3.42:1 Metal4} -layer Metal4 -width 0.16 -set_to_set_distance 3.42 -start 3.36 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+[11/14 00:43:50     60s] #% Begin addStripe (date=11/14 00:43:50, mem=2203.5M)
+[11/14 00:43:50     60s] **WARN: (IMPPP-2034):	Option -spacing does not need to be specified and will be ignored when mode stapling_nets_style is set to end_to_end.
+[11/14 00:43:50     60s] 
+[11/14 00:43:50     60s] Initialize fgc environment(mem: 2657.3M) ...  done(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2657.3M)
+[11/14 00:43:50     60s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2657.3M)
+[11/14 00:43:50     60s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:43:50     60s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2657.3M)
+[11/14 00:43:50     60s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2657.3M)
+[11/14 00:43:50     60s] Starting stripe generation ...
+[11/14 00:43:50     60s] Non-Default Mode Option Settings :
+[11/14 00:43:50     60s]   -use_exact_spacing  1
+[11/14 00:43:50     60s]   -remove_floating_stapling  0
+[11/14 00:43:50     60s]   -stapling_shift  0
+[11/14 00:43:50     60s] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:43:50     60s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 3.495000 101.809998 3.495000 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+[11/14 00:43:50     60s] Type 'man IMPPP-354' for more detail.
+[11/14 00:43:50     60s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 6.895000 101.809998 6.895000 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+[11/14 00:43:50     60s] Type 'man IMPPP-354' for more detail.
+[11/14 00:43:50     60s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 10.295000 101.809998 10.295000 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+[11/14 00:43:50     60s] Type 'man IMPPP-354' for more detail.
+[11/14 00:43:50     60s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 13.695000 101.809998 13.695000 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+[11/14 00:43:50     60s] Type 'man IMPPP-354' for more detail.
+[11/14 00:43:50     60s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 17.094999 101.809998 17.094999 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+[11/14 00:43:50     60s] Type 'man IMPPP-354' for more detail.
+[11/14 00:43:50     60s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 20.495001 101.809998 20.495001 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+[11/14 00:43:50     60s] Type 'man IMPPP-354' for more detail.
+[11/14 00:43:50     60s] Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2658.3M)
+[11/14 00:43:50     60s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 23.895000 101.809998 23.895000 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+[11/14 00:43:50     60s] Type 'man IMPPP-354' for more detail.
+[11/14 00:43:50     60s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 27.295000 101.809998 27.295000 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+[11/14 00:43:50     60s] Type 'man IMPPP-354' for more detail.
+[11/14 00:43:50     60s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 30.895000 101.809998 30.895000 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+[11/14 00:43:50     60s] Type 'man IMPPP-354' for more detail.
+[11/14 00:43:50     60s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 34.294998 101.809998 34.294998 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+[11/14 00:43:50     60s] Type 'man IMPPP-354' for more detail.
+[11/14 00:43:50     60s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 37.695000 101.809998 37.695000 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+[11/14 00:43:50     60s] Type 'man IMPPP-354' for more detail.
+[11/14 00:43:50     60s] Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2659.3M)
+[11/14 00:43:50     60s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 41.095001 101.809998 41.095001 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+[11/14 00:43:50     60s] Type 'man IMPPP-354' for more detail.
+[11/14 00:43:50     60s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 44.494999 101.809998 44.494999 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+[11/14 00:43:50     60s] Type 'man IMPPP-354' for more detail.
+[11/14 00:43:50     60s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 47.895000 101.809998 47.895000 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+[11/14 00:43:50     60s] Type 'man IMPPP-354' for more detail.
+[11/14 00:43:50     60s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 51.294998 101.809998 51.294998 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+[11/14 00:43:50     60s] Type 'man IMPPP-354' for more detail.
+[11/14 00:43:50     60s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 54.695000 101.809998 54.695000 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+[11/14 00:43:50     60s] Type 'man IMPPP-354' for more detail.
+[11/14 00:43:50     60s] Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2659.3M)
+[11/14 00:43:50     60s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 58.095001 101.809998 58.095001 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+[11/14 00:43:50     60s] Type 'man IMPPP-354' for more detail.
+[11/14 00:43:50     60s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 61.494999 101.809998 61.494999 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+[11/14 00:43:50     60s] Type 'man IMPPP-354' for more detail.
+[11/14 00:43:50     60s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 65.095001 101.809998 65.095001 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+[11/14 00:43:50     60s] Type 'man IMPPP-354' for more detail.
+[11/14 00:43:50     60s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 68.495003 101.809998 68.495003 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+[11/14 00:43:50     60s] Type 'man IMPPP-354' for more detail.
+[11/14 00:43:50     60s] **WARN: (EMS-27):	Message (IMPPP-354) has exceeded the current message display limit of 20.
+[11/14 00:43:50     60s] To increase the message display limit, refer to the product command reference manual.
+[11/14 00:43:50     60s] Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2660.3M)
+[11/14 00:43:50     60s] Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2661.3M)
+[11/14 00:43:50     60s] Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2661.3M)
+[11/14 00:43:50     60s] Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2662.3M)
+[11/14 00:43:50     60s] Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2663.3M)
+[11/14 00:43:50     60s] Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2663.3M)
+[11/14 00:43:50     60s] Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2665.3M)
+[11/14 00:43:50     60s] Stripe generation is complete.
+[11/14 00:43:50     60s] addStripe created 1653 wires.
+[11/14 00:43:50     60s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:50     60s] +--------+----------------+----------------+
+[11/14 00:43:50     60s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:50     60s] +--------+----------------+----------------+
+[11/14 00:43:50     60s] | Metal4 |      1653      |       NA       |
+[11/14 00:43:50     60s] +--------+----------------+----------------+
+[11/14 00:43:50     60s] #% End addStripe (date=11/14 00:43:50, total cpu=0:00:00.1, real=0:00:00.0, peak res=2211.4M, current mem=2211.4M)
+[11/14 00:43:50     60s] <CMD> setViaGenMode -reset
+[11/14 00:43:50     60s] <CMD> setViaGenMode -extend_out_wire_end false
+[11/14 00:43:50     60s] Setting -extend_out_wire_end to 0. ViaGen will not allow via extending outside of the end of the existing wires and may shift it inside.
+[11/14 00:43:50     60s] <CMD> setViaGenMode -allow_via_expansion false
+[11/14 00:43:50     60s] Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+[11/14 00:43:50     60s] <CMD> setViaGenMode -viarule_preference Via3
+[11/14 00:43:50     60s] **WARN: (IMPPP-614):	There is neither VIARULE nor via cell found with name Via3 in technology file. Correct the name if it's mis-typed, or add the corresponding VIARULE or via cell definition in technology file if it's missing.
+[11/14 00:43:50     60s] <CMD> editPowerVia -add_vias 1 -bottom_layer Metal3 -top_layer Metal4
+[11/14 00:43:50     60s] 
+[11/14 00:43:50     61s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:50     61s] Multi Thread begin for Metal3 horizontal
+[11/14 00:43:50     61s] Viagen work status, 5% finished
+[11/14 00:43:50     61s] Viagen work status, 10% finished
+[11/14 00:43:50     61s] Viagen work status, 15% finished
+[11/14 00:43:50     61s] Viagen work status, 20% finished
+[11/14 00:43:50     61s] Viagen work status, 25% finished
+[11/14 00:43:50     61s] Viagen work status, 30% finished
+[11/14 00:43:50     61s] Viagen work status, 35% finished
+[11/14 00:43:50     61s] Viagen work status, 40% finished
+[11/14 00:43:50     61s] Viagen work status, 45% finished
+[11/14 00:43:50     61s] Viagen work status, 50% finished
+[11/14 00:43:50     61s] Viagen work status, 55% finished
+[11/14 00:43:50     61s] Viagen work status, 60% finished
+[11/14 00:43:50     61s] Viagen work status, 65% finished
+[11/14 00:43:50     61s] Viagen work status, 70% finished
+[11/14 00:43:50     61s] Viagen work status, 75% finished
+[11/14 00:43:50     61s] Viagen work status, 80% finished
+[11/14 00:43:50     61s] Viagen work status, 85% finished
+[11/14 00:43:50     61s] Viagen work status, 90% finished
+[11/14 00:43:50     61s] Viagen work status, 95% finished
+[11/14 00:43:50     61s] Viagen work status, 100% finished
+[11/14 00:43:50     61s] Multi Thread begin for Metal4 vertical
+[11/14 00:43:50     61s] Viagen work status, 5% finished
+[11/14 00:43:50     61s] Viagen work status, 10% finished
+[11/14 00:43:50     61s] Viagen work status, 15% finished
+[11/14 00:43:50     61s] Viagen work status, 20% finished
+[11/14 00:43:50     61s] Viagen work status, 25% finished
+[11/14 00:43:50     61s] Viagen work status, 30% finished
+[11/14 00:43:50     61s] Viagen work status, 35% finished
+[11/14 00:43:50     61s] Viagen work status, 40% finished
+[11/14 00:43:50     61s] Viagen work status, 45% finished
+[11/14 00:43:50     61s] Viagen work status, 50% finished
+[11/14 00:43:50     61s] Viagen work status, 55% finished
+[11/14 00:43:50     61s] Viagen work status, 60% finished
+[11/14 00:43:50     61s] Viagen work status, 65% finished
+[11/14 00:43:50     61s] Viagen work status, 70% finished
+[11/14 00:43:50     61s] Viagen work status, 75% finished
+[11/14 00:43:50     61s] Viagen work status, 80% finished
+[11/14 00:43:50     61s] Viagen work status, 85% finished
+[11/14 00:43:50     61s] Viagen work status, 90% finished
+[11/14 00:43:50     61s] Viagen work status, 95% finished
+[11/14 00:43:50     61s] Viagen work status, 100% finished
+[11/14 00:43:50     61s] ViaGen created 3393 vias, deleted 0 via to avoid violation.
+[11/14 00:43:50     61s] +--------+----------------+----------------+
+[11/14 00:43:50     61s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:50     61s] +--------+----------------+----------------+
+[11/14 00:43:50     61s] |  Via3  |      3393      |        0       |
+[11/14 00:43:50     61s] +--------+----------------+----------------+
+[11/14 00:43:50     61s] <CMD> addStripe -nets VDD -layer Metal5 -direction horizontal -width 0.16 -set_to_set_distance 3.42 -start 1.45 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+[11/14 00:43:50     61s] #% Begin addStripe (date=11/14 00:43:50, mem=2212.1M)
+[11/14 00:43:50     61s] 
+[11/14 00:43:50     61s] Initialize fgc environment(mem: 2671.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2671.3M)
+[11/14 00:43:50     61s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2671.3M)
+[11/14 00:43:50     61s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:43:50     61s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2671.3M)
+[11/14 00:43:50     61s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2671.3M)
+[11/14 00:43:50     61s] Starting stripe generation ...
+[11/14 00:43:50     61s] Non-Default Mode Option Settings :
+[11/14 00:43:50     61s]   -use_exact_spacing  1
+[11/14 00:43:50     61s]   -remove_floating_stapling  0
+[11/14 00:43:50     61s]   -stapling_shift  0
+[11/14 00:43:50     61s] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:43:50     61s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:51     62s] Stripe generation is complete.
+[11/14 00:43:51     62s] vias are now being generated.
+[11/14 00:43:51     62s] addStripe created 30 wires.
+[11/14 00:43:51     62s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:51     62s] +--------+----------------+----------------+
+[11/14 00:43:51     62s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:51     62s] +--------+----------------+----------------+
+[11/14 00:43:51     62s] | Metal5 |       30       |       NA       |
+[11/14 00:43:51     62s] +--------+----------------+----------------+
+[11/14 00:43:51     62s] #% End addStripe (date=11/14 00:43:51, total cpu=0:00:00.6, real=0:00:01.0, peak res=2212.3M, current mem=2212.3M)
+[11/14 00:43:51     62s] <CMD> addStripe -nets VSS -layer Metal5 -direction horizontal -width 0.16 -set_to_set_distance 3.42 -start 3.15 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+[11/14 00:43:51     62s] #% Begin addStripe (date=11/14 00:43:51, mem=2212.3M)
+[11/14 00:43:51     62s] 
+[11/14 00:43:51     62s] Initialize fgc environment(mem: 2671.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2671.3M)
+[11/14 00:43:51     62s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2671.3M)
+[11/14 00:43:51     62s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:43:51     62s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2671.3M)
+[11/14 00:43:51     62s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2671.3M)
+[11/14 00:43:51     62s] Starting stripe generation ...
+[11/14 00:43:51     62s] Non-Default Mode Option Settings :
+[11/14 00:43:51     62s]   -use_exact_spacing  1
+[11/14 00:43:51     62s]   -remove_floating_stapling  0
+[11/14 00:43:51     62s]   -stapling_shift  0
+[11/14 00:43:51     62s] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:43:51     62s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:51     62s] Stripe generation is complete.
+[11/14 00:43:51     62s] vias are now being generated.
+[11/14 00:43:51     62s] addStripe created 29 wires.
+[11/14 00:43:51     62s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:51     62s] +--------+----------------+----------------+
+[11/14 00:43:51     62s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:51     62s] +--------+----------------+----------------+
+[11/14 00:43:51     62s] | Metal5 |       29       |       NA       |
+[11/14 00:43:51     62s] +--------+----------------+----------------+
+[11/14 00:43:51     62s] #% End addStripe (date=11/14 00:43:51, total cpu=0:00:00.6, real=0:00:00.0, peak res=2212.3M, current mem=2212.3M)
+[11/14 00:43:51     62s] <CMD> setViaGenMode -reset
+[11/14 00:43:51     62s] <CMD> setViaGenMode -extend_out_wire_end false
+[11/14 00:43:51     62s] Setting -extend_out_wire_end to 0. ViaGen will not allow via extending outside of the end of the existing wires and may shift it inside.
+[11/14 00:43:51     62s] <CMD> setViaGenMode -allow_via_expansion false
+[11/14 00:43:51     62s] Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+[11/14 00:43:51     62s] <CMD> setViaGenMode -viarule_preference Via4
+[11/14 00:43:51     62s] **WARN: (IMPPP-614):	There is neither VIARULE nor via cell found with name Via4 in technology file. Correct the name if it's mis-typed, or add the corresponding VIARULE or via cell definition in technology file if it's missing.
+[11/14 00:43:51     62s] <CMD> editPowerVia -add_vias 1 -bottom_layer Metal4 -top_layer Metal5
+[11/14 00:43:51     62s] 
+[11/14 00:43:51     62s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:51     62s] Multi Thread begin for Metal4 vertical
+[11/14 00:43:51     62s] Viagen work status, 5% finished
+[11/14 00:43:51     62s] Viagen work status, 10% finished
+[11/14 00:43:51     63s] Viagen work status, 15% finished
+[11/14 00:43:51     63s] Viagen work status, 20% finished
+[11/14 00:43:51     63s] Viagen work status, 25% finished
+[11/14 00:43:51     63s] Viagen work status, 30% finished
+[11/14 00:43:51     63s] Viagen work status, 35% finished
+[11/14 00:43:51     63s] Viagen work status, 40% finished
+[11/14 00:43:51     63s] Viagen work status, 45% finished
+[11/14 00:43:51     63s] Viagen work status, 50% finished
+[11/14 00:43:51     63s] Viagen work status, 55% finished
+[11/14 00:43:51     63s] Viagen work status, 60% finished
+[11/14 00:43:51     63s] Viagen work status, 65% finished
+[11/14 00:43:51     63s] Viagen work status, 70% finished
+[11/14 00:43:51     63s] Viagen work status, 75% finished
+[11/14 00:43:51     63s] Viagen work status, 80% finished
+[11/14 00:43:51     63s] Viagen work status, 85% finished
+[11/14 00:43:51     63s] Viagen work status, 90% finished
+[11/14 00:43:51     63s] Viagen work status, 95% finished
+[11/14 00:43:51     63s] Viagen work status, 100% finished
+[11/14 00:43:51     63s] Multi Thread begin for Metal5 horizontal
+[11/14 00:43:51     63s] Viagen work status, 5% finished
+[11/14 00:43:51     63s] Viagen work status, 10% finished
+[11/14 00:43:51     63s] Viagen work status, 15% finished
+[11/14 00:43:51     63s] Viagen work status, 20% finished
+[11/14 00:43:51     63s] Viagen work status, 25% finished
+[11/14 00:43:51     63s] Viagen work status, 30% finished
+[11/14 00:43:51     63s] Viagen work status, 35% finished
+[11/14 00:43:51     63s] Viagen work status, 40% finished
+[11/14 00:43:51     63s] Viagen work status, 45% finished
+[11/14 00:43:51     63s] Viagen work status, 50% finished
+[11/14 00:43:51     63s] Viagen work status, 55% finished
+[11/14 00:43:51     63s] Viagen work status, 60% finished
+[11/14 00:43:51     63s] Viagen work status, 65% finished
+[11/14 00:43:51     63s] Viagen work status, 70% finished
+[11/14 00:43:51     63s] Viagen work status, 75% finished
+[11/14 00:43:51     63s] Viagen work status, 80% finished
+[11/14 00:43:51     63s] Viagen work status, 85% finished
+[11/14 00:43:51     63s] Viagen work status, 90% finished
+[11/14 00:43:51     63s] Viagen work status, 95% finished
+[11/14 00:43:51     63s] Viagen work status, 100% finished
+[11/14 00:43:51     63s] ViaGen created 3393 vias, deleted 0 via to avoid violation.
+[11/14 00:43:51     63s] +--------+----------------+----------------+
+[11/14 00:43:51     63s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:51     63s] +--------+----------------+----------------+
+[11/14 00:43:51     63s] |  Via4  |      3393      |        0       |
+[11/14 00:43:51     63s] +--------+----------------+----------------+
+[11/14 00:43:51     63s] <CMD> addStripe -nets VDD -layer Metal6 -direction vertical -width 0.32 -set_to_set_distance 6.6 -start 2.5 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+[11/14 00:43:52     63s] #% Begin addStripe (date=11/14 00:43:51, mem=2214.0M)
+[11/14 00:43:52     63s] 
+[11/14 00:43:52     63s] Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:52     63s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:52     63s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:43:52     63s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:52     63s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:52     63s] Starting stripe generation ...
+[11/14 00:43:52     63s] Non-Default Mode Option Settings :
+[11/14 00:43:52     63s]   -use_exact_spacing  1
+[11/14 00:43:52     63s]   -remove_floating_stapling  0
+[11/14 00:43:52     63s]   -stapling_shift  0
+[11/14 00:43:52     63s] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:43:52     63s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:52     64s] Stripe generation is complete.
+[11/14 00:43:52     64s] vias are now being generated.
+[11/14 00:43:52     64s] addStripe created 30 wires.
+[11/14 00:43:52     64s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:52     64s] +--------+----------------+----------------+
+[11/14 00:43:52     64s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:52     64s] +--------+----------------+----------------+
+[11/14 00:43:52     64s] | Metal6 |       30       |       NA       |
+[11/14 00:43:52     64s] +--------+----------------+----------------+
+[11/14 00:43:52     64s] #% End addStripe (date=11/14 00:43:52, total cpu=0:00:00.5, real=0:00:00.0, peak res=2214.0M, current mem=2214.0M)
+[11/14 00:43:52     64s] <CMD> addStripe -nets VSS -layer Metal6 -direction vertical -width 0.32 -set_to_set_distance 6.6 -start 4.2 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+[11/14 00:43:52     64s] #% Begin addStripe (date=11/14 00:43:52, mem=2214.0M)
+[11/14 00:43:52     64s] 
+[11/14 00:43:52     64s] Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:52     64s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:52     64s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:43:52     64s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:52     64s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:52     64s] Starting stripe generation ...
+[11/14 00:43:52     64s] Non-Default Mode Option Settings :
+[11/14 00:43:52     64s]   -use_exact_spacing  1
+[11/14 00:43:52     64s]   -remove_floating_stapling  0
+[11/14 00:43:52     64s]   -stapling_shift  0
+[11/14 00:43:52     64s] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:43:52     64s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:53     64s] Stripe generation is complete.
+[11/14 00:43:53     64s] vias are now being generated.
+[11/14 00:43:53     64s] addStripe created 30 wires.
+[11/14 00:43:53     64s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:53     64s] +--------+----------------+----------------+
+[11/14 00:43:53     64s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:53     64s] +--------+----------------+----------------+
+[11/14 00:43:53     64s] | Metal6 |       30       |       NA       |
+[11/14 00:43:53     64s] +--------+----------------+----------------+
+[11/14 00:43:53     64s] #% End addStripe (date=11/14 00:43:53, total cpu=0:00:00.6, real=0:00:01.0, peak res=2214.0M, current mem=2214.0M)
+[11/14 00:43:53     64s] <CMD> setViaGenMode -reset
+[11/14 00:43:53     64s] <CMD> setViaGenMode -extend_out_wire_end false
+[11/14 00:43:53     64s] Setting -extend_out_wire_end to 0. ViaGen will not allow via extending outside of the end of the existing wires and may shift it inside.
+[11/14 00:43:53     64s] <CMD> setViaGenMode -allow_via_expansion false
+[11/14 00:43:53     64s] Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+[11/14 00:43:53     64s] <CMD> setViaGenMode -viarule_preference Via5
+[11/14 00:43:53     64s] **WARN: (IMPPP-614):	There is neither VIARULE nor via cell found with name Via5 in technology file. Correct the name if it's mis-typed, or add the corresponding VIARULE or via cell definition in technology file if it's missing.
+[11/14 00:43:53     64s] <CMD> editPowerVia -add_vias 1 -bottom_layer Metal5 -top_layer Metal6
+[11/14 00:43:53     64s] 
+[11/14 00:43:53     64s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:53     64s] Multi Thread begin for Metal5 horizontal
+[11/14 00:43:53     64s] Viagen work status, 5% finished
+[11/14 00:43:53     64s] Viagen work status, 10% finished
+[11/14 00:43:53     64s] Viagen work status, 15% finished
+[11/14 00:43:53     64s] Viagen work status, 20% finished
+[11/14 00:43:53     64s] Viagen work status, 25% finished
+[11/14 00:43:53     64s] Viagen work status, 30% finished
+[11/14 00:43:53     64s] Viagen work status, 35% finished
+[11/14 00:43:53     64s] Viagen work status, 40% finished
+[11/14 00:43:53     64s] Viagen work status, 45% finished
+[11/14 00:43:53     64s] Viagen work status, 50% finished
+[11/14 00:43:53     64s] Viagen work status, 55% finished
+[11/14 00:43:53     64s] Viagen work status, 60% finished
+[11/14 00:43:53     64s] Viagen work status, 65% finished
+[11/14 00:43:53     64s] Viagen work status, 70% finished
+[11/14 00:43:53     64s] Viagen work status, 75% finished
+[11/14 00:43:53     64s] Viagen work status, 80% finished
+[11/14 00:43:53     64s] Viagen work status, 85% finished
+[11/14 00:43:53     64s] Viagen work status, 90% finished
+[11/14 00:43:53     64s] Viagen work status, 95% finished
+[11/14 00:43:53     64s] Viagen work status, 100% finished
+[11/14 00:43:53     64s] Multi Thread begin for Metal6 vertical
+[11/14 00:43:53     64s] Viagen work status, 5% finished
+[11/14 00:43:53     64s] Viagen work status, 10% finished
+[11/14 00:43:53     64s] Viagen work status, 15% finished
+[11/14 00:43:53     64s] Viagen work status, 20% finished
+[11/14 00:43:53     64s] Viagen work status, 25% finished
+[11/14 00:43:53     64s] Viagen work status, 30% finished
+[11/14 00:43:53     64s] Viagen work status, 35% finished
+[11/14 00:43:53     64s] Viagen work status, 40% finished
+[11/14 00:43:53     64s] Viagen work status, 45% finished
+[11/14 00:43:53     64s] Viagen work status, 50% finished
+[11/14 00:43:53     64s] Viagen work status, 55% finished
+[11/14 00:43:53     64s] Viagen work status, 60% finished
+[11/14 00:43:53     64s] Viagen work status, 65% finished
+[11/14 00:43:53     64s] Viagen work status, 70% finished
+[11/14 00:43:53     64s] Viagen work status, 75% finished
+[11/14 00:43:53     64s] Viagen work status, 80% finished
+[11/14 00:43:53     64s] Viagen work status, 85% finished
+[11/14 00:43:53     64s] Viagen work status, 90% finished
+[11/14 00:43:53     64s] Viagen work status, 95% finished
+[11/14 00:43:53     64s] Viagen work status, 100% finished
+[11/14 00:43:53     64s] ViaGen created 1770 vias, deleted 0 via to avoid violation.
+[11/14 00:43:53     64s] +--------+----------------+----------------+
+[11/14 00:43:53     64s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:53     64s] +--------+----------------+----------------+
+[11/14 00:43:53     64s] |  Via5  |      1770      |        0       |
+[11/14 00:43:53     64s] +--------+----------------+----------------+
+[11/14 00:43:53     65s] <CMD> addStripe -nets VDD -layer Metal7 -direction horizontal -width 0.32 -set_to_set_distance 6.6 -start 2 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+[11/14 00:43:53     65s] #% Begin addStripe (date=11/14 00:43:53, mem=2214.0M)
+[11/14 00:43:53     65s] 
+[11/14 00:43:53     65s] Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:53     65s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:53     65s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:43:53     65s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:53     65s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:53     65s] Starting stripe generation ...
+[11/14 00:43:53     65s] Non-Default Mode Option Settings :
+[11/14 00:43:53     65s]   -use_exact_spacing  1
+[11/14 00:43:53     65s]   -remove_floating_stapling  0
+[11/14 00:43:53     65s]   -stapling_shift  0
+[11/14 00:43:53     65s] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:43:53     65s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:54     65s] Stripe generation is complete.
+[11/14 00:43:54     65s] vias are now being generated.
+[11/14 00:43:54     65s] addStripe created 16 wires.
+[11/14 00:43:54     65s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:54     65s] +--------+----------------+----------------+
+[11/14 00:43:54     65s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:54     65s] +--------+----------------+----------------+
+[11/14 00:43:54     65s] | Metal7 |       16       |       NA       |
+[11/14 00:43:54     65s] +--------+----------------+----------------+
+[11/14 00:43:54     65s] #% End addStripe (date=11/14 00:43:54, total cpu=0:00:00.6, real=0:00:01.0, peak res=2214.0M, current mem=2214.0M)
+[11/14 00:43:54     65s] <CMD> addStripe -nets VSS -layer Metal7 -direction horizontal -width 0.32 -set_to_set_distance 6.6 -start 3.7 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+[11/14 00:43:54     65s] #% Begin addStripe (date=11/14 00:43:54, mem=2214.0M)
+[11/14 00:43:54     65s] 
+[11/14 00:43:54     65s] Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:54     65s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:54     65s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:43:54     65s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:54     65s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:54     65s] Starting stripe generation ...
+[11/14 00:43:54     65s] Non-Default Mode Option Settings :
+[11/14 00:43:54     65s]   -use_exact_spacing  1
+[11/14 00:43:54     65s]   -remove_floating_stapling  0
+[11/14 00:43:54     65s]   -stapling_shift  0
+[11/14 00:43:54     65s] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:43:54     65s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:54     66s] Stripe generation is complete.
+[11/14 00:43:54     66s] vias are now being generated.
+[11/14 00:43:54     66s] addStripe created 15 wires.
+[11/14 00:43:54     66s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:54     66s] +--------+----------------+----------------+
+[11/14 00:43:54     66s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:54     66s] +--------+----------------+----------------+
+[11/14 00:43:54     66s] | Metal7 |       15       |       NA       |
+[11/14 00:43:54     66s] +--------+----------------+----------------+
+[11/14 00:43:55     66s] #% End addStripe (date=11/14 00:43:54, total cpu=0:00:00.6, real=0:00:01.0, peak res=2214.0M, current mem=2214.0M)
+[11/14 00:43:55     66s] <CMD> setViaGenMode -reset
+[11/14 00:43:55     66s] <CMD> setViaGenMode -extend_out_wire_end false
+[11/14 00:43:55     66s] Setting -extend_out_wire_end to 0. ViaGen will not allow via extending outside of the end of the existing wires and may shift it inside.
+[11/14 00:43:55     66s] <CMD> setViaGenMode -allow_via_expansion false
+[11/14 00:43:55     66s] Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+[11/14 00:43:55     66s] <CMD> setViaGenMode -viarule_preference Via6
+[11/14 00:43:55     66s] **WARN: (IMPPP-614):	There is neither VIARULE nor via cell found with name Via6 in technology file. Correct the name if it's mis-typed, or add the corresponding VIARULE or via cell definition in technology file if it's missing.
+[11/14 00:43:55     66s] <CMD> editPowerVia -add_vias 1 -bottom_layer Metal6 -top_layer Metal7
+[11/14 00:43:55     66s] 
+[11/14 00:43:55     66s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:55     66s] Multi Thread begin for Metal6 vertical
+[11/14 00:43:55     66s] Viagen work status, 5% finished
+[11/14 00:43:55     66s] Viagen work status, 10% finished
+[11/14 00:43:55     66s] Viagen work status, 15% finished
+[11/14 00:43:55     66s] Viagen work status, 20% finished
+[11/14 00:43:55     66s] Viagen work status, 25% finished
+[11/14 00:43:55     66s] Viagen work status, 30% finished
+[11/14 00:43:55     66s] Viagen work status, 35% finished
+[11/14 00:43:55     66s] Viagen work status, 40% finished
+[11/14 00:43:55     66s] Viagen work status, 45% finished
+[11/14 00:43:55     66s] Viagen work status, 50% finished
+[11/14 00:43:55     66s] Viagen work status, 55% finished
+[11/14 00:43:55     66s] Viagen work status, 60% finished
+[11/14 00:43:55     66s] Viagen work status, 65% finished
+[11/14 00:43:55     66s] Viagen work status, 70% finished
+[11/14 00:43:55     66s] Viagen work status, 75% finished
+[11/14 00:43:55     66s] Viagen work status, 80% finished
+[11/14 00:43:55     66s] Viagen work status, 85% finished
+[11/14 00:43:55     66s] Viagen work status, 90% finished
+[11/14 00:43:55     66s] Viagen work status, 95% finished
+[11/14 00:43:55     66s] Viagen work status, 100% finished
+[11/14 00:43:55     66s] Multi Thread begin for Metal7 horizontal
+[11/14 00:43:55     66s] Viagen work status, 5% finished
+[11/14 00:43:55     66s] Viagen work status, 10% finished
+[11/14 00:43:55     66s] Viagen work status, 15% finished
+[11/14 00:43:55     66s] Viagen work status, 20% finished
+[11/14 00:43:55     66s] Viagen work status, 25% finished
+[11/14 00:43:55     66s] Viagen work status, 30% finished
+[11/14 00:43:55     66s] Viagen work status, 35% finished
+[11/14 00:43:55     66s] Viagen work status, 40% finished
+[11/14 00:43:55     66s] Viagen work status, 45% finished
+[11/14 00:43:55     66s] Viagen work status, 50% finished
+[11/14 00:43:55     66s] Viagen work status, 55% finished
+[11/14 00:43:55     66s] Viagen work status, 60% finished
+[11/14 00:43:55     66s] Viagen work status, 65% finished
+[11/14 00:43:55     66s] Viagen work status, 70% finished
+[11/14 00:43:55     66s] Viagen work status, 75% finished
+[11/14 00:43:55     66s] Viagen work status, 80% finished
+[11/14 00:43:55     66s] Viagen work status, 85% finished
+[11/14 00:43:55     66s] Viagen work status, 90% finished
+[11/14 00:43:55     66s] Viagen work status, 95% finished
+[11/14 00:43:55     66s] Viagen work status, 100% finished
+[11/14 00:43:55     66s] ViaGen created 930 vias, deleted 0 via to avoid violation.
+[11/14 00:43:55     66s] +--------+----------------+----------------+
+[11/14 00:43:55     66s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:55     66s] +--------+----------------+----------------+
+[11/14 00:43:55     66s] |  Via6  |       930      |        0       |
+[11/14 00:43:55     66s] +--------+----------------+----------------+
+[11/14 00:43:55     66s] <CMD> addStripe -nets VDD -layer Metal8 -direction vertical -width 0.32 -set_to_set_distance 6.6 -start 2.5 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+[11/14 00:43:55     66s] #% Begin addStripe (date=11/14 00:43:55, mem=2214.0M)
+[11/14 00:43:55     66s] 
+[11/14 00:43:55     66s] Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:55     66s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:55     66s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:43:55     66s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:55     66s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:55     66s] Starting stripe generation ...
+[11/14 00:43:55     66s] Non-Default Mode Option Settings :
+[11/14 00:43:55     66s]   -use_exact_spacing  1
+[11/14 00:43:55     66s]   -remove_floating_stapling  0
+[11/14 00:43:55     66s]   -stapling_shift  0
+[11/14 00:43:55     66s] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:43:55     66s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:55     67s] Stripe generation is complete.
+[11/14 00:43:55     67s] vias are now being generated.
+[11/14 00:43:55     67s] addStripe created 30 wires.
+[11/14 00:43:55     67s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:55     67s] +--------+----------------+----------------+
+[11/14 00:43:55     67s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:55     67s] +--------+----------------+----------------+
+[11/14 00:43:55     67s] | Metal8 |       30       |       NA       |
+[11/14 00:43:55     67s] +--------+----------------+----------------+
+[11/14 00:43:55     67s] #% End addStripe (date=11/14 00:43:55, total cpu=0:00:00.6, real=0:00:00.0, peak res=2214.0M, current mem=2214.0M)
+[11/14 00:43:55     67s] <CMD> addStripe -nets VSS -layer Metal8 -direction vertical -width 0.32 -set_to_set_distance 6.6 -start 4.2 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+[11/14 00:43:56     67s] #% Begin addStripe (date=11/14 00:43:55, mem=2214.0M)
+[11/14 00:43:56     67s] 
+[11/14 00:43:56     67s] Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:56     67s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:56     67s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:43:56     67s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:56     67s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:56     67s] Starting stripe generation ...
+[11/14 00:43:56     67s] Non-Default Mode Option Settings :
+[11/14 00:43:56     67s]   -use_exact_spacing  1
+[11/14 00:43:56     67s]   -remove_floating_stapling  0
+[11/14 00:43:56     67s]   -stapling_shift  0
+[11/14 00:43:56     67s] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:43:56     67s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:56     67s] Stripe generation is complete.
+[11/14 00:43:56     67s] vias are now being generated.
+[11/14 00:43:56     67s] addStripe created 30 wires.
+[11/14 00:43:56     67s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:56     67s] +--------+----------------+----------------+
+[11/14 00:43:56     67s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:56     67s] +--------+----------------+----------------+
+[11/14 00:43:56     67s] | Metal8 |       30       |       NA       |
+[11/14 00:43:56     67s] +--------+----------------+----------------+
+[11/14 00:43:56     67s] #% End addStripe (date=11/14 00:43:56, total cpu=0:00:00.6, real=0:00:00.0, peak res=2214.0M, current mem=2214.0M)
+[11/14 00:43:56     67s] <CMD> setViaGenMode -reset
+[11/14 00:43:56     67s] <CMD> setViaGenMode -extend_out_wire_end false
+[11/14 00:43:56     67s] Setting -extend_out_wire_end to 0. ViaGen will not allow via extending outside of the end of the existing wires and may shift it inside.
+[11/14 00:43:56     67s] <CMD> setViaGenMode -allow_via_expansion false
+[11/14 00:43:56     67s] Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+[11/14 00:43:56     67s] <CMD> setViaGenMode -viarule_preference Via7
+[11/14 00:43:56     67s] **WARN: (IMPPP-614):	There is neither VIARULE nor via cell found with name Via7 in technology file. Correct the name if it's mis-typed, or add the corresponding VIARULE or via cell definition in technology file if it's missing.
+[11/14 00:43:56     67s] <CMD> editPowerVia -add_vias 1 -bottom_layer Metal7 -top_layer Metal8
+[11/14 00:43:56     67s] 
+[11/14 00:43:56     67s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:56     67s] Multi Thread begin for Metal7 horizontal
+[11/14 00:43:56     67s] Viagen work status, 5% finished
+[11/14 00:43:56     67s] Viagen work status, 10% finished
+[11/14 00:43:56     67s] Viagen work status, 15% finished
+[11/14 00:43:56     67s] Viagen work status, 20% finished
+[11/14 00:43:56     67s] Viagen work status, 25% finished
+[11/14 00:43:56     67s] Viagen work status, 30% finished
+[11/14 00:43:56     67s] Viagen work status, 35% finished
+[11/14 00:43:56     67s] Viagen work status, 40% finished
+[11/14 00:43:56     67s] Viagen work status, 45% finished
+[11/14 00:43:56     67s] Viagen work status, 50% finished
+[11/14 00:43:56     67s] Viagen work status, 55% finished
+[11/14 00:43:56     67s] Viagen work status, 60% finished
+[11/14 00:43:56     67s] Viagen work status, 65% finished
+[11/14 00:43:56     67s] Viagen work status, 70% finished
+[11/14 00:43:56     67s] Viagen work status, 75% finished
+[11/14 00:43:56     67s] Viagen work status, 80% finished
+[11/14 00:43:56     67s] Viagen work status, 85% finished
+[11/14 00:43:56     67s] Viagen work status, 90% finished
+[11/14 00:43:56     67s] Viagen work status, 95% finished
+[11/14 00:43:56     67s] Viagen work status, 100% finished
+[11/14 00:43:56     67s] Multi Thread begin for Metal8 vertical
+[11/14 00:43:56     67s] Viagen work status, 5% finished
+[11/14 00:43:56     67s] Viagen work status, 10% finished
+[11/14 00:43:56     67s] Viagen work status, 15% finished
+[11/14 00:43:56     67s] Viagen work status, 20% finished
+[11/14 00:43:56     67s] Viagen work status, 25% finished
+[11/14 00:43:56     67s] Viagen work status, 30% finished
+[11/14 00:43:56     67s] Viagen work status, 35% finished
+[11/14 00:43:56     67s] Viagen work status, 40% finished
+[11/14 00:43:56     67s] Viagen work status, 45% finished
+[11/14 00:43:56     67s] Viagen work status, 50% finished
+[11/14 00:43:56     67s] Viagen work status, 55% finished
+[11/14 00:43:56     67s] Viagen work status, 60% finished
+[11/14 00:43:56     67s] Viagen work status, 65% finished
+[11/14 00:43:56     67s] Viagen work status, 70% finished
+[11/14 00:43:56     67s] Viagen work status, 75% finished
+[11/14 00:43:56     67s] Viagen work status, 80% finished
+[11/14 00:43:56     67s] Viagen work status, 85% finished
+[11/14 00:43:56     67s] Viagen work status, 90% finished
+[11/14 00:43:56     67s] Viagen work status, 95% finished
+[11/14 00:43:56     67s] Viagen work status, 100% finished
+[11/14 00:43:56     67s] ViaGen created 930 vias, deleted 0 via to avoid violation.
+[11/14 00:43:56     67s] +--------+----------------+----------------+
+[11/14 00:43:56     67s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:56     67s] +--------+----------------+----------------+
+[11/14 00:43:56     67s] |  Via7  |       930      |        0       |
+[11/14 00:43:56     67s] +--------+----------------+----------------+
+[11/14 00:43:56     67s] <CMD> addStripe -nets VDD -layer Metal9 -direction horizontal -width 0.32 -set_to_set_distance 6.6 -start 2 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+[11/14 00:43:56     68s] #% Begin addStripe (date=11/14 00:43:56, mem=2214.0M)
+[11/14 00:43:56     68s] 
+[11/14 00:43:56     68s] Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:56     68s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:56     68s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:43:56     68s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:56     68s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:56     68s] Starting stripe generation ...
+[11/14 00:43:56     68s] Non-Default Mode Option Settings :
+[11/14 00:43:56     68s]   -use_exact_spacing  1
+[11/14 00:43:56     68s]   -remove_floating_stapling  0
+[11/14 00:43:56     68s]   -stapling_shift  0
+[11/14 00:43:56     68s] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:43:56     68s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:57     68s] Stripe generation is complete.
+[11/14 00:43:57     68s] vias are now being generated.
+[11/14 00:43:57     68s] addStripe created 16 wires.
+[11/14 00:43:57     68s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:57     68s] +--------+----------------+----------------+
+[11/14 00:43:57     68s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:57     68s] +--------+----------------+----------------+
+[11/14 00:43:57     68s] | Metal9 |       16       |       NA       |
+[11/14 00:43:57     68s] +--------+----------------+----------------+
+[11/14 00:43:57     68s] #% End addStripe (date=11/14 00:43:57, total cpu=0:00:00.6, real=0:00:01.0, peak res=2214.1M, current mem=2214.1M)
+[11/14 00:43:57     68s] <CMD> addStripe -nets VSS -layer Metal9 -direction horizontal -width 0.32 -set_to_set_distance 6.6 -start 3.7 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+[11/14 00:43:57     68s] #% Begin addStripe (date=11/14 00:43:57, mem=2214.1M)
+[11/14 00:43:57     68s] 
+[11/14 00:43:57     68s] Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:57     68s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:57     68s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:43:57     68s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:57     68s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:57     68s] Starting stripe generation ...
+[11/14 00:43:57     68s] Non-Default Mode Option Settings :
+[11/14 00:43:57     68s]   -use_exact_spacing  1
+[11/14 00:43:57     68s]   -remove_floating_stapling  0
+[11/14 00:43:57     68s]   -stapling_shift  0
+[11/14 00:43:57     68s] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:43:57     68s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:58     69s] Stripe generation is complete.
+[11/14 00:43:58     69s] vias are now being generated.
+[11/14 00:43:58     69s] addStripe created 15 wires.
+[11/14 00:43:58     69s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:58     69s] +--------+----------------+----------------+
+[11/14 00:43:58     69s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:58     69s] +--------+----------------+----------------+
+[11/14 00:43:58     69s] | Metal9 |       15       |       NA       |
+[11/14 00:43:58     69s] +--------+----------------+----------------+
+[11/14 00:43:58     69s] #% End addStripe (date=11/14 00:43:58, total cpu=0:00:00.6, real=0:00:01.0, peak res=2214.1M, current mem=2214.1M)
+[11/14 00:43:58     69s] <CMD> setViaGenMode -reset
+[11/14 00:43:58     69s] <CMD> setViaGenMode -extend_out_wire_end false
+[11/14 00:43:58     69s] Setting -extend_out_wire_end to 0. ViaGen will not allow via extending outside of the end of the existing wires and may shift it inside.
+[11/14 00:43:58     69s] <CMD> setViaGenMode -allow_via_expansion false
+[11/14 00:43:58     69s] Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+[11/14 00:43:58     69s] <CMD> setViaGenMode -viarule_preference Via8
+[11/14 00:43:58     69s] **WARN: (IMPPP-614):	There is neither VIARULE nor via cell found with name Via8 in technology file. Correct the name if it's mis-typed, or add the corresponding VIARULE or via cell definition in technology file if it's missing.
+[11/14 00:43:58     69s] <CMD> editPowerVia -add_vias 1 -bottom_layer Metal8 -top_layer Metal9
+[11/14 00:43:58     69s] 
+[11/14 00:43:58     69s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:58     69s] Multi Thread begin for Metal8 vertical
+[11/14 00:43:58     69s] Viagen work status, 5% finished
+[11/14 00:43:58     69s] Viagen work status, 10% finished
+[11/14 00:43:58     69s] Viagen work status, 15% finished
+[11/14 00:43:58     69s] Viagen work status, 20% finished
+[11/14 00:43:58     69s] Viagen work status, 25% finished
+[11/14 00:43:58     69s] Viagen work status, 30% finished
+[11/14 00:43:58     69s] Viagen work status, 35% finished
+[11/14 00:43:58     69s] Viagen work status, 40% finished
+[11/14 00:43:58     69s] Viagen work status, 45% finished
+[11/14 00:43:58     69s] Viagen work status, 50% finished
+[11/14 00:43:58     69s] Viagen work status, 55% finished
+[11/14 00:43:58     69s] Viagen work status, 60% finished
+[11/14 00:43:58     69s] Viagen work status, 65% finished
+[11/14 00:43:58     69s] Viagen work status, 70% finished
+[11/14 00:43:58     69s] Viagen work status, 75% finished
+[11/14 00:43:58     69s] Viagen work status, 80% finished
+[11/14 00:43:58     69s] Viagen work status, 85% finished
+[11/14 00:43:58     69s] Viagen work status, 90% finished
+[11/14 00:43:58     69s] Viagen work status, 95% finished
+[11/14 00:43:58     69s] Viagen work status, 100% finished
+[11/14 00:43:58     69s] Multi Thread begin for Metal9 horizontal
+[11/14 00:43:58     69s] Viagen work status, 5% finished
+[11/14 00:43:58     69s] Viagen work status, 10% finished
+[11/14 00:43:58     69s] Viagen work status, 15% finished
+[11/14 00:43:58     69s] Viagen work status, 20% finished
+[11/14 00:43:58     69s] Viagen work status, 25% finished
+[11/14 00:43:58     69s] Viagen work status, 30% finished
+[11/14 00:43:58     69s] Viagen work status, 35% finished
+[11/14 00:43:58     69s] Viagen work status, 40% finished
+[11/14 00:43:58     69s] Viagen work status, 45% finished
+[11/14 00:43:58     69s] Viagen work status, 50% finished
+[11/14 00:43:58     69s] Viagen work status, 55% finished
+[11/14 00:43:58     69s] Viagen work status, 60% finished
+[11/14 00:43:58     69s] Viagen work status, 65% finished
+[11/14 00:43:58     69s] Viagen work status, 70% finished
+[11/14 00:43:58     69s] Viagen work status, 75% finished
+[11/14 00:43:58     69s] Viagen work status, 80% finished
+[11/14 00:43:58     69s] Viagen work status, 85% finished
+[11/14 00:43:58     69s] Viagen work status, 90% finished
+[11/14 00:43:58     69s] Viagen work status, 95% finished
+[11/14 00:43:58     69s] Viagen work status, 100% finished
+[11/14 00:43:58     69s] ViaGen created 930 vias, deleted 0 via to avoid violation.
+[11/14 00:43:58     69s] +--------+----------------+----------------+
+[11/14 00:43:58     69s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:58     69s] +--------+----------------+----------------+
+[11/14 00:43:58     69s] |  Via8  |       930      |        0       |
+[11/14 00:43:58     69s] +--------+----------------+----------------+
+[11/14 00:43:58     69s] <CMD> addStripe -nets VDD -layer Metal10 -direction vertical -width 0.32 -set_to_set_distance 7 -start 5 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+[11/14 00:43:58     69s] #% Begin addStripe (date=11/14 00:43:58, mem=2214.1M)
+[11/14 00:43:58     69s] 
+[11/14 00:43:58     69s] Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:58     69s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:58     69s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:43:58     69s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:58     69s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:58     69s] Starting stripe generation ...
+[11/14 00:43:58     69s] Non-Default Mode Option Settings :
+[11/14 00:43:58     69s]   -use_exact_spacing  1
+[11/14 00:43:58     69s]   -remove_floating_stapling  0
+[11/14 00:43:58     69s]   -stapling_shift  0
+[11/14 00:43:58     69s] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:43:58     69s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:59     70s] Stripe generation is complete.
+[11/14 00:43:59     70s] vias are now being generated.
+[11/14 00:43:59     70s] addStripe created 28 wires.
+[11/14 00:43:59     70s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:59     70s] +--------+----------------+----------------+
+[11/14 00:43:59     70s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:59     70s] +--------+----------------+----------------+
+[11/14 00:43:59     70s] | Metal10|       28       |       NA       |
+[11/14 00:43:59     70s] +--------+----------------+----------------+
+[11/14 00:43:59     70s] #% End addStripe (date=11/14 00:43:59, total cpu=0:00:00.5, real=0:00:01.0, peak res=2214.1M, current mem=2214.1M)
+[11/14 00:43:59     70s] <CMD> addStripe -nets VSS -layer Metal10 -direction vertical -width 0.32 -set_to_set_distance 7 -start 6.7 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+[11/14 00:43:59     70s] #% Begin addStripe (date=11/14 00:43:59, mem=2214.1M)
+[11/14 00:43:59     70s] 
+[11/14 00:43:59     70s] Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:59     70s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:59     70s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:43:59     70s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:59     70s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:43:59     70s] Starting stripe generation ...
+[11/14 00:43:59     70s] Non-Default Mode Option Settings :
+[11/14 00:43:59     70s]   -use_exact_spacing  1
+[11/14 00:43:59     70s]   -remove_floating_stapling  0
+[11/14 00:43:59     70s]   -stapling_shift  0
+[11/14 00:43:59     70s] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:43:59     70s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:59     70s] Stripe generation is complete.
+[11/14 00:43:59     70s] vias are now being generated.
+[11/14 00:43:59     70s] addStripe created 28 wires.
+[11/14 00:43:59     70s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:43:59     70s] +--------+----------------+----------------+
+[11/14 00:43:59     70s] |  Layer |     Created    |     Deleted    |
+[11/14 00:43:59     70s] +--------+----------------+----------------+
+[11/14 00:43:59     70s] | Metal10|       28       |       NA       |
+[11/14 00:43:59     70s] +--------+----------------+----------------+
+[11/14 00:43:59     70s] #% End addStripe (date=11/14 00:43:59, total cpu=0:00:00.6, real=0:00:00.0, peak res=2214.1M, current mem=2214.1M)
+[11/14 00:43:59     70s] <CMD> setViaGenMode -reset
+[11/14 00:43:59     70s] <CMD> setViaGenMode -extend_out_wire_end false
+[11/14 00:43:59     70s] Setting -extend_out_wire_end to 0. ViaGen will not allow via extending outside of the end of the existing wires and may shift it inside.
+[11/14 00:43:59     70s] <CMD> setViaGenMode -allow_via_expansion false
+[11/14 00:43:59     70s] Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+[11/14 00:43:59     70s] <CMD> setViaGenMode -viarule_preference Via9
+[11/14 00:43:59     70s] **WARN: (IMPPP-614):	There is neither VIARULE nor via cell found with name Via9 in technology file. Correct the name if it's mis-typed, or add the corresponding VIARULE or via cell definition in technology file if it's missing.
+[11/14 00:43:59     70s] <CMD> editPowerVia -add_vias 1 -bottom_layer Metal9 -top_layer Metal10
+[11/14 00:43:59     70s] 
+[11/14 00:43:59     70s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:43:59     70s] Multi Thread begin for Metal9 horizontal
+[11/14 00:43:59     70s] Viagen work status, 5% finished
+[11/14 00:43:59     70s] Viagen work status, 10% finished
+[11/14 00:43:59     70s] Viagen work status, 15% finished
+[11/14 00:43:59     70s] Viagen work status, 20% finished
+[11/14 00:43:59     70s] Viagen work status, 25% finished
+[11/14 00:43:59     70s] Viagen work status, 30% finished
+[11/14 00:44:00     70s] Viagen work status, 35% finished
+[11/14 00:44:00     70s] Viagen work status, 40% finished
+[11/14 00:44:00     70s] Viagen work status, 45% finished
+[11/14 00:44:00     70s] Viagen work status, 50% finished
+[11/14 00:44:00     70s] Viagen work status, 55% finished
+[11/14 00:44:00     70s] Viagen work status, 60% finished
+[11/14 00:44:00     70s] Viagen work status, 65% finished
+[11/14 00:44:00     70s] Viagen work status, 70% finished
+[11/14 00:44:00     70s] Viagen work status, 75% finished
+[11/14 00:44:00     70s] Viagen work status, 80% finished
+[11/14 00:44:00     70s] Viagen work status, 85% finished
+[11/14 00:44:00     70s] Viagen work status, 90% finished
+[11/14 00:44:00     70s] Viagen work status, 95% finished
+[11/14 00:44:00     70s] Viagen work status, 100% finished
+[11/14 00:44:00     70s] Multi Thread begin for Metal10 vertical
+[11/14 00:44:00     70s] Viagen work status, 5% finished
+[11/14 00:44:00     70s] Viagen work status, 10% finished
+[11/14 00:44:00     70s] Viagen work status, 15% finished
+[11/14 00:44:00     70s] Viagen work status, 20% finished
+[11/14 00:44:00     70s] Viagen work status, 25% finished
+[11/14 00:44:00     70s] Viagen work status, 30% finished
+[11/14 00:44:00     70s] Viagen work status, 35% finished
+[11/14 00:44:00     70s] Viagen work status, 40% finished
+[11/14 00:44:00     70s] Viagen work status, 45% finished
+[11/14 00:44:00     70s] Viagen work status, 50% finished
+[11/14 00:44:00     70s] Viagen work status, 55% finished
+[11/14 00:44:00     70s] Viagen work status, 60% finished
+[11/14 00:44:00     70s] Viagen work status, 65% finished
+[11/14 00:44:00     70s] Viagen work status, 70% finished
+[11/14 00:44:00     70s] Viagen work status, 75% finished
+[11/14 00:44:00     70s] Viagen work status, 80% finished
+[11/14 00:44:00     70s] Viagen work status, 85% finished
+[11/14 00:44:00     70s] Viagen work status, 90% finished
+[11/14 00:44:00     70s] Viagen work status, 95% finished
+[11/14 00:44:00     70s] Viagen work status, 100% finished
+[11/14 00:44:00     70s] ViaGen created 868 vias, deleted 0 via to avoid violation.
+[11/14 00:44:00     70s] +--------+----------------+----------------+
+[11/14 00:44:00     70s] |  Layer |     Created    |     Deleted    |
+[11/14 00:44:00     70s] +--------+----------------+----------------+
+[11/14 00:44:00     70s] |  Via9  |       868      |        0       |
+[11/14 00:44:00     70s] +--------+----------------+----------------+
+[11/14 00:44:00     70s] <CMD> addStripe -nets VDD -layer Metal11 -direction horizontal -width 0.475 -set_to_set_distance 7 -start 4 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+[11/14 00:44:00     71s] #% Begin addStripe (date=11/14 00:44:00, mem=2214.1M)
+[11/14 00:44:00     71s] 
+[11/14 00:44:00     71s] **WARN: (IMPPP-152):	-width (0.475000) is not an even multiple of manufacturing grid (0.005000), setting to 0.480000.
+[11/14 00:44:00     71s] Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:44:00     71s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:44:00     71s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:44:00     71s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:44:00     71s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:44:00     71s] Starting stripe generation ...
+[11/14 00:44:00     71s] Non-Default Mode Option Settings :
+[11/14 00:44:00     71s]   -use_exact_spacing  1
+[11/14 00:44:00     71s]   -remove_floating_stapling  0
+[11/14 00:44:00     71s]   -stapling_shift  0
+[11/14 00:44:00     71s] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:44:00     71s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:44:00     71s] Stripe generation is complete.
+[11/14 00:44:00     71s] vias are now being generated.
+[11/14 00:44:00     71s] addStripe created 14 wires.
+[11/14 00:44:00     71s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:44:00     71s] +--------+----------------+----------------+
+[11/14 00:44:00     71s] |  Layer |     Created    |     Deleted    |
+[11/14 00:44:00     71s] +--------+----------------+----------------+
+[11/14 00:44:00     71s] | Metal11|       14       |       NA       |
+[11/14 00:44:00     71s] +--------+----------------+----------------+
+[11/14 00:44:00     71s] #% End addStripe (date=11/14 00:44:00, total cpu=0:00:00.6, real=0:00:00.0, peak res=2214.1M, current mem=2214.1M)
+[11/14 00:44:00     71s] <CMD> addStripe -nets VSS -layer Metal11 -direction horizontal -width 0.475 -set_to_set_distance 7 -start 5.7 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+[11/14 00:44:00     71s] #% Begin addStripe (date=11/14 00:44:00, mem=2214.1M)
+[11/14 00:44:00     71s] 
+[11/14 00:44:00     71s] **WARN: (IMPPP-152):	-width (0.475000) is not an even multiple of manufacturing grid (0.005000), setting to 0.480000.
+[11/14 00:44:00     71s] Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:44:00     71s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:44:00     71s] **WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+[11/14 00:44:00     71s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:44:00     71s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+[11/14 00:44:00     71s] Starting stripe generation ...
+[11/14 00:44:00     71s] Non-Default Mode Option Settings :
+[11/14 00:44:00     71s]   -use_exact_spacing  1
+[11/14 00:44:00     71s]   -remove_floating_stapling  0
+[11/14 00:44:00     71s]   -stapling_shift  0
+[11/14 00:44:00     71s] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[11/14 00:44:00     71s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:44:01     72s] Stripe generation is complete.
+[11/14 00:44:01     72s] vias are now being generated.
+[11/14 00:44:01     72s] addStripe created 14 wires.
+[11/14 00:44:01     72s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[11/14 00:44:01     72s] +--------+----------------+----------------+
+[11/14 00:44:01     72s] |  Layer |     Created    |     Deleted    |
+[11/14 00:44:01     72s] +--------+----------------+----------------+
+[11/14 00:44:01     72s] | Metal11|       14       |       NA       |
+[11/14 00:44:01     72s] +--------+----------------+----------------+
+[11/14 00:44:01     72s] #% End addStripe (date=11/14 00:44:01, total cpu=0:00:00.6, real=0:00:01.0, peak res=2214.1M, current mem=2214.1M)
+[11/14 00:44:01     72s] <CMD> setViaGenMode -reset
+[11/14 00:44:01     72s] <CMD> setViaGenMode -extend_out_wire_end false
+[11/14 00:44:01     72s] Setting -extend_out_wire_end to 0. ViaGen will not allow via extending outside of the end of the existing wires and may shift it inside.
+[11/14 00:44:01     72s] <CMD> setViaGenMode -allow_via_expansion false
+[11/14 00:44:01     72s] Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+[11/14 00:44:01     72s] <CMD> setViaGenMode -viarule_preference Via10
+[11/14 00:44:01     72s] **WARN: (IMPPP-614):	There is neither VIARULE nor via cell found with name Via10 in technology file. Correct the name if it's mis-typed, or add the corresponding VIARULE or via cell definition in technology file if it's missing.
+[11/14 00:44:01     72s] <CMD> editPowerVia -add_vias 1 -bottom_layer Metal10 -top_layer Metal11
+[11/14 00:44:01     72s] 
+[11/14 00:44:01     72s] Multi-CPU acceleration using 8 CPU(s).
+[11/14 00:44:01     72s] Multi Thread begin for Metal10 vertical
+[11/14 00:44:01     72s] Viagen work status, 5% finished
+[11/14 00:44:01     72s] Viagen work status, 10% finished
+[11/14 00:44:01     72s] Viagen work status, 15% finished
+[11/14 00:44:01     72s] Viagen work status, 20% finished
+[11/14 00:44:01     72s] Viagen work status, 25% finished
+[11/14 00:44:01     72s] Viagen work status, 30% finished
+[11/14 00:44:01     72s] Viagen work status, 35% finished
+[11/14 00:44:01     72s] Viagen work status, 40% finished
+[11/14 00:44:01     72s] Viagen work status, 45% finished
+[11/14 00:44:01     72s] Viagen work status, 50% finished
+[11/14 00:44:01     72s] Viagen work status, 55% finished
+[11/14 00:44:01     72s] Viagen work status, 60% finished
+[11/14 00:44:01     72s] Viagen work status, 65% finished
+[11/14 00:44:01     72s] Viagen work status, 70% finished
+[11/14 00:44:01     72s] Viagen work status, 75% finished
+[11/14 00:44:01     72s] Viagen work status, 80% finished
+[11/14 00:44:01     72s] Viagen work status, 85% finished
+[11/14 00:44:01     72s] Viagen work status, 90% finished
+[11/14 00:44:01     72s] Viagen work status, 95% finished
+[11/14 00:44:01     72s] Viagen work status, 100% finished
+[11/14 00:44:01     72s] Multi Thread begin for Metal11 horizontal
+[11/14 00:44:01     72s] Viagen work status, 5% finished
+[11/14 00:44:01     72s] Viagen work status, 10% finished
+[11/14 00:44:01     72s] Viagen work status, 15% finished
+[11/14 00:44:01     72s] Viagen work status, 20% finished
+[11/14 00:44:01     72s] Viagen work status, 25% finished
+[11/14 00:44:01     72s] Viagen work status, 30% finished
+[11/14 00:44:01     72s] Viagen work status, 35% finished
+[11/14 00:44:01     72s] Viagen work status, 40% finished
+[11/14 00:44:01     72s] Viagen work status, 45% finished
+[11/14 00:44:01     72s] Viagen work status, 50% finished
+[11/14 00:44:01     72s] Viagen work status, 55% finished
+[11/14 00:44:01     72s] Viagen work status, 60% finished
+[11/14 00:44:01     72s] Viagen work status, 65% finished
+[11/14 00:44:01     72s] Viagen work status, 70% finished
+[11/14 00:44:01     72s] Viagen work status, 75% finished
+[11/14 00:44:01     72s] Viagen work status, 80% finished
+[11/14 00:44:01     72s] Viagen work status, 85% finished
+[11/14 00:44:01     72s] Viagen work status, 90% finished
+[11/14 00:44:01     72s] Viagen work status, 95% finished
+[11/14 00:44:01     72s] Viagen work status, 100% finished
+[11/14 00:44:01     72s] ViaGen created 784 vias, deleted 0 via to avoid violation.
+[11/14 00:44:01     72s] +--------+----------------+----------------+
+[11/14 00:44:01     72s] |  Layer |     Created    |     Deleted    |
+[11/14 00:44:01     72s] +--------+----------------+----------------+
+[11/14 00:44:01     72s] |  Via10 |       784      |        0       |
+[11/14 00:44:01     72s] +--------+----------------+----------------+
+[11/14 00:44:01     72s] **INFO(SUSPEND): The current script is stopped at 'suspend' command. Type 'resume' to continue.
+[11/14 00:44:13     74s] <CMD> zoomBox -58.53050 -47.06000 187.79600 172.74900
+[11/14 00:44:13     74s] <CMD> zoomBox -2.42050 3.18200 126.16400 117.92400
+[11/14 00:44:15     74s] <CMD> zoomBox -6.58450 -23.52950 171.38750 135.28350
+[11/14 00:44:16     74s] <CMD> zoomBox -50.76150 -110.33600 290.17700 193.89950
+[11/14 00:44:18     75s] <CMD> zoomBox -21.06550 -54.13400 225.26250 165.67600
+[11/14 00:44:35     76s] <CMD> uiSetTool ruler
+[11/14 00:44:52     81s] <CMD> zoomBox -1.88200 -11.89000 149.39500 123.10150
+[11/14 00:44:53     81s] <CMD> zoomBox 0.76750 18.01550 93.67050 100.91750
+[11/14 00:44:53     81s] <CMD> zoomBox 3.58900 45.08550 52.08500 88.36100
+[11/14 00:44:54     81s] <CMD> zoomBox 6.07300 61.84650 27.59100 81.04800
+[11/14 00:44:54     81s] <CMD> zoomBox 7.06100 68.23700 18.29300 78.26000
+[11/14 00:44:55     82s] <CMD> zoomBox 8.46050 72.01250 13.44500 76.46050
+[11/14 00:45:03     83s] <CMD> uiSetTool ruler
+[11/14 00:45:04     83s] <CMD> uiSetTool select
+[11/14 00:45:05     83s] <CMD> selectWire 9.1350 1.7100 9.4550 101.8400 6 VDD
+[11/14 00:45:06     84s] <CMD> deselectAll
+[11/14 00:45:09     84s] <CMD> selectWire 9.1350 1.7100 9.4550 101.8400 6 VDD
+[11/14 00:45:21     86s] <CMD> setLayerPreference Poly -isVisible 0
+[11/14 00:45:22     86s] <CMD> setLayerPreference Poly -isVisible 1
+[11/14 00:45:23     86s] <CMD> setLayerPreference Poly -isSelectable 0
+[11/14 00:45:24     86s] <CMD> setLayerPreference Poly -isSelectable 1
+[11/14 00:45:28     87s] <CMD> zoomBox 7.96050 71.64300 13.82500 76.87600
+[11/14 00:45:40     88s] <CMD> zoomBox 4.90800 69.01900 18.12650 80.81450
+[11/14 00:45:40     88s] <CMD> zoomBox -0.11550 64.71700 25.20700 87.31350
+[11/14 00:45:43     89s] <CMD> setLayerPreference node_layer -isSelectable 0
+[11/14 00:45:43     89s] <CMD> setLayerPreference node_layer -isSelectable 1
+[11/14 00:45:44     89s] <CMD> setLayerPreference node_layer -isVisible 0
+[11/14 00:45:45     89s] <CMD> setLayerPreference node_layer -isVisible 1
+[11/14 00:45:52     90s] <CMD> zoomBox -1.82450 61.75400 33.22450 93.03000
+[11/14 00:45:54     90s] <CMD> zoomBox -1.06350 66.50750 20.46100 85.71500
+[11/14 00:45:55     91s] <CMD> zoomBox -0.49000 70.12300 10.74650 80.15000
+[11/14 00:45:55     91s] <CMD> zoomBox -0.24900 71.64700 6.65200 77.80500
+[11/14 00:45:56     91s] <CMD> zoomBox -0.14250 72.32000 4.84350 76.76900
+[11/14 00:45:57     91s] <CMD> zoomBox -1.61950 72.65250 2.61900 76.43450
+[11/14 00:45:57     91s] <CMD> pan -2.62600 72.78400
+[11/14 00:45:57     91s] <CMD> zoomBox -1.06850 73.73250 0.81300 75.41150
+[11/14 00:45:59     91s] <CMD> zoomBox -3.10100 72.45250 1.88900 76.90550
+[11/14 00:45:59     92s] <CMD> zoomBox -8.55450 69.11900 4.67850 80.92750
+[11/14 00:46:00     92s] <CMD> pan 1.95700 71.15150
+[11/14 00:46:01     92s] <CMD> pan 0.82400 61.28200
+[11/14 00:46:02     92s] <CMD> zoomBox -11.58450 48.46200 18.24100 75.07650
+[11/14 00:46:02     92s] <CMD> zoomBox -13.50300 47.05550 21.58600 78.36700
+[11/14 00:46:03     93s] <CMD> zoomBox -5.36750 50.05400 7.86650 61.86350
+[11/14 00:46:04     93s] <CMD> zoomBox -2.36700 50.52100 3.50600 55.76200
+[11/14 00:46:05     93s] <CMD> deselectAll
+[11/14 00:46:42     97s] <CMD> zoomBox -7.77650 44.89350 7.79800 58.79150
+[11/14 00:46:56     99s] <CMD> checkFPlan -reportUtil
+[11/14 00:46:56     99s] Checking routing tracks.....
+[11/14 00:46:56     99s] Checking other grids.....
+[11/14 00:46:56     99s] Checking FINFET Grid is on Manufacture Grid.....
+[11/14 00:46:56     99s] Checking core/die box is on Grid.....
+[11/14 00:46:56     99s] Checking snap rule ......
+[11/14 00:46:56     99s] Checking Row is on grid......
+[11/14 00:46:56     99s] Tech site CoreSite has no symmetry Y. 	Current symmetry setting : isSymmetryR90 false; isSymmetryX : false; isSymmetryY : false;
+[11/14 00:46:56     99s] 
+[11/14 00:46:56     99s] INFO (IMPFP-7241): Tech site CoreSite has no symmetry Y. 	Current symmetry setting : isSymmetryR90 false; isSymmetryX : false; isSymmetryY : false;
+[11/14 00:46:56     99s] 
+[11/14 00:46:56     99s] Checking AreaIO row.....
+[11/14 00:46:56     99s] Checking row out of die ...
+[11/14 00:46:56     99s] Checking routing blockage.....
+[11/14 00:46:56     99s] Checking placement blockage.....
+[11/14 00:46:56     99s] placeBlkGrid grid_type = 1 
+[11/14 00:46:56     99s] Checking components.....
+[11/14 00:46:56     99s] Checking IO Pads out of die...
+[11/14 00:46:56     99s] Checking constraints (guide/region/fence).....
+[11/14 00:46:56     99s] 
+[11/14 00:46:56     99s] Checking Preroutes.....
+[11/14 00:46:56     99s] No. of regular pre-routes not on tracks : 0 
+[11/14 00:46:56     99s] 
+[11/14 00:46:56     99s] Reporting Utilizations.....
+[11/14 00:46:56     99s] 
+[11/14 00:46:56     99s] Core utilization  = 39.172637
+[11/14 00:46:56     99s] Effective Utilizations
+[11/14 00:46:56     99s] Disable fast DP-INIT: start main density report
+[11/14 00:46:56     99s] Processing tracks to init pin-track alignment.
+[11/14 00:46:56     99s] z: 2, totalTracks: 1
+[11/14 00:46:56     99s] z: 4, totalTracks: 1
+[11/14 00:46:56     99s] z: 6, totalTracks: 1
+[11/14 00:46:56     99s] z: 8, totalTracks: 1
+[11/14 00:46:56     99s] #spOpts: N=45 hrOri=1 hrSnap=1 rpCkHalo=4 
+[11/14 00:46:56     99s] Cell fir_serial_parallel LLGs are deleted
+[11/14 00:46:56     99s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/14 00:46:56     99s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/14 00:46:56     99s] OPERPROF: Starting SiteArray-Init at level 1, MEM:3362.7M, EPOCH TIME: 1794628016.869344
+[11/14 00:46:56     99s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/14 00:46:56     99s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/14 00:46:56     99s] OPERPROF:   Starting SiteArray-Init-FPlan at level 2, MEM:3362.7M, EPOCH TIME: 1794628016.874098
+[11/14 00:46:56     99s] Max number of tech site patterns supported in site array is 256.
+[11/14 00:46:56     99s] Core basic site is CoreSite
+[11/14 00:46:56    100s] DP-Init: Signature of floorplan is ccf1b242779b7b00. Signature of routing blockage is cf302097bf26c3d5.
+[11/14 00:46:56    100s] After signature check, allow fast init is false, keep pre-filter is false.
+[11/14 00:46:56    100s] After signature check and other controls, allow fast init is false, keep pre-filter is false.
+[11/14 00:46:56    100s] Use non-trimmed site array because memory saving is not enough.
+[11/14 00:46:56    100s] SiteArray: non-trimmed site array dimensions = 58 x 980
+[11/14 00:46:56    100s] SiteArray: use 299,008 bytes
+[11/14 00:46:56    100s] SiteArray: current memory after site array memory allocation 3396.0M
+[11/14 00:46:56    100s] SiteArray: FP blocked sites are writable
+[11/14 00:46:56    100s] SY_THREAD_POOL_QUEUE SY-GLB-THREAD-POOL (0x4717e3e0): Create thread pool 0x7effb7783b80.
+[11/14 00:46:56    100s] SY_THREAD_POOL_QUEUE SY-GLB-THREAD-POOL (0x4717e3e0): 0 out of 1 thread pools are available.
+[11/14 00:46:56    100s] Estimated cell power/ground rail width = 0.160 um
+[11/14 00:46:56    100s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[11/14 00:46:56    100s] OPERPROF:     Starting Routing-Blockage-From-Wire-Via-StBox at level 3, MEM:3524.0M, EPOCH TIME: 1794628016.969716
+[11/14 00:46:56    100s] Process 30227 wires and vias for routing blockage analysis
+[11/14 00:46:56    100s] OPERPROF:     Finished Routing-Blockage-From-Wire-Via-StBox at level 3, CPU:0.110, REAL:0.020, MEM:3524.0M, EPOCH TIME: 1794628016.989472
+[11/14 00:46:56    100s] SiteArray: number of non floorplan blocked sites for llg default is 56840
+[11/14 00:46:56    100s] Atter site array init, number of instance map data is 0.
+[11/14 00:46:56    100s] OPERPROF:   Finished SiteArray-Init-FPlan at level 2, CPU:0.240, REAL:0.118, MEM:3527.0M, EPOCH TIME: 1794628016.992405
+[11/14 00:46:56    100s] 
+[11/14 00:46:56    100s] Scanning PG Shapes for Pre-Colorizing...Done.
+[11/14 00:46:56    100s] Verbose-2062: PG Shapes are colorized in Pre_CCE_Colorize flow.
+[11/14 00:46:56    100s]  Pre_CCE_Colorizing is not ON! (0:0:1559:0)
+[11/14 00:46:56    100s] OPERPROF: Finished SiteArray-Init at level 1, CPU:0.240, REAL:0.126, MEM:3527.0M, EPOCH TIME: 1794628016.995496
+[11/14 00:46:56    100s] Average macro density = 0.000.
+[11/14 00:46:56    100s] Average module density = 0.395.
+[11/14 00:46:56    100s] Pure std cell Density 0.395479
+[11/14 00:46:56    100s]  Density for the design = 0.395.
+[11/14 00:46:56    100s]        = stdcell_area 22479 sites (7688 um^2) / alloc_area 56840 sites (19439 um^2).
+[11/14 00:46:56    100s] Pin Density = 0.1599.
+[11/14 00:46:56    100s]             = total # of pins 9088 / total area 56840.
+[11/14 00:46:56    100s] Cell fir_serial_parallel LLGs are deleted
+[11/14 00:46:56    100s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/14 00:46:56    100s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/14 00:46:57    100s] # Resetting pin-track-align track data.
+[11/14 00:46:57    100s] Disable fast DP-INIT: end main density report
+[11/14 00:46:57    100s] *** Message Summary: 0 warning(s), 0 error(s)
+[11/14 00:46:57    100s] 
+[11/14 00:49:04    113s] couldn't read file "./scripts/ex3_area.tcl": no such file or directory
+[11/14 00:50:32    122s] couldn't read file "ex3_area.tcl": no such file or directory
+[11/14 00:51:17    126s] couldn't read file "ex3_area.tcl": no such file or directory
+[11/14 00:52:11    132s] **ERROR: (IMPDBTCL-248):	'width' is not a recognized object or attribute for object type 'base_cell'. Update its value to match one of the 'base_cell' attributes. Run 'help base_cell' to get a list of all 'base_cell' attributes.
+
+[11/14 00:52:54    136s] <CMD> help base_cell
+[11/14 00:52:54    136s] No help is available for 'base_cell'.
+[11/14 00:52:54    136s]       You might have typed the command name incorrectly
+[11/14 00:52:54    136s]       (command names are case sensitive), or this is an
+[11/14 00:52:54    136s]       unknown or unsupported command.
+[11/14 00:52:54    136s] 
+[11/14 01:08:15    231s] 
+[11/14 01:08:15    231s] *** Memory Usage v#2 (Current mem = 3529.047M, initial mem = 820.648M) ***
+[11/14 01:08:15    231s] 
+[11/14 01:08:15    231s] *** Summary of all messages that are not suppressed in this session:
+[11/14 01:08:15    231s] Severity  ID               Count  Summary                                  
+[11/14 01:08:15    231s] WARNING   IMPLF-200            3  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[11/14 01:08:15    231s] WARNING   IMPFP-325            1  Floorplan of the design is resized. All ...
+[11/14 01:08:15    231s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[11/14 01:08:15    231s] ERROR     IMPDBTCL-248         1  '%s' is not a recognized object or attri...
+[11/14 01:08:15    231s] WARNING   IMPPP-354           57  The power planner did not generate the %...
+[11/14 01:08:15    231s] WARNING   IMPPP-614           10  There is neither VIARULE nor via cell fo...
+[11/14 01:08:15    231s] WARNING   IMPPP-149           22  Half grid on layer %s is not on manufact...
+[11/14 01:08:15    231s] WARNING   IMPPP-152            2  %s (%f) is not an even multiple of manuf...
+[11/14 01:08:15    231s] WARNING   IMPPP-2034           6  Option -spacing does not need to be spec...
+[11/14 01:08:15    231s] WARNING   IMPSR-4302           1  Cap-table/qrcTechFile is found in the de...
+[11/14 01:08:15    231s] WARNING   TA-976               1  Path groups asserted by the group_path c...
+[11/14 01:08:15    231s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[11/14 01:08:15    231s] WARNING   TECHLIB-302         24  No function defined for cell '%s'. The c...
+[11/14 01:08:15    231s] *** Message Summary: 133 warning(s), 1 error(s)
+[11/14 01:08:15    231s] 
+[11/14 01:08:15    231s] --- Ending "Innovus" (totcpu=0:03:52, real=0:26:31, mem=3529.0M) ---

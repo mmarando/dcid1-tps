@@ -1,0 +1,1713 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v23.10-p003_1, built Thu Feb 1 13:54:57 PST 2024
+Options:	
+Date:		Sat Nov 14 00:41:44 2026
+Host:		fiubarh01 (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (20cores*80cpus*Intel(R) Xeon(R) Gold 6138 CPU @ 2.00GHz 28160KB)
+OS:		Red Hat Enterprise Linux Server 7.9 (Maipo)
+
+License:
+		[00:41:44.249705] Configured Lic search path (23.02-s003): 5280@fiubarh01
+
+		invs	Innovus Implementation System	23.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (450 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> zoomBox -0.02500 -0.01700 0.13100 0.12200
+<CMD> zoomBox -0.01500 -0.00800 0.11700 0.11000
+<CMD> zoomBox -0.16500 -0.13000 0.19000 0.18700
+<CMD> setPreference CmdLogMode 2
+<CMD> set init_verilog /home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.v
+<CMD> set init_mmmc_file ./scripts/mmmc_invs.tcl
+<CMD> set init_lef_file {/home/amslib/PDKs/gpdk045v6/gsclib045_tech/lef/gsclib045_tech.lef /home/amslib/PDKs/gpdk045v6/gsclib045_hvt/lef/gsclib045_hvt_macro.lef /home/amslib/PDKs/gpdk045v6/gsclib045/lef/gsclib045_macro.lef /home/amslib/PDKs/gpdk045v6/gsclib045_lvt/lef/gsclib045_lvt_macro.lef}
+<CMD> set init_top_cell fir_serial_parallel
+<CMD> set init_gnd_net VSS
+<CMD> set init_pwr_net VDD
+<CMD> set init_design_uniquify 0
+<CMD> init_design
+#% Begin Load MMMC data ... (date=11/14 00:43:24, mem=1497.8M)
+#% End Load MMMC data ... (date=11/14 00:43:24, total cpu=0:00:00.1, real=0:00:00.0, peak res=1498.7M, current mem=1498.7M)
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+
+Loading LEF file /home/amslib/PDKs/gpdk045v6/gsclib045_tech/lef/gsclib045_tech.lef ...
+Set DBUPerIGU to M2 pitch 400.
+
+Loading LEF file /home/amslib/PDKs/gpdk045v6/gsclib045_hvt/lef/gsclib045_hvt_macro.lef ...
+
+Loading LEF file /home/amslib/PDKs/gpdk045v6/gsclib045/lef/gsclib045_macro.lef ...
+
+Loading LEF file /home/amslib/PDKs/gpdk045v6/gsclib045_lvt/lef/gsclib045_lvt_macro.lef ...
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNALVT' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNAHVT' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from ./scripts/mmmc_invs.tcl
+Reading slow timing library '/home/amslib/PDKs/gpdk045v6/gsclib045_hvt/timing/slow_vdd1v0_basicCells_hvt.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNAHVT'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045_hvt/timing/slow_vdd1v0_basicCells_hvt.lib)
+Read 480 cells in library 'slow_vdd1v0' 
+Reading slow timing library '/home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+Read 489 cells in library 'slow_vdd1v0' 
+Reading slow timing library '/home/amslib/PDKs/gpdk045v6/gsclib045_lvt/timing/slow_vdd1v0_basicCells_lvt.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNALVT'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045_lvt/timing/slow_vdd1v0_basicCells_lvt.lib)
+Read 480 cells in library 'slow_vdd1v0' 
+Reading fast timing library '/home/amslib/PDKs/gpdk045v6/gsclib045_hvt/timing/fast_vdd1v0_basicCells_hvt.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNAHVT'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045_hvt/timing/fast_vdd1v0_basicCells_hvt.lib)
+Read 480 cells in library 'fast_vdd1v0' 
+Reading fast timing library '/home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 489 cells in library 'fast_vdd1v0' 
+Reading fast timing library '/home/amslib/PDKs/gpdk045v6/gsclib045_lvt/timing/fast_vdd1v0_basicCells_lvt.lib' ...
+Read 480 cells in library 'fast_vdd1v0' 
+*** End library_loading (cpu=0.09min, real=0.08min, mem=20.5M, fe_cpu=0.74min, fe_real=1.77min, fe_mem=1782.6M) ***
+#% Begin Load netlist data ... (date=11/14 00:43:30, mem=1525.4M)
+*** Begin netlist parsing (mem=1782.6M) ***
+Created 1449 new cells from 6 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '/home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.v'
+
+*** Memory Usage v#2 (Current mem = 1782.637M, initial mem = 820.648M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=1782.6M) ***
+#% End Load netlist data ... (date=11/14 00:43:30, total cpu=0:00:00.1, real=0:00:00.0, peak res=1550.0M, current mem=1550.0M)
+Set top cell to fir_serial_parallel.
+Hooked 2898 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell fir_serial_parallel ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 3011 modules.
+** info: there are 2335 stdCell insts.
+** info: there are 0 insts with no signal pins.
+
+*** Memory Usage v#2 (Current mem = 1864.062M, initial mem = 820.648M) ***
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+Extraction setup Started for TopCell fir_serial_parallel 
+Initializing multi-corner RC extraction with 4 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Generating auto layer map file.
+Importing multi-corner technology file(s) for preRoute extraction...
+/home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile
+Generating auto layer map file.
+
+/home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile
+Generating auto layer map file.
+
+Completed (cpu: 0:00:10.0 real: 0:00:12.0)
+Set Shrink Factor to 1.00000
+Summary of Active RC-Corners : 
+ 
+ Analysis View: func_setup_ss0p9v_125c_rcworst
+  Late RC-Corner
+    RC-Corner Name        : late_spef_rcworst_125
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 0.91
+    RC-Corner PreRoute Cap Factor         : 1.11
+    RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+    RC-Corner PostRoute Cap Factor        : 1.06 {1.06 1.06 1}
+    RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+    RC-Corner PreRoute Clock Res Factor   : 0.985
+    RC-Corner PreRoute Clock Cap Factor   : 1.01
+    RC-Corner PostRoute Clock Cap Factor  : 0.948 {0.948 0.948 1} 
+    RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 
+    RC-Corner Technology file: '/home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile'
+ 
+  Early RC-Corner
+    RC-Corner Name        : early_spef_rcworst_125
+    RC-Corner Index       : 1
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 0.91
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+    RC-Corner PostRoute Cap Factor        : 0.961 {0.961 0.961 1}
+    RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+    RC-Corner PreRoute Clock Res Factor   : 0.985
+    RC-Corner PreRoute Clock Cap Factor   : 0.912
+    RC-Corner PostRoute Clock Cap Factor  : 0.857 {0.857 0.857 1} 
+    RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 
+    RC-Corner Technology file: '/home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile'
+ 
+ Analysis View: func_hold_ff1p1v_0c_rcbest
+  Late RC-Corner
+    RC-Corner Name        : late_spef_rcbest_0
+    RC-Corner Index       : 2
+    RC-Corner Temperature : 0 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 0.91
+    RC-Corner PreRoute Cap Factor         : 1.11
+    RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+    RC-Corner PostRoute Cap Factor        : 1.06 {1.06 1.06 1}
+    RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+    RC-Corner PreRoute Clock Res Factor   : 0.985
+    RC-Corner PreRoute Clock Cap Factor   : 1.01
+    RC-Corner PostRoute Clock Cap Factor  : 0.948 {0.948 0.948 1} 
+    RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 
+    RC-Corner Technology file: '/home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile'
+ 
+  Early RC-Corner
+    RC-Corner Name        : early_spef_rcbest_0
+    RC-Corner Index       : 3
+    RC-Corner Temperature : 0 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 0.91
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+    RC-Corner PostRoute Cap Factor        : 0.961 {0.961 0.961 1}
+    RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+    RC-Corner PreRoute Clock Res Factor   : 0.985
+    RC-Corner PreRoute Clock Cap Factor   : 0.912
+    RC-Corner PostRoute Clock Cap Factor  : 0.857 {0.857 0.857 1} 
+    RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 
+    RC-Corner Technology file: '/home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile'
+Updating RC Grid density data for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.sdc' ...
+Current (total cpu=0:00:57.1, real=0:02:01, peak res=2078.8M, current mem=2053.8M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.sdc, Line 9).
+
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.sdc, Line 10).
+
+fir_serial_parallel
+INFO (CTE): Reading of timing constraints file /home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.sdc completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=2094.0M, current mem=2094.0M)
+Current (total cpu=0:00:57.3, real=0:02:02, peak res=2094.0M, current mem=2094.0M)
+**WARN: (TA-976):	Path groups asserted by the group_path constraint are considered by the software to be global in nature - they cannot be restricted to specific constraint modes. Due to this restriction, the group_path constraint is not supported directly in the constraint files which are configured in mode-specific commands such as create_constraint_mode. The current group_path entry will be ignored. You can enter the group_path constraint interactively or as part of a general command script -  where it will be interpreted as global and will be in effect for all modes.
+Total number of combinational cells: 954
+Total number of sequential cells: 456
+Total number of tristate cells: 30
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 9
+List of usable buffers: BUFX2LVT BUFX12LVT BUFX16LVT BUFX20LVT CLKBUFX2LVT BUFX3LVT BUFX4LVT BUFX6LVT BUFX8LVT CLKBUFX12LVT CLKBUFX16LVT CLKBUFX20LVT CLKBUFX3LVT CLKBUFX4LVT CLKBUFX6LVT CLKBUFX8LVT DLY1X1LVT DLY1X4LVT BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8 BUFX2HVT BUFX12HVT BUFX16HVT BUFX20HVT CLKBUFX2HVT BUFX3HVT BUFX4HVT BUFX6HVT BUFX8HVT CLKBUFX12HVT CLKBUFX16HVT CLKBUFX20HVT CLKBUFX3HVT CLKBUFX4HVT CLKBUFX6HVT CLKBUFX8HVT
+Total number of usable buffers: 50
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1LVT CLKINVX2LVT CLKINVX12LVT CLKINVX16LVT CLKINVX20LVT CLKINVX4LVT CLKINVX3LVT CLKINVX6LVT CLKINVX8LVT INVX1LVT INVX2LVT INVX12LVT INVX16LVT INVX20LVT INVX3LVT INVX4LVT INVX6LVT INVX8LVT INVXLLVT CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVX3 INVX4 INVX6 INVX8 INVXL CLKINVX1HVT CLKINVX2HVT CLKINVX12HVT CLKINVX16HVT CLKINVX20HVT CLKINVX4HVT CLKINVX3HVT CLKINVX6HVT CLKINVX8HVT INVX1HVT INVX2HVT INVX12HVT INVX16HVT INVX20HVT INVXLHVT INVX3HVT INVX4HVT INVX6HVT INVX8HVT
+Total number of usable inverters: 57
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY2X1LVT DLY2X4LVT DLY3X1LVT DLY3X4LVT DLY4X1LVT DLY4X4LVT DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4 DLY1X1HVT DLY1X4HVT DLY2X1HVT DLY2X4HVT DLY3X1HVT DLY3X4HVT DLY4X1HVT DLY4X4HVT
+Total number of identified usable delay cells: 22
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+#% Begin Load MMMC data post ... (date=11/14 00:43:46, mem=2097.8M)
+#% End Load MMMC data post ... (date=11/14 00:43:46, total cpu=0:00:00.1, real=0:00:00.0, peak res=2097.8M, current mem=2097.8M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200            3  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   TA-976               1  Path groups asserted by the group_path c...
+WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+WARNING   TECHLIB-302         24  No function defined for cell '%s'. The c...
+*** Message Summary: 32 warning(s), 0 error(s)
+
+<CMD> setMultiCpuUsage -localCPU 8
+<CMD> setDesignMode -topRoutingLayer 11
+<CMD> setDesignMode -bottomRoutingLayer 2
+<CMD> setDesignMode -flowEffort standar -process 45
+##  Process: 45            (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 45nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'high'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'medium'.
+<CMD> floorPlan -site CoreSite -coreMarginsBy die -d 200 103.64 2 1.71 2 1.71 -flip f
+The die height changes from 103.640000 to 103.550000 when snapping to grid "PlacementGrid".
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> add_tracks -pitch_pattern {Metal1 offset 0.19 pitch 0.19 Metal3 offset 0.19 pitch 0.19 Metal5 offset 0.19 pitch 0.19} -offset {Metal1 horiz 0.095 Metal2 vert 0.095 Metal3 horiz 0.1 Metal4 vert 0.095 Metal5 horiz 0.1 Metal6 vert 0.095 Metal7 horiz 0.1 Metal8 vert 0.095 Metal9 horiz 0.1 Metal10 vert 0.95 Metal11 horiz 0.6}
+Start create_tracks
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -override -verbose -autoTie
+2335 new pwr-pin connections were made to global net 'VDD'.
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -override -verbose -autoTie
+2335 new gnd-pin connections were made to global net 'VSS'.
+2 new auto-tielo connections were made to global net 'VSS'.
+<CMD> deleteBufferTree
+*** Start deleteBufferTree ***
+Multithreaded Timing Analysis is initialized with 8 threads
+
+Using master clock 'clock' for generated clock 'clk_div2' in view 'func_setup_ss0p9v_125c_rcworst'
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.5) ***
+<CMD> loadPtnPin -file ./scripts/pinfile -all
+Reading partition pin assignment from the file ./scripts/pinfile.
+Reading pin assignment for the partition fir_serial_parallel.
+Partition fir_serial_parallel: 93 pins processed.
+<CMD> setSrouteMode -connectBrokenCorePin true
+<CMD> sroute -connect corePin
+#% Begin sroute (date=11/14 00:43:47, mem=2152.4M)
+
+viaInitial starts at Sat Nov 14 00:43:47 2026
+viaInitial ends at Sat Nov 14 00:43:47 2026
+*** Begin SPECIAL ROUTE on Sat Nov 14 00:43:47 2026 ***
+SPECIAL ROUTE ran on directory: /home/mmarando/dcid-tps/dcid2/practico-fp-pg
+SPECIAL ROUTE ran on machine: fiubarh01 (Linux 3.10.0-1160.119.1.el7.x86_64 Xeon 2.00Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSpecial set to true
+srouteConnectBlockPin set to false
+srouteConnectBrokenFollowPin set to true
+srouteConnectConverterPin set to false
+srouteConnectPadPin set to false
+srouteConnectStripe set to false
+srouteFollowCorePinEnd set to 3
+srouteFollowPadPin set to false
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 102.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+**WARN: (IMPSR-4302):	Cap-table/qrcTechFile is found in the design, so the same information from the technology file will be ignored.
+Read in 24 layers, 11 routing layers, 1 overlap layer
+Read in 2 nondefault rules, 0 used
+Read in 1559 macros, 52 used
+Read in 52 components
+  52 core components: 52 unplaced, 0 placed, 0 fixed
+Read in 93 physical pins
+  93 physical pins: 0 unplaced, 0 placed, 93 fixed
+Read in 93 nets
+Read in 2 special nets
+Read in 197 terminals
+Begin power routing ...
+CPU time for VDD FollowPin 0 seconds
+CPU time for VSS FollowPin 0 seconds
+  Number of Core ports routed: 0  open: 118
+  Number of Followpin connections: 59
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 109.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 93 io pins ...
+ Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute created 59 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal1 |       59       |       NA       |
++--------+----------------+----------------+
+#% End sroute (date=11/14 00:43:48, total cpu=0:00:01.1, real=0:00:01.0, peak res=2189.4M, current mem=2162.5M)
+<CMD> setAddStripeMode -skip_via_on_pin {block cover pad physicalpin standardcell}
+<CMD> setAddStripeMode -skip_via_on_wire_shape {blockring blockwire corewire fillwire followpin iowire noshape padring ring stripe}
+<CMD> setAddStripeMode -stapling_shift false
+<CMD> setAddStripeMode -use_exact_spacing true
+Stripes will break as close as possible to obstructions.
+<CMD> setAddStripeMode -remove_floating_stapling false
+<CMD> select_obj {special_wire:0x7f000eec1280 special_wire:0x7f000eec12b0 special_wire:0x7f000eec12e0 special_wire:0x7f000eec1310 special_wire:0x7f000eec1340 special_wire:0x7f000eec1370 special_wire:0x7f000eec13a0 special_wire:0x7f000eec13d0 special_wire:0x7f000eec1400 special_wire:0x7f000eec1430 special_wire:0x7f000eec1460 special_wire:0x7f000eec1490 special_wire:0x7f000eec14c0 special_wire:0x7f000eec14f0 special_wire:0x7f000eec1520 special_wire:0x7f000eec1550 special_wire:0x7f000eec1580 special_wire:0x7f000eec15b0 special_wire:0x7f000eec15e0 special_wire:0x7f000eec1610 special_wire:0x7f000eec1640 special_wire:0x7f000eec1670 special_wire:0x7f000eec16a0 special_wire:0x7f000eec16d0 special_wire:0x7f000eec1700 special_wire:0x7f000eec1730 special_wire:0x7f000eec1760 special_wire:0x7f000eec1790 special_wire:0x7f000eec17c0 special_wire:0x7f000eec17f0 special_wire:0x7f000eec1820 special_wire:0x7f000eec1850 special_wire:0x7f000eec1880 special_wire:0x7f000eec18b0 special_wire:0x7f000eec18e0 special_wire:0x7f000eec1910 special_wire:0x7f000eec1940 special_wire:0x7f000eec1970 special_wire:0x7f000eec19a0 special_wire:0x7f000eec19d0 special_wire:0x7f000eec1a00 special_wire:0x7f000eec1a30 special_wire:0x7f000eec1a60 special_wire:0x7f000eec1a90 special_wire:0x7f000eec1ac0 special_wire:0x7f000eec1af0 special_wire:0x7f000eec1b20 special_wire:0x7f000eec1b50 special_wire:0x7f000eec1b80 special_wire:0x7f000eec1bb0 special_wire:0x7f000eec1be0 special_wire:0x7f000eec1c10 special_wire:0x7f000eec1c40 special_wire:0x7f000eec1c70 special_wire:0x7f000eec1ca0 special_wire:0x7f000eec1cd0 special_wire:0x7f000eec1d00 special_wire:0x7f000eec1d30 special_wire:0x7f000eec1d60}
+<CMD> deleteSelectedFromFPlan
+<CMD> addStripe -nets VDD -layer Metal1 -direction horizontal -width 0.12 -spacing 3.42 -start 1.65 -set_to_set_distance 3.42 -switch_layer_over_obs false -snap_wire_center_to_grid Grid -use_wire_group 1 -use_wire_group_bits 1 -stop 105.26
+#% Begin addStripe (date=11/14 00:43:48, mem=2163.0M)
+
+Initialize fgc environment(mem: 2486.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 30 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal1 |       30       |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:43:48, total cpu=0:00:00.1, real=0:00:00.0, peak res=2164.5M, current mem=2164.5M)
+<CMD> addStripe -nets VSS -layer Metal1 -direction horizontal -width 0.12 -spacing 3.42 -start 3.36 -set_to_set_distance 3.42 -switch_layer_over_obs false -snap_wire_center_to_grid Grid -use_wire_group 1 -use_wire_group_bits 1 -stop 103.55
+#% Begin addStripe (date=11/14 00:43:48, mem=2164.5M)
+
+Initialize fgc environment(mem: 2486.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2486.3M)
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 30 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal1 |       30       |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:43:48, total cpu=0:00:00.1, real=0:00:00.0, peak res=2164.5M, current mem=2164.5M)
+<CMD> addStripe -nets VDD -stapling {0.880 1.80 3.42:1 Metal3} -layer Metal2 -width 0.16 -set_to_set_distance 3.42 -start 2.695 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+#% Begin addStripe (date=11/14 00:43:48, mem=2164.5M)
+**WARN: (IMPPP-2034):	Option -spacing does not need to be specified and will be ignored when mode stapling_nets_style is set to end_to_end.
+
+Initialize fgc environment(mem: 2486.3M) ...  done(cpu: 0:00:00.1, real: 0:00:00.0, peak mem: 2624.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2624.3M)
+Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2625.3M)
+Stripe generation is complete.
+addStripe created 1740 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal2 |      1740      |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:43:48, total cpu=0:00:00.2, real=0:00:00.0, peak res=2183.4M, current mem=2183.4M)
+<CMD> addStripe -nets VSS -stapling {0.880 3.51 3.42:1 Metal3} -layer Metal2 -width 0.16 -set_to_set_distance 3.42 -start 3.36 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+#% Begin addStripe (date=11/14 00:43:48, mem=2183.4M)
+**WARN: (IMPPP-2034):	Option -spacing does not need to be specified and will be ignored when mode stapling_nets_style is set to end_to_end.
+
+Initialize fgc environment(mem: 2625.3M) ...  done(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2625.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2625.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2625.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2625.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2626.3M)
+Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2626.3M)
+Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2627.3M)
+Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2627.3M)
+Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2628.3M)
+Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2629.3M)
+Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2629.3M)
+Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2630.3M)
+Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2630.3M)
+Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2632.3M)
+Stripe generation is complete.
+addStripe created 1653 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal2 |      1653      |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:43:48, total cpu=0:00:00.1, real=0:00:00.0, peak res=2190.6M, current mem=2190.6M)
+<CMD> setViaGenMode -reset
+<CMD> setViaGenMode -extend_out_wire_end false
+Setting -extend_out_wire_end to 0. ViaGen will not allow via extending outside of the end of the existing wires and may shift it inside.
+<CMD> setViaGenMode -allow_via_expansion false
+Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+<CMD> setViaGenMode -viarule_preference Via1
+**WARN: (IMPPP-614):	There is neither VIARULE nor via cell found with name Via1 in technology file. Correct the name if it's mis-typed, or add the corresponding VIARULE or via cell definition in technology file if it's missing.
+<CMD> editPowerVia -add_vias 1 -bottom_layer Metal1 -top_layer Metal2
+
+Multi-CPU acceleration using 8 CPU(s).
+Multi Thread begin for Metal1 horizontal
+Viagen work status, 5% finished
+Viagen work status, 10% finished
+Viagen work status, 15% finished
+Viagen work status, 20% finished
+Viagen work status, 25% finished
+Viagen work status, 30% finished
+Viagen work status, 35% finished
+Viagen work status, 40% finished
+Viagen work status, 45% finished
+Viagen work status, 50% finished
+Viagen work status, 55% finished
+Viagen work status, 60% finished
+Viagen work status, 65% finished
+Viagen work status, 70% finished
+Viagen work status, 75% finished
+Viagen work status, 80% finished
+Viagen work status, 85% finished
+Viagen work status, 90% finished
+Viagen work status, 95% finished
+Viagen work status, 100% finished
+Multi Thread begin for Metal2 vertical
+Viagen work status, 5% finished
+Viagen work status, 10% finished
+Viagen work status, 15% finished
+Viagen work status, 20% finished
+Viagen work status, 25% finished
+Viagen work status, 30% finished
+Viagen work status, 35% finished
+Viagen work status, 40% finished
+Viagen work status, 45% finished
+Viagen work status, 50% finished
+Viagen work status, 55% finished
+Viagen work status, 60% finished
+Viagen work status, 65% finished
+Viagen work status, 70% finished
+Viagen work status, 75% finished
+Viagen work status, 80% finished
+Viagen work status, 85% finished
+Viagen work status, 90% finished
+Viagen work status, 95% finished
+Viagen work status, 100% finished
+ViaGen created 3393 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  Via1  |      3393      |        0       |
++--------+----------------+----------------+
+<CMD> addStripe -nets VDD -stapling {0.880 2.90 3.42:1 Metal3} -layer Metal3 -direction horizontal -width 0.16 -set_to_set_distance 3.42 -start 1.45 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 101.84}
+#% Begin addStripe (date=11/14 00:43:49, mem=2192.4M)
+**WARN: (IMPPP-2034):	Option -spacing does not need to be specified and will be ignored when mode stapling_nets_style is set to end_to_end.
+
+Initialize fgc environment(mem: 2644.3M) ...  done(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2644.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2644.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2645.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2645.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2647.3M)
+Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2647.3M)
+Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2647.3M)
+Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2647.3M)
+Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2647.3M)
+Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2648.3M)
+Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2648.3M)
+Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2648.3M)
+Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2648.3M)
+Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2649.3M)
+Stripe generation is complete.
+addStripe created 1740 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal3 |      1740      |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:43:49, total cpu=0:00:00.2, real=0:00:00.0, peak res=2193.3M, current mem=2193.3M)
+<CMD> addStripe -nets VSS -stapling {0.880 3.51 3.42:1 Metal3} -layer Metal3 -direction horizontal -width 0.16 -set_to_set_distance 3.42 -start 3.36 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 101.84}
+#% Begin addStripe (date=11/14 00:43:49, mem=2193.3M)
+**WARN: (IMPPP-2034):	Option -spacing does not need to be specified and will be ignored when mode stapling_nets_style is set to end_to_end.
+
+Initialize fgc environment(mem: 2649.3M) ...  done(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2649.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2649.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2649.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2649.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2649.3M)
+Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2650.3M)
+Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2650.3M)
+Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2650.3M)
+Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2650.3M)
+Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2651.3M)
+Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2651.3M)
+Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2651.3M)
+Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2651.3M)
+Stripe generation is complete.
+addStripe created 1653 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal3 |      1653      |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:43:49, total cpu=0:00:00.1, real=0:00:00.0, peak res=2196.0M, current mem=2196.0M)
+<CMD> setViaGenMode -reset
+<CMD> setViaGenMode -extend_out_wire_end false
+Setting -extend_out_wire_end to 0. ViaGen will not allow via extending outside of the end of the existing wires and may shift it inside.
+<CMD> setViaGenMode -allow_via_expansion false
+Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+<CMD> setViaGenMode -viarule_preference Via2
+**WARN: (IMPPP-614):	There is neither VIARULE nor via cell found with name Via2 in technology file. Correct the name if it's mis-typed, or add the corresponding VIARULE or via cell definition in technology file if it's missing.
+<CMD> editPowerVia -add_vias 1 -bottom_layer Metal2 -top_layer Metal3
+
+Multi-CPU acceleration using 8 CPU(s).
+Multi Thread begin for Metal2 vertical
+Viagen work status, 5% finished
+Viagen work status, 10% finished
+Viagen work status, 15% finished
+Viagen work status, 20% finished
+Viagen work status, 25% finished
+Viagen work status, 30% finished
+Viagen work status, 35% finished
+Viagen work status, 40% finished
+Viagen work status, 45% finished
+Viagen work status, 50% finished
+Viagen work status, 55% finished
+Viagen work status, 60% finished
+Viagen work status, 65% finished
+Viagen work status, 70% finished
+Viagen work status, 75% finished
+Viagen work status, 80% finished
+Viagen work status, 85% finished
+Viagen work status, 90% finished
+Viagen work status, 95% finished
+Viagen work status, 100% finished
+Multi Thread begin for Metal3 horizontal
+Viagen work status, 5% finished
+Viagen work status, 10% finished
+Viagen work status, 15% finished
+Viagen work status, 20% finished
+Viagen work status, 25% finished
+Viagen work status, 30% finished
+Viagen work status, 35% finished
+Viagen work status, 40% finished
+Viagen work status, 45% finished
+Viagen work status, 50% finished
+Viagen work status, 55% finished
+Viagen work status, 60% finished
+Viagen work status, 65% finished
+Viagen work status, 70% finished
+Viagen work status, 75% finished
+Viagen work status, 80% finished
+Viagen work status, 85% finished
+Viagen work status, 90% finished
+Viagen work status, 95% finished
+Viagen work status, 100% finished
+ViaGen created 3393 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  Via2  |      3393      |        0       |
++--------+----------------+----------------+
+<CMD> addStripe -nets VDD -stapling {1.76 1.80 3.42:1 Metal4} -layer Metal4 -width 0.16 -set_to_set_distance 3.42 -start 2.695 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+#% Begin addStripe (date=11/14 00:43:49, mem=2200.3M)
+**WARN: (IMPPP-2034):	Option -spacing does not need to be specified and will be ignored when mode stapling_nets_style is set to end_to_end.
+
+Initialize fgc environment(mem: 2655.3M) ...  done(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2655.3M)
+Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2656.3M)
+Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2656.3M)
+Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2657.3M)
+Stripe generation is complete.
+addStripe created 1740 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal4 |      1740      |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:43:49, total cpu=0:00:00.1, real=0:00:01.0, peak res=2203.5M, current mem=2203.5M)
+<CMD> addStripe -nets VSS -stapling {1.76 3.51 3.42:1 Metal4} -layer Metal4 -width 0.16 -set_to_set_distance 3.42 -start 3.36 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+#% Begin addStripe (date=11/14 00:43:50, mem=2203.5M)
+**WARN: (IMPPP-2034):	Option -spacing does not need to be specified and will be ignored when mode stapling_nets_style is set to end_to_end.
+
+Initialize fgc environment(mem: 2657.3M) ...  done(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2657.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2657.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2657.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2657.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 3.495000 101.809998 3.495000 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 6.895000 101.809998 6.895000 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 10.295000 101.809998 10.295000 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 13.695000 101.809998 13.695000 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 17.094999 101.809998 17.094999 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 20.495001 101.809998 20.495001 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2658.3M)
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 23.895000 101.809998 23.895000 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 27.295000 101.809998 27.295000 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 30.895000 101.809998 30.895000 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 34.294998 101.809998 34.294998 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 37.695000 101.809998 37.695000 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2659.3M)
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 41.095001 101.809998 41.095001 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 44.494999 101.809998 44.494999 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 47.895000 101.809998 47.895000 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 51.294998 101.809998 51.294998 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 54.695000 101.809998 54.695000 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2659.3M)
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 58.095001 101.809998 58.095001 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 61.494999 101.809998 61.494999 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 65.095001 101.809998 65.095001 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 68.495003 101.809998 68.495003 103.570000 with width 0.160000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+**WARN: (EMS-27):	Message (IMPPP-354) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2660.3M)
+Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2661.3M)
+Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2661.3M)
+Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2662.3M)
+Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2663.3M)
+Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2663.3M)
+Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2665.3M)
+Stripe generation is complete.
+addStripe created 1653 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal4 |      1653      |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:43:50, total cpu=0:00:00.1, real=0:00:00.0, peak res=2211.4M, current mem=2211.4M)
+<CMD> setViaGenMode -reset
+<CMD> setViaGenMode -extend_out_wire_end false
+Setting -extend_out_wire_end to 0. ViaGen will not allow via extending outside of the end of the existing wires and may shift it inside.
+<CMD> setViaGenMode -allow_via_expansion false
+Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+<CMD> setViaGenMode -viarule_preference Via3
+**WARN: (IMPPP-614):	There is neither VIARULE nor via cell found with name Via3 in technology file. Correct the name if it's mis-typed, or add the corresponding VIARULE or via cell definition in technology file if it's missing.
+<CMD> editPowerVia -add_vias 1 -bottom_layer Metal3 -top_layer Metal4
+
+Multi-CPU acceleration using 8 CPU(s).
+Multi Thread begin for Metal3 horizontal
+Viagen work status, 5% finished
+Viagen work status, 10% finished
+Viagen work status, 15% finished
+Viagen work status, 20% finished
+Viagen work status, 25% finished
+Viagen work status, 30% finished
+Viagen work status, 35% finished
+Viagen work status, 40% finished
+Viagen work status, 45% finished
+Viagen work status, 50% finished
+Viagen work status, 55% finished
+Viagen work status, 60% finished
+Viagen work status, 65% finished
+Viagen work status, 70% finished
+Viagen work status, 75% finished
+Viagen work status, 80% finished
+Viagen work status, 85% finished
+Viagen work status, 90% finished
+Viagen work status, 95% finished
+Viagen work status, 100% finished
+Multi Thread begin for Metal4 vertical
+Viagen work status, 5% finished
+Viagen work status, 10% finished
+Viagen work status, 15% finished
+Viagen work status, 20% finished
+Viagen work status, 25% finished
+Viagen work status, 30% finished
+Viagen work status, 35% finished
+Viagen work status, 40% finished
+Viagen work status, 45% finished
+Viagen work status, 50% finished
+Viagen work status, 55% finished
+Viagen work status, 60% finished
+Viagen work status, 65% finished
+Viagen work status, 70% finished
+Viagen work status, 75% finished
+Viagen work status, 80% finished
+Viagen work status, 85% finished
+Viagen work status, 90% finished
+Viagen work status, 95% finished
+Viagen work status, 100% finished
+ViaGen created 3393 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  Via3  |      3393      |        0       |
++--------+----------------+----------------+
+<CMD> addStripe -nets VDD -layer Metal5 -direction horizontal -width 0.16 -set_to_set_distance 3.42 -start 1.45 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+#% Begin addStripe (date=11/14 00:43:50, mem=2212.1M)
+
+Initialize fgc environment(mem: 2671.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2671.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2671.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2671.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2671.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Multi-CPU acceleration using 8 CPU(s).
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 30 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal5 |       30       |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:43:51, total cpu=0:00:00.6, real=0:00:01.0, peak res=2212.3M, current mem=2212.3M)
+<CMD> addStripe -nets VSS -layer Metal5 -direction horizontal -width 0.16 -set_to_set_distance 3.42 -start 3.15 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+#% Begin addStripe (date=11/14 00:43:51, mem=2212.3M)
+
+Initialize fgc environment(mem: 2671.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2671.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2671.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2671.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2671.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Multi-CPU acceleration using 8 CPU(s).
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 29 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal5 |       29       |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:43:51, total cpu=0:00:00.6, real=0:00:00.0, peak res=2212.3M, current mem=2212.3M)
+<CMD> setViaGenMode -reset
+<CMD> setViaGenMode -extend_out_wire_end false
+Setting -extend_out_wire_end to 0. ViaGen will not allow via extending outside of the end of the existing wires and may shift it inside.
+<CMD> setViaGenMode -allow_via_expansion false
+Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+<CMD> setViaGenMode -viarule_preference Via4
+**WARN: (IMPPP-614):	There is neither VIARULE nor via cell found with name Via4 in technology file. Correct the name if it's mis-typed, or add the corresponding VIARULE or via cell definition in technology file if it's missing.
+<CMD> editPowerVia -add_vias 1 -bottom_layer Metal4 -top_layer Metal5
+
+Multi-CPU acceleration using 8 CPU(s).
+Multi Thread begin for Metal4 vertical
+Viagen work status, 5% finished
+Viagen work status, 10% finished
+Viagen work status, 15% finished
+Viagen work status, 20% finished
+Viagen work status, 25% finished
+Viagen work status, 30% finished
+Viagen work status, 35% finished
+Viagen work status, 40% finished
+Viagen work status, 45% finished
+Viagen work status, 50% finished
+Viagen work status, 55% finished
+Viagen work status, 60% finished
+Viagen work status, 65% finished
+Viagen work status, 70% finished
+Viagen work status, 75% finished
+Viagen work status, 80% finished
+Viagen work status, 85% finished
+Viagen work status, 90% finished
+Viagen work status, 95% finished
+Viagen work status, 100% finished
+Multi Thread begin for Metal5 horizontal
+Viagen work status, 5% finished
+Viagen work status, 10% finished
+Viagen work status, 15% finished
+Viagen work status, 20% finished
+Viagen work status, 25% finished
+Viagen work status, 30% finished
+Viagen work status, 35% finished
+Viagen work status, 40% finished
+Viagen work status, 45% finished
+Viagen work status, 50% finished
+Viagen work status, 55% finished
+Viagen work status, 60% finished
+Viagen work status, 65% finished
+Viagen work status, 70% finished
+Viagen work status, 75% finished
+Viagen work status, 80% finished
+Viagen work status, 85% finished
+Viagen work status, 90% finished
+Viagen work status, 95% finished
+Viagen work status, 100% finished
+ViaGen created 3393 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  Via4  |      3393      |        0       |
++--------+----------------+----------------+
+<CMD> addStripe -nets VDD -layer Metal6 -direction vertical -width 0.32 -set_to_set_distance 6.6 -start 2.5 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+#% Begin addStripe (date=11/14 00:43:51, mem=2214.0M)
+
+Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Multi-CPU acceleration using 8 CPU(s).
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 30 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal6 |       30       |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:43:52, total cpu=0:00:00.5, real=0:00:00.0, peak res=2214.0M, current mem=2214.0M)
+<CMD> addStripe -nets VSS -layer Metal6 -direction vertical -width 0.32 -set_to_set_distance 6.6 -start 4.2 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+#% Begin addStripe (date=11/14 00:43:52, mem=2214.0M)
+
+Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Multi-CPU acceleration using 8 CPU(s).
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 30 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal6 |       30       |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:43:53, total cpu=0:00:00.6, real=0:00:01.0, peak res=2214.0M, current mem=2214.0M)
+<CMD> setViaGenMode -reset
+<CMD> setViaGenMode -extend_out_wire_end false
+Setting -extend_out_wire_end to 0. ViaGen will not allow via extending outside of the end of the existing wires and may shift it inside.
+<CMD> setViaGenMode -allow_via_expansion false
+Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+<CMD> setViaGenMode -viarule_preference Via5
+**WARN: (IMPPP-614):	There is neither VIARULE nor via cell found with name Via5 in technology file. Correct the name if it's mis-typed, or add the corresponding VIARULE or via cell definition in technology file if it's missing.
+<CMD> editPowerVia -add_vias 1 -bottom_layer Metal5 -top_layer Metal6
+
+Multi-CPU acceleration using 8 CPU(s).
+Multi Thread begin for Metal5 horizontal
+Viagen work status, 5% finished
+Viagen work status, 10% finished
+Viagen work status, 15% finished
+Viagen work status, 20% finished
+Viagen work status, 25% finished
+Viagen work status, 30% finished
+Viagen work status, 35% finished
+Viagen work status, 40% finished
+Viagen work status, 45% finished
+Viagen work status, 50% finished
+Viagen work status, 55% finished
+Viagen work status, 60% finished
+Viagen work status, 65% finished
+Viagen work status, 70% finished
+Viagen work status, 75% finished
+Viagen work status, 80% finished
+Viagen work status, 85% finished
+Viagen work status, 90% finished
+Viagen work status, 95% finished
+Viagen work status, 100% finished
+Multi Thread begin for Metal6 vertical
+Viagen work status, 5% finished
+Viagen work status, 10% finished
+Viagen work status, 15% finished
+Viagen work status, 20% finished
+Viagen work status, 25% finished
+Viagen work status, 30% finished
+Viagen work status, 35% finished
+Viagen work status, 40% finished
+Viagen work status, 45% finished
+Viagen work status, 50% finished
+Viagen work status, 55% finished
+Viagen work status, 60% finished
+Viagen work status, 65% finished
+Viagen work status, 70% finished
+Viagen work status, 75% finished
+Viagen work status, 80% finished
+Viagen work status, 85% finished
+Viagen work status, 90% finished
+Viagen work status, 95% finished
+Viagen work status, 100% finished
+ViaGen created 1770 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  Via5  |      1770      |        0       |
++--------+----------------+----------------+
+<CMD> addStripe -nets VDD -layer Metal7 -direction horizontal -width 0.32 -set_to_set_distance 6.6 -start 2 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+#% Begin addStripe (date=11/14 00:43:53, mem=2214.0M)
+
+Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Multi-CPU acceleration using 8 CPU(s).
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 16 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal7 |       16       |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:43:54, total cpu=0:00:00.6, real=0:00:01.0, peak res=2214.0M, current mem=2214.0M)
+<CMD> addStripe -nets VSS -layer Metal7 -direction horizontal -width 0.32 -set_to_set_distance 6.6 -start 3.7 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+#% Begin addStripe (date=11/14 00:43:54, mem=2214.0M)
+
+Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Multi-CPU acceleration using 8 CPU(s).
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 15 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal7 |       15       |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:43:54, total cpu=0:00:00.6, real=0:00:01.0, peak res=2214.0M, current mem=2214.0M)
+<CMD> setViaGenMode -reset
+<CMD> setViaGenMode -extend_out_wire_end false
+Setting -extend_out_wire_end to 0. ViaGen will not allow via extending outside of the end of the existing wires and may shift it inside.
+<CMD> setViaGenMode -allow_via_expansion false
+Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+<CMD> setViaGenMode -viarule_preference Via6
+**WARN: (IMPPP-614):	There is neither VIARULE nor via cell found with name Via6 in technology file. Correct the name if it's mis-typed, or add the corresponding VIARULE or via cell definition in technology file if it's missing.
+<CMD> editPowerVia -add_vias 1 -bottom_layer Metal6 -top_layer Metal7
+
+Multi-CPU acceleration using 8 CPU(s).
+Multi Thread begin for Metal6 vertical
+Viagen work status, 5% finished
+Viagen work status, 10% finished
+Viagen work status, 15% finished
+Viagen work status, 20% finished
+Viagen work status, 25% finished
+Viagen work status, 30% finished
+Viagen work status, 35% finished
+Viagen work status, 40% finished
+Viagen work status, 45% finished
+Viagen work status, 50% finished
+Viagen work status, 55% finished
+Viagen work status, 60% finished
+Viagen work status, 65% finished
+Viagen work status, 70% finished
+Viagen work status, 75% finished
+Viagen work status, 80% finished
+Viagen work status, 85% finished
+Viagen work status, 90% finished
+Viagen work status, 95% finished
+Viagen work status, 100% finished
+Multi Thread begin for Metal7 horizontal
+Viagen work status, 5% finished
+Viagen work status, 10% finished
+Viagen work status, 15% finished
+Viagen work status, 20% finished
+Viagen work status, 25% finished
+Viagen work status, 30% finished
+Viagen work status, 35% finished
+Viagen work status, 40% finished
+Viagen work status, 45% finished
+Viagen work status, 50% finished
+Viagen work status, 55% finished
+Viagen work status, 60% finished
+Viagen work status, 65% finished
+Viagen work status, 70% finished
+Viagen work status, 75% finished
+Viagen work status, 80% finished
+Viagen work status, 85% finished
+Viagen work status, 90% finished
+Viagen work status, 95% finished
+Viagen work status, 100% finished
+ViaGen created 930 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  Via6  |       930      |        0       |
++--------+----------------+----------------+
+<CMD> addStripe -nets VDD -layer Metal8 -direction vertical -width 0.32 -set_to_set_distance 6.6 -start 2.5 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+#% Begin addStripe (date=11/14 00:43:55, mem=2214.0M)
+
+Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Multi-CPU acceleration using 8 CPU(s).
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 30 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal8 |       30       |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:43:55, total cpu=0:00:00.6, real=0:00:00.0, peak res=2214.0M, current mem=2214.0M)
+<CMD> addStripe -nets VSS -layer Metal8 -direction vertical -width 0.32 -set_to_set_distance 6.6 -start 4.2 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+#% Begin addStripe (date=11/14 00:43:55, mem=2214.0M)
+
+Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Multi-CPU acceleration using 8 CPU(s).
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 30 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal8 |       30       |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:43:56, total cpu=0:00:00.6, real=0:00:00.0, peak res=2214.0M, current mem=2214.0M)
+<CMD> setViaGenMode -reset
+<CMD> setViaGenMode -extend_out_wire_end false
+Setting -extend_out_wire_end to 0. ViaGen will not allow via extending outside of the end of the existing wires and may shift it inside.
+<CMD> setViaGenMode -allow_via_expansion false
+Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+<CMD> setViaGenMode -viarule_preference Via7
+**WARN: (IMPPP-614):	There is neither VIARULE nor via cell found with name Via7 in technology file. Correct the name if it's mis-typed, or add the corresponding VIARULE or via cell definition in technology file if it's missing.
+<CMD> editPowerVia -add_vias 1 -bottom_layer Metal7 -top_layer Metal8
+
+Multi-CPU acceleration using 8 CPU(s).
+Multi Thread begin for Metal7 horizontal
+Viagen work status, 5% finished
+Viagen work status, 10% finished
+Viagen work status, 15% finished
+Viagen work status, 20% finished
+Viagen work status, 25% finished
+Viagen work status, 30% finished
+Viagen work status, 35% finished
+Viagen work status, 40% finished
+Viagen work status, 45% finished
+Viagen work status, 50% finished
+Viagen work status, 55% finished
+Viagen work status, 60% finished
+Viagen work status, 65% finished
+Viagen work status, 70% finished
+Viagen work status, 75% finished
+Viagen work status, 80% finished
+Viagen work status, 85% finished
+Viagen work status, 90% finished
+Viagen work status, 95% finished
+Viagen work status, 100% finished
+Multi Thread begin for Metal8 vertical
+Viagen work status, 5% finished
+Viagen work status, 10% finished
+Viagen work status, 15% finished
+Viagen work status, 20% finished
+Viagen work status, 25% finished
+Viagen work status, 30% finished
+Viagen work status, 35% finished
+Viagen work status, 40% finished
+Viagen work status, 45% finished
+Viagen work status, 50% finished
+Viagen work status, 55% finished
+Viagen work status, 60% finished
+Viagen work status, 65% finished
+Viagen work status, 70% finished
+Viagen work status, 75% finished
+Viagen work status, 80% finished
+Viagen work status, 85% finished
+Viagen work status, 90% finished
+Viagen work status, 95% finished
+Viagen work status, 100% finished
+ViaGen created 930 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  Via7  |       930      |        0       |
++--------+----------------+----------------+
+<CMD> addStripe -nets VDD -layer Metal9 -direction horizontal -width 0.32 -set_to_set_distance 6.6 -start 2 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+#% Begin addStripe (date=11/14 00:43:56, mem=2214.0M)
+
+Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Multi-CPU acceleration using 8 CPU(s).
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 16 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal9 |       16       |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:43:57, total cpu=0:00:00.6, real=0:00:01.0, peak res=2214.1M, current mem=2214.1M)
+<CMD> addStripe -nets VSS -layer Metal9 -direction horizontal -width 0.32 -set_to_set_distance 6.6 -start 3.7 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+#% Begin addStripe (date=11/14 00:43:57, mem=2214.1M)
+
+Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Multi-CPU acceleration using 8 CPU(s).
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 15 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal9 |       15       |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:43:58, total cpu=0:00:00.6, real=0:00:01.0, peak res=2214.1M, current mem=2214.1M)
+<CMD> setViaGenMode -reset
+<CMD> setViaGenMode -extend_out_wire_end false
+Setting -extend_out_wire_end to 0. ViaGen will not allow via extending outside of the end of the existing wires and may shift it inside.
+<CMD> setViaGenMode -allow_via_expansion false
+Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+<CMD> setViaGenMode -viarule_preference Via8
+**WARN: (IMPPP-614):	There is neither VIARULE nor via cell found with name Via8 in technology file. Correct the name if it's mis-typed, or add the corresponding VIARULE or via cell definition in technology file if it's missing.
+<CMD> editPowerVia -add_vias 1 -bottom_layer Metal8 -top_layer Metal9
+
+Multi-CPU acceleration using 8 CPU(s).
+Multi Thread begin for Metal8 vertical
+Viagen work status, 5% finished
+Viagen work status, 10% finished
+Viagen work status, 15% finished
+Viagen work status, 20% finished
+Viagen work status, 25% finished
+Viagen work status, 30% finished
+Viagen work status, 35% finished
+Viagen work status, 40% finished
+Viagen work status, 45% finished
+Viagen work status, 50% finished
+Viagen work status, 55% finished
+Viagen work status, 60% finished
+Viagen work status, 65% finished
+Viagen work status, 70% finished
+Viagen work status, 75% finished
+Viagen work status, 80% finished
+Viagen work status, 85% finished
+Viagen work status, 90% finished
+Viagen work status, 95% finished
+Viagen work status, 100% finished
+Multi Thread begin for Metal9 horizontal
+Viagen work status, 5% finished
+Viagen work status, 10% finished
+Viagen work status, 15% finished
+Viagen work status, 20% finished
+Viagen work status, 25% finished
+Viagen work status, 30% finished
+Viagen work status, 35% finished
+Viagen work status, 40% finished
+Viagen work status, 45% finished
+Viagen work status, 50% finished
+Viagen work status, 55% finished
+Viagen work status, 60% finished
+Viagen work status, 65% finished
+Viagen work status, 70% finished
+Viagen work status, 75% finished
+Viagen work status, 80% finished
+Viagen work status, 85% finished
+Viagen work status, 90% finished
+Viagen work status, 95% finished
+Viagen work status, 100% finished
+ViaGen created 930 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  Via8  |       930      |        0       |
++--------+----------------+----------------+
+<CMD> addStripe -nets VDD -layer Metal10 -direction vertical -width 0.32 -set_to_set_distance 7 -start 5 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+#% Begin addStripe (date=11/14 00:43:58, mem=2214.1M)
+
+Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Multi-CPU acceleration using 8 CPU(s).
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 28 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal10|       28       |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:43:59, total cpu=0:00:00.5, real=0:00:01.0, peak res=2214.1M, current mem=2214.1M)
+<CMD> addStripe -nets VSS -layer Metal10 -direction vertical -width 0.32 -set_to_set_distance 7 -start 6.7 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+#% Begin addStripe (date=11/14 00:43:59, mem=2214.1M)
+
+Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Multi-CPU acceleration using 8 CPU(s).
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 28 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal10|       28       |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:43:59, total cpu=0:00:00.6, real=0:00:00.0, peak res=2214.1M, current mem=2214.1M)
+<CMD> setViaGenMode -reset
+<CMD> setViaGenMode -extend_out_wire_end false
+Setting -extend_out_wire_end to 0. ViaGen will not allow via extending outside of the end of the existing wires and may shift it inside.
+<CMD> setViaGenMode -allow_via_expansion false
+Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+<CMD> setViaGenMode -viarule_preference Via9
+**WARN: (IMPPP-614):	There is neither VIARULE nor via cell found with name Via9 in technology file. Correct the name if it's mis-typed, or add the corresponding VIARULE or via cell definition in technology file if it's missing.
+<CMD> editPowerVia -add_vias 1 -bottom_layer Metal9 -top_layer Metal10
+
+Multi-CPU acceleration using 8 CPU(s).
+Multi Thread begin for Metal9 horizontal
+Viagen work status, 5% finished
+Viagen work status, 10% finished
+Viagen work status, 15% finished
+Viagen work status, 20% finished
+Viagen work status, 25% finished
+Viagen work status, 30% finished
+Viagen work status, 35% finished
+Viagen work status, 40% finished
+Viagen work status, 45% finished
+Viagen work status, 50% finished
+Viagen work status, 55% finished
+Viagen work status, 60% finished
+Viagen work status, 65% finished
+Viagen work status, 70% finished
+Viagen work status, 75% finished
+Viagen work status, 80% finished
+Viagen work status, 85% finished
+Viagen work status, 90% finished
+Viagen work status, 95% finished
+Viagen work status, 100% finished
+Multi Thread begin for Metal10 vertical
+Viagen work status, 5% finished
+Viagen work status, 10% finished
+Viagen work status, 15% finished
+Viagen work status, 20% finished
+Viagen work status, 25% finished
+Viagen work status, 30% finished
+Viagen work status, 35% finished
+Viagen work status, 40% finished
+Viagen work status, 45% finished
+Viagen work status, 50% finished
+Viagen work status, 55% finished
+Viagen work status, 60% finished
+Viagen work status, 65% finished
+Viagen work status, 70% finished
+Viagen work status, 75% finished
+Viagen work status, 80% finished
+Viagen work status, 85% finished
+Viagen work status, 90% finished
+Viagen work status, 95% finished
+Viagen work status, 100% finished
+ViaGen created 868 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  Via9  |       868      |        0       |
++--------+----------------+----------------+
+<CMD> addStripe -nets VDD -layer Metal11 -direction horizontal -width 0.475 -set_to_set_distance 7 -start 4 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+#% Begin addStripe (date=11/14 00:44:00, mem=2214.1M)
+
+**WARN: (IMPPP-152):	-width (0.475000) is not an even multiple of manufacturing grid (0.005000), setting to 0.480000.
+Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Multi-CPU acceleration using 8 CPU(s).
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 14 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal11|       14       |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:44:00, total cpu=0:00:00.6, real=0:00:00.0, peak res=2214.1M, current mem=2214.1M)
+<CMD> addStripe -nets VSS -layer Metal11 -direction horizontal -width 0.475 -set_to_set_distance 7 -start 5.7 -snap_wire_center_to_grid Grid -switch_layer_over_obs false -area_blockage {198.0 0.0 200.0 103.55}
+#% Begin addStripe (date=11/14 00:44:00, mem=2214.1M)
+
+**WARN: (IMPPP-152):	-width (0.475000) is not an even multiple of manufacturing grid (0.005000), setting to 0.480000.
+Initialize fgc environment(mem: 2672.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2672.3M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+  -remove_floating_stapling  0
+  -stapling_shift  0
+The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Multi-CPU acceleration using 8 CPU(s).
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 14 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal11|       14       |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=11/14 00:44:01, total cpu=0:00:00.6, real=0:00:01.0, peak res=2214.1M, current mem=2214.1M)
+<CMD> setViaGenMode -reset
+<CMD> setViaGenMode -extend_out_wire_end false
+Setting -extend_out_wire_end to 0. ViaGen will not allow via extending outside of the end of the existing wires and may shift it inside.
+<CMD> setViaGenMode -allow_via_expansion false
+Setting -allow_via_expansion to 0. ViaGen will not allow via expanded outside of the intersection area.
+<CMD> setViaGenMode -viarule_preference Via10
+**WARN: (IMPPP-614):	There is neither VIARULE nor via cell found with name Via10 in technology file. Correct the name if it's mis-typed, or add the corresponding VIARULE or via cell definition in technology file if it's missing.
+<CMD> editPowerVia -add_vias 1 -bottom_layer Metal10 -top_layer Metal11
+
+Multi-CPU acceleration using 8 CPU(s).
+Multi Thread begin for Metal10 vertical
+Viagen work status, 5% finished
+Viagen work status, 10% finished
+Viagen work status, 15% finished
+Viagen work status, 20% finished
+Viagen work status, 25% finished
+Viagen work status, 30% finished
+Viagen work status, 35% finished
+Viagen work status, 40% finished
+Viagen work status, 45% finished
+Viagen work status, 50% finished
+Viagen work status, 55% finished
+Viagen work status, 60% finished
+Viagen work status, 65% finished
+Viagen work status, 70% finished
+Viagen work status, 75% finished
+Viagen work status, 80% finished
+Viagen work status, 85% finished
+Viagen work status, 90% finished
+Viagen work status, 95% finished
+Viagen work status, 100% finished
+Multi Thread begin for Metal11 horizontal
+Viagen work status, 5% finished
+Viagen work status, 10% finished
+Viagen work status, 15% finished
+Viagen work status, 20% finished
+Viagen work status, 25% finished
+Viagen work status, 30% finished
+Viagen work status, 35% finished
+Viagen work status, 40% finished
+Viagen work status, 45% finished
+Viagen work status, 50% finished
+Viagen work status, 55% finished
+Viagen work status, 60% finished
+Viagen work status, 65% finished
+Viagen work status, 70% finished
+Viagen work status, 75% finished
+Viagen work status, 80% finished
+Viagen work status, 85% finished
+Viagen work status, 90% finished
+Viagen work status, 95% finished
+Viagen work status, 100% finished
+ViaGen created 784 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  Via10 |       784      |        0       |
++--------+----------------+----------------+
+**INFO(SUSPEND): The current script is stopped at 'suspend' command. Type 'resume' to continue.
+<CMD> zoomBox -58.53050 -47.06000 187.79600 172.74900
+<CMD> zoomBox -2.42050 3.18200 126.16400 117.92400
+<CMD> zoomBox -6.58450 -23.52950 171.38750 135.28350
+<CMD> zoomBox -50.76150 -110.33600 290.17700 193.89950
+<CMD> zoomBox -21.06550 -54.13400 225.26250 165.67600
+<CMD> uiSetTool ruler
+<CMD> zoomBox -1.88200 -11.89000 149.39500 123.10150
+<CMD> zoomBox 0.76750 18.01550 93.67050 100.91750
+<CMD> zoomBox 3.58900 45.08550 52.08500 88.36100
+<CMD> zoomBox 6.07300 61.84650 27.59100 81.04800
+<CMD> zoomBox 7.06100 68.23700 18.29300 78.26000
+<CMD> zoomBox 8.46050 72.01250 13.44500 76.46050
+<CMD> uiSetTool ruler
+<CMD> uiSetTool select
+<CMD> selectWire 9.1350 1.7100 9.4550 101.8400 6 VDD
+<CMD> deselectAll
+<CMD> selectWire 9.1350 1.7100 9.4550 101.8400 6 VDD
+<CMD> setLayerPreference Poly -isVisible 0
+<CMD> setLayerPreference Poly -isVisible 1
+<CMD> setLayerPreference Poly -isSelectable 0
+<CMD> setLayerPreference Poly -isSelectable 1
+<CMD> zoomBox 7.96050 71.64300 13.82500 76.87600
+<CMD> zoomBox 4.90800 69.01900 18.12650 80.81450
+<CMD> zoomBox -0.11550 64.71700 25.20700 87.31350
+<CMD> setLayerPreference node_layer -isSelectable 0
+<CMD> setLayerPreference node_layer -isSelectable 1
+<CMD> setLayerPreference node_layer -isVisible 0
+<CMD> setLayerPreference node_layer -isVisible 1
+<CMD> zoomBox -1.82450 61.75400 33.22450 93.03000
+<CMD> zoomBox -1.06350 66.50750 20.46100 85.71500
+<CMD> zoomBox -0.49000 70.12300 10.74650 80.15000
+<CMD> zoomBox -0.24900 71.64700 6.65200 77.80500
+<CMD> zoomBox -0.14250 72.32000 4.84350 76.76900
+<CMD> zoomBox -1.61950 72.65250 2.61900 76.43450
+<CMD> pan -2.62600 72.78400
+<CMD> zoomBox -1.06850 73.73250 0.81300 75.41150
+<CMD> zoomBox -3.10100 72.45250 1.88900 76.90550
+<CMD> zoomBox -8.55450 69.11900 4.67850 80.92750
+<CMD> pan 1.95700 71.15150
+<CMD> pan 0.82400 61.28200
+<CMD> zoomBox -11.58450 48.46200 18.24100 75.07650
+<CMD> zoomBox -13.50300 47.05550 21.58600 78.36700
+<CMD> zoomBox -5.36750 50.05400 7.86650 61.86350
+<CMD> zoomBox -2.36700 50.52100 3.50600 55.76200
+<CMD> deselectAll
+<CMD> zoomBox -7.77650 44.89350 7.79800 58.79150
+<CMD> checkFPlan -reportUtil
+Checking routing tracks.....
+Checking other grids.....
+Checking FINFET Grid is on Manufacture Grid.....
+Checking core/die box is on Grid.....
+Checking snap rule ......
+Checking Row is on grid......
+Tech site CoreSite has no symmetry Y. 	Current symmetry setting : isSymmetryR90 false; isSymmetryX : false; isSymmetryY : false;
+
+INFO (IMPFP-7241): Tech site CoreSite has no symmetry Y. 	Current symmetry setting : isSymmetryR90 false; isSymmetryX : false; isSymmetryY : false;
+
+Checking AreaIO row.....
+Checking row out of die ...
+Checking routing blockage.....
+Checking placement blockage.....
+placeBlkGrid grid_type = 1 
+Checking components.....
+Checking IO Pads out of die...
+Checking constraints (guide/region/fence).....
+
+Checking Preroutes.....
+No. of regular pre-routes not on tracks : 0 
+
+Reporting Utilizations.....
+
+Core utilization  = 39.172637
+Effective Utilizations
+Estimated cell power/ground rail width = 0.160 um
+Average macro density = 0.000.
+Average module density = 0.395.
+Pure std cell Density 0.395479
+ Density for the design = 0.395.
+       = stdcell_area 22479 sites (7688 um^2) / alloc_area 56840 sites (19439 um^2).
+Pin Density = 0.1599.
+            = total # of pins 9088 / total area 56840.
+*** Message Summary: 0 warning(s), 0 error(s)
+
+couldn't read file "./scripts/ex3_area.tcl": no such file or directory
+couldn't read file "ex3_area.tcl": no such file or directory
+couldn't read file "ex3_area.tcl": no such file or directory
+**ERROR: (IMPDBTCL-248):	'width' is not a recognized object or attribute for object type 'base_cell'. Update its value to match one of the 'base_cell' attributes. Run 'help base_cell' to get a list of all 'base_cell' attributes.
+
+<CMD> help base_cell
+No help is available for 'base_cell'.
+      You might have typed the command name incorrectly
+      (command names are case sensitive), or this is an
+      unknown or unsupported command.
+
+
+*** Memory Usage v#2 (Current mem = 3529.047M, initial mem = 820.648M) ***
+*** Message Summary: 133 warning(s), 1 error(s)
+
+--- Ending "Innovus" (totcpu=0:03:52, real=0:26:31, mem=3529.0M) ---

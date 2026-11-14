@@ -1,0 +1,2 @@
+Celdas funcionales: 2335
+Area total de celdas funcionales: 7687.8180 um^2
