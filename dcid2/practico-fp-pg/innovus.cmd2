@@ -125,3 +125,12 @@ setViaGenMode -allow_via_expansion false
 setViaGenMode -viarule_preference Via10
 editPowerVia -add_vias 1 -bottom_layer Metal10 -top_layer Metal11
 verify_drc
+saveDesign dataout/fp_25_antes_fix.enc
+zoomBox 235 125 253 129
+gui_select -rect {249.55500 124.28400 250.58700 124.30950}
+deselectAll
+select_obj special_wire:0x7f5097209970
+deleteSelectedFromFPlan
+verify_drc
+verify_connectivity -type special -no_antenna -report reports/conn_25.rpt
+saveDesign dataout/fp_25_drc_ok.enc

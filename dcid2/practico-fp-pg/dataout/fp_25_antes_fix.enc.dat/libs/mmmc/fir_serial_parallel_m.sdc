@@ -1,0 +1,1 @@
+/home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.sdc
