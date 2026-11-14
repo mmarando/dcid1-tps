@@ -10726,3 +10726,83 @@ Time Elapsed: 0:00:03.0
 <CMD> fit
 no event matches "cp"
 no event matches "cp"
+<CMD> setLayerPreference violation -isVisible 0
+<CMD> uiSetTool ruler
+<CMD> zoomBox -7.62000 52.29400 164.63500 147.31250
+<CMD> zoomBox -7.62000 90.30200 164.63500 185.32050
+<CMD> zoomBox -7.62000 99.80400 164.63500 194.82250
+<CMD> zoomBox -7.62000 52.29400 164.63500 147.31250
+<CMD> zoomBox 47.06800 109.56600 102.29050 140.02750
+<CMD> zoomBox -25.54900 64.83400 177.11300 176.62550
+<CMD> zoomBox -190.38950 -36.70750 346.96300 259.70450
+<CMD> zoomBox 21.13900 44.23050 126.93100 102.58700
+<CMD> zoomBox 68.62750 64.08900 81.42100 71.14600
+<CMD> zoomBox 54.73700 54.92100 94.64800 76.93650
+<CMD> zoomBox -248.73050 -145.36800 383.64200 203.45850
+<CMD> fit
+<CMD> saveDesign dataout/fp_70.enc
+#% Begin save design ... (date=11/14 18:27:58, mem=2647.5M)
+% Begin Save ccopt configuration ... (date=11/14 18:27:58, mem=2647.5M)
+% End Save ccopt configuration ... (date=11/14 18:27:58, total cpu=0:00:00.1, real=0:00:00.0, peak res=2648.6M, current mem=2648.6M)
+% Begin Save netlist data ... (date=11/14 18:27:58, mem=2648.6M)
+Writing Binary DB to dataout/fp_70.enc.dat/vbin/fir_serial_parallel.v.bin in multi-threaded mode...
+% End Save netlist data ... (date=11/14 18:27:58, total cpu=0:00:00.1, real=0:00:01.0, peak res=2648.7M, current mem=2648.7M)
+Saving symbol-table file in separate thread ...
+Saving congestion map file in separate thread ...
+Saving congestion map file dataout/fp_70.enc.dat/fir_serial_parallel.route.congmap.gz ...
+% Begin Save AAE data ... (date=11/14 18:27:59, mem=2649.8M)
+Saving AAE Data ...
+% End Save AAE data ... (date=11/14 18:27:59, total cpu=0:00:00.3, real=0:00:00.0, peak res=2650.5M, current mem=2650.5M)
+Saving preference file dataout/fp_70.enc.dat/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+*info - save blackBox cells to lef file dataout/fp_70.enc.dat/fir_serial_parallel.bbox.lef
+Saving Drc markers ...
+... 23 markers are saved ...
+... 0 geometry drc markers are saved ...
+... 0 antenna drc markers are saved ...
+Saving special route data file in separate thread ...
+Saving PG file in separate thread ...
+Saving placement file in separate thread ...
+Saving route file in separate thread ...
+Saving PG file dataout/fp_70.enc.dat/fir_serial_parallel.pg.gz, version#2, (Created by Innovus v23.10-p003_1 on Sat Nov 14 18:27:59 2026)
+Saving property file in separate thread ...
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+Saving property file dataout/fp_70.enc.dat/fir_serial_parallel.prop
+TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=3783.6M) ***
+*** Completed savePGFile (cpu=0:00:00.1 real=0:00:01.0 mem=3783.6M) ***
+TAT_INFO: ::savePGFile REAL = 1 : CPU = 0 : MEM = 0.
+TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
+*** Completed saveRoute (cpu=0:00:00.1 real=0:00:01.0 mem=3767.6M) ***
+TAT_INFO: ::saveRoute REAL = 1 : CPU = 0 : MEM = 0.
+TAT_INFO: ::db::saveAnnotationAndProp REAL = 0 : CPU = 0 : MEM = 0.
+Saving preRoute extracted patterns in file 'dataout/fp_70.enc.dat/fir_serial_parallel.techData.gz' ...
+Saving preRoute extraction data in directory 'dataout/fp_70.enc.dat/extraction/' ...
+TAT_INFO: ::db::saveSymbolTable REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: ::saveCongMap REAL = 0 : CPU = 0 : MEM = 0.
+% Begin Save power constraints data ... (date=11/14 18:28:00, mem=2657.0M)
+% End Save power constraints data ... (date=11/14 18:28:00, total cpu=0:00:00.1, real=0:00:00.0, peak res=2657.1M, current mem=2657.1M)
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+Generated self-contained design fp_70.enc.dat
+fast slow
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+func
+/home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.sdc
+#% End save design ... (date=11/14 18:28:01, total cpu=0:00:02.1, real=0:00:03.0, peak res=2659.4M, current mem=2659.4M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+
+*** Memory Usage v#2 (Current mem = 3741.926M, initial mem = 820.648M) ***
+*** Message Summary: 9074 warning(s), 1 error(s)
+
+--- Ending "Innovus" (totcpu=0:59:32, real=8:48:00, mem=3741.9M) ---

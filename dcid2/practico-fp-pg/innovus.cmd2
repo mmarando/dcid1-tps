@@ -1,0 +1,38 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat Nov 14 18:29:42 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v23.10-p003_1 (64bit) 02/01/2024 13:54 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 23.10-p003_1 NR240109-1512/23_10-UB (database version 18.20.618) {superthreading v2.20}
+#@(#)CDS: AAE 23.10-p002 (64bit) 02/01/2024 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 23.10-p003_1 () Dec  5 2023 19:42:23 ( )
+#@(#)CDS: SYNTECH 23.10-p002_1 () Nov 29 2023 02:17:21 ( )
+#@(#)CDS: CPE v23.10-p004
+#@(#)CDS: IQuantus/TQuantus 22.1.1-s215 (64bit) Mon Nov 20 10:05:08 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+setPreference CmdLogMode 2
+set init_verilog /home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.v
+set init_mmmc_file ./scripts/mmmc_invs.tcl
+set init_lef_file {/home/amslib/PDKs/gpdk045v6/gsclib045_tech/lef/gsclib045_tech.lef /home/amslib/PDKs/gpdk045v6/gsclib045_hvt/lef/gsclib045_hvt_macro.lef /home/amslib/PDKs/gpdk045v6/gsclib045/lef/gsclib045_macro.lef /home/amslib/PDKs/gpdk045v6/gsclib045_lvt/lef/gsclib045_lvt_macro.lef}
+set init_top_cell fir_serial_parallel
+set init_gnd_net VSS
+set init_pwr_net VDD
+set init_design_uniquify 0
+init_design
+setMultiCpuUsage -localCPU 8
+setDesignMode -topRoutingLayer 11
+setDesignMode -bottomRoutingLayer 2
+setDesignMode -flowEffort standar -process 45
+floorPlan -site CoreSite -coreMarginsBy die -d 252.00 128.25 2 1.71 2 1.71 -flip f
+add_tracks -pitch_pattern {Metal1 offset 0.19 pitch 0.19 Metal3 offset 0.19 pitch 0.19 Metal5 offset 0.19 pitch 0.19} -offset {Metal1 horiz 0.095 Metal2 vert 0.095 Metal3 horiz 0.1 Metal4 vert 0.095 Metal5 horiz 0.1 Metal6 vert 0.095 Metal7 horiz 0.1 Metal8 vert 0.095 Metal9 horiz 0.1 Metal10 vert 0.95 Metal11 horiz 0.6}
+globalNetConnect VDD -type pgpin -pin VDD -inst * -override -verbose -autoTie
+globalNetConnect VSS -type pgpin -pin VSS -inst * -override -verbose -autoTie
+deleteBufferTree
+checkFPlan -reportUtil
+checkFPlan -reportUtil > reports/util_25.rpt

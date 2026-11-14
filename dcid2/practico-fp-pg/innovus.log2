@@ -1,0 +1,367 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v23.10-p003_1, built Thu Feb 1 13:54:57 PST 2024
+Options:	
+Date:		Sat Nov 14 18:29:16 2026
+Host:		fiubarh01 (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (20cores*80cpus*Intel(R) Xeon(R) Gold 6138 CPU @ 2.00GHz 28160KB)
+OS:		Red Hat Enterprise Linux Server 7.9 (Maipo)
+
+License:
+		[18:29:16.249817] Configured Lic search path (23.02-s003): 5280@fiubarh01
+
+		invs	Innovus Implementation System	23.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (450 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> setPreference CmdLogMode 2
+<CMD> set init_verilog /home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.v
+<CMD> set init_mmmc_file ./scripts/mmmc_invs.tcl
+<CMD> set init_lef_file {/home/amslib/PDKs/gpdk045v6/gsclib045_tech/lef/gsclib045_tech.lef /home/amslib/PDKs/gpdk045v6/gsclib045_hvt/lef/gsclib045_hvt_macro.lef /home/amslib/PDKs/gpdk045v6/gsclib045/lef/gsclib045_macro.lef /home/amslib/PDKs/gpdk045v6/gsclib045_lvt/lef/gsclib045_lvt_macro.lef}
+<CMD> set init_top_cell fir_serial_parallel
+<CMD> set init_gnd_net VSS
+<CMD> set init_pwr_net VDD
+<CMD> set init_design_uniquify 0
+<CMD> init_design
+#% Begin Load MMMC data ... (date=11/14 18:48:31, mem=1497.8M)
+#% End Load MMMC data ... (date=11/14 18:48:31, total cpu=0:00:00.1, real=0:00:01.0, peak res=1498.7M, current mem=1498.7M)
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+
+Loading LEF file /home/amslib/PDKs/gpdk045v6/gsclib045_tech/lef/gsclib045_tech.lef ...
+Set DBUPerIGU to M2 pitch 400.
+
+Loading LEF file /home/amslib/PDKs/gpdk045v6/gsclib045_hvt/lef/gsclib045_hvt_macro.lef ...
+
+Loading LEF file /home/amslib/PDKs/gpdk045v6/gsclib045/lef/gsclib045_macro.lef ...
+
+Loading LEF file /home/amslib/PDKs/gpdk045v6/gsclib045_lvt/lef/gsclib045_lvt_macro.lef ...
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNALVT' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNAHVT' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from ./scripts/mmmc_invs.tcl
+Reading slow timing library '/home/amslib/PDKs/gpdk045v6/gsclib045_hvt/timing/slow_vdd1v0_basicCells_hvt.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNAHVT'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045_hvt/timing/slow_vdd1v0_basicCells_hvt.lib)
+Read 480 cells in library 'slow_vdd1v0' 
+Reading slow timing library '/home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+Read 489 cells in library 'slow_vdd1v0' 
+Reading slow timing library '/home/amslib/PDKs/gpdk045v6/gsclib045_lvt/timing/slow_vdd1v0_basicCells_lvt.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNALVT'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045_lvt/timing/slow_vdd1v0_basicCells_lvt.lib)
+Read 480 cells in library 'slow_vdd1v0' 
+Reading fast timing library '/home/amslib/PDKs/gpdk045v6/gsclib045_hvt/timing/fast_vdd1v0_basicCells_hvt.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNAHVT'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045_hvt/timing/fast_vdd1v0_basicCells_hvt.lib)
+Read 480 cells in library 'fast_vdd1v0' 
+Reading fast timing library '/home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /home/amslib/PDKs/gpdk045v6/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 489 cells in library 'fast_vdd1v0' 
+Reading fast timing library '/home/amslib/PDKs/gpdk045v6/gsclib045_lvt/timing/fast_vdd1v0_basicCells_lvt.lib' ...
+Read 480 cells in library 'fast_vdd1v0' 
+*** End library_loading (cpu=0.09min, real=0.10min, mem=22.5M, fe_cpu=2.49min, fe_real=19.37min, fe_mem=1783.5M) ***
+#% Begin Load netlist data ... (date=11/14 18:48:38, mem=1526.5M)
+*** Begin netlist parsing (mem=1783.5M) ***
+Created 1449 new cells from 6 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '/home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.v'
+
+*** Memory Usage v#2 (Current mem = 1783.465M, initial mem = 820.648M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=1783.5M) ***
+#% End Load netlist data ... (date=11/14 18:48:38, total cpu=0:00:00.1, real=0:00:00.0, peak res=1551.2M, current mem=1551.2M)
+Set top cell to fir_serial_parallel.
+Hooked 2898 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell fir_serial_parallel ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 3011 modules.
+** info: there are 2335 stdCell insts.
+** info: there are 0 insts with no signal pins.
+
+*** Memory Usage v#2 (Current mem = 1864.891M, initial mem = 820.648M) ***
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+Extraction setup Started for TopCell fir_serial_parallel 
+Initializing multi-corner RC extraction with 4 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Generating auto layer map file.
+Importing multi-corner technology file(s) for preRoute extraction...
+/home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile
+Generating auto layer map file.
+
+/home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile
+Generating auto layer map file.
+
+Completed (cpu: 0:00:09.5 real: 0:00:11.0)
+Set Shrink Factor to 1.00000
+Summary of Active RC-Corners : 
+ 
+ Analysis View: func_setup_ss0p9v_125c_rcworst
+  Late RC-Corner
+    RC-Corner Name        : late_spef_rcworst_125
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 0.91
+    RC-Corner PreRoute Cap Factor         : 1.11
+    RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+    RC-Corner PostRoute Cap Factor        : 1.06 {1.06 1.06 1}
+    RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+    RC-Corner PreRoute Clock Res Factor   : 0.985
+    RC-Corner PreRoute Clock Cap Factor   : 1.01
+    RC-Corner PostRoute Clock Cap Factor  : 0.948 {0.948 0.948 1} 
+    RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 
+    RC-Corner Technology file: '/home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile'
+ 
+  Early RC-Corner
+    RC-Corner Name        : early_spef_rcworst_125
+    RC-Corner Index       : 1
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 0.91
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+    RC-Corner PostRoute Cap Factor        : 0.961 {0.961 0.961 1}
+    RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+    RC-Corner PreRoute Clock Res Factor   : 0.985
+    RC-Corner PreRoute Clock Cap Factor   : 0.912
+    RC-Corner PostRoute Clock Cap Factor  : 0.857 {0.857 0.857 1} 
+    RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 
+    RC-Corner Technology file: '/home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile'
+ 
+ Analysis View: func_hold_ff1p1v_0c_rcbest
+  Late RC-Corner
+    RC-Corner Name        : late_spef_rcbest_0
+    RC-Corner Index       : 2
+    RC-Corner Temperature : 0 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 0.91
+    RC-Corner PreRoute Cap Factor         : 1.11
+    RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+    RC-Corner PostRoute Cap Factor        : 1.06 {1.06 1.06 1}
+    RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+    RC-Corner PreRoute Clock Res Factor   : 0.985
+    RC-Corner PreRoute Clock Cap Factor   : 1.01
+    RC-Corner PostRoute Clock Cap Factor  : 0.948 {0.948 0.948 1} 
+    RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 
+    RC-Corner Technology file: '/home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile'
+ 
+  Early RC-Corner
+    RC-Corner Name        : early_spef_rcbest_0
+    RC-Corner Index       : 3
+    RC-Corner Temperature : 0 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 0.91
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+    RC-Corner PostRoute Cap Factor        : 0.961 {0.961 0.961 1}
+    RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+    RC-Corner PreRoute Clock Res Factor   : 0.985
+    RC-Corner PreRoute Clock Cap Factor   : 0.912
+    RC-Corner PostRoute Clock Cap Factor  : 0.857 {0.857 0.857 1} 
+    RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 
+    RC-Corner Technology file: '/home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile'
+Updating RC Grid density data for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.sdc' ...
+Current (total cpu=0:02:42, real=0:19:36, peak res=2051.2M, current mem=2051.2M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.sdc, Line 9).
+
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.sdc, Line 10).
+
+fir_serial_parallel
+INFO (CTE): Reading of timing constraints file /home/mmarando/dcid-tps/dcid2/practico-fp-pg/dataout/fir_serial_parallel_m.sdc completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2094.2M, current mem=2094.2M)
+Current (total cpu=0:02:42, real=0:19:36, peak res=2094.2M, current mem=2094.2M)
+**WARN: (TA-976):	Path groups asserted by the group_path constraint are considered by the software to be global in nature - they cannot be restricted to specific constraint modes. Due to this restriction, the group_path constraint is not supported directly in the constraint files which are configured in mode-specific commands such as create_constraint_mode. The current group_path entry will be ignored. You can enter the group_path constraint interactively or as part of a general command script -  where it will be interpreted as global and will be in effect for all modes.
+Total number of combinational cells: 954
+Total number of sequential cells: 456
+Total number of tristate cells: 30
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 9
+List of usable buffers: BUFX2LVT BUFX12LVT BUFX16LVT BUFX20LVT CLKBUFX2LVT BUFX3LVT BUFX4LVT BUFX6LVT BUFX8LVT CLKBUFX12LVT CLKBUFX16LVT CLKBUFX20LVT CLKBUFX3LVT CLKBUFX4LVT CLKBUFX6LVT CLKBUFX8LVT DLY1X1LVT DLY1X4LVT BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8 BUFX2HVT BUFX12HVT BUFX16HVT BUFX20HVT CLKBUFX2HVT BUFX3HVT BUFX4HVT BUFX6HVT BUFX8HVT CLKBUFX12HVT CLKBUFX16HVT CLKBUFX20HVT CLKBUFX3HVT CLKBUFX4HVT CLKBUFX6HVT CLKBUFX8HVT
+Total number of usable buffers: 50
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1LVT CLKINVX2LVT CLKINVX12LVT CLKINVX16LVT CLKINVX20LVT CLKINVX4LVT CLKINVX3LVT CLKINVX6LVT CLKINVX8LVT INVX1LVT INVX2LVT INVX12LVT INVX16LVT INVX20LVT INVX3LVT INVX4LVT INVX6LVT INVX8LVT INVXLLVT CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVX3 INVX4 INVX6 INVX8 INVXL CLKINVX1HVT CLKINVX2HVT CLKINVX12HVT CLKINVX16HVT CLKINVX20HVT CLKINVX4HVT CLKINVX3HVT CLKINVX6HVT CLKINVX8HVT INVX1HVT INVX2HVT INVX12HVT INVX16HVT INVX20HVT INVXLHVT INVX3HVT INVX4HVT INVX6HVT INVX8HVT
+Total number of usable inverters: 57
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY2X1LVT DLY2X4LVT DLY3X1LVT DLY3X4LVT DLY4X1LVT DLY4X4LVT DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4 DLY1X1HVT DLY1X4HVT DLY2X1HVT DLY2X4HVT DLY3X1HVT DLY3X4HVT DLY4X1HVT DLY4X4HVT
+Total number of identified usable delay cells: 22
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+#% Begin Load MMMC data post ... (date=11/14 18:48:52, mem=2098.1M)
+#% End Load MMMC data post ... (date=11/14 18:48:52, total cpu=0:00:00.0, real=0:00:01.0, peak res=2098.2M, current mem=2098.2M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200            3  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   TA-976               1  Path groups asserted by the group_path c...
+WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+WARNING   TECHLIB-302         24  No function defined for cell '%s'. The c...
+*** Message Summary: 32 warning(s), 0 error(s)
+
+<CMD> setMultiCpuUsage -localCPU 8
+<CMD> setDesignMode -topRoutingLayer 11
+<CMD> setDesignMode -bottomRoutingLayer 2
+<CMD> setDesignMode -flowEffort standar -process 45
+##  Process: 45            (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 45nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'high'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'medium'.
+<CMD> floorPlan -site CoreSite -coreMarginsBy die -d 252.00 128.25 2 1.71 2 1.71 -flip f
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> add_tracks -pitch_pattern {Metal1 offset 0.19 pitch 0.19 Metal3 offset 0.19 pitch 0.19 Metal5 offset 0.19 pitch 0.19} -offset {Metal1 horiz 0.095 Metal2 vert 0.095 Metal3 horiz 0.1 Metal4 vert 0.095 Metal5 horiz 0.1 Metal6 vert 0.095 Metal7 horiz 0.1 Metal8 vert 0.095 Metal9 horiz 0.1 Metal10 vert 0.95 Metal11 horiz 0.6}
+Start create_tracks
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -override -verbose -autoTie
+2335 new pwr-pin connections were made to global net 'VDD'.
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -override -verbose -autoTie
+2335 new gnd-pin connections were made to global net 'VSS'.
+2 new auto-tielo connections were made to global net 'VSS'.
+<CMD> deleteBufferTree
+*** Start deleteBufferTree ***
+Multithreaded Timing Analysis is initialized with 8 threads
+
+Using master clock 'clock' for generated clock 'clk_div2' in view 'func_setup_ss0p9v_125c_rcworst'
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.5) ***
+**INFO(SUSPEND): The current script is stopped at 'suspend' command. Type 'resume' to continue.
+<CMD> checkFPlan -reportUtil
+Checking routing tracks.....
+Checking other grids.....
+Checking FINFET Grid is on Manufacture Grid.....
+Checking core/die box is on Grid.....
+Checking snap rule ......
+Checking Row is on grid......
+Tech site CoreSite has no symmetry Y. 	Current symmetry setting : isSymmetryR90 false; isSymmetryX : false; isSymmetryY : false;
+
+INFO (IMPFP-7241): Tech site CoreSite has no symmetry Y. 	Current symmetry setting : isSymmetryR90 false; isSymmetryX : false; isSymmetryY : false;
+
+Checking AreaIO row.....
+Checking row out of die ...
+Checking routing blockage.....
+Checking placement blockage.....
+placeBlkGrid grid_type = 1 
+Checking components.....
+Checking IO Pads out of die...
+Checking constraints (guide/region/fence).....
+
+Checking Preroutes.....
+No. of regular pre-routes not on tracks : 0 
+
+Reporting Utilizations.....
+
+Core utilization  = 24.833186
+Effective Utilizations
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Extracting macro/IO cell pins and blockage ...... 
+Pin and blockage extraction finished
+Estimated cell power/ground rail width = 0.213 um
+Average macro density = 0.000.
+Average module density = 0.248.
+Pure std cell Density 0.248332
+ Density for the design = 0.248.
+       = stdcell_area 22479 sites (7688 um^2) / alloc_area 90520 sites (30958 um^2).
+Pin Density = 0.1004.
+            = total # of pins 9088 / total area 90520.
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> checkFPlan -reportUtil > reports/util_25.rpt
+Checking routing tracks.....
+Checking other grids.....
+Checking FINFET Grid is on Manufacture Grid.....
+Checking core/die box is on Grid.....
+Checking snap rule ......
+Checking Row is on grid......
+Tech site CoreSite has no symmetry Y. 	Current symmetry setting : isSymmetryR90 false; isSymmetryX : false; isSymmetryY : false;
+
+INFO (IMPFP-7241): Tech site CoreSite has no symmetry Y. 	Current symmetry setting : isSymmetryR90 false; isSymmetryX : false; isSymmetryY : false;
+
+Checking AreaIO row.....
+Checking row out of die ...
+Checking routing blockage.....
+Checking placement blockage.....
+placeBlkGrid grid_type = 1 
+Checking components.....
+Checking IO Pads out of die...
+Checking constraints (guide/region/fence).....
+
+Checking Preroutes.....
+No. of regular pre-routes not on tracks : 0 
+
+Reporting Utilizations.....
+
+Core utilization  = 24.833186
+Effective Utilizations
+Average macro density = 0.000.
+Average module density = 0.248.
+Pure std cell Density 0.248332
+ Density for the design = 0.248.
+       = stdcell_area 22479 sites (7688 um^2) / alloc_area 90520 sites (30958 um^2).
+Pin Density = 0.1004.
+            = total # of pins 9088 / total area 90520.
+*** Message Summary: 0 warning(s), 0 error(s)
+
