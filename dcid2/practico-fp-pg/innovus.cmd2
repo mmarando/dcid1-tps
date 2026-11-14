@@ -134,3 +134,11 @@ deleteSelectedFromFPlan
 verify_drc
 verify_connectivity -type special -no_antenna -report reports/conn_25.rpt
 saveDesign dataout/fp_25_drc_ok.enc
+zoomBox 235 123 252 128.25
+help editPowerWire
+addStripe -help
+man addStripe
+setAddStripeMode -domain_offset_from_core false
+addStripe -nets VSS -layer Metal2 -direction vertical -width 0.16 -area {236.015 123.20 236.175 126.50} -start_from left -start_offset 0 -number_of_sets 1 -snap_wire_center_to_grid None
+verify_drc
+verify_connectivity -type special -no_antenna -report reports/conn_25_puente.rpt
