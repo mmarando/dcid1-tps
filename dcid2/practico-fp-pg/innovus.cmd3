@@ -117,3 +117,49 @@ setViaGenMode -allow_via_expansion false
 setViaGenMode -viarule_preference Via10
 editPowerVia -add_vias 1 -bottom_layer Metal10 -top_layer Metal11
 verify_connectivity -type special -no_antenna -report reports/conn_70.rpt
+help special_wire
+man special_wire
+editPowerVia -help
+saveDesign dataout/fp_70_antes_fix.enc
+editPowerVia -add_vias 1 -nets VSS -bottom_layer Metal1 -top_layer Metal2 -area {{146.9 1.71 147.3 76.95}} -orthogonal_only 1
+setViaGenMode -reset
+setViaGenMode -extend_out_wire_end false
+setViaGenMode -allow_via_expansion false
+setViaGenMode -viarule_preference Via1
+editPowerVia -add_vias 1 -nets VSS -bottom_layer Metal1 -top_layer Metal2 -area {{146.9 1.71 147.3 76.95}} -orthogonal_only 1
+editPowerVia -add_vias 1 -nets VSS -bottom_layer Metal1 -top_layer Metal2 -area {{2.0 75.15 150.4 75.35}} -orthogonal_only 1
+editPowerVia -add_vias 1 -nets VSS -bottom_layer Metal1 -top_layer Metal2 -area {{2.0 75.15 150.4 75.35}} -orthogonal_only 1 -skip_via_on_wire_shape {} -skip_via_on_wire_status {}
+man editPowerVia
+setViaGenMode -area_only 1
+editPowerVia -add_vias 1 -nets VSS -bottom_layer Metal1 -top_layer Metal2 -area {{2.0 75.15 150.4 75.35}} -orthogonal_only 1
+editPowerVia -add_vias 1 -nets VSS -bottom_layer Metal1 -top_layer Metal2 -area {2.0 75.15 150.4 75.35} -orthogonal_only 1
+zoomBox 12.14100 6.81700 105.04250 89.71750
+zoomBox 21.43100 11.51600 100.39750 81.98150
+zoomBox 47.34750 24.60600 88.56900 61.39000
+zoomBox 58.30200 30.15500 83.61800 52.74550
+zoomBox 68.21200 35.09850 79.44550 45.12250
+zoomBox 71.32700 36.63800 78.22600 42.79450
+zoomBox 73.58600 37.89550 77.18750 41.10950
+zoomBox 74.78050 38.56050 76.66050 40.23800
+selectWire 75.1350 1.7100 75.4550 76.9500 6 VDD
+deselectAll
+selectWire 2.0000 39.2700 150.4000 39.3900 1 VDD
+deselectAll
+selectMarker 2.0000 1.7100 150.4000 76.9500 -1 3 7
+deselectAll
+selectWire 2.0000 39.2700 150.4000 39.3900 1 VDD
+man editPowerVia
+deselectAll
+select_obj {special_wire:0x7f690fb09ac0 special_wire:0x7f68f5169e80}
+setViaGenMode -reset
+setViaGenMode -viarule_preference Via1
+editPowerVia -add_vias 1 -nets VSS -bottom_layer Metal1 -top_layer Metal2 -between_selected_wires 1 -skip_via_on_pin {}
+setViaGenMode -reset
+setViaGenMode -viarule_preference M2_M1_1
+editPowerVia -add_vias 1 -nets VSS -bottom_layer Metal1 -top_layer Metal2 -between_selected_wires 1 -skip_via_on_pin {}
+deselectAll
+select_obj special_wire:0x7f690fb09ac0
+setViaGenMode -reset
+setViaGenMode -viarule_preference M2_M1_1
+editPowerVia -add_vias 1 -nets VSS -bottom_layer Metal1 -top_layer Metal2 -selected_wires 1 -skip_via_on_pin {}
+verify_connectivity -type special -no_antenna -report reports/conn_70_postdiag.rpt
