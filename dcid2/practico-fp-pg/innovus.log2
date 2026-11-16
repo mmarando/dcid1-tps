@@ -20303,3 +20303,8 @@ No help is available for '*Ruler*'.
 <CMD> zoomBox 96.10350 -9.67100 150.85750 17.06300
 <CMD> deselectAll
 <CMD> fit
+
+*** Memory Usage v#2 (Current mem = 3908.594M, initial mem = 820.648M) ***
+*** Message Summary: 18073 warning(s), 2 error(s)
+
+--- Ending "Innovus" (totcpu=3:01:53, real=26:27:18, mem=3908.6M) ---
