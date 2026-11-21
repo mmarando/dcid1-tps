@@ -126,3 +126,9 @@ checkFPlan -reportUtil > reports/fp40/util.rpt
 verify_drc > reports/fp40/drc_salida.rpt
 verify_connectivity -type special -no_antenna -report reports/fp40/conectividad.rpt
 saveDesign dataout/fp_40.enc
+zoomBox 194 48 200 55
+zoomBox 197.5 50.8 198.4 51.8
+selectMarker 2.0000 1.7100 198.2000 100.8900 -1 3 7
+deselectAll
+selectMarker 198.0100 51.2200 198.2000 51.3800 -1 3 7
+deselectAll

@@ -10793,3 +10793,9 @@ func
 #% End save design ... (date=11/21 15:31:52, total cpu=0:00:01.9, real=0:00:03.0, peak res=2671.2M, current mem=2671.2M)
 *** Message Summary: 0 warning(s), 0 error(s)
 
+<CMD> zoomBox 194 48 200 55
+<CMD> zoomBox 197.5 50.8 198.4 51.8
+<CMD> selectMarker 2.0000 1.7100 198.2000 100.8900 -1 3 7
+<CMD> deselectAll
+<CMD> selectMarker 198.0100 51.2200 198.2000 51.3800 -1 3 7
+<CMD> deselectAll
