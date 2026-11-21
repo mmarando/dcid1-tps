@@ -320,3 +320,13 @@ verify_drc > reports/ej1/drc_con_diodo.rpt
 verify_connectivity -type all -no_antenna -report reports/ej1/conn_con_diodo.rpt
 verify_antenna -report reports/ej1/antenna_con_diodo.rpt
 gui_dump_picture reports/ej1/route_con_diodo.png -format PNG
+set_analysis_view -setup func_setup_ss0p9v_125c_rcworst -hold func_hold_ff1p1v_0c_rcbest
+setExtractRCMode -engine postRoute -effortLevel medium
+extractRC
+checkFPlan -reportUtil > reports/ej1/util_post_route.rpt
+report_area > reports/ej1/area_post_route.rpt
+report_timing -late -path_type summary_slack_only -max_paths 50 > reports/ej1/timing_setup.rpt
+report_timing -early -path_type summary_slack_only -max_paths 50 > reports/ej1/timing_hold.rpt
+report_constraint -all_violators -drv_violation_type max_transition > reports/ej1/max_transition.rpt
+set_analysis_view -dynamic -hold func_hold_ff1p1v_0c_rcbest -setup func_hold_ff1p1v_0c_rcbest
+report_power -view func_hold_ff1p1v_0c_rcbest > reports/ej1/power.rpt

@@ -1,0 +1,5 @@
+    Hinst Name       Module Name          Inst Count           Total Area
+----------------------------------------------------------------------
+fir_serial_parallel                             3507             9566.424
+  RC_CG_HIER_INST0   RC_CG_MOD                     1                7.182
+  RC_CG_HIER_INST1   RC_CG_MOD_1                   1                7.182

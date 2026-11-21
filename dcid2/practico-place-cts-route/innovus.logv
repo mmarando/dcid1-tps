@@ -57973,3 +57973,1173 @@ _______________________________________________________________________
 [11/21 19:53:50   2191s] 
 [11/21 19:53:50   2191s] ******* DONE VERIFY ANTENNA ********
 [11/21 19:53:51   2192s] <CMD> gui_dump_picture reports/ej1/route_con_diodo.png -format PNG
+[11/21 19:55:30   2197s] <CMD> set_analysis_view -setup func_setup_ss0p9v_125c_rcworst -hold func_hold_ff1p1v_0c_rcbest
+[11/21 19:55:32   2199s] Extraction setup Started for TopCell fir_serial_parallel 
+[11/21 19:55:32   2199s] Initializing multi-corner RC extraction with 4 active RC Corners ...
+[11/21 19:55:32   2199s] Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+[11/21 19:55:32   2199s] eee: __QRC_SADV_USE_LE__ is set 0
+[11/21 19:55:32   2199s] eee: __QRC_SADV_USE_LE__ is set 0
+[11/21 19:55:34   2201s] Generating auto layer map file.
+[11/21 19:55:34   2201s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[11/21 19:55:34   2201s] eee:        1	  Metal1	        6	metal1_conn	Metal          
+[11/21 19:55:34   2201s] eee:       34	    Via1	        7	       via1	Via            
+[11/21 19:55:34   2201s] eee:        2	  Metal2	        8	metal2_conn	Metal          
+[11/21 19:55:34   2201s] eee:       35	    Via2	        9	       via2	Via            
+[11/21 19:55:34   2201s] eee:        3	  Metal3	       10	metal3_conn	Metal          
+[11/21 19:55:34   2201s] eee:       36	    Via3	       11	       via3	Via            
+[11/21 19:55:34   2201s] eee:        4	  Metal4	       12	metal4_conn	Metal          
+[11/21 19:55:34   2201s] eee:       37	    Via4	       13	       via4	Via            
+[11/21 19:55:34   2201s] eee:        5	  Metal5	       14	metal5_conn	Metal          
+[11/21 19:55:34   2201s] eee:       38	    Via5	       15	       via5	Via            
+[11/21 19:55:34   2201s] eee:        6	  Metal6	       16	metal6_conn	Metal          
+[11/21 19:55:34   2201s] eee:       39	    Via6	       17	       via6	Via            
+[11/21 19:55:34   2201s] eee:        7	  Metal7	       18	metal7_conn	Metal          
+[11/21 19:55:34   2201s] eee:       40	    Via7	       19	       via7	Via            
+[11/21 19:55:34   2201s] eee:        8	  Metal8	       20	metal8_conn	Metal          
+[11/21 19:55:34   2201s] eee:       41	    Via8	       21	       via8	Via            
+[11/21 19:55:34   2201s] eee:        9	  Metal9	       22	metal9_conn	Metal          
+[11/21 19:55:34   2201s] eee:       42	    Via9	       23	       via9	Via            
+[11/21 19:55:34   2201s] eee:       10	 Metal10	       24	metal10_conn	Metal          
+[11/21 19:55:34   2201s] eee:       43	   Via10	       25	via10_nocap	Via            
+[11/21 19:55:34   2201s] eee:       11	 Metal11	       27	metal11_conn	Metal          
+[11/21 19:55:34   2201s] eee: TechFile: /home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile
+[11/21 19:55:34   2201s] eee: HoWee  : 0 0 0 0 0 0 0 0 0 0 0 
+[11/21 19:55:34   2201s] eee: Erosn  : 1 1 1 1 1 1 1 1 1 1 0 
+[11/21 19:55:34   2201s] eee: nrColor: 0 0 0 0 0 0 0 0 0 0 0 
+[11/21 19:55:35   2201s] eee: TechFile: /home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile
+[11/21 19:55:35   2201s] eee: HoWee  : 0 0 0 0 0 0 0 0 0 0 0 
+[11/21 19:55:35   2201s] eee: Erosn  : 1 1 1 1 1 1 1 1 1 1 0 
+[11/21 19:55:35   2201s] eee: nrColor: 0 0 0 0 0 0 0 0 0 0 0 
+[11/21 19:55:35   2201s] eee: Save / Restore of RC patterns enabled 
+[11/21 19:55:35   2201s] eee: Pattern meta data file doesn't exist
+[11/21 19:55:35   2201s] eee: Pattern data restore failed for 2 tech files
+[11/21 19:55:35   2201s] eee: Pattern extraction started for 2 tech files
+[11/21 19:55:35   2201s] Importing multi-corner technology file(s) for preRoute extraction...
+[11/21 19:55:35   2201s] /home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile
+[11/21 19:55:37   2203s] Generating auto layer map file.
+[11/21 19:55:37   2203s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[11/21 19:55:37   2203s] eee:        1	  Metal1	        6	metal1_conn	Metal          
+[11/21 19:55:37   2203s] eee:       34	    Via1	        7	       via1	Via            
+[11/21 19:55:37   2203s] eee:        2	  Metal2	        8	metal2_conn	Metal          
+[11/21 19:55:37   2203s] eee:       35	    Via2	        9	       via2	Via            
+[11/21 19:55:37   2203s] eee:        3	  Metal3	       10	metal3_conn	Metal          
+[11/21 19:55:37   2203s] eee:       36	    Via3	       11	       via3	Via            
+[11/21 19:55:37   2203s] eee:        4	  Metal4	       12	metal4_conn	Metal          
+[11/21 19:55:37   2203s] eee:       37	    Via4	       13	       via4	Via            
+[11/21 19:55:37   2203s] eee:        5	  Metal5	       14	metal5_conn	Metal          
+[11/21 19:55:37   2203s] eee:       38	    Via5	       15	       via5	Via            
+[11/21 19:55:37   2203s] eee:        6	  Metal6	       16	metal6_conn	Metal          
+[11/21 19:55:37   2203s] eee:       39	    Via6	       17	       via6	Via            
+[11/21 19:55:37   2203s] eee:        7	  Metal7	       18	metal7_conn	Metal          
+[11/21 19:55:37   2203s] eee:       40	    Via7	       19	       via7	Via            
+[11/21 19:55:37   2203s] eee:        8	  Metal8	       20	metal8_conn	Metal          
+[11/21 19:55:37   2203s] eee:       41	    Via8	       21	       via8	Via            
+[11/21 19:55:37   2203s] eee:        9	  Metal9	       22	metal9_conn	Metal          
+[11/21 19:55:37   2203s] eee:       42	    Via9	       23	       via9	Via            
+[11/21 19:55:37   2203s] eee:       10	 Metal10	       24	metal10_conn	Metal          
+[11/21 19:55:37   2203s] eee:       43	   Via10	       25	via10_nocap	Via            
+[11/21 19:55:37   2203s] eee:       11	 Metal11	       27	metal11_conn	Metal          
+[11/21 19:55:45   2211s] /home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile
+[11/21 19:55:47   2213s] Generating auto layer map file.
+[11/21 19:55:47   2213s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[11/21 19:55:47   2213s] eee:        1	  Metal1	        6	metal1_conn	Metal          
+[11/21 19:55:47   2213s] eee:       34	    Via1	        7	       via1	Via            
+[11/21 19:55:47   2213s] eee:        2	  Metal2	        8	metal2_conn	Metal          
+[11/21 19:55:47   2213s] eee:       35	    Via2	        9	       via2	Via            
+[11/21 19:55:47   2213s] eee:        3	  Metal3	       10	metal3_conn	Metal          
+[11/21 19:55:47   2213s] eee:       36	    Via3	       11	       via3	Via            
+[11/21 19:55:47   2213s] eee:        4	  Metal4	       12	metal4_conn	Metal          
+[11/21 19:55:47   2213s] eee:       37	    Via4	       13	       via4	Via            
+[11/21 19:55:47   2213s] eee:        5	  Metal5	       14	metal5_conn	Metal          
+[11/21 19:55:47   2213s] eee:       38	    Via5	       15	       via5	Via            
+[11/21 19:55:47   2213s] eee:        6	  Metal6	       16	metal6_conn	Metal          
+[11/21 19:55:47   2213s] eee:       39	    Via6	       17	       via6	Via            
+[11/21 19:55:47   2213s] eee:        7	  Metal7	       18	metal7_conn	Metal          
+[11/21 19:55:47   2213s] eee:       40	    Via7	       19	       via7	Via            
+[11/21 19:55:47   2213s] eee:        8	  Metal8	       20	metal8_conn	Metal          
+[11/21 19:55:47   2213s] eee:       41	    Via8	       21	       via8	Via            
+[11/21 19:55:47   2213s] eee:        9	  Metal9	       22	metal9_conn	Metal          
+[11/21 19:55:47   2213s] eee:       42	    Via9	       23	       via9	Via            
+[11/21 19:55:47   2213s] eee:       10	 Metal10	       24	metal10_conn	Metal          
+[11/21 19:55:47   2213s] eee:       43	   Via10	       25	via10_nocap	Via            
+[11/21 19:55:47   2213s] eee:       11	 Metal11	       27	metal11_conn	Metal          
+[11/21 19:55:54   2220s] eee: Pattern extraction completed
+[11/21 19:55:54   2220s] Completed (cpu: 0:00:20.8 real: 0:00:22.0)
+[11/21 19:55:54   2220s] Set Shrink Factor to 1.00000
+[11/21 19:55:54   2220s] Summary of Active RC-Corners : 
+[11/21 19:55:54   2220s]  
+[11/21 19:55:54   2220s]  Analysis View: func_setup_ss0p9v_125c_rcworst
+[11/21 19:55:54   2220s]   Late RC-Corner
+[11/21 19:55:54   2220s]     RC-Corner Name        : late_spef_rcworst_125
+[11/21 19:55:54   2220s]     RC-Corner Index       : 0
+[11/21 19:55:54   2220s]     RC-Corner Temperature : 125 Celsius
+[11/21 19:55:54   2220s]     RC-Corner Cap Table   : ''
+[11/21 19:55:54   2220s]     RC-Corner PreRoute Res Factor         : 0.91
+[11/21 19:55:54   2220s]     RC-Corner PreRoute Cap Factor         : 1.11
+[11/21 19:55:54   2220s]     RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+[11/21 19:55:54   2220s]     RC-Corner PostRoute Cap Factor        : 1.06 {1.06 1.06 1}
+[11/21 19:55:54   2220s]     RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+[11/21 19:55:54   2220s]     RC-Corner PreRoute Clock Res Factor   : 0.985
+[11/21 19:55:54   2220s]     RC-Corner PreRoute Clock Cap Factor   : 1.01
+[11/21 19:55:54   2220s]     RC-Corner PostRoute Clock Cap Factor  : 0.948 {0.948 0.948 1} 
+[11/21 19:55:54   2220s]     RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+[11/21 19:55:54   2220s]     RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 
+[11/21 19:55:54   2220s]     RC-Corner Technology file: '/home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile'
+[11/21 19:55:54   2220s]  
+[11/21 19:55:54   2220s]   Early RC-Corner
+[11/21 19:55:54   2220s]     RC-Corner Name        : early_spef_rcworst_125
+[11/21 19:55:54   2220s]     RC-Corner Index       : 1
+[11/21 19:55:54   2220s]     RC-Corner Temperature : 125 Celsius
+[11/21 19:55:54   2220s]     RC-Corner Cap Table   : ''
+[11/21 19:55:54   2220s]     RC-Corner PreRoute Res Factor         : 0.91
+[11/21 19:55:54   2220s]     RC-Corner PreRoute Cap Factor         : 1
+[11/21 19:55:54   2220s]     RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+[11/21 19:55:54   2220s]     RC-Corner PostRoute Cap Factor        : 0.961 {0.961 0.961 1}
+[11/21 19:55:54   2220s]     RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+[11/21 19:55:54   2220s]     RC-Corner PreRoute Clock Res Factor   : 0.985
+[11/21 19:55:54   2220s]     RC-Corner PreRoute Clock Cap Factor   : 0.912
+[11/21 19:55:54   2220s]     RC-Corner PostRoute Clock Cap Factor  : 0.857 {0.857 0.857 1} 
+[11/21 19:55:54   2220s]     RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+[11/21 19:55:54   2220s]     RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 
+[11/21 19:55:54   2220s]     RC-Corner Technology file: '/home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile'
+[11/21 19:55:54   2220s]  
+[11/21 19:55:54   2220s]  Analysis View: func_hold_ff1p1v_0c_rcbest
+[11/21 19:55:54   2220s]   Late RC-Corner
+[11/21 19:55:54   2220s]     RC-Corner Name        : late_spef_rcbest_0
+[11/21 19:55:54   2220s]     RC-Corner Index       : 2
+[11/21 19:55:54   2220s]     RC-Corner Temperature : 0 Celsius
+[11/21 19:55:54   2220s]     RC-Corner Cap Table   : ''
+[11/21 19:55:54   2220s]     RC-Corner PreRoute Res Factor         : 0.91
+[11/21 19:55:54   2220s]     RC-Corner PreRoute Cap Factor         : 1.11
+[11/21 19:55:54   2220s]     RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+[11/21 19:55:54   2220s]     RC-Corner PostRoute Cap Factor        : 1.06 {1.06 1.06 1}
+[11/21 19:55:54   2220s]     RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+[11/21 19:55:54   2220s]     RC-Corner PreRoute Clock Res Factor   : 0.985
+[11/21 19:55:54   2220s]     RC-Corner PreRoute Clock Cap Factor   : 1.01
+[11/21 19:55:54   2220s]     RC-Corner PostRoute Clock Cap Factor  : 0.948 {0.948 0.948 1} 
+[11/21 19:55:54   2220s]     RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+[11/21 19:55:54   2220s]     RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 
+[11/21 19:55:54   2220s]     RC-Corner Technology file: '/home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile'
+[11/21 19:55:54   2220s]  
+[11/21 19:55:54   2220s]   Early RC-Corner
+[11/21 19:55:54   2220s]     RC-Corner Name        : early_spef_rcbest_0
+[11/21 19:55:54   2220s]     RC-Corner Index       : 3
+[11/21 19:55:54   2220s]     RC-Corner Temperature : 0 Celsius
+[11/21 19:55:54   2220s]     RC-Corner Cap Table   : ''
+[11/21 19:55:54   2220s]     RC-Corner PreRoute Res Factor         : 0.91
+[11/21 19:55:54   2220s]     RC-Corner PreRoute Cap Factor         : 1
+[11/21 19:55:54   2220s]     RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+[11/21 19:55:54   2220s]     RC-Corner PostRoute Cap Factor        : 0.961 {0.961 0.961 1}
+[11/21 19:55:54   2220s]     RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+[11/21 19:55:54   2220s]     RC-Corner PreRoute Clock Res Factor   : 0.985
+[11/21 19:55:54   2220s]     RC-Corner PreRoute Clock Cap Factor   : 0.912
+[11/21 19:55:54   2220s]     RC-Corner PostRoute Clock Cap Factor  : 0.857 {0.857 0.857 1} 
+[11/21 19:55:54   2220s]     RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+[11/21 19:55:54   2220s]     RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 
+[11/21 19:55:54   2220s]     RC-Corner Technology file: '/home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile'
+[11/21 19:55:54   2220s] Technology file '/home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile' associated with first view 'func_setup_ss0p9v_125c_rcworst' will be used as the primary corner for the multi-corner extraction.
+[11/21 19:55:54   2220s] eee: RC Grid memory allocated = 13728 (13 X 8 X 11 X 12b)
+[11/21 19:55:54   2220s] Updating RC Grid density data for preRoute extraction ...
+[11/21 19:55:54   2220s] eee: pegSigSF=1.070000
+[11/21 19:55:54   2220s] Initializing multi-corner resistance tables ...
+[11/21 19:55:54   2220s] eee: Grid unit RC data computation started
+[11/21 19:55:54   2220s] eee: Grid unit RC data computation completed
+[11/21 19:55:54   2220s] eee: l=1 avDens=0.115354 usedTrk=747.495410 availTrk=6480.000000 sigTrk=747.495410
+[11/21 19:55:54   2220s] eee: l=2 avDens=0.146108 usedTrk=899.439240 availTrk=6156.000000 sigTrk=899.439240
+[11/21 19:55:54   2220s] eee: l=3 avDens=0.161884 usedTrk=1049.008982 availTrk=6480.000000 sigTrk=1049.008982
+[11/21 19:55:54   2220s] eee: l=4 avDens=0.139403 usedTrk=858.166720 availTrk=6156.000000 sigTrk=858.166720
+[11/21 19:55:54   2220s] eee: l=5 avDens=0.180269 usedTrk=1168.142017 availTrk=6480.000000 sigTrk=1168.142017
+[11/21 19:55:54   2220s] eee: l=6 avDens=0.110025 usedTrk=677.316348 availTrk=6156.000000 sigTrk=677.316348
+[11/21 19:55:54   2220s] eee: l=7 avDens=0.118560 usedTrk=768.267809 availTrk=6480.000000 sigTrk=768.267809
+[11/21 19:55:54   2220s] eee: l=8 avDens=0.084143 usedTrk=517.981435 availTrk=6156.000000 sigTrk=517.981435
+[11/21 19:55:54   2220s] eee: l=9 avDens=0.057821 usedTrk=374.682923 availTrk=6480.000000 sigTrk=374.682923
+[11/21 19:55:54   2220s] eee: l=10 avDens=0.136877 usedTrk=337.046492 availTrk=2462.400000 sigTrk=337.046492
+[11/21 19:55:54   2220s] eee: l=11 avDens=0.133933 usedTrk=347.153772 availTrk=2592.000000 sigTrk=347.153772
+[11/21 19:55:54   2220s] {RT late_spef_rcworst_125 0 2 11  {8 0} {10 0} 2}
+[11/21 19:55:54   2220s] eee: LAM-FP: thresh=1 ; dimX=1053.684211 ; dimY=540.000000 ; multX=1.000000 ; multY=1.000000 ; minP=380 ; fpMult=1.000000 ;
+[11/21 19:55:54   2220s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.262563 uaWl=1.000000 uaWlH=0.545900 aWlH=0.000000 lMod=0 pMax=0.883600 pMod=79 pModAss=50 wcR=0.772700 crit=0.000000 siPrev=0 newSi=0.001600 wHLS=1.931800 viaL=0.000000 shortMod=0.000000 fModUnas=0.000000 fModAs=0.000000 pDens=0.500000 
+[11/21 19:55:54   2220s] eee: NetCapCache creation started. (Current Mem: 6034.195M) 
+[11/21 19:55:54   2220s] eee: NetCapCache completed. (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  Curr Mem: 6034.195M) 
+[11/21 19:55:54   2220s] eee: dbu = 2000, Design = [ll(0.000000, 0.000000) ur(200.200000, 102.600000)], Layers = [f(11) b(0)], Grid size = 17.100000 um, Grid Dim = (12 X 7)
+[11/21 19:55:54   2220s] eee: Metal Layers Info:
+[11/21 19:55:54   2220s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[11/21 19:55:54   2220s] eee: |   Layer  |  Id |    W    |    S    |    P    |   uC   |   uR   | D | T | wS |
+[11/21 19:55:54   2220s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[11/21 19:55:54   2220s] eee: |   Metal1 |   1 |   0.060 |   0.060 |   0.190 |  0.256 |   1.04 | H | 0 |  2 |
+[11/21 19:55:54   2220s] eee: |   Metal2 |   2 |   0.080 |   0.070 |   0.200 |  0.249 |   0.67 | V | 0 |  2 |
+[11/21 19:55:54   2220s] eee: |   Metal3 |   3 |   0.080 |   0.070 |   0.190 |  0.263 |   0.71 | H | 0 |  2 |
+[11/21 19:55:54   2220s] eee: |   Metal4 |   4 |   0.080 |   0.070 |   0.200 |  0.260 |   0.67 | V | 0 |  2 |
+[11/21 19:55:54   2220s] eee: |   Metal5 |   5 |   0.080 |   0.070 |   0.190 |  0.265 |   0.71 | H | 0 |  2 |
+[11/21 19:55:54   2220s] eee: |   Metal6 |   6 |   0.080 |   0.070 |   0.200 |  0.262 |   0.67 | V | 0 |  2 |
+[11/21 19:55:54   2220s] eee: |   Metal7 |   7 |   0.080 |   0.070 |   0.190 |  0.270 |   0.71 | H | 0 |  2 |
+[11/21 19:55:54   2220s] eee: |   Metal8 |   8 |   0.080 |   0.070 |   0.200 |  0.254 |   0.24 | V | 0 |  2 |
+[11/21 19:55:54   2220s] eee: |   Metal9 |   9 |   0.080 |   0.070 |   0.190 |  1.433 |   0.26 | H | 0 |  2 |
+[11/21 19:55:54   2220s] eee: |  Metal10 |  10 |   0.220 |   0.200 |   0.500 |  0.660 |   0.09 | V | 0 |  2 |
+[11/21 19:55:54   2220s] eee: |  Metal11 |  11 |   0.220 |   0.200 |   0.475 |  0.644 |   0.15 | H | 0 |  2 |
+[11/21 19:55:54   2220s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[11/21 19:55:54   2220s] eee: uC/uR for corner late_spef_rcworst_125, min-width/min-spacing, 30 perc over/under densities.
+[11/21 19:55:55   2220s] Ending "SetAnalysisView" (total cpu=0:00:00.2, real=0:00:01.0, peak res=3522.7M, current mem=2991.9M)
+[11/21 19:55:55   2221s] Reading timing constraints file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/.mmmcyblQbL/modes/func/func.sdc' ...
+[11/21 19:55:55   2221s] Current (total cpu=0:37:02, real=4:30:25, peak res=4680.7M, current mem=3332.3M)
+[11/21 19:55:55   2221s] INFO (CTE): Constraints read successfully.
+[11/21 19:55:56   2221s] Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:01.0, peak res=3349.6M, current mem=3349.6M)
+[11/21 19:55:56   2221s] Current (total cpu=0:37:02, real=4:30:26, peak res=4680.7M, current mem=3349.6M)
+[11/21 19:55:56   2221s] Reading latency file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/.mmmcyblQbL/views/func_setup_ss0p9v_125c_rcworst/latency.sdc' ...
+[11/21 19:55:56   2221s] Reading latency file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/.mmmcyblQbL/views/func_hold_ff1p1v_0c_rcbest/latency.sdc' ...
+[11/21 19:55:56   2221s] Ending "Cell type marking" (total cpu=0:00:00.1, real=0:00:00.0, peak res=3349.8M, current mem=3349.8M)
+[11/21 19:55:56   2221s] 
+[11/21 19:55:56   2221s] TimeStamp Deleting Cell Server Begin ...
+[11/21 19:55:56   2221s] Deleting Lib Analyzer.
+[11/21 19:55:56   2221s] 
+[11/21 19:55:56   2221s] TimeStamp Deleting Cell Server End ...
+[11/21 19:55:56   2221s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[11/21 19:55:56   2221s] 
+[11/21 19:55:56   2221s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATSRXLLVT complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATSRX4LVT complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATSRX2LVT complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATSRX1LVT complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATNSRXLLVT complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATNSRX4LVT complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATNSRX2LVT complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATNSRX1LVT complicate code: 8
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SMDFFHQX8LVT complicate code: 30.1
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SMDFFHQX4LVT complicate code: 30.1
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SMDFFHQX2LVT complicate code: 30.1
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SMDFFHQX1LVT complicate code: 30.1
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFTRXLLVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFTRX4LVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFTRX2LVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFTRX1LVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFHQX8LVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFHQX4LVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFHQX2LVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFHQX1LVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: EDFFTRXLLVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: EDFFTRX4LVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: EDFFTRX2LVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: EDFFTRX1LVT complicate code: 30.05
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATSRXL complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATSRX4 complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATSRX2 complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATSRX1 complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATNSRXL complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATNSRX4 complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATNSRX2 complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATNSRX1 complicate code: 8
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATSRXLHVT complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATSRX4HVT complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATSRX2HVT complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATSRX1HVT complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATNSRXLHVT complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATNSRX4HVT complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATNSRX2HVT complicate code: 8
+[11/21 19:55:56   2221s] SB Latch Setting to complicate: TLATNSRX1HVT complicate code: 8
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SMDFFHQX8HVT complicate code: 30.1
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SMDFFHQX4HVT complicate code: 30.1
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SMDFFHQX2HVT complicate code: 30.1
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SMDFFHQX1HVT complicate code: 30.1
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFTRXLHVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFTRX4HVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFTRX2HVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFTRX1HVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFHQX8HVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFHQX4HVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFHQX2HVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: SEDFFHQX1HVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: EDFFTRXLHVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: EDFFTRX4HVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: EDFFTRX2HVT complicate code: 30.05
+[11/21 19:55:56   2221s] SBFF Setting to complicate: EDFFTRX1HVT complicate code: 30.05
+[11/21 19:55:56   2221s] Summary for sequential cells identification: 
+[11/21 19:55:56   2221s]   Identified SBFF number: 312
+[11/21 19:55:56   2221s]   Identified MBFF number: 0
+[11/21 19:55:56   2221s]   Identified SB Latch number: 24
+[11/21 19:55:56   2221s]   Identified MB Latch number: 0
+[11/21 19:55:56   2221s]   Not identified SBFF number: 48
+[11/21 19:55:56   2221s]   Not identified MBFF number: 0
+[11/21 19:55:56   2221s]   Not identified SB Latch number: 24
+[11/21 19:55:56   2221s]   Not identified MB Latch number: 0
+[11/21 19:55:56   2221s]   Number of sequential cells which are not FFs: 48
+[11/21 19:55:56   2222s]  Visiting view : func_setup_ss0p9v_125c_rcworst
+[11/21 19:55:56   2222s]    : PowerDomain = none : Weighted F : unweighted  = 27.70 (1.000) with rcCorner = 0
+[11/21 19:55:56   2222s]    : PowerDomain = none : Weighted F : unweighted  = 12.70 (1.000) with rcCorner = -1
+[11/21 19:55:56   2222s]  Visiting view : func_hold_ff1p1v_0c_rcbest
+[11/21 19:55:56   2222s]    : PowerDomain = none : Weighted F : unweighted  = 10.30 (1.000) with rcCorner = 3
+[11/21 19:55:56   2222s]    : PowerDomain = none : Weighted F : unweighted  = 4.60 (1.000) with rcCorner = -1
+[11/21 19:55:56   2222s] TLC MultiMap info (StdDelay):
+[11/21 19:55:56   2222s]   : hold_rcbest + fast + 1 + no RcCorner := 4.6ps
+[11/21 19:55:56   2222s]   : hold_rcbest + fast + 1 + early_spef_rcbest_0 := 10.3ps
+[11/21 19:55:56   2222s]   : setup_rcworst + slow + 1 + no RcCorner := 12.7ps
+[11/21 19:55:56   2222s]   : setup_rcworst + slow + 1 + late_spef_rcworst_125 := 27.7ps
+[11/21 19:55:56   2222s]  Setting StdDelay to: 27.7ps
+[11/21 19:55:56   2222s] 
+[11/21 19:55:56   2222s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[11/21 19:55:56   2222s] 
+[11/21 19:55:56   2222s] TimeStamp Deleting Cell Server Begin ...
+[11/21 19:55:56   2222s] 
+[11/21 19:55:56   2222s] TimeStamp Deleting Cell Server End ...
+[11/21 19:55:56   2222s] <CMD> setExtractRCMode -engine postRoute -effortLevel medium
+[11/21 19:55:59   2222s] <CMD> extractRC
+[11/21 19:55:59   2222s] tQuantus: Need to rerun tQuantus because the top cell's isRCExtracted() is false.
+[11/21 19:55:59   2222s] ### Net info: total nets: 4452
+[11/21 19:55:59   2222s] ### Net info: dirty nets: 0
+[11/21 19:55:59   2222s] ### Net info: marked as disconnected nets: 0
+[11/21 19:55:59   2222s] ### Net info: fully routed nets: 4450
+[11/21 19:55:59   2222s] ### Net info: trivial (< 2 pins) nets: 2
+[11/21 19:55:59   2222s] ### Net info: unrouted nets: 0
+[11/21 19:55:59   2222s] ### Net info: re-extraction nets: 0
+[11/21 19:55:59   2222s] ### Net info: ignored nets: 0
+[11/21 19:55:59   2222s] ### Net info: skip routing nets: 0
+[11/21 19:56:00   2222s] ### import design signature (227): route=1559637128 fixed_route=1559637128 flt_obj=0 vio=1905142130 swire=282492057 shield_wire=1 net_attr=2108132893 dirty_area=0 del_dirty_area=0 cell=1431261461 placement=1682663818 pin_access=1161996693 inst_pattern=1 inst_orient=1 via=610195162 routing_via=1564330932 timing=1976466920 sns=1976466920
+[11/21 19:56:00   2222s] #Extract in post route mode
+[11/21 19:56:00   2222s] #Finish check_net_pin_list step Enter extract_rc_in_nr_cmd
+[11/21 19:56:00   2222s] #Fast data preparation for tQuantus.
+[11/21 19:56:00   2222s] #Start routing data preparation on Sat Nov 21 19:56:00 2026
+[11/21 19:56:00   2222s] #
+[11/21 19:56:00   2222s] # Metal1       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.13000
+[11/21 19:56:00   2222s] # Metal2       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+[11/21 19:56:00   2222s] # Metal3       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+[11/21 19:56:00   2222s] # Metal4       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+[11/21 19:56:00   2222s] # Metal5       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+[11/21 19:56:00   2222s] # Metal6       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+[11/21 19:56:00   2222s] # Metal7       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+[11/21 19:56:00   2222s] # Metal8       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+[11/21 19:56:00   2222s] # Metal9       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+[11/21 19:56:00   2222s] # Metal10      V   Track-Pitch = 0.50000    Line-2-Via Pitch = 0.42000
+[11/21 19:56:00   2222s] # Metal11      H   Track-Pitch = 0.47500    Line-2-Via Pitch = 0.43000
+[11/21 19:56:00   2222s] #Regenerating Ggrids automatically.
+[11/21 19:56:00   2222s] #Auto generating G-grids with size=15 tracks, using layer Metal3's pitch = 0.19000.
+[11/21 19:56:00   2222s] #Using automatically generated G-grids.
+[11/21 19:56:00   2222s] #Done routing data preparation.
+[11/21 19:56:00   2222s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3346.39 (MB), peak = 4680.68 (MB)
+[11/21 19:56:00   2222s] #Start routing data preparation on Sat Nov 21 19:56:00 2026
+[11/21 19:56:00   2222s] #
+[11/21 19:56:00   2223s] #Bottom routing layer index=2(Metal2), bottom routing layer for shielding=2(Metal2), bottom shield layer=2(Metal2)
+[11/21 19:56:00   2223s] #shield_bottom_stripe_layer=1(Metal1), shield_top_stripe_layer=11(Metal11)
+[11/21 19:56:00   2223s] #pin_access_rlayer=2(Metal2)
+[11/21 19:56:00   2223s] #shield_top_dpt_rlayer=-1 top_rlayer=11 top_trim_metal_rlayer=-1 rlayer_lowest=1 bottom_rlayer=2
+[11/21 19:56:00   2223s] #enable_trim_layer_shield=F enable_dpt_layer_shield=F has_line_end_grid=F
+[11/21 19:56:00   2223s] #enable_dpt_layer_shield=F
+[11/21 19:56:00   2223s] #has_line_end_grid=F
+[11/21 19:56:00   2223s] #Regenerating Ggrids automatically.
+[11/21 19:56:00   2223s] #Auto generating G-grids with size=15 tracks, using layer Metal3's pitch = 0.19000.
+[11/21 19:56:00   2223s] #Using automatically generated G-grids.
+[11/21 19:56:08   2231s] #Done routing data preparation.
+[11/21 19:56:08   2231s] #cpu time = 00:00:08, elapsed time = 00:00:08, memory = 3427.73 (MB), peak = 4680.68 (MB)
+[11/21 19:56:08   2231s] #
+[11/21 19:56:08   2231s] #Start tQuantus RC extraction...
+[11/21 19:56:08   2231s] #Start building rc corner(s)...
+[11/21 19:56:08   2231s] #Number of RC Corner = 4
+[11/21 19:56:08   2231s] #Corner early_spef_rcworst_125 /home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile 125.000000 (real) 
+[11/21 19:56:08   2231s] #Corner late_spef_rcworst_125 /home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile 125.000000 (real) 
+[11/21 19:56:08   2231s] #Corner early_spef_rcbest_0 /home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile 0.000000 (real) 
+[11/21 19:56:08   2231s] #Corner late_spef_rcbest_0 /home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile 0.000000 (real) 
+[11/21 19:56:08   2231s] #(i=11, n=11 2000)
+[11/21 19:56:08   2231s] #metal1_conn -> Metal1 (1)
+[11/21 19:56:08   2231s] #metal2_conn -> Metal2 (2)
+[11/21 19:56:08   2231s] #metal3_conn -> Metal3 (3)
+[11/21 19:56:08   2231s] #metal4_conn -> Metal4 (4)
+[11/21 19:56:08   2231s] #metal5_conn -> Metal5 (5)
+[11/21 19:56:08   2231s] #metal6_conn -> Metal6 (6)
+[11/21 19:56:08   2231s] #metal7_conn -> Metal7 (7)
+[11/21 19:56:08   2231s] #metal8_conn -> Metal8 (8)
+[11/21 19:56:08   2231s] #metal9_conn -> Metal9 (9)
+[11/21 19:56:08   2231s] #metal10_conn -> Metal10 (10)
+[11/21 19:56:08   2231s] #metal11_conn -> Metal11 (11)
+[11/21 19:56:10   2232s] #SADV-On
+[11/21 19:56:10   2232s] # Corner(s) : 
+[11/21 19:56:10   2232s] #early_spef_rcworst_125 [125.00] 
+[11/21 19:56:10   2232s] #late_spef_rcworst_125 [125.00] 
+[11/21 19:56:10   2232s] #early_spef_rcbest_0 [ 0.00] 
+[11/21 19:56:10   2232s] #late_spef_rcbest_0 [ 0.00]
+[11/21 19:56:13   2235s] # Corner id: 0
+[11/21 19:56:13   2235s] # Layout Scale: 1.000000
+[11/21 19:56:13   2235s] # Has Metal Fill model: yes
+[11/21 19:56:13   2235s] # Temperature was set
+[11/21 19:56:13   2235s] # Temperature : 125.000000
+[11/21 19:56:13   2235s] # Ref. Temp   : 25.000000
+[11/21 19:56:13   2235s] # Corner id: 1
+[11/21 19:56:13   2235s] # Layout Scale: 1.000000
+[11/21 19:56:13   2235s] # Has Metal Fill model: yes
+[11/21 19:56:13   2235s] # Temperature was set
+[11/21 19:56:13   2235s] # Temperature : 0.000000
+[11/21 19:56:13   2235s] # Ref. Temp   : 25.000000
+[11/21 19:56:13   2235s] # Corner id: 2
+[11/21 19:56:13   2235s] # Layout Scale: 1.000000
+[11/21 19:56:13   2235s] # Has Metal Fill model: yes
+[11/21 19:56:13   2235s] # Temperature was set
+[11/21 19:56:13   2235s] # Temperature : 125.000000
+[11/21 19:56:13   2235s] # Ref. Temp   : 25.000000
+[11/21 19:56:13   2235s] # Corner id: 3
+[11/21 19:56:13   2235s] # Layout Scale: 1.000000
+[11/21 19:56:13   2235s] # Has Metal Fill model: yes
+[11/21 19:56:13   2235s] # Temperature was set
+[11/21 19:56:13   2235s] # Temperature : 0.000000
+[11/21 19:56:13   2235s] # Ref. Temp   : 25.000000
+[11/21 19:56:13   2235s] #SADV-Off
+[11/21 19:56:13   2235s] #total pattern=286 [22, 1584]
+[11/21 19:56:13   2235s] #Reading previously stored rc_model file ( rc_model.bin ) ...
+[11/21 19:56:13   2235s] #found CAPMODEL /home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile
+[11/21 19:56:13   2235s] #found CAPMODEL /home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile
+[11/21 19:56:13   2235s] #found RESMODEL /home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile 125.000000 
+[11/21 19:56:13   2235s] #found RESMODEL /home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile 0.000000 
+[11/21 19:56:13   2235s] #CCE Version read = IQuantus/TQuantus 22.1.1-s215
+[11/21 19:56:13   2235s] #number model r/c [2,2] [22,1584] read
+[11/21 19:56:14   2235s] #0 rcmodel(s) requires rebuild
+[11/21 19:56:14   2235s] #Build RC corners: cpu time = 00:00:05, elapsed time = 00:00:07, memory = 3446.18 (MB), peak = 4680.68 (MB)
+[11/21 19:56:14   2235s] #Finish check_net_pin_list step Enter extract
+[11/21 19:56:14   2235s] #Start init net ripin tree building
+[11/21 19:56:14   2235s] #Finish init net ripin tree building
+[11/21 19:56:14   2235s] #Cpu time = 00:00:00
+[11/21 19:56:14   2235s] #Elapsed time = 00:00:00
+[11/21 19:56:14   2235s] #Increased memory = 0.00 (MB)
+[11/21 19:56:14   2235s] #Total memory = 3446.19 (MB)
+[11/21 19:56:14   2235s] #Peak memory = 4680.68 (MB)
+[11/21 19:56:14   2235s] #Using multithreading with 8 threads.
+[11/21 19:56:14   2235s] #begin processing metal fill model file
+[11/21 19:56:14   2235s] #end processing metal fill model file
+[11/21 19:56:14   2235s] #Length limit = 200 pitches
+[11/21 19:56:14   2235s] #opt mode = 2
+[11/21 19:56:14   2235s] #Finish check_net_pin_list step Fix net pin list
+[11/21 19:56:14   2235s] #Start generate extraction boxes.
+[11/21 19:56:14   2235s] #
+[11/21 19:56:14   2235s] #Extract using 30 x 30 Hboxes
+[11/21 19:56:14   2235s] #4x3 initial hboxes
+[11/21 19:56:14   2235s] #Use area based hbox pruning.
+[11/21 19:56:14   2235s] #0/0 hboxes pruned.
+[11/21 19:56:14   2235s] #Complete generating extraction boxes.
+[11/21 19:56:14   2235s] #Start step Extraction
+[11/21 19:56:14   2235s] #Extract 5 hboxes with 8 threads on machine with  Xeon 2.00GHz 28160KB Cache 80CPU...
+[11/21 19:56:14   2235s] #Process 0 special clock nets for rc extraction
+[11/21 19:56:15   2236s] #Total 4450 nets were built. 25 nodes added to break long wires. 0 net(s) have incomplete routes.
+[11/21 19:56:20   2245s] #Run Statistics for Extraction:
+[11/21 19:56:20   2245s] #   Cpu time = 00:00:10, elapsed time = 00:00:05 .
+[11/21 19:56:20   2245s] #   Increased memory =   173.07 (MB), total memory =  3619.39 (MB), peak memory =  4680.68 (MB)
+[11/21 19:56:20   2245s] #Register nets and terms for rcdb /home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/nr95549_e76iqE.rcdb.d
+[11/21 19:56:20   2246s] #Finish registering nets and terms for rcdb.
+[11/21 19:56:20   2246s] #Simplify RC tree: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3491.10 (MB), peak = 4680.68 (MB)
+[11/21 19:56:20   2246s] #RC Statistics: 17000 Res, 9229 Ground Cap, 4745 XCap (Edge to Edge)
+[11/21 19:56:20   2246s] #RC V/H edge ratio: 0.36, Avg V/H Edge Length: 4083.94 (7567), Avg L-Edge Length: 8978.66 (6039)
+[11/21 19:56:20   2246s] #Nets and terms are pre-registered for rcdb /home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/nr95549_e76iqE.rcdb.d.
+[11/21 19:56:20   2246s] #Start writing RC data.
+[11/21 19:56:20   2246s] #Finish writing RC data
+[11/21 19:56:20   2246s] #Finish writing rcdb with 21452 nodes, 17002 edges, and 9498 xcaps
+[11/21 19:56:20   2246s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3486.82 (MB), peak = 4680.68 (MB)
+[11/21 19:56:20   2246s] Restoring parasitic data from file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/nr95549_e76iqE.rcdb.d' ...
+[11/21 19:56:20   2246s] Opening parasitic data file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/nr95549_e76iqE.rcdb.d' for reading (mem: 5806.016M)
+[11/21 19:56:20   2246s] Reading RCDB with compressed RC data.
+[11/21 19:56:20   2246s] Opening parasitic data file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/nr95549_e76iqE.rcdb.d' for content verification (mem: 5806.016M)
+[11/21 19:56:20   2246s] Reading RCDB with compressed RC data.
+[11/21 19:56:20   2246s] Closing parasitic data file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/nr95549_e76iqE.rcdb.d': 0 access done (mem: 5806.016M)
+[11/21 19:56:20   2246s] Closing parasitic data file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/nr95549_e76iqE.rcdb.d': 0 access done (mem: 5806.016M)
+[11/21 19:56:20   2246s] Begin read_parasitics... (cpu: 0:00:00.0 real: 0:00:00.0 mem: 5806.016M)
+[11/21 19:56:20   2246s] Following multi-corner parasitics specified:
+[11/21 19:56:20   2246s] 	/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/nr95549_e76iqE.rcdb.d (rcdb)
+[11/21 19:56:20   2246s] Opening parasitic data file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/nr95549_e76iqE.rcdb.d' for reading (mem: 5806.016M)
+[11/21 19:56:20   2246s] Reading RCDB with compressed RC data.
+[11/21 19:56:20   2246s] 		Cell fir_serial_parallel has rcdb /home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/nr95549_e76iqE.rcdb.d specified
+[11/21 19:56:20   2246s] Cell fir_serial_parallel, hinst 
+[11/21 19:56:20   2246s] processing rcdb (/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/nr95549_e76iqE.rcdb.d) for hinst (top) of cell (fir_serial_parallel);
+[11/21 19:56:20   2246s] Closing parasitic data file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/nr95549_e76iqE.rcdb.d': 0 access done (mem: 5806.016M)
+[11/21 19:56:20   2246s] Lumped Parasitic Loading Started (total cpu=0:00:00.0, real=0:00:00.0, current mem=5806.016M)
+[11/21 19:56:20   2246s] Opening parasitic data file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/fir_serial_parallel_95549_xBp4cD.rcdb.d/fir_serial_parallel.rcdb.d' for reading (mem: 5806.016M)
+[11/21 19:56:20   2246s] Reading RCDB with compressed RC data.
+[11/21 19:56:21   2247s] Closing parasitic data file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/fir_serial_parallel_95549_xBp4cD.rcdb.d/fir_serial_parallel.rcdb.d': 0 access done (mem: 5806.020M)
+[11/21 19:56:21   2247s] Lumped Parasitic Loading Completed (total cpu=0:00:00.5, real=0:00:01.0, current mem=5806.020M)
+[11/21 19:56:21   2247s] Done read_parasitics... (cpu: 0:00:00.6 real: 0:00:01.0 mem: 5806.020M)
+[11/21 19:56:21   2247s] #
+[11/21 19:56:21   2247s] #Restore RCDB.
+[11/21 19:56:21   2247s] #
+[11/21 19:56:21   2247s] #Complete tQuantus RC extraction.
+[11/21 19:56:21   2247s] #Cpu time = 00:00:16
+[11/21 19:56:21   2247s] #Elapsed time = 00:00:13
+[11/21 19:56:21   2247s] #Increased memory = 59.80 (MB)
+[11/21 19:56:21   2247s] #Total memory = 3487.53 (MB)
+[11/21 19:56:21   2247s] #Peak memory = 4680.68 (MB)
+[11/21 19:56:21   2247s] #
+[11/21 19:56:21   2247s] #25 inserted nodes are removed
+[11/21 19:56:21   2247s] #Restored 0 tie nets, 0 tie snets, 0 partial nets
+[11/21 19:56:21   2247s] ### export design design signature (229): route=1350502528 fixed_route=1350502528 flt_obj=0 vio=1905142130 swire=282492057 shield_wire=1 net_attr=2122325685 dirty_area=0 del_dirty_area=0 cell=1431261461 placement=1682663818 pin_access=1161996693 inst_pattern=1 inst_orient=1 via=610195162 routing_via=1564330932 timing=1976466920 sns=1976466920
+[11/21 19:56:21   2247s] ### import design signature (230): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1161996693 inst_pattern=1 inst_orient=1 via=610195162 routing_via=1564330932 timing=1 sns=1
+[11/21 19:56:21   2247s] #Start Design Signature (0)
+[11/21 19:56:21   2247s] #Finish Inst Signature in MT(3746315)
+[11/21 19:56:21   2247s] #Finish Net Signature in MT(15710826)
+[11/21 19:56:21   2247s] #Finish SNet Signature in MT (51183822)
+[11/21 19:56:21   2247s] #Run time and memory report for RC extraction:
+[11/21 19:56:21   2247s] #RC extraction running on  Xeon 2.00GHz 28160KB Cache 80CPU.
+[11/21 19:56:21   2247s] #Run Statistics for snet signature:
+[11/21 19:56:21   2247s] #   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  1.16/8, scale score = 0.15.
+[11/21 19:56:21   2247s] #    Increased memory =     0.01 (MB), total memory =  3379.89 (MB), peak memory =  4680.68 (MB)
+[11/21 19:56:21   2247s] #Run Statistics for Net Final Signature:
+[11/21 19:56:21   2247s] #   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+[11/21 19:56:21   2247s] #   Increased memory =     0.00 (MB), total memory =  3379.89 (MB), peak memory =  4680.68 (MB)
+[11/21 19:56:21   2247s] #Run Statistics for Net launch:
+[11/21 19:56:21   2247s] #   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  5.02/8, scale score = 0.63.
+[11/21 19:56:21   2247s] #    Increased memory =     0.01 (MB), total memory =  3379.89 (MB), peak memory =  4680.68 (MB)
+[11/21 19:56:21   2247s] #Run Statistics for Net init_dbsNet_slist:
+[11/21 19:56:21   2247s] #   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+[11/21 19:56:21   2247s] #   Increased memory =     0.00 (MB), total memory =  3379.88 (MB), peak memory =  4680.68 (MB)
+[11/21 19:56:21   2247s] #Run Statistics for net signature:
+[11/21 19:56:21   2247s] #   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  4.35/8, scale score = 0.54.
+[11/21 19:56:21   2247s] #    Increased memory =     0.01 (MB), total memory =  3379.89 (MB), peak memory =  4680.68 (MB)
+[11/21 19:56:21   2247s] #Run Statistics for inst signature:
+[11/21 19:56:21   2247s] #   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  2.78/8, scale score = 0.35.
+[11/21 19:56:21   2247s] #    Increased memory =    -6.30 (MB), total memory =  3379.88 (MB), peak memory =  4680.68 (MB)
+[11/21 19:56:27   2248s] <CMD> checkFPlan -reportUtil > reports/ej1/util_post_route.rpt
+[11/21 19:56:27   2248s] Checking routing tracks.....
+[11/21 19:56:27   2248s] Checking other grids.....
+[11/21 19:56:27   2248s] Checking FINFET Grid is on Manufacture Grid.....
+[11/21 19:56:27   2248s] Checking core/die box is on Grid.....
+[11/21 19:56:27   2248s] Checking snap rule ......
+[11/21 19:56:27   2248s] Checking Row is on grid......
+[11/21 19:56:27   2248s] Tech site CoreSite has no symmetry Y. 	Current symmetry setting : isSymmetryR90 false; isSymmetryX : false; isSymmetryY : false;
+[11/21 19:56:27   2248s] 
+[11/21 19:56:27   2248s] INFO (IMPFP-7241): Tech site CoreSite has no symmetry Y. 	Current symmetry setting : isSymmetryR90 false; isSymmetryX : false; isSymmetryY : false;
+[11/21 19:56:27   2248s] 
+[11/21 19:56:27   2248s] Checking AreaIO row.....
+[11/21 19:56:27   2248s] Checking row out of die ...
+[11/21 19:56:27   2248s] Checking routing blockage.....
+[11/21 19:56:27   2248s] Checking placement blockage.....
+[11/21 19:56:27   2248s] placeBlkGrid grid_type = 1 
+[11/21 19:56:27   2248s] Checking components.....
+[11/21 19:56:27   2248s] Checking IO Pads out of die...
+[11/21 19:56:27   2248s] Checking constraints (guide/region/fence).....
+[11/21 19:56:27   2248s] 
+[11/21 19:56:27   2248s] Checking Preroutes.....
+[11/21 19:56:28   2248s] No. of regular pre-routes not on tracks : 0 
+[11/21 19:56:28   2248s] 
+[11/21 19:56:28   2248s] Reporting Utilizations.....
+[11/21 19:56:28   2248s] 
+[11/21 19:56:28   2248s] Core utilization  = 100.000000
+[11/21 19:56:28   2248s] Effective Utilizations
+[11/21 19:56:28   2248s] Disable fast DP-INIT: start main density report
+[11/21 19:56:28   2248s] Processing tracks to init pin-track alignment.
+[11/21 19:56:28   2248s] z: 2, totalTracks: 1
+[11/21 19:56:28   2248s] z: 4, totalTracks: 1
+[11/21 19:56:28   2248s] z: 6, totalTracks: 1
+[11/21 19:56:28   2248s] z: 8, totalTracks: 1
+[11/21 19:56:28   2248s] #spOpts: N=45 hrOri=1 hrSnap=1 rpCkHalo=4 
+[11/21 19:56:28   2248s] Cell fir_serial_parallel LLGs are deleted
+[11/21 19:56:28   2248s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 19:56:28   2248s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 19:56:28   2248s] OPERPROF: Starting SiteArray-Init at level 1, MEM:5599.7M, EPOCH TIME: 1795301788.061955
+[11/21 19:56:28   2248s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 19:56:28   2248s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 19:56:28   2248s] OPERPROF:   Starting SiteArray-Init-FPlan at level 2, MEM:5599.7M, EPOCH TIME: 1795301788.071594
+[11/21 19:56:28   2248s] Max number of tech site patterns supported in site array is 256.
+[11/21 19:56:28   2248s] Core basic site is CoreSite
+[11/21 19:56:28   2248s] After signature check, allow fast init is false, keep pre-filter is true.
+[11/21 19:56:28   2248s] After signature check and other controls, allow fast init is false, keep pre-filter is false.
+[11/21 19:56:28   2248s] SiteArray: non-trimmed site array dimensions = 58 x 981
+[11/21 19:56:28   2248s] SiteArray: use 299,008 bytes
+[11/21 19:56:28   2248s] SiteArray: current memory after site array memory allocation 5600.0M
+[11/21 19:56:28   2248s] SiteArray: FP blocked sites are writable
+[11/21 19:56:28   2248s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[11/21 19:56:28   2248s] OPERPROF:     Starting Routing-Blockage-From-Wire-Via-StBox at level 3, MEM:5600.0M, EPOCH TIME: 1795301788.252360
+[11/21 19:56:28   2248s] Process 30227 wires and vias for routing blockage analysis
+[11/21 19:56:28   2248s] OPERPROF:     Finished Routing-Blockage-From-Wire-Via-StBox at level 3, CPU:0.100, REAL:0.046, MEM:5600.0M, EPOCH TIME: 1795301788.298337
+[11/21 19:56:28   2248s] SiteArray: number of non floorplan blocked sites for llg default is 56898
+[11/21 19:56:28   2248s] Atter site array init, number of instance map data is 0.
+[11/21 19:56:28   2248s] OPERPROF:   Finished SiteArray-Init-FPlan at level 2, CPU:0.290, REAL:0.230, MEM:5600.0M, EPOCH TIME: 1795301788.301702
+[11/21 19:56:28   2248s] 
+[11/21 19:56:28   2248s] Verbose-2062: PG Shapes are colorized in Pre_CCE_Colorize flow.
+[11/21 19:56:28   2248s]  Pre_CCE_Colorizing is not ON! (0:0:1559:0)
+[11/21 19:56:28   2248s] OPERPROF: Finished SiteArray-Init at level 1, CPU:0.310, REAL:0.246, MEM:5600.0M, EPOCH TIME: 1795301788.307799
+[11/21 19:56:28   2248s] Average macro density = 0.000.
+[11/21 19:56:28   2248s] Average module density = 1.000.
+[11/21 19:56:28   2248s] Pure std cell Density 1.000000
+[11/21 19:56:28   2248s]  Density for the design = 1.000.
+[11/21 19:56:28   2248s]        = stdcell_area 56898 sites (19459 um^2) / alloc_area 56898 sites (19459 um^2).
+[11/21 19:56:28   2248s] Pin Density = 0.2148.
+[11/21 19:56:28   2248s]             = total # of pins 12223 / total area 56898.
+[11/21 19:56:28   2248s] Cell fir_serial_parallel LLGs are deleted
+[11/21 19:56:28   2248s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:14).
+[11/21 19:56:28   2248s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 19:56:28   2248s] # Resetting pin-track-align track data.
+[11/21 19:56:28   2248s] Disable fast DP-INIT: end main density report
+[11/21 19:56:28   2248s] *** Message Summary: 0 warning(s), 0 error(s)
+[11/21 19:56:28   2248s] 
+[11/21 19:56:28   2248s] <CMD> report_area > reports/ej1/area_post_route.rpt
+[11/21 19:56:28   2248s] <CMD> report_timing -late -path_type summary_slack_only -max_paths 50 > reports/ej1/timing_setup.rpt
+[11/21 19:56:28   2249s] AAE_INFO: opIsDesignInPostRouteState() is 1
+[11/21 19:56:29   2249s] AAE DB initialization (MEM=5611.56 CPU=0:00:00.0 REAL=0:00:01.0) 
+[11/21 19:56:29   2249s] #################################################################################
+[11/21 19:56:29   2249s] # Design Stage: PostRoute
+[11/21 19:56:29   2249s] # Design Name: fir_serial_parallel
+[11/21 19:56:29   2249s] # Design Mode: 45nm
+[11/21 19:56:29   2249s] # Analysis Mode: MMMC Non-OCV 
+[11/21 19:56:29   2249s] # Parasitics Mode: SPEF/RCDB 
+[11/21 19:56:29   2249s] # Signoff Settings: SI Off 
+[11/21 19:56:29   2249s] #################################################################################
+[11/21 19:56:29   2249s] Topological Sorting (REAL = 0:00:00.0, MEM = 5681.7M, InitMEM = 5681.7M)
+[11/21 19:56:29   2250s] Calculate delays in BcWc mode...
+[11/21 19:56:29   2250s] Start delay calculation (fullDC) (8 T). (MEM=3513.94)
+[11/21 19:56:29   2250s] Start AAE Lib Loading. (MEM=5693.24)
+[11/21 19:56:29   2250s] End AAE Lib Loading. (MEM=5913.32 CPU=0:00:00.1 Real=0:00:00.0)
+[11/21 19:56:29   2250s] End AAE Lib Interpolated Model. (MEM=5913.32 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/21 19:56:29   2250s] Opening parasitic data file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/fir_serial_parallel_95549_xBp4cD.rcdb.d/fir_serial_parallel.rcdb.d' for reading (mem: 5913.316M)
+[11/21 19:56:29   2250s] Reading RCDB with compressed RC data.
+[11/21 19:56:29   2250s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 5913.3M)
+[11/21 19:56:30   2251s] Total number of fetched objects 4452
+[11/21 19:56:30   2251s] End Timing Check Calculation. (CPU Time=0:00:00.3, Real Time=0:00:00.0)
+[11/21 19:56:30   2251s] End delay calculation. (MEM=3550.06 CPU=0:00:01.4 REAL=0:00:00.0)
+[11/21 19:56:31   2252s] End delay calculation (fullDC). (MEM=3496.72 CPU=0:00:02.7 REAL=0:00:02.0)
+[11/21 19:56:31   2252s] *** CDM Built up (cpu=0:00:03.5  real=0:00:02.0  mem= 6151.9M) ***
+[11/21 19:56:31   2253s] <CMD> report_timing -early -path_type summary_slack_only -max_paths 50 > reports/ej1/timing_hold.rpt
+[11/21 19:56:32   2253s] AAE_INFO: opIsDesignInPostRouteState() is 1
+[11/21 19:56:32   2253s] #################################################################################
+[11/21 19:56:32   2253s] # Design Stage: PostRoute
+[11/21 19:56:32   2253s] # Design Name: fir_serial_parallel
+[11/21 19:56:32   2253s] # Design Mode: 45nm
+[11/21 19:56:32   2253s] # Analysis Mode: MMMC Non-OCV 
+[11/21 19:56:32   2253s] # Parasitics Mode: SPEF/RCDB 
+[11/21 19:56:32   2253s] # Signoff Settings: SI Off 
+[11/21 19:56:32   2253s] #################################################################################
+[11/21 19:56:32   2254s] Topological Sorting (REAL = 0:00:00.0, MEM = 6148.4M, InitMEM = 6148.4M)
+[11/21 19:56:32   2254s] Calculate delays in BcWc mode...
+[11/21 19:56:32   2254s] Start delay calculation (fullDC) (8 T). (MEM=3558.95)
+[11/21 19:56:33   2254s] End AAE Lib Interpolated Model. (MEM=6159.95 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/21 19:56:33   2255s] Total number of fetched objects 4452
+[11/21 19:56:33   2255s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/21 19:56:33   2255s] End delay calculation. (MEM=3581.43 CPU=0:00:01.2 REAL=0:00:00.0)
+[11/21 19:56:33   2255s] End delay calculation (fullDC). (MEM=3581.43 CPU=0:00:01.5 REAL=0:00:01.0)
+[11/21 19:56:33   2255s] *** CDM Built up (cpu=0:00:02.2  real=0:00:01.0  mem= 6151.9M) ***
+[11/21 19:56:33   2256s] <CMD> report_constraint -all_violators -drv_violation_type max_transition > reports/ej1/max_transition.rpt
+[11/21 19:56:34   2256s] AAE_INFO: opIsDesignInPostRouteState() is 1
+[11/21 19:56:34   2256s] #################################################################################
+[11/21 19:56:34   2256s] # Design Stage: PostRoute
+[11/21 19:56:34   2256s] # Design Name: fir_serial_parallel
+[11/21 19:56:34   2256s] # Design Mode: 45nm
+[11/21 19:56:34   2256s] # Analysis Mode: MMMC Non-OCV 
+[11/21 19:56:34   2256s] # Parasitics Mode: SPEF/RCDB 
+[11/21 19:56:34   2256s] # Signoff Settings: SI Off 
+[11/21 19:56:34   2256s] #################################################################################
+[11/21 19:56:34   2257s] Topological Sorting (REAL = 0:00:00.0, MEM = 6148.4M, InitMEM = 6148.4M)
+[11/21 19:56:34   2257s] Calculate delays in BcWc mode...
+[11/21 19:56:34   2257s] Start delay calculation (fullDC) (8 T). (MEM=3591.55)
+[11/21 19:56:35   2257s] End AAE Lib Interpolated Model. (MEM=6159.95 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/21 19:56:35   2258s] Total number of fetched objects 4452
+[11/21 19:56:35   2258s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/21 19:56:35   2258s] End delay calculation. (MEM=3601.52 CPU=0:00:01.1 REAL=0:00:00.0)
+[11/21 19:56:35   2258s] End delay calculation (fullDC). (MEM=3601.52 CPU=0:00:01.3 REAL=0:00:01.0)
+[11/21 19:56:35   2258s] *** CDM Built up (cpu=0:00:02.0  real=0:00:01.0  mem= 6161.0M) ***
+[11/21 19:56:35   2259s] <CMD> set_analysis_view -dynamic -hold func_hold_ff1p1v_0c_rcbest -setup func_hold_ff1p1v_0c_rcbest
+[11/21 19:56:37   2260s] Extraction setup Started for TopCell fir_serial_parallel 
+[11/21 19:56:37   2260s] Initializing multi-corner RC extraction with 2 active RC Corners ...
+[11/21 19:56:37   2260s] Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+[11/21 19:56:37   2260s] eee: __QRC_SADV_USE_LE__ is set 0
+[11/21 19:56:37   2260s] eee: Save / Restore of RC patterns enabled 
+[11/21 19:56:37   2260s] eee: Pattern data restore completed
+[11/21 19:56:37   2260s] Completed (cpu: 0:00:00.0 real: 0:00:00.0)
+[11/21 19:56:37   2260s] Set Shrink Factor to 1.00000
+[11/21 19:56:37   2260s] Summary of Active RC-Corners : 
+[11/21 19:56:37   2260s]  
+[11/21 19:56:37   2260s]  Analysis View: func_hold_ff1p1v_0c_rcbest
+[11/21 19:56:37   2260s]   Late RC-Corner
+[11/21 19:56:37   2260s]     RC-Corner Name        : late_spef_rcbest_0
+[11/21 19:56:37   2260s]     RC-Corner Index       : 0
+[11/21 19:56:37   2260s]     RC-Corner Temperature : 0 Celsius
+[11/21 19:56:37   2260s]     RC-Corner Cap Table   : ''
+[11/21 19:56:37   2260s]     RC-Corner PreRoute Res Factor         : 0.91
+[11/21 19:56:37   2260s]     RC-Corner PreRoute Cap Factor         : 1.11
+[11/21 19:56:37   2260s]     RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+[11/21 19:56:37   2260s]     RC-Corner PostRoute Cap Factor        : 1.06 {1.06 1.06 1}
+[11/21 19:56:37   2260s]     RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+[11/21 19:56:37   2260s]     RC-Corner PreRoute Clock Res Factor   : 0.985
+[11/21 19:56:37   2260s]     RC-Corner PreRoute Clock Cap Factor   : 1.01
+[11/21 19:56:37   2260s]     RC-Corner PostRoute Clock Cap Factor  : 0.948 {0.948 0.948 1} 
+[11/21 19:56:37   2260s]     RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+[11/21 19:56:37   2260s]     RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 	[Derived from postRoute_xcap (effortLevel medium)]
+[11/21 19:56:37   2260s]     RC-Corner Technology file: '/home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile'
+[11/21 19:56:37   2260s]  
+[11/21 19:56:37   2260s]   Early RC-Corner
+[11/21 19:56:37   2260s]     RC-Corner Name        : early_spef_rcbest_0
+[11/21 19:56:37   2260s]     RC-Corner Index       : 1
+[11/21 19:56:37   2260s]     RC-Corner Temperature : 0 Celsius
+[11/21 19:56:37   2260s]     RC-Corner Cap Table   : ''
+[11/21 19:56:37   2260s]     RC-Corner PreRoute Res Factor         : 0.91
+[11/21 19:56:37   2260s]     RC-Corner PreRoute Cap Factor         : 1
+[11/21 19:56:37   2260s]     RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+[11/21 19:56:37   2260s]     RC-Corner PostRoute Cap Factor        : 0.961 {0.961 0.961 1}
+[11/21 19:56:37   2260s]     RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+[11/21 19:56:37   2260s]     RC-Corner PreRoute Clock Res Factor   : 0.985
+[11/21 19:56:37   2260s]     RC-Corner PreRoute Clock Cap Factor   : 0.912
+[11/21 19:56:37   2260s]     RC-Corner PostRoute Clock Cap Factor  : 0.857 {0.857 0.857 1} 
+[11/21 19:56:37   2260s]     RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+[11/21 19:56:37   2260s]     RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 	[Derived from postRoute_xcap (effortLevel medium)]
+[11/21 19:56:37   2260s]     RC-Corner Technology file: '/home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile'
+[11/21 19:56:37   2260s] Technology file '/home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile' associated with first view 'func_hold_ff1p1v_0c_rcbest' will be used as the primary corner for the multi-corner extraction.
+[11/21 19:56:37   2261s] Closing parasitic data file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/fir_serial_parallel_95549_xBp4cD.rcdb.d/fir_serial_parallel.rcdb.d': 8900 access done (mem: 6142.449M)
+[11/21 19:56:37   2261s] set_analysis_view/update_rc_corner called to change MMMC setup. New set of RC Corners are a subset of previous MMMC setup and the RC setup information for the new set has remained same. Therefore, parasitic data in the tool brought as per previous MMMC setup is being maintained.
+[11/21 19:56:37   2261s] Lumped Parasitic Loading Started (total cpu=0:00:00.0, real=0:00:00.0, current mem=6142.449M)
+[11/21 19:56:37   2261s] Opening parasitic data file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/fir_serial_parallel_95549_xBp4cD.rcdb.d/fir_serial_parallel.rcdb.d' for reading (mem: 6142.449M)
+[11/21 19:56:37   2261s] Reading RCDB with compressed RC data.
+[11/21 19:56:38   2261s] Closing parasitic data file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/fir_serial_parallel_95549_xBp4cD.rcdb.d/fir_serial_parallel.rcdb.d': 0 access done (mem: 6174.465M)
+[11/21 19:56:38   2261s] Lumped Parasitic Loading Completed (total cpu=0:00:00.3, real=0:00:01.0, current mem=6174.465M)
+[11/21 19:56:38   2261s] eee: RC Grid memory freed = 13728 (13 X 8 X 11 X 12b)
+[11/21 19:56:38   2261s] eee: RC Grid memory allocated = 13728 (13 X 8 X 11 X 12b)
+[11/21 19:56:38   2261s] eee: pegSigSF=1.070000
+[11/21 19:56:38   2261s] Initializing multi-corner resistance tables ...
+[11/21 19:56:38   2261s] eee: Grid unit RC data computation started
+[11/21 19:56:38   2261s] eee: Grid unit RC data computation completed
+[11/21 19:56:38   2261s] eee: l=1 avDens=0.115354 usedTrk=747.495410 availTrk=6480.000000 sigTrk=747.495410
+[11/21 19:56:38   2261s] eee: l=2 avDens=0.146108 usedTrk=899.439240 availTrk=6156.000000 sigTrk=899.439240
+[11/21 19:56:38   2261s] eee: l=3 avDens=0.161884 usedTrk=1049.008982 availTrk=6480.000000 sigTrk=1049.008982
+[11/21 19:56:38   2261s] eee: l=4 avDens=0.139403 usedTrk=858.166720 availTrk=6156.000000 sigTrk=858.166720
+[11/21 19:56:38   2261s] eee: l=5 avDens=0.180269 usedTrk=1168.142017 availTrk=6480.000000 sigTrk=1168.142017
+[11/21 19:56:38   2261s] eee: l=6 avDens=0.110025 usedTrk=677.316348 availTrk=6156.000000 sigTrk=677.316348
+[11/21 19:56:38   2261s] eee: l=7 avDens=0.118560 usedTrk=768.267809 availTrk=6480.000000 sigTrk=768.267809
+[11/21 19:56:38   2261s] eee: l=8 avDens=0.084143 usedTrk=517.981435 availTrk=6156.000000 sigTrk=517.981435
+[11/21 19:56:38   2261s] eee: l=9 avDens=0.057821 usedTrk=374.682923 availTrk=6480.000000 sigTrk=374.682923
+[11/21 19:56:38   2261s] eee: l=10 avDens=0.136877 usedTrk=337.046492 availTrk=2462.400000 sigTrk=337.046492
+[11/21 19:56:38   2261s] eee: l=11 avDens=0.133933 usedTrk=347.153772 availTrk=2592.000000 sigTrk=347.153772
+[11/21 19:56:38   2261s] eee: LAM-FP: thresh=1 ; dimX=1053.684211 ; dimY=540.000000 ; multX=1.000000 ; multY=1.000000 ; minP=380 ; fpMult=1.000000 ;
+[11/21 19:56:38   2261s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.262563 uaWl=1.000000 uaWlH=0.545900 aWlH=0.000000 lMod=0 pMax=0.883600 pMod=79 pModAss=50 wcR=0.772700 crit=0.000000 siPrev=0 newSi=0.001600 wHLS=1.931800 viaL=0.000000 shortMod=0.000000 fModUnas=0.000000 fModAs=0.000000 pDens=0.500000 
+[11/21 19:56:38   2261s] eee: NetCapCache creation started. (Current Mem: 5324.465M) 
+[11/21 19:56:38   2261s] eee: NetCapCache completed. (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  Curr Mem: 5324.465M) 
+[11/21 19:56:38   2261s] eee: dbu = 2000, Design = [ll(0.000000, 0.000000) ur(200.200000, 102.600000)], Layers = [f(11) b(0)], Grid size = 17.100000 um, Grid Dim = (12 X 7)
+[11/21 19:56:38   2261s] eee: Metal Layers Info:
+[11/21 19:56:38   2261s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[11/21 19:56:38   2261s] eee: |   Layer  |  Id |    W    |    S    |    P    |   uC   |   uR   | D | T | wS |
+[11/21 19:56:38   2261s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[11/21 19:56:38   2261s] eee: |   Metal1 |   1 |   0.060 |   0.060 |   0.190 |  0.198 |   0.57 | H | 0 |  2 |
+[11/21 19:56:38   2261s] eee: |   Metal2 |   2 |   0.080 |   0.070 |   0.200 |  0.183 |   0.40 | V | 0 |  2 |
+[11/21 19:56:38   2261s] eee: |   Metal3 |   3 |   0.080 |   0.070 |   0.190 |  0.194 |   0.42 | H | 0 |  2 |
+[11/21 19:56:38   2261s] eee: |   Metal4 |   4 |   0.080 |   0.070 |   0.200 |  0.189 |   0.40 | V | 0 |  2 |
+[11/21 19:56:38   2261s] eee: |   Metal5 |   5 |   0.080 |   0.070 |   0.190 |  0.195 |   0.42 | H | 0 |  2 |
+[11/21 19:56:38   2261s] eee: |   Metal6 |   6 |   0.080 |   0.070 |   0.200 |  0.191 |   0.40 | V | 0 |  2 |
+[11/21 19:56:38   2261s] eee: |   Metal7 |   7 |   0.080 |   0.070 |   0.190 |  0.198 |   0.42 | H | 0 |  2 |
+[11/21 19:56:38   2261s] eee: |   Metal8 |   8 |   0.080 |   0.070 |   0.200 |  0.189 |   0.13 | V | 0 |  2 |
+[11/21 19:56:38   2261s] eee: |   Metal9 |   9 |   0.080 |   0.070 |   0.190 |  0.908 |   0.14 | H | 0 |  2 |
+[11/21 19:56:38   2261s] eee: |  Metal10 |  10 |   0.220 |   0.200 |   0.500 |  0.438 |   0.05 | V | 0 |  2 |
+[11/21 19:56:38   2261s] eee: |  Metal11 |  11 |   0.220 |   0.200 |   0.475 |  0.541 |   0.06 | H | 0 |  2 |
+[11/21 19:56:38   2261s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[11/21 19:56:38   2261s] eee: uC/uR for corner late_spef_rcbest_0, min-width/min-spacing, 30 perc over/under densities.
+[11/21 19:56:38   2261s] *Info: initialize multi-corner CTS.
+[11/21 19:56:38   2261s] Ending "SetAnalysisView" (total cpu=0:00:00.2, real=0:00:00.0, peak res=3466.0M, current mem=3021.3M)
+[11/21 19:56:39   2262s] Reading timing constraints file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/.mmmcQWDMEa/modes/func/func.sdc' ...
+[11/21 19:56:39   2262s] Current (total cpu=0:37:43, real=4:31:09, peak res=4680.7M, current mem=3351.5M)
+[11/21 19:56:39   2262s] INFO (CTE): Constraints read successfully.
+[11/21 19:56:39   2262s] Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=3368.6M, current mem=3368.6M)
+[11/21 19:56:39   2263s] Current (total cpu=0:37:43, real=4:31:09, peak res=4680.7M, current mem=3368.6M)
+[11/21 19:56:39   2263s] Reading latency file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/.mmmcQWDMEa/views/func_hold_ff1p1v_0c_rcbest/latency.sdc' ...
+[11/21 19:56:39   2263s] 
+[11/21 19:56:39   2263s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[11/21 19:56:39   2263s] SB Latch Setting to complicate: TLATSRXLHVT complicate code: 8
+[11/21 19:56:39   2263s] SB Latch Setting to complicate: TLATSRX4HVT complicate code: 8
+[11/21 19:56:39   2263s] SB Latch Setting to complicate: TLATSRX2HVT complicate code: 8
+[11/21 19:56:39   2263s] SB Latch Setting to complicate: TLATSRX1HVT complicate code: 8
+[11/21 19:56:39   2263s] SB Latch Setting to complicate: TLATNSRXLHVT complicate code: 8
+[11/21 19:56:39   2263s] SB Latch Setting to complicate: TLATNSRX4HVT complicate code: 8
+[11/21 19:56:39   2263s] SB Latch Setting to complicate: TLATNSRX2HVT complicate code: 8
+[11/21 19:56:39   2263s] SB Latch Setting to complicate: TLATNSRX1HVT complicate code: 8
+[11/21 19:56:39   2263s] SBFF Setting to complicate: SMDFFHQX8HVT complicate code: 30.1
+[11/21 19:56:39   2263s] SBFF Setting to complicate: SMDFFHQX4HVT complicate code: 30.1
+[11/21 19:56:39   2263s] SBFF Setting to complicate: SMDFFHQX2HVT complicate code: 30.1
+[11/21 19:56:39   2263s] SBFF Setting to complicate: SMDFFHQX1HVT complicate code: 30.1
+[11/21 19:56:39   2263s] SBFF Setting to complicate: SEDFFTRXLHVT complicate code: 30.05
+[11/21 19:56:39   2263s] SBFF Setting to complicate: SEDFFTRX4HVT complicate code: 30.05
+[11/21 19:56:39   2263s] SBFF Setting to complicate: SEDFFTRX2HVT complicate code: 30.05
+[11/21 19:56:39   2263s] SBFF Setting to complicate: SEDFFTRX1HVT complicate code: 30.05
+[11/21 19:56:39   2263s] SBFF Setting to complicate: SEDFFHQX8HVT complicate code: 30.05
+[11/21 19:56:39   2263s] SBFF Setting to complicate: SEDFFHQX4HVT complicate code: 30.05
+[11/21 19:56:39   2263s] SBFF Setting to complicate: SEDFFHQX2HVT complicate code: 30.05
+[11/21 19:56:39   2263s] SBFF Setting to complicate: SEDFFHQX1HVT complicate code: 30.05
+[11/21 19:56:39   2263s] SBFF Setting to complicate: EDFFTRXLHVT complicate code: 30.05
+[11/21 19:56:39   2263s] SBFF Setting to complicate: EDFFTRX4HVT complicate code: 30.05
+[11/21 19:56:39   2263s] SBFF Setting to complicate: EDFFTRX2HVT complicate code: 30.05
+[11/21 19:56:39   2263s] SBFF Setting to complicate: EDFFTRX1HVT complicate code: 30.05
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATSRXL complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATSRX4 complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATSRX2 complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATSRX1 complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATNSRXL complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATNSRX4 complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATNSRX2 complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATNSRX1 complicate code: 8
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATSRXLLVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATSRX4LVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATSRX2LVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATSRX1LVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATNSRXLLVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATNSRX4LVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATNSRX2LVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATNSRX1LVT complicate code: 8
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SMDFFHQX8LVT complicate code: 30.1
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SMDFFHQX4LVT complicate code: 30.1
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SMDFFHQX2LVT complicate code: 30.1
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SMDFFHQX1LVT complicate code: 30.1
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFTRXLLVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFTRX4LVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFTRX2LVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFTRX1LVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFHQX8LVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFHQX4LVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFHQX2LVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFHQX1LVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: EDFFTRXLLVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: EDFFTRX4LVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: EDFFTRX2LVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: EDFFTRX1LVT complicate code: 30.05
+[11/21 19:56:40   2263s] Summary for sequential cells identification: 
+[11/21 19:56:40   2263s]   Identified SBFF number: 312
+[11/21 19:56:40   2263s]   Identified MBFF number: 0
+[11/21 19:56:40   2263s]   Identified SB Latch number: 24
+[11/21 19:56:40   2263s]   Identified MB Latch number: 0
+[11/21 19:56:40   2263s]   Not identified SBFF number: 48
+[11/21 19:56:40   2263s]   Not identified MBFF number: 0
+[11/21 19:56:40   2263s]   Not identified SB Latch number: 24
+[11/21 19:56:40   2263s]   Not identified MB Latch number: 0
+[11/21 19:56:40   2263s]   Number of sequential cells which are not FFs: 48
+[11/21 19:56:40   2263s] Total number of combinational cells: 954
+[11/21 19:56:40   2263s] Total number of sequential cells: 456
+[11/21 19:56:40   2263s] Total number of tristate cells: 30
+[11/21 19:56:40   2263s] Total number of level shifter cells: 0
+[11/21 19:56:40   2263s] Total number of power gating cells: 0
+[11/21 19:56:40   2263s] Total number of isolation cells: 0
+[11/21 19:56:40   2263s] Total number of power switch cells: 0
+[11/21 19:56:40   2263s] Total number of pulse generator cells: 0
+[11/21 19:56:40   2263s] Total number of always on buffers: 0
+[11/21 19:56:40   2263s] Total number of retention cells: 0
+[11/21 19:56:40   2263s] Total number of physical cells: 9
+[11/21 19:56:40   2263s] List of usable buffers: BUFX2LVT BUFX12LVT BUFX16LVT BUFX20LVT CLKBUFX2LVT BUFX3LVT BUFX4LVT BUFX6LVT BUFX8LVT CLKBUFX12LVT CLKBUFX16LVT CLKBUFX20LVT CLKBUFX3LVT CLKBUFX4LVT CLKBUFX6LVT CLKBUFX8LVT DLY1X1LVT DLY1X4LVT BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8 BUFX2HVT BUFX12HVT BUFX16HVT BUFX20HVT CLKBUFX2HVT BUFX3HVT BUFX4HVT BUFX6HVT BUFX8HVT CLKBUFX12HVT CLKBUFX16HVT CLKBUFX20HVT CLKBUFX3HVT CLKBUFX4HVT CLKBUFX6HVT CLKBUFX8HVT
+[11/21 19:56:40   2263s] Total number of usable buffers: 50
+[11/21 19:56:40   2263s] List of unusable buffers:
+[11/21 19:56:40   2263s] Total number of unusable buffers: 0
+[11/21 19:56:40   2263s] List of usable inverters: CLKINVX1LVT CLKINVX2LVT CLKINVX12LVT CLKINVX16LVT CLKINVX20LVT CLKINVX4LVT CLKINVX3LVT CLKINVX6LVT CLKINVX8LVT INVX1LVT INVX2LVT INVX12LVT INVX16LVT INVX20LVT INVX3LVT INVX4LVT INVX6LVT INVX8LVT INVXLLVT CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVX3 INVX4 INVX6 INVX8 INVXL CLKINVX1HVT CLKINVX2HVT CLKINVX12HVT CLKINVX16HVT CLKINVX20HVT CLKINVX4HVT CLKINVX3HVT CLKINVX6HVT CLKINVX8HVT INVX1HVT INVX2HVT INVX12HVT INVX16HVT INVX20HVT INVXLHVT INVX3HVT INVX4HVT INVX6HVT INVX8HVT
+[11/21 19:56:40   2263s] Total number of usable inverters: 57
+[11/21 19:56:40   2263s] List of unusable inverters:
+[11/21 19:56:40   2263s] Total number of unusable inverters: 0
+[11/21 19:56:40   2263s] List of identified usable delay cells: DLY2X1LVT DLY2X4LVT DLY3X1LVT DLY3X4LVT DLY4X1LVT DLY4X4LVT DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4 DLY1X1HVT DLY1X4HVT DLY2X1HVT DLY2X4HVT DLY3X1HVT DLY3X4HVT DLY4X1HVT DLY4X4HVT
+[11/21 19:56:40   2263s] Total number of identified usable delay cells: 22
+[11/21 19:56:40   2263s] List of identified unusable delay cells:
+[11/21 19:56:40   2263s] Total number of identified unusable delay cells: 0
+[11/21 19:56:40   2263s] 
+[11/21 19:56:40   2263s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[11/21 19:56:40   2263s] 
+[11/21 19:56:40   2263s] TimeStamp Deleting Cell Server Begin ...
+[11/21 19:56:40   2263s] 
+[11/21 19:56:40   2263s] TimeStamp Deleting Cell Server End ...
+[11/21 19:56:40   2263s] Ending "Cell type marking" (total cpu=0:00:00.1, real=0:00:00.0, peak res=3370.2M, current mem=3370.2M)
+[11/21 19:56:40   2263s] 
+[11/21 19:56:40   2263s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATSRXLLVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATSRX4LVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATSRX2LVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATSRX1LVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATNSRXLLVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATNSRX4LVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATNSRX2LVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATNSRX1LVT complicate code: 8
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SMDFFHQX8LVT complicate code: 30.1
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SMDFFHQX4LVT complicate code: 30.1
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SMDFFHQX2LVT complicate code: 30.1
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SMDFFHQX1LVT complicate code: 30.1
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFTRXLLVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFTRX4LVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFTRX2LVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFTRX1LVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFHQX8LVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFHQX4LVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFHQX2LVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFHQX1LVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: EDFFTRXLLVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: EDFFTRX4LVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: EDFFTRX2LVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: EDFFTRX1LVT complicate code: 30.05
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATSRXL complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATSRX4 complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATSRX2 complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATSRX1 complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATNSRXL complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATNSRX4 complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATNSRX2 complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATNSRX1 complicate code: 8
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATSRXLHVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATSRX4HVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATSRX2HVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATSRX1HVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATNSRXLHVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATNSRX4HVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATNSRX2HVT complicate code: 8
+[11/21 19:56:40   2263s] SB Latch Setting to complicate: TLATNSRX1HVT complicate code: 8
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SMDFFHQX8HVT complicate code: 30.1
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SMDFFHQX4HVT complicate code: 30.1
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SMDFFHQX2HVT complicate code: 30.1
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SMDFFHQX1HVT complicate code: 30.1
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFTRXLHVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFTRX4HVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFTRX2HVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFTRX1HVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFHQX8HVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFHQX4HVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFHQX2HVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: SEDFFHQX1HVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: EDFFTRXLHVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: EDFFTRX4HVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: EDFFTRX2HVT complicate code: 30.05
+[11/21 19:56:40   2263s] SBFF Setting to complicate: EDFFTRX1HVT complicate code: 30.05
+[11/21 19:56:40   2263s] Summary for sequential cells identification: 
+[11/21 19:56:40   2263s]   Identified SBFF number: 312
+[11/21 19:56:40   2263s]   Identified MBFF number: 0
+[11/21 19:56:40   2263s]   Identified SB Latch number: 24
+[11/21 19:56:40   2263s]   Identified MB Latch number: 0
+[11/21 19:56:40   2263s]   Not identified SBFF number: 48
+[11/21 19:56:40   2263s]   Not identified MBFF number: 0
+[11/21 19:56:40   2263s]   Not identified SB Latch number: 24
+[11/21 19:56:40   2263s]   Not identified MB Latch number: 0
+[11/21 19:56:40   2263s]   Number of sequential cells which are not FFs: 48
+[11/21 19:56:40   2263s]  Visiting view : func_hold_ff1p1v_0c_rcbest
+[11/21 19:56:40   2263s]    : PowerDomain = none : Weighted F : unweighted  = 10.40 (1.000) with rcCorner = 0
+[11/21 19:56:40   2263s]    : PowerDomain = none : Weighted F : unweighted  = 4.60 (1.000) with rcCorner = -1
+[11/21 19:56:40   2263s]  Visiting view : func_hold_ff1p1v_0c_rcbest
+[11/21 19:56:40   2263s]    : PowerDomain = none : Weighted F : unweighted  = 10.30 (1.000) with rcCorner = 1
+[11/21 19:56:40   2263s]    : PowerDomain = none : Weighted F : unweighted  = 4.60 (1.000) with rcCorner = -1
+[11/21 19:56:40   2263s] TLC MultiMap info (StdDelay):
+[11/21 19:56:40   2263s]   : hold_rcbest + fast + 1 + early_spef_rcbest_0 := 10.3ps
+[11/21 19:56:40   2263s]   : hold_rcbest + fast + 1 + no RcCorner := 4.6ps
+[11/21 19:56:40   2263s]   : hold_rcbest + fast + 1 + late_spef_rcbest_0 := 10.4ps
+[11/21 19:56:40   2263s]  Setting StdDelay to: 10.4ps
+[11/21 19:56:40   2263s] 
+[11/21 19:56:40   2263s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[11/21 19:56:40   2263s] 
+[11/21 19:56:40   2263s] TimeStamp Deleting Cell Server Begin ...
+[11/21 19:56:40   2263s] 
+[11/21 19:56:40   2263s] TimeStamp Deleting Cell Server End ...
+[11/21 19:56:45   2264s] <CMD> report_power -view func_hold_ff1p1v_0c_rcbest > reports/ej1/power.rpt
+[11/21 19:56:45   2264s] env CDS_WORKAREA is set to /home/mmarando/dcid-tps/dcid2/practico-place-cts-route
+[11/21 19:56:45   2264s] 
+[11/21 19:56:45   2264s] Power Net Detected:
+[11/21 19:56:45   2264s]         Voltage	    Name
+[11/21 19:56:45   2264s]              0V	    VSS
+[11/21 19:56:45   2264s]            1.1V	    VDD
+[11/21 19:56:45   2264s] AAE_INFO: opIsDesignInPostRouteState() is 1
+[11/21 19:56:45   2264s] AAE DB initialization (MEM=5613.26 CPU=0:00:00.0 REAL=0:00:00.0) 
+[11/21 19:56:45   2264s] #################################################################################
+[11/21 19:56:45   2264s] # Design Stage: PostRoute
+[11/21 19:56:45   2264s] # Design Name: fir_serial_parallel
+[11/21 19:56:45   2264s] # Design Mode: 45nm
+[11/21 19:56:45   2264s] # Analysis Mode: MMMC Non-OCV 
+[11/21 19:56:45   2264s] # Parasitics Mode: SPEF/RCDB 
+[11/21 19:56:45   2264s] # Signoff Settings: SI Off 
+[11/21 19:56:45   2264s] #################################################################################
+[11/21 19:56:45   2265s] Topological Sorting (REAL = 0:00:00.0, MEM = 5668.4M, InitMEM = 5668.4M)
+[11/21 19:56:46   2265s] Calculate delays in BcWc mode...
+[11/21 19:56:46   2265s] Start delay calculation (fullDC) (8 T). (MEM=3499.38)
+[11/21 19:56:46   2265s] Start AAE Lib Loading. (MEM=5679.91)
+[11/21 19:56:46   2265s] End AAE Lib Loading. (MEM=5899.99 CPU=0:00:00.1 Real=0:00:00.0)
+[11/21 19:56:46   2265s] End AAE Lib Interpolated Model. (MEM=5899.99 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/21 19:56:46   2265s] Opening parasitic data file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_95549_fiubarh01_mmarando_1wTDgh/fir_serial_parallel_95549_xBp4cD.rcdb.d/fir_serial_parallel.rcdb.d' for reading (mem: 5899.988M)
+[11/21 19:56:46   2265s] Reading RCDB with compressed RC data.
+[11/21 19:56:46   2265s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 5900.0M)
+[11/21 19:56:46   2265s] AAE_INFO: 8 threads acquired from CTE.
+[11/21 19:56:46   2267s] Total number of fetched objects 4452
+[11/21 19:56:46   2267s] End Timing Check Calculation. (CPU Time=0:00:00.1, Real Time=0:00:00.0)
+[11/21 19:56:46   2267s] End delay calculation. (MEM=3535.08 CPU=0:00:01.2 REAL=0:00:00.0)
+[11/21 19:56:47   2268s] End delay calculation (fullDC). (MEM=3481.68 CPU=0:00:02.7 REAL=0:00:01.0)
+[11/21 19:56:47   2268s] *** CDM Built up (cpu=0:00:03.5  real=0:00:02.0  mem= 6138.6M) ***
+[11/21 19:56:48   2268s] 
+[11/21 19:56:48   2268s] Begin Power Analysis
+[11/21 19:56:48   2268s] 
+[11/21 19:56:48   2268s]              0V	    VSS
+[11/21 19:56:48   2268s]            1.1V	    VDD
+[11/21 19:56:48   2268s] Begin Processing Timing Library for Power Calculation
+[11/21 19:56:48   2268s] 
+[11/21 19:56:48   2268s] Ended Processing Timing Library for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3554.80MB/8878.12MB/4471.61MB)
+[11/21 19:56:48   2268s] 
+[11/21 19:56:48   2268s] 
+[11/21 19:56:48   2268s] 
+[11/21 19:56:48   2268s] Begin Processing Power Net/Grid for Power Calculation
+[11/21 19:56:48   2268s] 
+[11/21 19:56:48   2268s] Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3554.98MB/8878.12MB/4471.61MB)
+[11/21 19:56:48   2268s] 
+[11/21 19:56:48   2268s] Begin Processing Timing Window Data for Power Calculation
+[11/21 19:56:48   2268s] 
+[11/21 19:56:48   2268s] clock(833.333MHz) clk_div2(416.667MHz) Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3555.48MB/8878.12MB/4471.61MB)
+[11/21 19:56:48   2269s] 
+[11/21 19:56:48   2269s] Begin Processing User Attributes
+[11/21 19:56:48   2269s] 
+[11/21 19:56:48   2269s] Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3555.59MB/8878.12MB/4471.61MB)
+[11/21 19:56:48   2269s] 
+[11/21 19:56:48   2269s] Begin Processing Signal Activity
+[11/21 19:56:48   2269s] 
+[11/21 19:56:48   2269s] Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3556.10MB/8878.12MB/4471.61MB)
+[11/21 19:56:48   2269s] 
+[11/21 19:56:48   2269s] Begin Power Computation
+[11/21 19:56:48   2269s] 
+[11/21 19:56:48   2269s]       ----------------------------------------------------------
+[11/21 19:56:48   2269s]       # of cell(s) missing both power/leakage table: 0
+[11/21 19:56:48   2269s]       # of cell(s) missing power table: 1
+[11/21 19:56:48   2269s]       # of cell(s) missing leakage table: 0
+[11/21 19:56:48   2269s]       ----------------------------------------------------------
+[11/21 19:56:48   2269s] CellName                                  Missing Table(s)
+[11/21 19:56:48   2269s] TIELOLVT                                  internal power, 
+[11/21 19:56:48   2269s] 
+[11/21 19:56:48   2269s] 
+[11/21 19:56:49   2270s]       # of MSMV cell(s) missing power_level: 0
+[11/21 19:56:49   2270s] Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3564.51MB/8966.15MB/4471.61MB)
+[11/21 19:56:49   2270s] 
+[11/21 19:56:49   2270s] Begin Processing User Attributes
+[11/21 19:56:49   2270s] 
+[11/21 19:56:49   2270s] Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3564.58MB/8966.15MB/4471.61MB)
+[11/21 19:56:49   2270s] 
+[11/21 19:56:49   2270s] Ended Power Analysis: (cpu=0:00:01, real=0:00:01, mem(process/total/peak)=3564.58MB/8966.15MB/4471.61MB)
+[11/21 19:56:49   2270s] 
+[11/21 19:56:49   2270s] *
+
+
+
+[11/21 19:56:49   2270s] Total Power
+[11/21 19:56:49   2270s] -----------------------------------------------------------------------------------------
+[11/21 19:56:49   2270s] Total Internal Power:        2.06225108 	   52.2063%
+[11/21 19:56:49   2270s] Total Switching Power:       1.88330536 	   47.6763%
+[11/21 19:56:49   2270s] Total Leakage Power:         0.00463610 	    0.1174%
+[11/21 19:56:49   2270s] Total Power:                 3.95019254
+[11/21 19:56:49   2270s] -----------------------------------------------------------------------------------------
+[11/21 19:56:49   2270s] Processing average sequential pin duty cycle 
+[11/21 19:56:49   2270s] 
+[11/21 19:56:49   2270s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATSRXLLVT complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATSRX4LVT complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATSRX2LVT complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATSRX1LVT complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATNSRXLLVT complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATNSRX4LVT complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATNSRX2LVT complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATNSRX1LVT complicate code: 8
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SMDFFHQX8LVT complicate code: 30.1
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SMDFFHQX4LVT complicate code: 30.1
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SMDFFHQX2LVT complicate code: 30.1
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SMDFFHQX1LVT complicate code: 30.1
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFTRXLLVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFTRX4LVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFTRX2LVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFTRX1LVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFHQX8LVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFHQX4LVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFHQX2LVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFHQX1LVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: EDFFTRXLLVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: EDFFTRX4LVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: EDFFTRX2LVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: EDFFTRX1LVT complicate code: 30.05
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATSRXL complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATSRX4 complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATSRX2 complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATSRX1 complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATNSRXL complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATNSRX4 complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATNSRX2 complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATNSRX1 complicate code: 8
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATSRXLHVT complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATSRX4HVT complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATSRX2HVT complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATSRX1HVT complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATNSRXLHVT complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATNSRX4HVT complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATNSRX2HVT complicate code: 8
+[11/21 19:56:49   2270s] SB Latch Setting to complicate: TLATNSRX1HVT complicate code: 8
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SMDFFHQX8HVT complicate code: 30.1
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SMDFFHQX4HVT complicate code: 30.1
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SMDFFHQX2HVT complicate code: 30.1
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SMDFFHQX1HVT complicate code: 30.1
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFTRXLHVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFTRX4HVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFTRX2HVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFTRX1HVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFHQX8HVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFHQX4HVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFHQX2HVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: SEDFFHQX1HVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: EDFFTRXLHVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: EDFFTRX4HVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: EDFFTRX2HVT complicate code: 30.05
+[11/21 19:56:49   2270s] SBFF Setting to complicate: EDFFTRX1HVT complicate code: 30.05
+[11/21 19:56:49   2270s] Summary for sequential cells identification: 
+[11/21 19:56:49   2270s]   Identified SBFF number: 312
+[11/21 19:56:49   2270s]   Identified MBFF number: 0
+[11/21 19:56:49   2270s]   Identified SB Latch number: 24
+[11/21 19:56:49   2270s]   Identified MB Latch number: 0
+[11/21 19:56:49   2270s]   Not identified SBFF number: 48
+[11/21 19:56:49   2270s]   Not identified MBFF number: 0
+[11/21 19:56:49   2270s]   Not identified SB Latch number: 24
+[11/21 19:56:49   2270s]   Not identified MB Latch number: 0
+[11/21 19:56:49   2270s]   Number of sequential cells which are not FFs: 48
+[11/21 19:56:49   2270s]  Visiting view : func_hold_ff1p1v_0c_rcbest
+[11/21 19:56:49   2270s]    : PowerDomain = none : Weighted F : unweighted  = 10.40 (1.000) with rcCorner = 0
+[11/21 19:56:49   2270s]    : PowerDomain = none : Weighted F : unweighted  = 4.60 (1.000) with rcCorner = -1
+[11/21 19:56:49   2270s]  Visiting view : func_hold_ff1p1v_0c_rcbest
+[11/21 19:56:49   2270s]    : PowerDomain = none : Weighted F : unweighted  = 10.30 (1.000) with rcCorner = 1
+[11/21 19:56:49   2270s]    : PowerDomain = none : Weighted F : unweighted  = 4.60 (1.000) with rcCorner = -1
+[11/21 19:56:49   2270s] TLC MultiMap info (StdDelay):
+[11/21 19:56:49   2270s]   : hold_rcbest + fast + 1 + early_spef_rcbest_0 := 10.3ps
+[11/21 19:56:49   2270s]   : hold_rcbest + fast + 1 + no RcCorner := 4.6ps
+[11/21 19:56:49   2270s]   : hold_rcbest + fast + 1 + late_spef_rcbest_0 := 10.4ps
+[11/21 19:56:49   2270s]  Setting StdDelay to: 10.4ps
+[11/21 19:56:49   2270s] 
+[11/21 19:56:49   2270s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
