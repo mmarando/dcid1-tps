@@ -312,3 +312,11 @@ checkPlace > reports/ej1/check_place_sin_filler.rpt
 verify_drc > reports/ej1/drc_sin_filler.rpt
 verify_connectivity -type all -no_antenna -report reports/ej1/conn_sin_filler.rpt
 verify_antenna -report reports/ej1/antenna_sin_filler.rpt
+addFiller -cell FILL8LVT FILL64LVT FILL4LVT FILL32LVT FILL2LVT FILL16LVT FILL1LVT FILL8 FILL64 FILL4 FILL32 FILL2 FILL16 FILL1 DECAP10 -prefix FILLER -powerDomain VDD -doDRC -fitGap
+ecoRoute -target
+saveDesign dataout/ej1_route_con_diodo.enc
+checkPlace > reports/ej1/check_place_con_diodo.rpt
+verify_drc > reports/ej1/drc_con_diodo.rpt
+verify_connectivity -type all -no_antenna -report reports/ej1/conn_con_diodo.rpt
+verify_antenna -report reports/ej1/antenna_con_diodo.rpt
+gui_dump_picture reports/ej1/route_con_diodo.png -format PNG
