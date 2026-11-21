@@ -282,3 +282,7 @@ ecoRoute -target
 selectWire 96.4550 16.1100 96.5350 18.2800 4 {u_fir_parallel_shift_reg[1][6]}
 deselectAll
 saveDesign dataout/ej1_route.enc
+verify_drc > reports/ej1/drc_post_route.rpt
+verify_connectivity -type all -no_antenna -report reports/ej1/conn_post_route.rpt
+verify_antenna -report reports/ej1/antenna_post_route.rpt
+gui_dump_picture reports/ej1/route.png -format PNG

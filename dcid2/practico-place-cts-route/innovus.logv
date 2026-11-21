@@ -55891,3 +55891,74 @@ _______________________________________________________________________
 [11/21 16:25:48   1114s] #% End save design ... (date=11/21 16:25:48, total cpu=0:00:09.9, real=0:00:04.0, peak res=3665.2M, current mem=3663.5M)
 [11/21 16:25:48   1114s] *** Message Summary: 0 warning(s), 0 error(s)
 [11/21 16:25:48   1114s] 
+[11/21 16:27:14   1123s] <CMD> verify_drc > reports/ej1/drc_post_route.rpt
+[11/21 16:27:14   1123s] #-check_same_via_cell true               # bool, default=false, user setting
+[11/21 16:27:14   1123s]  *** Starting Verify DRC (MEM: 5528.9) ***
+[11/21 16:27:14   1123s] 
+[11/21 16:27:14   1123s]   VERIFY DRC ...... Starting Verification
+[11/21 16:27:14   1123s]   VERIFY DRC ...... Initializing
+[11/21 16:27:14   1123s]   VERIFY DRC ...... Deleting Existing Violations
+[11/21 16:27:14   1123s]   VERIFY DRC ...... Creating Sub-Areas
+[11/21 16:27:14   1123s] **WARN: (IMPVFG-1198):	The number of CPUs requested 8 is larger than that verify_drc used 6. In Multithreading mode, the number of CPUs verify_drc used is not larger than the number of subareas.
+[11/21 16:27:14   1123s]  Use 'setMultiCpuUsage -localCpu' to specify the less cup number if the verify area is not large.
+[11/21 16:27:14   1123s]   VERIFY DRC ...... Using new threading
+[11/21 16:27:15   1123s]  VERIFY DRC ...... Sub-Area: {0.000 0.000 67.200 51.840} 1 of 6  Thread : 2
+[11/21 16:27:15   1123s]  VERIFY DRC ...... Sub-Area: {134.400 0.000 200.200 51.840} 3 of 6  Thread : 1
+[11/21 16:27:15   1124s]  VERIFY DRC ...... Sub-Area: {67.200 0.000 134.400 51.840} 2 of 6  Thread : 1
+[11/21 16:27:15   1124s]  VERIFY DRC ...... Sub-Area: {0.000 51.840 67.200 102.600} 4 of 6  Thread : 1
+[11/21 16:27:15   1124s]  VERIFY DRC ...... Sub-Area: {134.400 51.840 200.200 102.600} 6 of 6  Thread : 2
+[11/21 16:27:15   1124s]  VERIFY DRC ...... Thread : 1 finished.
+[11/21 16:27:15   1124s]  VERIFY DRC ...... Thread : 3 finished.
+[11/21 16:27:15   1124s]  VERIFY DRC ...... Thread : 5 finished.
+[11/21 16:27:15   1124s]  VERIFY DRC ...... Thread : 0 finished.
+[11/21 16:27:15   1124s]  VERIFY DRC ...... Thread : 4 finished.
+[11/21 16:27:16   1125s]  VERIFY DRC ...... Sub-Area: {67.200 51.840 134.400 102.600} 5 of 6  Thread : 2
+[11/21 16:27:16   1125s]  VERIFY DRC ...... Thread : 2 finished.
+[11/21 16:27:16   1125s] 
+[11/21 16:27:16   1125s]   Verification Complete : 0 Viols.
+[11/21 16:27:16   1125s] 
+[11/21 16:27:16   1125s]  *** End Verify DRC (CPU TIME: 0:00:02.0  ELAPSED TIME: 0:00:02.0  MEM: 256.1M) ***
+[11/21 16:27:16   1125s] 
+[11/21 16:27:16   1125s] <CMD> verify_connectivity -type all -no_antenna -report reports/ej1/conn_post_route.rpt
+[11/21 16:27:16   1125s] VERIFY_CONNECTIVITY use new engine.
+[11/21 16:27:16   1125s] 
+[11/21 16:27:16   1125s] ******** Start: VERIFY CONNECTIVITY ********
+[11/21 16:27:16   1125s] Start Time: Sat Nov 21 16:27:16 2026
+[11/21 16:27:16   1125s] 
+[11/21 16:27:16   1125s] Design Name: fir_serial_parallel
+[11/21 16:27:16   1125s] Database Units: 2000
+[11/21 16:27:16   1125s] Design Boundary: (0.0000, 0.0000) (200.2000, 102.6000)
+[11/21 16:27:16   1125s] Error Limit = 1000; Warning Limit = 50
+[11/21 16:27:16   1125s] Check all nets
+[11/21 16:27:16   1125s] Use 8 pthreads
+[11/21 16:27:16   1126s] 
+[11/21 16:27:16   1126s] Begin Summary 
+[11/21 16:27:16   1126s]   Found no problems or warnings.
+[11/21 16:27:16   1126s] End Summary
+[11/21 16:27:16   1126s] 
+[11/21 16:27:16   1126s] End Time: Sat Nov 21 16:27:16 2026
+[11/21 16:27:16   1126s] Time Elapsed: 0:00:00.0
+[11/21 16:27:16   1126s] 
+[11/21 16:27:16   1126s] ******** End: VERIFY CONNECTIVITY ********
+[11/21 16:27:16   1126s]   Verification Complete : 0 Viols.  0 Wrngs.
+[11/21 16:27:16   1126s]   (CPU Time: 0:00:00.7  MEM: 0.000M)
+[11/21 16:27:16   1126s] 
+[11/21 16:27:16   1126s] <CMD> verify_antenna -report reports/ej1/antenna_post_route.rpt
+[11/21 16:27:16   1126s]  *** Starting Verify Antenna (MEM: 5913.0) ***
+[11/21 16:27:16   1126s] 
+[11/21 16:27:16   1126s] Report File: reports/ej1/antenna_post_route.rpt
+[11/21 16:27:16   1126s]   VERIFY Antenna ...... Starting Verification
+[11/21 16:27:16   1126s]   VERIFY Antenna ...... Using new threading
+[11/21 16:27:16   1126s]  VERIFY Antenna...... Thread : 1 finished.
+[11/21 16:27:16   1126s]  VERIFY Antenna...... Thread : 2 finished.
+[11/21 16:27:16   1126s]  VERIFY Antenna...... Thread : 4 finished.
+[11/21 16:27:16   1126s]  VERIFY Antenna...... Thread : 0 finished.
+[11/21 16:27:16   1126s]  VERIFY Antenna...... Thread : 6 finished.
+[11/21 16:27:16   1126s]  VERIFY Antenna...... Thread : 7 finished.
+[11/21 16:27:16   1126s]  VERIFY Antenna...... Thread : 5 finished.
+[11/21 16:27:16   1126s]  VERIFY Antenna...... Thread : 3 finished.
+[11/21 16:27:16   1126s] Verification Complete: 2 Violations
+[11/21 16:27:16   1126s]  *** End Verify Antenna (CPU: 0:00:00.8  ELAPSED TIME: 0.00  MEM: 0.0M) ***
+[11/21 16:27:16   1126s] 
+[11/21 16:27:16   1126s] ******* DONE VERIFY ANTENNA ********
+[11/21 16:27:18   1127s] <CMD> gui_dump_picture reports/ej1/route.png -format PNG
