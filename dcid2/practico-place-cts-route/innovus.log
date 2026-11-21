@@ -30500,3 +30500,162 @@ Overlapping with other instance:	714
 Placement Density:41.96%(8166/19459)
 Placement Density (including fixed std cells):41.96%(8166/19459)
 Finished checkPlace (total: cpu=0:00:00.4, real=0:00:00.0; vio checks: cpu=0:00:00.2, real=0:00:00.0; mem=5189.7M)
+<CMD> refinePlace > reports/ej1/refine_place.rpt
+*** Starting refinePlace (0:09:20 mem=5221.7M) ***
+Move report: Detail placement moves 2042 insts, mean move: 1.38 um, max move: 6.31 um 
+	Max move on inst (u_fir_parallel_csa_tree_ADD_TC_OP_13_groupi148_cdnfadd_011_26): (133.00, 27.36) --> (137.60, 25.65)
+	Runtime: CPU: 0:00:00.8 REAL: 0:00:00.0 MEM: 5189.7MB
+Summary Report:
+Instances move: 2042 (out of 2758 movable)
+Instances flipped: 0
+Mean displacement: 1.38 um
+Max displacement: 6.31 um (Instance: u_fir_parallel_csa_tree_ADD_TC_OP_13_groupi148_cdnfadd_011_26) (133, 27.36) -> (137.6, 25.65)
+	Length: 15 sites, height: 1 rows, site name: CoreSite, cell type: ADDFX1LVT
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Runtime: CPU: 0:00:00.8 REAL: 0:00:00.0 MEM: 5189.7MB
+*** Finished refinePlace (0:09:20 mem=5189.7M) ***
+<CMD> checkPlace > reports/ej1/check_place_refinado.rpt
+Begin checking placement ... (start mem=5215.7M, init mem=5215.7M)
+*info: Placed = 2758          
+*info: Unplaced = 0           
+Placement Density:41.96%(8166/19459)
+Placement Density (including fixed std cells):41.96%(8166/19459)
+Finished checkPlace (total: cpu=0:00:00.4, real=0:00:00.0; vio checks: cpu=0:00:00.2, real=0:00:00.0; mem=5183.7M)
+<CMD> checkFPlan -reportUtil > reports/ej1/util_post_refine.rpt
+Checking routing tracks.....
+Checking other grids.....
+Checking FINFET Grid is on Manufacture Grid.....
+Checking core/die box is on Grid.....
+Checking snap rule ......
+Checking Row is on grid......
+Tech site CoreSite has no symmetry Y. 	Current symmetry setting : isSymmetryR90 false; isSymmetryX : false; isSymmetryY : false;
+
+INFO (IMPFP-7241): Tech site CoreSite has no symmetry Y. 	Current symmetry setting : isSymmetryR90 false; isSymmetryX : false; isSymmetryY : false;
+
+Checking AreaIO row.....
+Checking row out of die ...
+Checking routing blockage.....
+Checking placement blockage.....
+placeBlkGrid grid_type = 1 
+Checking components.....
+Checking IO Pads out of die...
+Checking constraints (guide/region/fence).....
+
+Checking Preroutes.....
+No. of regular pre-routes not on tracks : 0 
+
+Reporting Utilizations.....
+
+Core utilization  = 41.966326
+Effective Utilizations
+Average macro density = 0.000.
+Average module density = 0.420.
+Pure std cell Density 0.419663
+ Density for the design = 0.420.
+       = stdcell_area 23878 sites (8166 um^2) / alloc_area 56898 sites (19459 um^2).
+Pin Density = 0.1796.
+            = total # of pins 10217 / total area 56898.
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> report_timing -late -path_type summary_slack_only -max_paths 50 > reports/ej1/setup_post_refine.rpt
+<CMD> verify_connectivity -type special -no_antenna -report reports/ej1/conn_post_refine.rpt
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Sat Nov 21 16:09:03 2026
+
+Design Name: fir_serial_parallel
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (200.2000, 102.6000)
+Error Limit = 1000; Warning Limit = 50
+Check specified nets
+Use 8 pthreads
+Net i_data[4]: Found a geometry with bounding box (-0.04,50.88) (0.34,50.96) outside the design boundary.
+Violations for such geometries will be reported.
+Net i_data[3]: Found a geometry with bounding box (-0.04,51.26) (0.34,51.34) outside the design boundary.
+Violations for such geometries will be reported.
+Net i_data[2]: Found a geometry with bounding box (-0.04,51.64) (51.13,51.72) outside the design boundary.
+Violations for such geometries will be reported.
+Net i_data[1]: Found a geometry with bounding box (-0.04,52.02) (0.73,52.10) outside the design boundary.
+Violations for such geometries will be reported.
+Net i_data[0]: Found a geometry with bounding box (-0.04,52.40) (0.54,52.48) outside the design boundary.
+Violations for such geometries will be reported.
+Net i_data[7]: Found a geometry with bounding box (-0.04,49.74) (0.54,49.82) outside the design boundary.
+Violations for such geometries will be reported.
+Net i_data[6]: Found a geometry with bounding box (-0.04,50.12) (0.73,50.20) outside the design boundary.
+Violations for such geometries will be reported.
+Net i_data[5]: Found a geometry with bounding box (-0.04,50.50) (0.34,50.58) outside the design boundary.
+Violations for such geometries will be reported.
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Sat Nov 21 16:09:03 2026
+Time Elapsed: 0:00:00.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.5  MEM: 32.016M)
+
+<CMD> saveDesign dataout/ej1_place_refinado.enc
+#% Begin save design ... (date=11/21 16:09:05, mem=3318.3M)
+% Begin Save ccopt configuration ... (date=11/21 16:09:05, mem=3318.3M)
+% End Save ccopt configuration ... (date=11/21 16:09:05, total cpu=0:00:00.1, real=0:00:00.0, peak res=3318.3M, current mem=3318.3M)
+% Begin Save netlist data ... (date=11/21 16:09:05, mem=3318.3M)
+Writing Binary DB to dataout/ej1_place_refinado.enc.dat/vbin/fir_serial_parallel.v.bin in multi-threaded mode...
+% End Save netlist data ... (date=11/21 16:09:05, total cpu=0:00:00.1, real=0:00:00.0, peak res=3318.3M, current mem=3318.2M)
+Saving symbol-table file in separate thread ...
+Saving congestion map file in separate thread ...
+Saving congestion map file dataout/ej1_place_refinado.enc.dat/fir_serial_parallel.route.congmap.gz ...
+% Begin Save AAE data ... (date=11/21 16:09:05, mem=3318.7M)
+Saving AAE Data ...
+% End Save AAE data ... (date=11/21 16:09:05, total cpu=0:00:05.6, real=0:00:00.0, peak res=3318.7M, current mem=3318.0M)
+Saving preference file dataout/ej1_place_refinado.enc.dat/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+*info - save blackBox cells to lef file dataout/ej1_place_refinado.enc.dat/fir_serial_parallel.bbox.lef
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving special route data file in separate thread ...
+Saving PG file in separate thread ...
+Saving placement file in separate thread ...
+Saving PG file dataout/ej1_place_refinado.enc.dat/fir_serial_parallel.pg.gz, version#2, (Created by Innovus v23.10-p003_1 on Sat Nov 21 16:09:06 2026)
+Saving route file in separate thread ...
+Saving property file in separate thread ...
+** Saving stdCellPlacement_binary (version# 2) ...
+Saving property file dataout/ej1_place_refinado.enc.dat/fir_serial_parallel.prop
+Save Adaptive View Pruning View Names to Binary file
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=5302.1M) ***
+TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
+*** Completed savePGFile (cpu=0:00:00.1 real=0:00:00.0 mem=5294.1M) ***
+TAT_INFO: ::savePGFile REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
+*** Completed saveRoute (cpu=0:00:00.1 real=0:00:00.0 mem=5278.1M) ***
+TAT_INFO: ::saveRoute REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: ::db::saveAnnotationAndProp REAL = 0 : CPU = 0 : MEM = 0.
+Saving rc congestion map dataout/ej1_place_refinado.enc.dat/fir_serial_parallel.congmap.gz ...
+Saving preRoute extracted patterns in file 'dataout/ej1_place_refinado.enc.dat/fir_serial_parallel.techData.gz' ...
+Saving preRoute extraction data in directory 'dataout/ej1_place_refinado.enc.dat/extraction/' ...
+Saving rc congestion map dataout/ej1_place_refinado.enc.dat/fir_serial_parallel.congmap.gz ...
+TAT_INFO: ::db::saveSymbolTable REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: ::saveCongMap REAL = 0 : CPU = 0 : MEM = 0.
+% Begin Save power constraints data ... (date=11/21 16:09:07, mem=3318.0M)
+% End Save power constraints data ... (date=11/21 16:09:07, total cpu=0:00:00.1, real=0:00:00.0, peak res=3318.0M, current mem=3318.0M)
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+Generated self-contained design ej1_place_refinado.enc.dat
+fast slow
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+func
+/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/dataout/fir_serial_parallel_m.sdc
+#% End save design ... (date=11/21 16:09:08, total cpu=0:00:07.4, real=0:00:03.0, peak res=3349.4M, current mem=3318.6M)
+*** Message Summary: 0 warning(s), 0 error(s)
+

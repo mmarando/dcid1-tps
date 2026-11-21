@@ -1,0 +1,13 @@
+*** Starting refinePlace (0:09:20 mem=5221.7M) ***
+Move report: Detail placement moves 2042 insts, mean move: 1.38 um, max move: 6.31 um 
+	Max move on inst (u_fir_parallel_csa_tree_ADD_TC_OP_13_groupi148_cdnfadd_011_26): (133.00, 27.36) --> (137.60, 25.65)
+	Runtime: CPU: 0:00:00.8 REAL: 0:00:00.0 MEM: 5189.7MB
+Summary Report:
+Instances move: 2042 (out of 2758 movable)
+Instances flipped: 0
+Mean displacement: 1.38 um
+Max displacement: 6.31 um (Instance: u_fir_parallel_csa_tree_ADD_TC_OP_13_groupi148_cdnfadd_011_26) (133, 27.36) -> (137.6, 25.65)
+	Length: 15 sites, height: 1 rows, site name: CoreSite, cell type: ADDFX1LVT
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Runtime: CPU: 0:00:00.8 REAL: 0:00:00.0 MEM: 5189.7MB
+*** Finished refinePlace (0:09:20 mem=5189.7M) ***

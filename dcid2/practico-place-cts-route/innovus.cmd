@@ -224,3 +224,9 @@ gui_dump_picture reports/ej1/placement.png -format PNG
 saveDesign dataout/ej1_place.enc
 checkFPlan -reportUtil > reports/ej1/util_post_place.rpt
 checkPlace > reports/ej1/check_place.rpt
+refinePlace > reports/ej1/refine_place.rpt
+checkPlace > reports/ej1/check_place_refinado.rpt
+checkFPlan -reportUtil > reports/ej1/util_post_refine.rpt
+report_timing -late -path_type summary_slack_only -max_paths 50 > reports/ej1/setup_post_refine.rpt
+verify_connectivity -type special -no_antenna -report reports/ej1/conn_post_refine.rpt
+saveDesign dataout/ej1_place_refinado.enc
