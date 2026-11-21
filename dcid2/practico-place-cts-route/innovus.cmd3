@@ -79,3 +79,37 @@ report_timing -early -path_type summary_slack_only -max_paths 50 > reports/ej2/h
 report_ccopt_skew_groups -histograms -summary > reports/ej2/skew_groups.rpt
 verify_connectivity -type special -no_antenna -report reports/ej2/conn_post_cts.rpt
 saveDesign dataout/ej2_cts.enc
+fit
+gui_dump_picture reports/ej2/placement_post_cts.png -format PNG
+setNanoRouteMode -route_with_timing_driven true
+setNanoRouteMode -route_with_si_driven true
+setNanoRouteMode -route_detail_use_multi_cut_via_effort medium
+routeDesign
+setNanoRouteMode -route_detail_min_slack_for_opt_wire 0
+setNanoRouteMode -route_detail_use_multi_cut_via_effort high
+setNanoRouteMode -route_with_timing_driven false
+setNanoRouteMode -route_detail_post_route_swap_via multiCut
+routeDesign -viaOpt
+setNanoRouteMode -route_detail_fix_antenna true
+setNanoRouteMode -route_antenna_cell_name ANTENNA
+setNanoRouteMode -route_antenna_diode_insertion true
+globalDetailRoute
+addFiller -cell FILL8LVT FILL64LVT FILL4LVT FILL32LVT FILL2LVT FILL16LVT FILL1LVT FILL8 FILL64 FILL4 FILL32 FILL2 FILL16 FILL1 DECAP10 -prefix FILLER -powerDomain VDD -doDRC -fitGap
+ecoRoute -target
+saveDesign dataout/ej2_route.enc
+checkPlace > reports/ej2/check_place_post_route.rpt
+verify_drc > reports/ej2/drc_post_route.rpt
+verify_connectivity -type all -no_antenna -report reports/ej2/conn_post_route.rpt
+verify_antenna -report reports/ej2/antenna_post_route.rpt
+fit
+gui_dump_picture reports/ej2/route.png -format PNG
+set_analysis_view -setup func_setup_ss0p9v_125c_rcworst -hold func_hold_ff1p1v_0c_rcbest
+setExtractRCMode -engine postRoute -effortLevel medium
+extractRC
+checkFPlan -reportUtil > reports/ej2/util_post_route.rpt
+report_area > reports/ej2/area_post_route.rpt
+report_timing -late -path_type summary_slack_only -max_paths 50 > reports/ej2/timing_setup.rpt
+report_timing -early -path_type summary_slack_only -max_paths 50 > reports/ej2/timing_hold.rpt
+report_constraint -all_violators -drv_violation_type max_transition > reports/ej2/max_transition.rpt
+set_analysis_view -dynamic -hold func_hold_ff1p1v_0c_rcbest -setup func_hold_ff1p1v_0c_rcbest
+report_power -view func_hold_ff1p1v_0c_rcbest > reports/ej2/power.rpt
