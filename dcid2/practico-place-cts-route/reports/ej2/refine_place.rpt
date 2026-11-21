@@ -1,0 +1,13 @@
+*** Starting refinePlace (0:03:19 mem=3680.9M) ***
+Move report: Detail placement moves 303 insts, mean move: 0.75 um, max move: 3.91 um 
+	Max move on inst (FE_RC_83_0): (138.20, 68.40) --> (140.40, 70.11)
+	Runtime: CPU: 0:00:00.4 REAL: 0:00:01.0 MEM: 3648.9MB
+Summary Report:
+Instances move: 303 (out of 2418 movable)
+Instances flipped: 0
+Mean displacement: 0.75 um
+Max displacement: 3.91 um (Instance: FE_RC_83_0) (138.2, 68.4) -> (140.4, 70.11)
+	Length: 3 sites, height: 1 rows, site name: CoreSite, cell type: NAND2X1LVT
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Runtime: CPU: 0:00:00.5 REAL: 0:00:01.0 MEM: 3648.9MB
+*** Finished refinePlace (0:03:20 mem=3648.9M) ***

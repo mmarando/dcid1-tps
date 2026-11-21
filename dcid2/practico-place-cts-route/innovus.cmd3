@@ -38,3 +38,10 @@ checkPlace > reports/ej2/check_place.rpt
 verify_connectivity -type special -no_antenna -report reports/ej2/conn_post_place.rpt
 gui_dump_picture reports/ej2/placement.png -format PNG
 saveDesign dataout/ej2_place.enc
+refinePlace > reports/ej2/refine_place.rpt
+checkPlace > reports/ej2/check_place_refinado.rpt
+checkFPlan -reportUtil > reports/ej2/util_post_refine.rpt
+report_timing -late -path_type summary_slack_only -max_paths 50 > reports/ej2/setup_post_refine.rpt
+verify_connectivity -type special -no_antenna -report reports/ej2/conn_post_refine.rpt
+gui_dump_picture reports/ej2/placement_refinado.png -format PNG
+saveDesign dataout/ej2_place_refinado.enc

@@ -7864,3 +7864,324 @@ _______________________________________________________________________
 [11/21 20:20:07    186s] #% End save design ... (date=11/21 20:20:07, total cpu=0:00:03.5, real=0:00:05.0, peak res=2734.2M, current mem=2685.5M)
 [11/21 20:20:07    186s] *** Message Summary: 0 warning(s), 0 error(s)
 [11/21 20:20:07    186s] 
+[11/21 20:24:13    198s] <CMD> refinePlace > reports/ej2/refine_place.rpt
+[11/21 20:24:13    198s] OPERPROF: Starting Refine-Place-V2 at level 1, MEM:3680.9M, EPOCH TIME: 1795303453.555093
+[11/21 20:24:13    198s] OPERPROF:   Starting Refine-Place-Init at level 2, MEM:3680.9M, EPOCH TIME: 1795303453.555302
+[11/21 20:24:13    198s] OPERPROF:     Starting DPlace-Init at level 3, MEM:3680.9M, EPOCH TIME: 1795303453.555509
+[11/21 20:24:13    198s] Processing tracks to init pin-track alignment.
+[11/21 20:24:13    198s] z: 2, totalTracks: 1
+[11/21 20:24:13    198s] z: 4, totalTracks: 1
+[11/21 20:24:13    198s] z: 6, totalTracks: 1
+[11/21 20:24:13    198s] z: 8, totalTracks: 1
+[11/21 20:24:13    198s] #spOpts: N=45 hrOri=1 hrSnap=1 rpCkHalo=4 
+[11/21 20:24:13    198s] Cell fir_serial_parallel LLGs are deleted
+[11/21 20:24:13    198s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 20:24:13    198s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 20:24:13    198s] # Building fir_serial_parallel llgBox search-tree.
+[11/21 20:24:13    198s] OPERPROF:       Starting SiteArray-Init at level 4, MEM:3680.9M, EPOCH TIME: 1795303453.581093
+[11/21 20:24:13    198s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 20:24:13    198s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 20:24:13    198s] OPERPROF:         Starting SiteArray-Init-FPlan at level 5, MEM:3680.9M, EPOCH TIME: 1795303453.588290
+[11/21 20:24:13    198s] Max number of tech site patterns supported in site array is 256.
+[11/21 20:24:13    198s] Core basic site is CoreSite
+[11/21 20:24:13    198s] After signature check, allow fast init is false, keep pre-filter is true.
+[11/21 20:24:13    198s] After signature check and other controls, allow fast init is false, keep pre-filter is true.
+[11/21 20:24:13    198s] SiteArray: non-trimmed site array dimensions = 58 x 981
+[11/21 20:24:13    198s] SiteArray: use 299,008 bytes
+[11/21 20:24:13    198s] SiteArray: current memory after site array memory allocation 3680.9M
+[11/21 20:24:13    198s] SiteArray: FP blocked sites are writable
+[11/21 20:24:13    198s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[11/21 20:24:13    198s] OPERPROF:           Starting Routing-Blockage-From-Wire-Via-StBox at level 6, MEM:3680.9M, EPOCH TIME: 1795303453.713373
+[11/21 20:24:13    198s] Process 30227 wires and vias for routing blockage analysis
+[11/21 20:24:13    198s] OPERPROF:           Finished Routing-Blockage-From-Wire-Via-StBox at level 6, CPU:0.010, REAL:0.008, MEM:3680.9M, EPOCH TIME: 1795303453.721330
+[11/21 20:24:13    198s] SiteArray: number of non floorplan blocked sites for llg default is 48372
+[11/21 20:24:13    198s] Atter site array init, number of instance map data is 0.
+[11/21 20:24:13    198s] OPERPROF:         Finished SiteArray-Init-FPlan at level 5, CPU:0.140, REAL:0.135, MEM:3680.9M, EPOCH TIME: 1795303453.723049
+[11/21 20:24:13    198s] 
+[11/21 20:24:13    198s] Verbose-2062: PG Shapes are colorized in Pre_CCE_Colorize flow.
+[11/21 20:24:13    198s]  Pre_CCE_Colorizing is not ON! (0:0:1559:0)
+[11/21 20:24:13    198s] OPERPROF:         Starting CMU at level 5, MEM:3680.9M, EPOCH TIME: 1795303453.725195
+[11/21 20:24:13    198s] OPERPROF:         Finished CMU at level 5, CPU:0.000, REAL:0.003, MEM:3680.9M, EPOCH TIME: 1795303453.728544
+[11/21 20:24:13    198s] 
+[11/21 20:24:13    198s] Bad Lib Cell Checking (CMU) is done! (0)
+[11/21 20:24:13    198s] OPERPROF:       Finished SiteArray-Init at level 4, CPU:0.150, REAL:0.148, MEM:3680.9M, EPOCH TIME: 1795303453.729344
+[11/21 20:24:13    198s] OPERPROF:       Starting Placement-Init-SB-Tree at level 4, MEM:3680.9M, EPOCH TIME: 1795303453.729484
+[11/21 20:24:13    198s] OPERPROF:       Finished Placement-Init-SB-Tree at level 4, CPU:0.000, REAL:0.001, MEM:3680.9M, EPOCH TIME: 1795303453.730235
+[11/21 20:24:13    198s] [CPU] DPlace-Init (cpu=0:00:00.2, real=0:00:00.0, mem=3680.9MB).
+[11/21 20:24:13    198s] OPERPROF:     Finished DPlace-Init at level 3, CPU:0.170, REAL:0.177, MEM:3680.9M, EPOCH TIME: 1795303453.732916
+[11/21 20:24:13    198s] OPERPROF:   Finished Refine-Place-Init at level 2, CPU:0.170, REAL:0.178, MEM:3680.9M, EPOCH TIME: 1795303453.733020
+[11/21 20:24:13    198s] TDRefine: refinePlace mode is spiral
+[11/21 20:24:13    198s] GigaOpt Checkpoint: Intermediate DB Saving Point beforeRefinePlace.85144.3
+[11/21 20:24:13    198s] OPERPROF:   Starting Refine-Place at level 2, MEM:3680.9M, EPOCH TIME: 1795303453.733202
+[11/21 20:24:13    198s] *** Starting refinePlace (0:03:19 mem=3680.9M) ***
+[11/21 20:24:13    198s] Total net bbox length = 3.781e+04 (1.985e+04 1.796e+04) (ext = 2.834e+03)
+[11/21 20:24:13    198s] 
+[11/21 20:24:13    198s] Verbose-2062: PG Shapes are colorized in Pre_CCE_Colorize flow.
+[11/21 20:24:13    198s]  Pre_CCE_Colorizing is not ON! (0:0:1559:0)
+[11/21 20:24:13    198s] Set min layer with design mode ( 2 )
+[11/21 20:24:13    198s] Set max layer with design mode ( 11 )
+[11/21 20:24:13    198s] Set min layer with design mode ( 2 )
+[11/21 20:24:13    198s] Set max layer with design mode ( 11 )
+[11/21 20:24:13    198s] OPERPROF:     Starting Refine-Place-V2 at level 3, MEM:3680.9M, EPOCH TIME: 1795303453.751147
+[11/21 20:24:13    198s] Starting refinePlace ...
+[11/21 20:24:13    198s] Set min layer with design mode ( 2 )
+[11/21 20:24:13    198s] Set max layer with design mode ( 11 )
+[11/21 20:24:13    198s] One DDP V2 for no tweak run.
+[11/21 20:24:13    198s] Set min layer with design mode ( 2 )
+[11/21 20:24:13    198s] Set max layer with design mode ( 11 )
+[11/21 20:24:13    198s] DDP initSite1 nrRow 58 nrJob 58
+[11/21 20:24:13    198s] DDP markSite nrRow 58 nrJob 58
+[11/21 20:24:13    198s] ** Cut row section cpu time 0:00:00.0.
+[11/21 20:24:13    198s]  ** Cut row section real time 0:00:00.0.
+[11/21 20:24:13    198s]    Spread Effort: high, standalone mode, useDDP on.
+[11/21 20:24:13    198s] [CPU] RefinePlace/preRPlace (cpu=0:00:00.1, real=0:00:00.0, mem=3680.9MB) @(0:03:19 - 0:03:20).
+[11/21 20:24:13    198s] Move report: preRPlace moves 303 insts, mean move: 0.75 um, max move: 3.91 um 
+[11/21 20:24:13    198s] 	Max move on inst (FE_RC_83_0): (138.20, 68.40) --> (140.40, 70.11)
+[11/21 20:24:13    198s] 	Length: 3 sites, height: 1 rows, site name: CoreSite, cell type: NAND2X1LVT
+[11/21 20:24:13    198s] wireLenOptFixPriorityInst 0 inst fixed
+[11/21 20:24:13    198s] 
+[11/21 20:24:13    198s]  === Spiral for Logical I: (movable: 2418) ===
+[11/21 20:24:13    198s] 
+[11/21 20:24:13    198s] Running Spiral with 1 thread in Normal Mode  fetchWidth=10 
+[11/21 20:24:14    198s] 
+[11/21 20:24:14    198s]  Info: 0 filler has been deleted!
+[11/21 20:24:14    198s] Move report: legalization moves 0 insts, mean move: 0.00 um, max move: 0.00 um spiral
+[11/21 20:24:14    198s] [CPU] RefinePlace/Spiral (cpu=0:00:00.1, real=0:00:01.0)
+[11/21 20:24:14    198s] [CPU] RefinePlace/Commit (cpu=0:00:00.2, real=0:00:00.0), EEQ(cpu=0:00:00.0, real=0:00:00.0), MTComit(cpu=0:00:00.2, real=0:00:00.0), leftOver(cpu=0:00:00.0, real=0:00:00.0)
+[11/21 20:24:14    198s] [CPU] RefinePlace/Legalization (cpu=0:00:00.4, real=0:00:01.0, mem=3648.9MB) @(0:03:20 - 0:03:20).
+[11/21 20:24:14    198s] Move report: Detail placement moves 303 insts, mean move: 0.75 um, max move: 3.91 um 
+[11/21 20:24:14    198s] 	Max move on inst (FE_RC_83_0): (138.20, 68.40) --> (140.40, 70.11)
+[11/21 20:24:14    198s] 	Runtime: CPU: 0:00:00.4 REAL: 0:00:01.0 MEM: 3648.9MB
+[11/21 20:24:14    198s] Statistics of distance of Instance movement in refine placement:
+[11/21 20:24:14    198s]   maximum (X+Y) =         3.91 um
+[11/21 20:24:14    198s]   inst (FE_RC_83_0) with max move: (138.2, 68.4) -> (140.4, 70.11)
+[11/21 20:24:14    198s]   mean    (X+Y) =         0.75 um
+[11/21 20:24:14    198s] Summary Report:
+[11/21 20:24:14    198s] Instances move: 303 (out of 2418 movable)
+[11/21 20:24:14    198s] Instances flipped: 0
+[11/21 20:24:14    198s] Mean displacement: 0.75 um
+[11/21 20:24:14    198s] Max displacement: 3.91 um (Instance: FE_RC_83_0) (138.2, 68.4) -> (140.4, 70.11)
+[11/21 20:24:14    198s] 	Length: 3 sites, height: 1 rows, site name: CoreSite, cell type: NAND2X1LVT
+[11/21 20:24:14    198s] 	Violation at original loc: Overlapping with other instance
+[11/21 20:24:14    198s] Physical-only instances move: 0 (out of 0 movable physical-only)
+[11/21 20:24:14    198s] Total instances moved : 303
+[11/21 20:24:14    198s] OPERPROF:     Finished Refine-Place-V2 at level 3, CPU:0.470, REAL:0.570, MEM:3648.9M, EPOCH TIME: 1795303454.320843
+[11/21 20:24:14    198s] Total net bbox length = 3.805e+04 (2.000e+04 1.804e+04) (ext = 2.832e+03)
+[11/21 20:24:14    198s] Runtime: CPU: 0:00:00.5 REAL: 0:00:01.0 MEM: 3648.9MB
+[11/21 20:24:14    198s] [CPU] RefinePlace/total (cpu=0:00:00.5, real=0:00:01.0, mem=3648.9MB) @(0:03:19 - 0:03:20).
+[11/21 20:24:14    198s] *** Finished refinePlace (0:03:20 mem=3648.9M) ***
+[11/21 20:24:14    198s] GigaOpt Checkpoint: Intermediate DB Saving Point afterRefinePlace.85144.3
+[11/21 20:24:14    198s] OPERPROF:   Finished Refine-Place at level 2, CPU:0.490, REAL:0.593, MEM:3648.9M, EPOCH TIME: 1795303454.326199
+[11/21 20:24:14    198s] OPERPROF:   Starting DPlace-Cleanup(auto) at level 2, MEM:3648.9M, EPOCH TIME: 1795303454.326322
+[11/21 20:24:14    198s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:2534).
+[11/21 20:24:14    198s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 20:24:14    198s] Cell fir_serial_parallel LLGs are deleted
+[11/21 20:24:14    198s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 20:24:14    198s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 20:24:14    198s] # Resetting pin-track-align track data.
+[11/21 20:24:14    198s] OPERPROF:   Finished DPlace-Cleanup(auto) at level 2, CPU:0.020, REAL:0.025, MEM:3648.9M, EPOCH TIME: 1795303454.351169
+[11/21 20:24:14    198s] OPERPROF: Finished Refine-Place-V2 at level 1, CPU:0.680, REAL:0.796, MEM:3648.9M, EPOCH TIME: 1795303454.351343
+[11/21 20:24:14    198s] <CMD> checkPlace > reports/ej2/check_place_refinado.rpt
+[11/21 20:24:14    198s] OPERPROF: Starting checkPlace at level 1, MEM:3648.9M, EPOCH TIME: 1795303454.357351
+[11/21 20:24:14    198s] Processing tracks to init pin-track alignment.
+[11/21 20:24:14    198s] z: 2, totalTracks: 1
+[11/21 20:24:14    198s] z: 4, totalTracks: 1
+[11/21 20:24:14    198s] z: 6, totalTracks: 1
+[11/21 20:24:14    198s] z: 8, totalTracks: 1
+[11/21 20:24:14    198s] #spOpts: N=45 hrOri=1 hrSnap=1 rpCkHalo=4 
+[11/21 20:24:14    198s] Cell fir_serial_parallel LLGs are deleted
+[11/21 20:24:14    198s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 20:24:14    198s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 20:24:14    198s] # Building fir_serial_parallel llgBox search-tree.
+[11/21 20:24:14    198s] OPERPROF:   Starting SiteArray-Init at level 2, MEM:3648.9M, EPOCH TIME: 1795303454.371197
+[11/21 20:24:14    198s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 20:24:14    198s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 20:24:14    198s] OPERPROF:     Starting SiteArray-Init-FPlan at level 3, MEM:3648.9M, EPOCH TIME: 1795303454.378836
+[11/21 20:24:14    198s] Max number of tech site patterns supported in site array is 256.
+[11/21 20:24:14    198s] Core basic site is CoreSite
+[11/21 20:24:14    199s] After signature check, allow fast init is false, keep pre-filter is true.
+[11/21 20:24:14    199s] After signature check and other controls, allow fast init is false, keep pre-filter is true.
+[11/21 20:24:14    199s] SiteArray: non-trimmed site array dimensions = 58 x 981
+[11/21 20:24:14    199s] SiteArray: use 299,008 bytes
+[11/21 20:24:14    199s] SiteArray: current memory after site array memory allocation 3648.9M
+[11/21 20:24:14    199s] SiteArray: FP blocked sites are writable
+[11/21 20:24:14    199s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[11/21 20:24:14    199s] OPERPROF:       Starting Routing-Blockage-From-Wire-Via-StBox at level 4, MEM:3648.9M, EPOCH TIME: 1795303454.523431
+[11/21 20:24:14    199s] Process 30227 wires and vias for routing blockage analysis
+[11/21 20:24:14    199s] OPERPROF:       Finished Routing-Blockage-From-Wire-Via-StBox at level 4, CPU:0.010, REAL:0.009, MEM:3648.9M, EPOCH TIME: 1795303454.532628
+[11/21 20:24:14    199s] SiteArray: number of non floorplan blocked sites for llg default is 48372
+[11/21 20:24:14    199s] Atter site array init, number of instance map data is 0.
+[11/21 20:24:14    199s] OPERPROF:     Finished SiteArray-Init-FPlan at level 3, CPU:0.150, REAL:0.155, MEM:3648.9M, EPOCH TIME: 1795303454.534130
+[11/21 20:24:14    199s] 
+[11/21 20:24:14    199s] Verbose-2062: PG Shapes are colorized in Pre_CCE_Colorize flow.
+[11/21 20:24:14    199s]  Pre_CCE_Colorizing is not ON! (0:0:1559:0)
+[11/21 20:24:14    199s] OPERPROF:   Finished SiteArray-Init at level 2, CPU:0.160, REAL:0.165, MEM:3648.9M, EPOCH TIME: 1795303454.535921
+[11/21 20:24:14    199s] Begin checking placement ... (start mem=3648.9M, init mem=3648.9M)
+[11/21 20:24:14    199s] Begin checking exclusive groups violation ...
+[11/21 20:24:14    199s] There are 0 groups to check, max #box is 0, total #box is 0
+[11/21 20:24:14    199s] Finished checking exclusive groups violations. Found 0 Vio.
+[11/21 20:24:14    199s] 
+[11/21 20:24:14    199s] Running CheckPlace using 1 thread in normal mode...
+[11/21 20:24:14    199s] 
+[11/21 20:24:14    199s] ...checkPlace normal is done!
+[11/21 20:24:14    199s] OPERPROF:   Starting checkPlace/Vio-Check at level 2, MEM:3648.9M, EPOCH TIME: 1795303454.693301
+[11/21 20:24:14    199s] OPERPROF:   Finished checkPlace/Vio-Check at level 2, CPU:0.000, REAL:0.004, MEM:3648.9M, EPOCH TIME: 1795303454.697637
+[11/21 20:24:14    199s] *info: Placed = 2418          
+[11/21 20:24:14    199s] *info: Unplaced = 0           
+[11/21 20:24:14    199s] Placement Density:47.01%(7777/16543)
+[11/21 20:24:14    199s] Placement Density (including fixed std cells):47.01%(7777/16543)
+[11/21 20:24:14    199s] Cell fir_serial_parallel LLGs are deleted
+[11/21 20:24:14    199s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:2534).
+[11/21 20:24:14    199s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 20:24:14    199s] # Resetting pin-track-align track data.
+[11/21 20:24:14    199s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 20:24:14    199s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 20:24:14    199s] Finished checkPlace (total: cpu=0:00:00.3, real=0:00:00.0; vio checks: cpu=0:00:00.2, real=0:00:00.0; mem=3648.9M)
+[11/21 20:24:14    199s] OPERPROF: Finished checkPlace at level 1, CPU:0.350, REAL:0.349, MEM:3648.9M, EPOCH TIME: 1795303454.706311
+[11/21 20:24:14    199s] <CMD> checkFPlan -reportUtil > reports/ej2/util_post_refine.rpt
+[11/21 20:24:14    199s] Checking routing tracks.....
+[11/21 20:24:14    199s] Checking other grids.....
+[11/21 20:24:14    199s] Checking FINFET Grid is on Manufacture Grid.....
+[11/21 20:24:14    199s] Checking core/die box is on Grid.....
+[11/21 20:24:14    199s] Checking snap rule ......
+[11/21 20:24:14    199s] Checking Row is on grid......
+[11/21 20:24:14    199s] Tech site CoreSite has no symmetry Y. 	Current symmetry setting : isSymmetryR90 false; isSymmetryX : false; isSymmetryY : false;
+[11/21 20:24:14    199s] 
+[11/21 20:24:14    199s] INFO (IMPFP-7241): Tech site CoreSite has no symmetry Y. 	Current symmetry setting : isSymmetryR90 false; isSymmetryX : false; isSymmetryY : false;
+[11/21 20:24:14    199s] 
+[11/21 20:24:14    199s] Checking AreaIO row.....
+[11/21 20:24:14    199s] Checking row out of die ...
+[11/21 20:24:14    199s] Checking routing blockage.....
+[11/21 20:24:14    199s] Checking placement blockage.....
+[11/21 20:24:14    199s] placeBlkGrid grid_type = 1 
+[11/21 20:24:14    199s] Checking components.....
+[11/21 20:24:14    199s] Checking IO Pads out of die...
+[11/21 20:24:14    199s] Checking constraints (guide/region/fence).....
+[11/21 20:24:14    199s] 
+[11/21 20:24:14    199s] Checking Preroutes.....
+[11/21 20:24:14    199s] No. of regular pre-routes not on tracks : 0 
+[11/21 20:24:14    199s] 
+[11/21 20:24:14    199s] Reporting Utilizations.....
+[11/21 20:24:14    199s] 
+[11/21 20:24:14    199s] Core utilization  = 39.966255
+[11/21 20:24:14    199s] Effective Utilizations
+[11/21 20:24:14    199s] Disable fast DP-INIT: start main density report
+[11/21 20:24:14    199s] Processing tracks to init pin-track alignment.
+[11/21 20:24:14    199s] z: 2, totalTracks: 1
+[11/21 20:24:14    199s] z: 4, totalTracks: 1
+[11/21 20:24:14    199s] z: 6, totalTracks: 1
+[11/21 20:24:14    199s] z: 8, totalTracks: 1
+[11/21 20:24:14    199s] #spOpts: N=45 hrOri=1 hrSnap=1 rpCkHalo=4 
+[11/21 20:24:14    199s] Cell fir_serial_parallel LLGs are deleted
+[11/21 20:24:14    199s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 20:24:14    199s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 20:24:14    199s] OPERPROF: Starting SiteArray-Init at level 1, MEM:3648.6M, EPOCH TIME: 1795303454.760691
+[11/21 20:24:14    199s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 20:24:14    199s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 20:24:14    199s] OPERPROF:   Starting SiteArray-Init-FPlan at level 2, MEM:3648.6M, EPOCH TIME: 1795303454.768731
+[11/21 20:24:14    199s] Max number of tech site patterns supported in site array is 256.
+[11/21 20:24:14    199s] Core basic site is CoreSite
+[11/21 20:24:14    199s] After signature check, allow fast init is false, keep pre-filter is true.
+[11/21 20:24:14    199s] After signature check and other controls, allow fast init is false, keep pre-filter is false.
+[11/21 20:24:14    199s] SiteArray: non-trimmed site array dimensions = 58 x 981
+[11/21 20:24:14    199s] SiteArray: use 299,008 bytes
+[11/21 20:24:14    199s] SiteArray: current memory after site array memory allocation 3648.9M
+[11/21 20:24:14    199s] SiteArray: FP blocked sites are writable
+[11/21 20:24:14    199s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[11/21 20:24:14    199s] OPERPROF:     Starting Routing-Blockage-From-Wire-Via-StBox at level 3, MEM:3648.9M, EPOCH TIME: 1795303454.915504
+[11/21 20:24:14    199s] Process 30227 wires and vias for routing blockage analysis
+[11/21 20:24:14    199s] OPERPROF:     Finished Routing-Blockage-From-Wire-Via-StBox at level 3, CPU:0.010, REAL:0.008, MEM:3648.9M, EPOCH TIME: 1795303454.923834
+[11/21 20:24:14    199s] SiteArray: number of non floorplan blocked sites for llg default is 48372
+[11/21 20:24:14    199s] Atter site array init, number of instance map data is 0.
+[11/21 20:24:14    199s] OPERPROF:   Finished SiteArray-Init-FPlan at level 2, CPU:0.150, REAL:0.156, MEM:3648.9M, EPOCH TIME: 1795303454.925213
+[11/21 20:24:14    199s] 
+[11/21 20:24:14    199s] Verbose-2062: PG Shapes are colorized in Pre_CCE_Colorize flow.
+[11/21 20:24:14    199s]  Pre_CCE_Colorizing is not ON! (0:0:1559:0)
+[11/21 20:24:14    199s] OPERPROF: Finished SiteArray-Init at level 1, CPU:0.160, REAL:0.167, MEM:3648.9M, EPOCH TIME: 1795303454.927685
+[11/21 20:24:14    199s] Average macro density = 0.000.
+[11/21 20:24:14    199s] Average module density = 0.571.
+[11/21 20:24:14    199s] Pure std cell Density 0.570697
+[11/21 20:24:14    199s]  Density for the design = 0.571.
+[11/21 20:24:14    199s]        = stdcell_area 22740 sites (7777 um^2) / alloc_area 39846 sites (13627 um^2).
+[11/21 20:24:14    199s] Pin Density = 0.1636.
+[11/21 20:24:14    199s]             = total # of pins 9306 / total area 56898.
+[11/21 20:24:14    199s] Cell fir_serial_parallel LLGs are deleted
+[11/21 20:24:14    199s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:116).
+[11/21 20:24:14    199s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/21 20:24:14    199s] # Resetting pin-track-align track data.
+[11/21 20:24:14    199s] Disable fast DP-INIT: end main density report
+[11/21 20:24:14    199s] *** Message Summary: 0 warning(s), 0 error(s)
+[11/21 20:24:14    199s] 
+[11/21 20:24:14    199s] <CMD> report_timing -late -path_type summary_slack_only -max_paths 50 > reports/ej2/setup_post_refine.rpt
+[11/21 20:24:15    199s] <CMD> verify_connectivity -type special -no_antenna -report reports/ej2/conn_post_refine.rpt
+[11/21 20:24:15    199s] VERIFY_CONNECTIVITY use new engine.
+[11/21 20:24:15    199s] 
+[11/21 20:24:15    199s] ******** Start: VERIFY CONNECTIVITY ********
+[11/21 20:24:15    199s] Start Time: Sat Nov 21 20:24:15 2026
+[11/21 20:24:15    199s] 
+[11/21 20:24:15    199s] Design Name: fir_serial_parallel
+[11/21 20:24:15    199s] Database Units: 2000
+[11/21 20:24:15    199s] Design Boundary: (0.0000, 0.0000) (200.2000, 102.6000)
+[11/21 20:24:15    199s] Error Limit = 1000; Warning Limit = 50
+[11/21 20:24:15    199s] Check specified nets
+[11/21 20:24:15    199s] Net i_data[7]: Found a geometry with bounding box (-0.04,49.74) (49.73,49.82) outside the design boundary.
+[11/21 20:24:15    199s] Violations for such geometries will be reported.
+[11/21 20:24:15    200s] 
+[11/21 20:24:15    200s] Begin Summary 
+[11/21 20:24:15    200s]   Found no problems or warnings.
+[11/21 20:24:15    200s] End Summary
+[11/21 20:24:15    200s] 
+[11/21 20:24:15    200s] End Time: Sat Nov 21 20:24:15 2026
+[11/21 20:24:15    200s] Time Elapsed: 0:00:00.0
+[11/21 20:24:15    200s] 
+[11/21 20:24:15    200s] ******** End: VERIFY CONNECTIVITY ********
+[11/21 20:24:15    200s]   Verification Complete : 0 Viols.  0 Wrngs.
+[11/21 20:24:15    200s]   (CPU Time: 0:00:00.3  MEM: 0.000M)
+[11/21 20:24:15    200s] 
+[11/21 20:24:15    200s] <CMD> gui_dump_picture reports/ej2/placement_refinado.png -format PNG
+[11/21 20:24:20    200s] <CMD> saveDesign dataout/ej2_place_refinado.enc
+[11/21 20:24:21    200s] #% Begin save design ... (date=11/21 20:24:20, mem=2682.0M)
+[11/21 20:24:21    200s] % Begin Save ccopt configuration ... (date=11/21 20:24:21, mem=2682.0M)
+[11/21 20:24:21    200s] % End Save ccopt configuration ... (date=11/21 20:24:21, total cpu=0:00:00.1, real=0:00:00.0, peak res=2682.3M, current mem=2682.3M)
+[11/21 20:24:21    200s] % Begin Save netlist data ... (date=11/21 20:24:21, mem=2682.3M)
+[11/21 20:24:21    200s] Writing Binary DB to dataout/ej2_place_refinado.enc.dat/fir_serial_parallel.v.bin in single-threaded mode...
+[11/21 20:24:21    201s] % End Save netlist data ... (date=11/21 20:24:21, total cpu=0:00:00.1, real=0:00:00.0, peak res=2682.3M, current mem=2682.3M)
+[11/21 20:24:21    201s] Saving symbol-table file ...
+[11/21 20:24:21    201s] Saving congestion map file dataout/ej2_place_refinado.enc.dat/fir_serial_parallel.route.congmap.gz ...
+[11/21 20:24:21    201s] % Begin Save AAE data ... (date=11/21 20:24:21, mem=2682.4M)
+[11/21 20:24:21    201s] Saving AAE Data ...
+[11/21 20:24:22    203s] % End Save AAE data ... (date=11/21 20:24:22, total cpu=0:00:02.5, real=0:00:01.0, peak res=2742.5M, current mem=2683.2M)
+[11/21 20:24:22    203s] Saving preference file dataout/ej2_place_refinado.enc.dat/gui.pref.tcl ...
+[11/21 20:24:22    203s] Saving mode setting ...
+[11/21 20:24:22    203s] Saving global file ...
+[11/21 20:24:23    204s] % Begin Save floorplan data ... (date=11/21 20:24:23, mem=2684.1M)
+[11/21 20:24:23    204s] Saving floorplan file ...
+[11/21 20:24:23    204s] Convert 0 swires and 0 svias from compressed groups
+[11/21 20:24:23    204s] % End Save floorplan data ... (date=11/21 20:24:23, total cpu=0:00:00.1, real=0:00:00.0, peak res=2684.1M, current mem=2684.1M)
+[11/21 20:24:23    204s] Saving PG file dataout/ej2_place_refinado.enc.dat/fir_serial_parallel.pg.gz, version#2, (Created by Innovus v23.10-p003_1 on Sat Nov 21 20:24:23 2026)
+[11/21 20:24:23    204s] *** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=3657.5M) ***
+[11/21 20:24:23    204s] *info - save blackBox cells to lef file dataout/ej2_place_refinado.enc.dat/fir_serial_parallel.bbox.lef
+[11/21 20:24:23    204s] Saving Drc markers ...
+[11/21 20:24:23    204s] ... No Drc file written since there is no markers found.
+[11/21 20:24:23    204s] % Begin Save placement data ... (date=11/21 20:24:23, mem=2684.1M)
+[11/21 20:24:23    204s] ** Saving stdCellPlacement_binary (version# 2) ...
+[11/21 20:24:23    204s] Save Adaptive View Pruning View Names to Binary file
+[11/21 20:24:23    204s] *** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=3660.5M) ***
+[11/21 20:24:23    204s] % End Save placement data ... (date=11/21 20:24:23, total cpu=0:00:00.1, real=0:00:00.0, peak res=2684.1M, current mem=2684.1M)
+[11/21 20:24:23    204s] % Begin Save routing data ... (date=11/21 20:24:23, mem=2684.1M)
+[11/21 20:24:23    204s] Saving route file ...
+[11/21 20:24:24    204s] *** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=3657.5M) ***
+[11/21 20:24:24    204s] % End Save routing data ... (date=11/21 20:24:24, total cpu=0:00:00.1, real=0:00:01.0, peak res=2684.2M, current mem=2684.2M)
+[11/21 20:24:24    204s] Saving property file dataout/ej2_place_refinado.enc.dat/fir_serial_parallel.prop
+[11/21 20:24:24    204s] *** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=3660.5M) ***
+[11/21 20:24:24    204s] Saving rc congestion map dataout/ej2_place_refinado.enc.dat/fir_serial_parallel.congmap.gz ...
+[11/21 20:24:24    204s] Saving preRoute extracted patterns in file 'dataout/ej2_place_refinado.enc.dat/fir_serial_parallel.techData.gz' ...
+[11/21 20:24:24    204s] Saving preRoute extraction data in directory 'dataout/ej2_place_refinado.enc.dat/extraction/' ...
+[11/21 20:24:24    204s] eee: Checksum of RC Grid density data=132
+[11/21 20:24:24    204s] Saving rc congestion map dataout/ej2_place_refinado.enc.dat/fir_serial_parallel.congmap.gz ...
+[11/21 20:24:24    204s] % Begin Save power constraints data ... (date=11/21 20:24:24, mem=2687.1M)
+[11/21 20:24:25    204s] % End Save power constraints data ... (date=11/21 20:24:24, total cpu=0:00:00.1, real=0:00:01.0, peak res=2687.1M, current mem=2687.1M)
+[11/21 20:24:25    205s] Generated self-contained design ej2_place_refinado.enc.dat
+[11/21 20:24:25    205s] #% End save design ... (date=11/21 20:24:25, total cpu=0:00:05.1, real=0:00:04.0, peak res=2742.5M, current mem=2687.7M)
+[11/21 20:24:25    205s] *** Message Summary: 0 warning(s), 0 error(s)
+[11/21 20:24:25    205s] 
