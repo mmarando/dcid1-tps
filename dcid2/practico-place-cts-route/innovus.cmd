@@ -301,3 +301,14 @@ verify_antenna -report reports/ej1/antenna_fix.rpt
 report_timing -late -path_type summary_slack_only -max_paths 50 > reports/ej1/setup_antenna_fix.rpt
 report_timing -early -path_type summary_slack_only -max_paths 50 > reports/ej1/hold_antenna_fix.rpt
 saveDesign dataout/ej1_route_antenna_fix.enc
+deleteFiller
+setNanoRouteMode -route_detail_fix_antenna true
+setNanoRouteMode -route_antenna_cell_name ANTENNA
+setNanoRouteMode -route_antenna_diode_insertion true
+setNanoRouteMode -route_diode_insertion_for_clock_nets true
+globalDetailRoute
+saveDesign dataout/ej1_route_prueba_sin_filler.enc
+checkPlace > reports/ej1/check_place_sin_filler.rpt
+verify_drc > reports/ej1/drc_sin_filler.rpt
+verify_connectivity -type all -no_antenna -report reports/ej1/conn_sin_filler.rpt
+verify_antenna -report reports/ej1/antenna_sin_filler.rpt
