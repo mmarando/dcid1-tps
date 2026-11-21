@@ -113,3 +113,4 @@ report_timing -early -path_type summary_slack_only -max_paths 50 > reports/ej2/t
 report_constraint -all_violators -drv_violation_type max_transition > reports/ej2/max_transition.rpt
 set_analysis_view -dynamic -hold func_hold_ff1p1v_0c_rcbest -setup func_hold_ff1p1v_0c_rcbest
 report_power -view func_hold_ff1p1v_0c_rcbest > reports/ej2/power.rpt
+fit

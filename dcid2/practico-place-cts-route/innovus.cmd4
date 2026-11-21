@@ -1,0 +1,34 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat Nov 21 20:53:18 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v23.10-p003_1 (64bit) 02/01/2024 13:54 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 23.10-p003_1 NR240109-1512/23_10-UB (database version 18.20.618) {superthreading v2.20}
+#@(#)CDS: AAE 23.10-p002 (64bit) 02/01/2024 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 23.10-p003_1 () Dec  5 2023 19:42:23 ( )
+#@(#)CDS: SYNTECH 23.10-p002_1 () Nov 29 2023 02:17:21 ( )
+#@(#)CDS: CPE v23.10-p004
+#@(#)CDS: IQuantus/TQuantus 22.1.1-s215 (64bit) Mon Nov 20 10:05:08 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+restoreDesign dataout/ej2_place_refinado.enc.dat fir_serial_parallel
+setLayerPreference Metal1 -isVisible 0
+setLayerPreference Metal2 -isVisible 0
+setLayerPreference Metal3 -isVisible 0
+setLayerPreference Metal4 -isVisible 0
+setLayerPreference Metal5 -isVisible 0
+setLayerPreference Metal6 -isVisible 0
+setLayerPreference Metal7 -isVisible 0
+setLayerPreference Metal8 -isVisible 0
+setLayerPreference Metal9 -isVisible 0
+setLayerPreference Metal10 -isVisible 0
+setLayerPreference Metal11 -isVisible 0
+setLayerPreference inst -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+fit
+gui_dump_picture reports/ej2/placement_sin_metales.png -format PNG

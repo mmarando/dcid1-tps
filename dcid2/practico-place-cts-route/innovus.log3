@@ -9420,3 +9420,16 @@ Clock Static Probability:  0.5000
 Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
 mem(process/total/peak)=2980.82MB/6014.90MB/3114.89MB)
 
+<CMD> fit
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Sat Nov 21 20:52:41 2026
+  Total CPU time:     0:13:20
+  Total real time:    0:37:12
+  Peak memory (main): 3356.86MB
+
+
+*** Memory Usage v#2 (Current mem = 4315.840M, initial mem = 812.648M) ***
+*** Message Summary: 54 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:10:52, real=0:37:09, mem=4315.8M) ---
