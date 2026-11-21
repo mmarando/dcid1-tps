@@ -11176,3 +11176,5 @@ viaInitial ends at Sat Nov 21 15:30:19 2026
 [11/21 15:35:36    131s] <CMD> deselectAll
 [11/21 15:35:36    131s] <CMD> selectMarker 198.0100 51.2200 198.2000 51.3800 -1 3 7
 [11/21 15:35:37    131s] <CMD> deselectAll
+[11/21 15:41:08    169s] <CMD> deselectAll
+[11/21 15:41:08    169s] <CMD_INTERNAL> selectWire 198.010 51.220 198.200 51.380 3 VSS

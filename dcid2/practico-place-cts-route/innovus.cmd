@@ -132,3 +132,5 @@ selectMarker 2.0000 1.7100 198.2000 100.8900 -1 3 7
 deselectAll
 selectMarker 198.0100 51.2200 198.2000 51.3800 -1 3 7
 deselectAll
+deselectAll
+selectWire 198.010 51.220 198.200 51.380 3 VSS
