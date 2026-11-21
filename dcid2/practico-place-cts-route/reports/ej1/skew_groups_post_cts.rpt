@@ -1,0 +1,83 @@
+Updating ideal nets and annotations...
+Clock tree spec update: Ideal nets, transition and delay annotations were updated to match active timing constraints.
+Updating ideal nets and annotations done. (took cpu=0:00:00.0 real=0:00:00.0)
+No differences between SDC and CTS ideal net status found.
+Clock tree timing engine global stage delay update for setup_rcworst:setup.early...
+Clock tree timing engine global stage delay update for setup_rcworst:setup.early done. (took cpu=0:00:00.2 real=0:00:00.1)
+Clock tree timing engine global stage delay update for setup_rcworst:setup.late...
+Clock tree timing engine global stage delay update for setup_rcworst:setup.late done. (took cpu=0:00:00.2 real=0:00:00.0)
+Clock tree timing engine global stage delay update for hold_rcbest:hold.early...
+Clock tree timing engine global stage delay update for hold_rcbest:hold.early done. (took cpu=0:00:00.0 real=0:00:00.0)
+Clock tree timing engine global stage delay update for hold_rcbest:hold.late...
+Clock tree timing engine global stage delay update for hold_rcbest:hold.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+
+Skew Group Structure:
+=====================
+
+-----------------------------------------------------------------
+Skew Group    Sources    Constrained Sinks    Unconstrained Sinks
+-----------------------------------------------------------------
+clock/func       1              128                    1
+-----------------------------------------------------------------
+
+Skew Group Summary:
+===================
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timing Corner                Skew Group    ID Target    Min ID    Max ID    Avg ID    Std.Dev. ID    Skew Target Type    Skew Target    Skew     Skew window occupancy
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+setup_rcworst:setup.early    clock/func        -        0.201     0.254     0.230        0.010       ignored                  -         0.052              -
+setup_rcworst:setup.late     clock/func    none         0.203     0.254     0.245        0.007       explicit             0.100         0.051    100% {0.203, 0.254}
+hold_rcbest:hold.early       clock/func        -        0.060     0.077     0.074        0.002       ignored                  -         0.017              -
+hold_rcbest:hold.late        clock/func        -        0.062     0.083     0.080        0.004       ignored                  -         0.022              -
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* - indicates that target was not met.
+
+Skew Group Min/Max path pins:
+=============================
+
+-------------------------------------------------------------------------------
+Timing Corner                Skew Group    Min ID    PathID    Max ID    PathID
+-------------------------------------------------------------------------------
+setup_rcworst:setup.early    clock/func    0.201       -       0.254       -
+-    min counter_reg/CK
+-    max buffer_in_reg[1][3]/CK
+setup_rcworst:setup.late     clock/func    0.203       -       0.254       -
+-    min counter_reg/CK
+-    max buffer_in_reg[1][3]/CK
+hold_rcbest:hold.early       clock/func    0.060       -       0.077       -
+-    min counter_reg/CK
+-    max u_fir_parallel_shift_reg_reg[6][2]/CK
+hold_rcbest:hold.late        clock/func    0.062       -       0.083       -
+-    min counter_reg/CK
+-    max u_fir_parallel_shift_reg_reg[6][2]/CK
+-------------------------------------------------------------------------------
+
+Insertion delay histogram:
+==========================
+
+----------------------------------------------------------------------------------
+Timing Corner              Skew        Range start (ns)  Range end (ns)  Number of
+                           Group                                         sinks
+----------------------------------------------------------------------------------
+setup_rcworst:setup.early  clock/func       0.200            0.210            2
+                                            0.210            0.220            0
+                                            0.220            0.230           77
+                                            0.230            0.240           33
+                                            0.240            0.250            0
+                                            0.250            0.260           16
+setup_rcworst:setup.late   clock/func       0.200            0.210            2
+                                            0.210            0.220            0
+                                            0.220            0.230            0
+                                            0.230            0.240            0
+                                            0.240            0.250          110
+                                            0.250            0.260           16
+hold_rcbest:hold.early     clock/func       0.060            0.070            2
+                                            0.070            0.080          126
+hold_rcbest:hold.late      clock/func       0.060            0.070            2
+                                            0.070            0.080           38
+                                            0.080            0.090           88
+----------------------------------------------------------------------------------
+
+
