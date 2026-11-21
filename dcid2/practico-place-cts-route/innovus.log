@@ -39946,3 +39946,23 @@ Clock Static Probability:  0.5000
 Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
 mem(process/total/peak)=3565.88MB/8966.15MB/4471.61MB)
 
+<CMD> restoreDesign dataout/ej1_place_refinado.enc fir_serial_parallel
+#% Begin load design ... (date=11/21 20:00:08, mem=3551.4M)
+**ERROR: (IMPSYT-7338):	The specified design session directory '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/dataout/ej1_place_refinado.enc' could not be located as specified. Check your file system, correct the location, and try restoring the design again.
+
+
+ERROR: 
+
+
+    while executing
+"error $catchMsg"
+    (procedure "restoreDesign" line 36)
+
+
+<CMD> fit
+<CMD> gui_dump_picture reports/ej1/placement_refinado.png -format PNG
+
+*** Memory Usage v#2 (Current mem = 5793.289M, initial mem = 820.648M) ***
+*** Message Summary: 27100 warning(s), 3 error(s)
+
+--- Ending "Innovus" (totcpu=0:38:08, real=4:36:54, mem=5793.3M) ---
