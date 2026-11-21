@@ -264,3 +264,21 @@ report_timing -early -path_type summary_slack_only -max_paths 50 > reports/ej1/h
 report_ccopt_skew_groups -histograms -summary > reports/ej1/skew_groups_post_cts.rpt
 verify_connectivity -type special -no_antenna -report reports/ej1/conn_post_cts.rpt
 saveDesign dataout/ej1_cts.enc
+setNanoRouteMode -route_with_timing_driven true
+setNanoRouteMode -route_with_si_driven true
+setNanoRouteMode -route_detail_use_multi_cut_via_effort medium
+routeDesign
+setNanoRouteMode -route_detail_min_slack_for_opt_wire 0
+setNanoRouteMode -route_detail_use_multi_cut_via_effort high
+setNanoRouteMode -route_with_timing_driven false
+setNanoRouteMode -route_detail_post_route_swap_via multiCut
+routeDesign -viaOpt
+setNanoRouteMode -route_detail_fix_antenna true
+setNanoRouteMode -route_antenna_cell_name ANTENNA
+setNanoRouteMode -route_antenna_diode_insertion true
+globalDetailRoute
+addFiller -cell FILL8LVT FILL64LVT FILL4LVT FILL32LVT FILL2LVT FILL16LVT FILL1LVT FILL8 FILL64 FILL4 FILL32 FILL2 FILL16 FILL1 DECAP10 -prefix FILLER -powerDomain VDD -doDRC -fitGap
+ecoRoute -target
+selectWire 96.4550 16.1100 96.5350 18.2800 4 {u_fir_parallel_shift_reg[1][6]}
+deselectAll
+saveDesign dataout/ej1_route.enc
