@@ -222,3 +222,5 @@ fit
 deselectAll
 gui_dump_picture reports/ej1/placement.png -format PNG
 saveDesign dataout/ej1_place.enc
+checkFPlan -reportUtil > reports/ej1/util_post_place.rpt
+checkPlace > reports/ej1/check_place.rpt
