@@ -20106,3 +20106,8 @@ Time Elapsed: 0:00:02.0
   Verification Complete : 23 Viols.  0 Wrngs.
   (CPU Time: 0:00:01.2  MEM: 12.012M)
 
+
+*** Memory Usage v#2 (Current mem = 3423.180M, initial mem = 820.648M) ***
+*** Message Summary: 18071 warning(s), 1 error(s)
+
+--- Ending "Innovus" (totcpu=0:07:10, real=0:56:36, mem=3423.2M) ---
