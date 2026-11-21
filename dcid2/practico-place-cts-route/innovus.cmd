@@ -290,3 +290,14 @@ verify_drc > reports/ej1/drc_post_route.rpt
 verify_connectivity -type all -no_antenna -report reports/ej1/conn_post_route.rpt
 verify_antenna -report reports/ej1/antenna_post_route.rpt
 gui_dump_picture reports/ej1/route.png -format PNG
+getNanoRouteMode -route_diode_insertion_for_clock_nets
+setNanoRouteMode -route_diode_insertion_for_clock_nets true
+globalDetailRoute
+globalNetConnect
+checkPlace > reports/ej1/check_place_antenna_fix.rpt
+verify_drc > reports/ej1/drc_antenna_fix.rpt
+verify_connectivity -type all -no_antenna -report reports/ej1/conn_antenna_fix.rpt
+verify_antenna -report reports/ej1/antenna_fix.rpt
+report_timing -late -path_type summary_slack_only -max_paths 50 > reports/ej1/setup_antenna_fix.rpt
+report_timing -early -path_type summary_slack_only -max_paths 50 > reports/ej1/hold_antenna_fix.rpt
+saveDesign dataout/ej1_route_antenna_fix.enc

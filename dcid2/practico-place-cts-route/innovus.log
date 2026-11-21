@@ -37877,3 +37877,556 @@ Verification Complete: 2 Violations
 
 ******* DONE VERIFY ANTENNA ********
 <CMD> gui_dump_picture reports/ej1/route.png -format PNG
+<CMD> getNanoRouteMode -route_diode_insertion_for_clock_nets
+-route_diode_insertion_for_clock_nets false
+                                          # bool, default=false
+<CMD> setNanoRouteMode -route_diode_insertion_for_clock_nets true
+<CMD> globalDetailRoute
+#% Begin globalDetailRoute (date=11/21 19:39:06, mem=3237.5M)
+
+globalDetailRoute
+
+#Start globalDetailRoute on Sat Nov 21 19:39:06 2026
+#
+#Warning: design is detail-routed. Trial route is skipped!
+#NanoRoute Version 23.10-p003_1 NR240109-1512/23_10-UB
+#Total number of trivial nets (e.g. < 2 pins) = 2 (skipped).
+#Total number of routable nets = 4450.
+#Total number of nets in the design = 4452.
+#4450 routable nets have routed wires.
+#20 detail routed (routable) nets have been constrained (e.g. have preferred extra spacing, require shielding etc.)
+#No nets have been global routed.
+#Using multithreading with 8 threads.
+#Start routing data preparation on Sat Nov 21 19:39:06 2026
+#
+#Initial pin access analysis.
+#Detail pin access analysis.
+# Metal1       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.13000
+# Metal2       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal3       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal4       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal5       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal6       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal7       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal8       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal9       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal10      V   Track-Pitch = 0.50000    Line-2-Via Pitch = 0.42000
+# Metal11      H   Track-Pitch = 0.47500    Line-2-Via Pitch = 0.43000
+#Bottom routing layer index=2(Metal2), bottom routing layer for shielding=2(Metal2), bottom shield layer=2(Metal2)
+#shield_bottom_stripe_layer=1(Metal1), shield_top_stripe_layer=11(Metal11)
+#pin_access_rlayer=2(Metal2)
+#shield_top_dpt_rlayer=-1 top_rlayer=11 top_trim_metal_rlayer=-1 rlayer_lowest=1 bottom_rlayer=2
+#enable_trim_layer_shield=F enable_dpt_layer_shield=F has_line_end_grid=F
+#enable_dpt_layer_shield=F
+#has_line_end_grid=F
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3245.09 (MB), peak = 4680.68 (MB)
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer Metal3's pitch = 0.19000.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:06, elapsed time = 00:00:06, memory = 3323.17 (MB), peak = 4680.68 (MB)
+#
+#Finished routing data preparation on Sat Nov 21 19:39:12 2026
+#
+#Cpu time = 00:00:06
+#Elapsed time = 00:00:06
+#Increased memory = 82.87 (MB)
+#Total memory = 3323.33 (MB)
+#Peak memory = 4680.68 (MB)
+#
+#
+#Start global routing on Sat Nov 21 19:39:12 2026
+#
+#
+#Start global routing initialization on Sat Nov 21 19:39:12 2026
+#
+#WARNING (NRGR-22) Design is already detail routed.
+#Routing data preparation, pin analysis, global routing and track assignment statistics:
+#Cpu time = 00:00:06
+#Elapsed time = 00:00:06
+#Increased memory = 83.55 (MB)
+#Total memory = 3323.52 (MB)
+#Peak memory = 4680.68 (MB)
+#Using multithreading with 8 threads.
+#
+#Start Detail Routing..
+#start initial detail routing ...
+#   number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3330.54 (MB), peak = 4680.68 (MB)
+#Complete Detail Routing.
+#Total number of nets with non-default rule or having extra spacing = 20
+#Total wire length = 58963 um.
+#Total half perimeter of net bounding box = 54275 um.
+#Total wire length on LAYER Metal1 = 0 um.
+#Total wire length on LAYER Metal2 = 12186 um.
+#Total wire length on LAYER Metal3 = 14650 um.
+#Total wire length on LAYER Metal4 = 8287 um.
+#Total wire length on LAYER Metal5 = 8195 um.
+#Total wire length on LAYER Metal6 = 5527 um.
+#Total wire length on LAYER Metal7 = 6951 um.
+#Total wire length on LAYER Metal8 = 2803 um.
+#Total wire length on LAYER Metal9 = 220 um.
+#Total wire length on LAYER Metal10 = 6 um.
+#Total wire length on LAYER Metal11 = 138 um.
+#Total number of vias = 30304
+#Total number of multi-cut vias = 29294 ( 96.7%)
+#Total number of single cut vias = 1010 (  3.3%)
+#Up-Via Summary (total 30304):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+# Metal1           916 (  7.5%)     11271 ( 92.5%)      12187
+# Metal2            82 (  0.8%)      9574 ( 99.2%)       9656
+# Metal3             5 (  0.1%)      3553 ( 99.9%)       3558
+# Metal4             4 (  0.2%)      2352 ( 99.8%)       2356
+# Metal5             0 (  0.0%)      1348 (100.0%)       1348
+# Metal6             0 (  0.0%)       882 (100.0%)        882
+# Metal7             0 (  0.0%)       285 (100.0%)        285
+# Metal8             0 (  0.0%)        22 (100.0%)         22
+# Metal9             0 (  0.0%)         5 (100.0%)          5
+# Metal10            3 ( 60.0%)         2 ( 40.0%)          5
+#-----------------------------------------------------------
+#                 1010 (  3.3%)     29294 ( 96.7%)      30304 
+#
+#Total number of DRC violations = 0
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 1.20 (MB)
+#Total memory = 3324.72 (MB)
+#Peak memory = 4680.68 (MB)
+#
+#start routing for process antenna violation fix ...
+#cpu time = 00:00:01, elapsed time = 00:00:00, memory = 3325.38 (MB), peak = 4680.68 (MB)
+#
+#Total number of nets with non-default rule or having extra spacing = 20
+#Total wire length = 58963 um.
+#Total half perimeter of net bounding box = 54275 um.
+#Total wire length on LAYER Metal1 = 0 um.
+#Total wire length on LAYER Metal2 = 12186 um.
+#Total wire length on LAYER Metal3 = 14650 um.
+#Total wire length on LAYER Metal4 = 8287 um.
+#Total wire length on LAYER Metal5 = 8195 um.
+#Total wire length on LAYER Metal6 = 5527 um.
+#Total wire length on LAYER Metal7 = 6951 um.
+#Total wire length on LAYER Metal8 = 2803 um.
+#Total wire length on LAYER Metal9 = 220 um.
+#Total wire length on LAYER Metal10 = 6 um.
+#Total wire length on LAYER Metal11 = 138 um.
+#Total number of vias = 30304
+#Total number of multi-cut vias = 29294 ( 96.7%)
+#Total number of single cut vias = 1010 (  3.3%)
+#Up-Via Summary (total 30304):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+# Metal1           916 (  7.5%)     11271 ( 92.5%)      12187
+# Metal2            82 (  0.8%)      9574 ( 99.2%)       9656
+# Metal3             5 (  0.1%)      3553 ( 99.9%)       3558
+# Metal4             4 (  0.2%)      2352 ( 99.8%)       2356
+# Metal5             0 (  0.0%)      1348 (100.0%)       1348
+# Metal6             0 (  0.0%)       882 (100.0%)        882
+# Metal7             0 (  0.0%)       285 (100.0%)        285
+# Metal8             0 (  0.0%)        22 (100.0%)         22
+# Metal9             0 (  0.0%)         5 (100.0%)          5
+# Metal10            3 ( 60.0%)         2 ( 40.0%)          5
+#-----------------------------------------------------------
+#                 1010 (  3.3%)     29294 ( 96.7%)      30304 
+#
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 2
+#Total number of net violated process antenna rule = 1
+#
+#
+# start diode insertion for process antenna violation fix ...
+# output diode eco list to '.nano_eco_diode.list1'.
+#
+# ** No diode (tried 1) instance could be added.
+#
+# can't find diode within 100um of (99.75 45.38)
+# 0 diode(s) added
+# 1 diode(s) can't find location
+# 0 old filler cell(s) deleted
+# 0 new filler cell(s) added
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3328.02 (MB), peak = 4680.68 (MB)
+#
+#Total number of nets with non-default rule or having extra spacing = 20
+#Total wire length = 58963 um.
+#Total half perimeter of net bounding box = 54275 um.
+#Total wire length on LAYER Metal1 = 0 um.
+#Total wire length on LAYER Metal2 = 12186 um.
+#Total wire length on LAYER Metal3 = 14650 um.
+#Total wire length on LAYER Metal4 = 8287 um.
+#Total wire length on LAYER Metal5 = 8195 um.
+#Total wire length on LAYER Metal6 = 5527 um.
+#Total wire length on LAYER Metal7 = 6951 um.
+#Total wire length on LAYER Metal8 = 2803 um.
+#Total wire length on LAYER Metal9 = 220 um.
+#Total wire length on LAYER Metal10 = 6 um.
+#Total wire length on LAYER Metal11 = 138 um.
+#Total number of vias = 30304
+#Total number of multi-cut vias = 29294 ( 96.7%)
+#Total number of single cut vias = 1010 (  3.3%)
+#Up-Via Summary (total 30304):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+# Metal1           916 (  7.5%)     11271 ( 92.5%)      12187
+# Metal2            82 (  0.8%)      9574 ( 99.2%)       9656
+# Metal3             5 (  0.1%)      3553 ( 99.9%)       3558
+# Metal4             4 (  0.2%)      2352 ( 99.8%)       2356
+# Metal5             0 (  0.0%)      1348 (100.0%)       1348
+# Metal6             0 (  0.0%)       882 (100.0%)        882
+# Metal7             0 (  0.0%)       285 (100.0%)        285
+# Metal8             0 (  0.0%)        22 (100.0%)         22
+# Metal9             0 (  0.0%)         5 (100.0%)          5
+# Metal10            3 ( 60.0%)         2 ( 40.0%)          5
+#-----------------------------------------------------------
+#                 1010 (  3.3%)     29294 ( 96.7%)      30304 
+#
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 2
+#Total number of net violated process antenna rule = 1
+#
+#
+#start delete and reroute for process antenna violation fix ...
+#cpu time = 00:00:01, elapsed time = 00:00:00, memory = 3328.25 (MB), peak = 4680.68 (MB)
+#Total number of nets with non-default rule or having extra spacing = 20
+#Total wire length = 58963 um.
+#Total half perimeter of net bounding box = 54275 um.
+#Total wire length on LAYER Metal1 = 0 um.
+#Total wire length on LAYER Metal2 = 12186 um.
+#Total wire length on LAYER Metal3 = 14650 um.
+#Total wire length on LAYER Metal4 = 8287 um.
+#Total wire length on LAYER Metal5 = 8195 um.
+#Total wire length on LAYER Metal6 = 5527 um.
+#Total wire length on LAYER Metal7 = 6951 um.
+#Total wire length on LAYER Metal8 = 2803 um.
+#Total wire length on LAYER Metal9 = 220 um.
+#Total wire length on LAYER Metal10 = 6 um.
+#Total wire length on LAYER Metal11 = 138 um.
+#Total number of vias = 30304
+#Total number of multi-cut vias = 29294 ( 96.7%)
+#Total number of single cut vias = 1010 (  3.3%)
+#Up-Via Summary (total 30304):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+# Metal1           916 (  7.5%)     11271 ( 92.5%)      12187
+# Metal2            82 (  0.8%)      9574 ( 99.2%)       9656
+# Metal3             5 (  0.1%)      3553 ( 99.9%)       3558
+# Metal4             4 (  0.2%)      2352 ( 99.8%)       2356
+# Metal5             0 (  0.0%)      1348 (100.0%)       1348
+# Metal6             0 (  0.0%)       882 (100.0%)        882
+# Metal7             0 (  0.0%)       285 (100.0%)        285
+# Metal8             0 (  0.0%)        22 (100.0%)         22
+# Metal9             0 (  0.0%)         5 (100.0%)          5
+# Metal10            3 ( 60.0%)         2 ( 40.0%)          5
+#-----------------------------------------------------------
+#                 1010 (  3.3%)     29294 ( 96.7%)      30304 
+#
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 2
+#Total number of net violated process antenna rule = 1
+#
+#
+#Total number of nets with non-default rule or having extra spacing = 20
+#Total wire length = 58963 um.
+#Total half perimeter of net bounding box = 54275 um.
+#Total wire length on LAYER Metal1 = 0 um.
+#Total wire length on LAYER Metal2 = 12186 um.
+#Total wire length on LAYER Metal3 = 14650 um.
+#Total wire length on LAYER Metal4 = 8287 um.
+#Total wire length on LAYER Metal5 = 8195 um.
+#Total wire length on LAYER Metal6 = 5527 um.
+#Total wire length on LAYER Metal7 = 6951 um.
+#Total wire length on LAYER Metal8 = 2803 um.
+#Total wire length on LAYER Metal9 = 220 um.
+#Total wire length on LAYER Metal10 = 6 um.
+#Total wire length on LAYER Metal11 = 138 um.
+#Total number of vias = 30304
+#Total number of multi-cut vias = 29294 ( 96.7%)
+#Total number of single cut vias = 1010 (  3.3%)
+#Up-Via Summary (total 30304):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+# Metal1           916 (  7.5%)     11271 ( 92.5%)      12187
+# Metal2            82 (  0.8%)      9574 ( 99.2%)       9656
+# Metal3             5 (  0.1%)      3553 ( 99.9%)       3558
+# Metal4             4 (  0.2%)      2352 ( 99.8%)       2356
+# Metal5             0 (  0.0%)      1348 (100.0%)       1348
+# Metal6             0 (  0.0%)       882 (100.0%)        882
+# Metal7             0 (  0.0%)       285 (100.0%)        285
+# Metal8             0 (  0.0%)        22 (100.0%)         22
+# Metal9             0 (  0.0%)         5 (100.0%)          5
+# Metal10            3 ( 60.0%)         2 ( 40.0%)          5
+#-----------------------------------------------------------
+#                 1010 (  3.3%)     29294 ( 96.7%)      30304 
+#
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 2
+#Total number of net violated process antenna rule = 1
+#
+#
+#Start Post Route via swapping...
+#No area is rerouted by ECO routing. Post route via swapping is skipped.
+#   number of violations = 0
+#cpu time = 00:33:14, elapsed time = 498694:39:13, memory = 3328.30 (MB), peak = 4680.68 (MB)
+#CELL_VIEW fir_serial_parallel,init has 0 DRC violations
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 2
+#Total number of net violated process antenna rule = 1
+#No via is swapped.
+#Post Route via swapping is done.
+#Total number of nets with non-default rule or having extra spacing = 20
+#Total wire length = 58963 um.
+#Total half perimeter of net bounding box = 54275 um.
+#Total wire length on LAYER Metal1 = 0 um.
+#Total wire length on LAYER Metal2 = 12186 um.
+#Total wire length on LAYER Metal3 = 14650 um.
+#Total wire length on LAYER Metal4 = 8287 um.
+#Total wire length on LAYER Metal5 = 8195 um.
+#Total wire length on LAYER Metal6 = 5527 um.
+#Total wire length on LAYER Metal7 = 6951 um.
+#Total wire length on LAYER Metal8 = 2803 um.
+#Total wire length on LAYER Metal9 = 220 um.
+#Total wire length on LAYER Metal10 = 6 um.
+#Total wire length on LAYER Metal11 = 138 um.
+#Total number of vias = 30304
+#Total number of multi-cut vias = 29294 ( 96.7%)
+#Total number of single cut vias = 1010 (  3.3%)
+#Up-Via Summary (total 30304):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+# Metal1           916 (  7.5%)     11271 ( 92.5%)      12187
+# Metal2            82 (  0.8%)      9574 ( 99.2%)       9656
+# Metal3             5 (  0.1%)      3553 ( 99.9%)       3558
+# Metal4             4 (  0.2%)      2352 ( 99.8%)       2356
+# Metal5             0 (  0.0%)      1348 (100.0%)       1348
+# Metal6             0 (  0.0%)       882 (100.0%)        882
+# Metal7             0 (  0.0%)       285 (100.0%)        285
+# Metal8             0 (  0.0%)        22 (100.0%)         22
+# Metal9             0 (  0.0%)         5 (100.0%)          5
+# Metal10            3 ( 60.0%)         2 ( 40.0%)          5
+#-----------------------------------------------------------
+#                 1010 (  3.3%)     29294 ( 96.7%)      30304 
+#
+#detailRoute Statistics:
+#Cpu time = 00:00:04
+#Elapsed time = 00:00:01
+#Increased memory = 4.79 (MB)
+#Total memory = 3328.30 (MB)
+#Peak memory = 4680.68 (MB)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:11
+#Elapsed time = 00:00:07
+#Increased memory = 10.64 (MB)
+#Total memory = 3248.28 (MB)
+#Peak memory = 4680.68 (MB)
+#Number of warnings = 1
+#Total number of warnings = 9
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Sat Nov 21 19:39:13 2026
+#
+#
+#  Scalability Statistics
+#
+#--------------------------+---------+-------------+------------+
+#  globalDetailRoute       | cpu time| elapsed time| scalability|
+#--------------------------+---------+-------------+------------+
+#  Pre Callback            | 00:00:00|     00:00:00|         1.0|
+#  Post Callback           | 00:00:00|     00:00:00|         1.0|
+#  Timing Data Generation  | 00:00:00|     00:00:00|         1.0|
+#  DB Import               | 00:00:00|     00:00:00|         1.0|
+#  DB Export               | 00:00:00|     00:00:00|         1.0|
+#  Cell Pin Access         | 00:00:00|     00:00:00|         1.0|
+#  Data Preparation        | 00:00:06|     00:00:06|         1.0|
+#  Global Routing          | 00:00:00|     00:00:00|         1.0|
+#  Track Assignment        | 00:00:00|     00:00:00|         1.0|
+#  Detail Routing          | 00:00:00|     00:00:00|         1.0|
+#  Antenna Fixing          | 00:00:04|     00:00:01|         1.0|
+#  Post Route Via Swapping | 00:00:00|     00:00:00|         1.0|
+#  Entire Command          | 00:00:11|     00:00:07|         1.5|
+#--------------------------+---------+-------------+------------+
+#
+#% End globalDetailRoute (date=11/21 19:39:13, total cpu=0:00:11.2, real=0:00:07.0, peak res=3242.5M, current mem=3242.5M)
+<CMD> globalNetConnect
+**ERROR: (IMPSYC-6159):	The <globalNetName> argument is missing, but it is a required argument unless the '-disconnect' option is given.
+
+<CMD> checkPlace > reports/ej1/check_place_antenna_fix.rpt
+Begin checking placement ... (start mem=5541.4M, init mem=5541.4M)
+*info: Placed = 6196           (Fixed = 14)
+*info: Unplaced = 0           
+Placement Density:100.00%(19459/19459)
+Placement Density (including fixed std cells):100.00%(19459/19459)
+Finished checkPlace (total: cpu=0:00:00.6, real=0:00:01.0; vio checks: cpu=0:00:00.3, real=0:00:01.0; mem=5509.3M)
+<CMD> verify_drc > reports/ej1/drc_antenna_fix.rpt
+#-check_same_via_cell true               # bool, default=false, user setting
+ *** Starting Verify DRC (MEM: 5509.3) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+**WARN: (IMPVFG-1198):	The number of CPUs requested 8 is larger than that verify_drc used 6. In Multithreading mode, the number of CPUs verify_drc used is not larger than the number of subareas.
+ Use 'setMultiCpuUsage -localCpu' to specify the less cup number if the verify area is not large.
+  VERIFY DRC ...... Using new threading
+ VERIFY DRC ...... Thread : 1 finished.
+ VERIFY DRC ...... Thread : 5 finished.
+ VERIFY DRC ...... Thread : 3 finished.
+ VERIFY DRC ...... Thread : 0 finished.
+ VERIFY DRC ...... Thread : 4 finished.
+ VERIFY DRC ...... Thread : 2 finished.
+
+  Verification Complete : 0 Viols.
+
+ *** End Verify DRC (CPU TIME: 0:00:02.0  ELAPSED TIME: 0:00:01.0  MEM: 288.1M) ***
+
+<CMD> verify_connectivity -type all -no_antenna -report reports/ej1/conn_antenna_fix.rpt
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Sat Nov 21 19:39:34 2026
+
+Design Name: fir_serial_parallel
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (200.2000, 102.6000)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+Use 8 pthreads
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Sat Nov 21 19:39:35 2026
+Time Elapsed: 0:00:01.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.9  MEM: 0.000M)
+
+<CMD> verify_antenna -report reports/ej1/antenna_fix.rpt
+ *** Starting Verify Antenna (MEM: 5925.4) ***
+
+Report File: reports/ej1/antenna_fix.rpt
+  VERIFY Antenna ...... Starting Verification
+  VERIFY Antenna ...... Using new threading
+ VERIFY Antenna...... Thread : 7 finished.
+ VERIFY Antenna...... Thread : 2 finished.
+ VERIFY Antenna...... Thread : 3 finished.
+ VERIFY Antenna...... Thread : 5 finished.
+ VERIFY Antenna...... Thread : 0 finished.
+ VERIFY Antenna...... Thread : 4 finished.
+ VERIFY Antenna...... Thread : 6 finished.
+ VERIFY Antenna...... Thread : 1 finished.
+Verification Complete: 2 Violations
+ *** End Verify Antenna (CPU: 0:00:00.8  ELAPSED TIME: 0.00  MEM: 0.0M) ***
+
+******* DONE VERIFY ANTENNA ********
+<CMD> report_timing -late -path_type summary_slack_only -max_paths 50 > reports/ej1/setup_antenna_fix.rpt
+AAE_INFO: opIsDesignInPostRouteState() is 1
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: fir_serial_parallel
+# Design Mode: 45nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Extraction called for design 'fir_serial_parallel' of instances=6196 and nets=4452 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design fir_serial_parallel.
+RC Extraction called in multi-corner(4) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1       2       3   
+Capacitance Scaling Factor   : 1.10775 1.00225 1.10775 1.00225 
+Resistance Scaling Factor    : 0.91000 0.91000 0.91000 0.91000 
+Clock Cap. Scaling Factor    : 1.00800 0.91200 1.00800 0.91200 
+Clock Res. Scaling Factor    : 0.98500 0.98500 0.98500 0.98500 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using Quantus QRC technology file ...
+Updating RC Grid density data for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.3  Real Time: 0:00:00.0  MEM: 5925.434M)
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (8 T). (MEM=3393.75)
+Total number of fetched objects 4452
+End delay calculation. (MEM=3440.63 CPU=0:00:00.9 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3387.38 CPU=0:00:01.8 REAL=0:00:01.0)
+<CMD> report_timing -early -path_type summary_slack_only -max_paths 50 > reports/ej1/hold_antenna_fix.rpt
+AAE_INFO: opIsDesignInPostRouteState() is 1
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: fir_serial_parallel
+# Design Mode: 45nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (8 T). (MEM=3464.82)
+Total number of fetched objects 4452
+End delay calculation. (MEM=3486.11 CPU=0:00:00.8 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3486.11 CPU=0:00:01.1 REAL=0:00:01.0)
+<CMD> saveDesign dataout/ej1_route_antenna_fix.enc
+#% Begin save design ... (date=11/21 19:39:39, mem=3435.1M)
+% Begin Save ccopt configuration ... (date=11/21 19:39:39, mem=3435.2M)
+% End Save ccopt configuration ... (date=11/21 19:39:39, total cpu=0:00:00.1, real=0:00:00.0, peak res=3438.9M, current mem=3438.9M)
+% Begin Save netlist data ... (date=11/21 19:39:39, mem=3439.0M)
+Writing Binary DB to dataout/ej1_route_antenna_fix.enc.dat/vbin/fir_serial_parallel.v.bin in multi-threaded mode...
+% End Save netlist data ... (date=11/21 19:39:39, total cpu=0:00:00.1, real=0:00:00.0, peak res=3442.1M, current mem=3442.1M)
+Saving symbol-table file in separate thread ...
+Saving congestion map file in separate thread ...
+Saving congestion map file dataout/ej1_route_antenna_fix.enc.dat/fir_serial_parallel.route.congmap.gz ...
+% Begin Save AAE data ... (date=11/21 19:39:39, mem=3444.0M)
+Saving AAE Data ...
+% End Save AAE data ... (date=11/21 19:39:39, total cpu=0:00:01.9, real=0:00:01.0, peak res=3444.0M, current mem=3444.0M)
+Saving preference file dataout/ej1_route_antenna_fix.enc.dat/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+*info - save blackBox cells to lef file dataout/ej1_route_antenna_fix.enc.dat/fir_serial_parallel.bbox.lef
+Saving Drc markers ...
+... 2 markers are saved ...
+... 0 geometry drc markers are saved ...
+... 2 antenna drc markers are saved ...
+Saving special route data file in separate thread ...
+Saving PG file in separate thread ...
+Saving placement file in separate thread ...
+Saving route file in separate thread ...
+Saving property file in separate thread ...
+Saving PG file dataout/ej1_route_antenna_fix.enc.dat/fir_serial_parallel.pg.gz, version#2, (Created by Innovus v23.10-p003_1 on Sat Nov 21 19:39:40 2026)
+** Saving stdCellPlacement_binary (version# 2) ...
+Saving property file dataout/ej1_route_antenna_fix.enc.dat/fir_serial_parallel.prop
+Save Adaptive View Pruning View Names to Binary file
+*** Completed saveProperty (cpu=0:00:00.1 real=0:00:00.0 mem=5849.6M) ***
+TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
+*** Completed savePGFile (cpu=0:00:00.1 real=0:00:00.0 mem=5841.6M) ***
+TAT_INFO: ::savePGFile REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
+*** Completed saveRoute (cpu=0:00:00.1 real=0:00:01.0 mem=5825.5M) ***
+TAT_INFO: ::saveRoute REAL = 1 : CPU = 0 : MEM = 0.
+TAT_INFO: ::db::saveAnnotationAndProp REAL = 0 : CPU = 0 : MEM = 0.
+#Saving pin access data to file dataout/ej1_route_antenna_fix.enc.dat/fir_serial_parallel.apa ...
+#
+Saving preRoute extracted patterns in file 'dataout/ej1_route_antenna_fix.enc.dat/fir_serial_parallel.techData.gz' ...
+Saving preRoute extraction data in directory 'dataout/ej1_route_antenna_fix.enc.dat/extraction/' ...
+TAT_INFO: ::db::saveSymbolTable REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: ::saveCongMap REAL = 0 : CPU = 0 : MEM = 0.
+% Begin Save power constraints data ... (date=11/21 19:39:42, mem=3447.3M)
+% End Save power constraints data ... (date=11/21 19:39:42, total cpu=0:00:00.1, real=0:00:00.0, peak res=3447.5M, current mem=3447.5M)
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+Generated self-contained design ej1_route_antenna_fix.enc.dat
+fast slow
+early_spef_rcworst_125 late_spef_rcworst_125 early_spef_rcbest_0 late_spef_rcbest_0
+func
+/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/dataout/fir_serial_parallel_m.sdc
+#% End save design ... (date=11/21 19:39:43, total cpu=0:00:04.3, real=0:00:04.0, peak res=3448.3M, current mem=3448.3M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
