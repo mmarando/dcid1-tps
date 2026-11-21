@@ -157,3 +157,68 @@ gui_dump_picture
 fit
 gui_dump_picture reports/fp40/floorplan.png -format PNG
 report_clocks > reports/fp40/clocks.rpt
+get_time_unit
+get_capacitance_unit
+setPlaceMode -place_detail_wire_length_opt_effort medium
+setPlaceMode -place_global_clock_gate_aware true
+setPlaceMode -place_global_clock_power_driven true
+setPlaceMode -place_global_cong_effort auto
+setPlaceMode -place_global_ignore_scan true
+setPlaceMode -place_global_max_density -1
+setPlaceMode -place_global_solver_effort high
+setPlaceMode -place_global_timing_effort medium
+setPlaceMode -place_global_uniform_density true
+place_opt_design
+setTieHiLoMode -maxfanout 10
+addTieHiLo -cell TIEHILVT -createHierPort true -powerDomain VDD
+addTieHiLo -cell TIELOLVT -createHierPort true -powerDomain VSS
+selectWire 61.4550 5.8500 67.3350 5.9300 3 u_fir_parallel_csa_tree_ADD_TC_OP_13_groupi_n_1589
+setLayerPreference pinObj -isVisible 1
+setLayerPreference pinObj -isVisible 0
+setLayerPreference layoutObj -isVisible 1
+setLayerPreference layoutObj -isVisible 0
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 0
+setLayerPreference cellBlkgObj -isVisible 1
+zoomBox -1.28550 7.22400 171.53050 88.76550
+zoomBox 25.12500 25.11700 101.80550 61.29800
+zoomBox 38.24450 34.00550 67.16650 47.65200
+zoomBox 44.58600 37.38550 59.68450 44.50950
+zoomBox 42.51050 35.17050 63.40850 45.03100
+zoomBox 51.73750 38.47000 62.64700 43.61750
+zoomBox 55.52000 39.77700 60.36250 42.06200
+setLayerPreference node_module -isVisible 0
+setLayerPreference node_module -isVisible 1
+setLayerPreference node_module -isSelectable 0
+setLayerPreference node_module -isSelectable 1
+setLayerPreference node_module -isVisible 0
+setLayerPreference node_module -isVisible 1
+zoomBox 50.97150 37.96450 63.81100 44.02250
+zoomBox 38.94000 33.15650 72.98750 49.22150
+zoomBox 35.53150 31.79450 75.58750 50.69450
+zoomBox -1.99900 16.80050 104.21150 66.91500
+setLayerPreference node_module -isSelectable 0
+setLayerPreference node_module -isSelectable 1
+setLayerPreference node_module -isVisible 0
+setLayerPreference node_module -isVisible 1
+setLayerPreference Poly -isVisible 0
+setLayerPreference Poly -isVisible 1
+zoomBox 39.74500 37.25250 86.87200 59.48900
+zoomBox 44.73600 39.69950 84.79400 58.60050
+zoomBox 67.47300 49.42650 78.38900 54.57700
+zoomBox 68.75050 49.97300 78.02900 54.35100
+zoomBox 71.54350 51.16750 77.24200 53.85650
+setLayerPreference Poly -isVisible 0
+setLayerPreference Poly -isVisible 1
+setLayerPreference Cont -isVisible 0
+setLayerPreference Cont -isVisible 1
+setLayerPreference Metal1 -isVisible 0
+setLayerPreference Metal1 -isVisible 1
+report_area > reports/ej1/area_post_place.rpt
+verify_connectivity -type special -no_antenna -report reports/ej1/conn_post_place.rpt
+deselectAll
+selectInst u_fir_parallel_csa_tree_ADD_TC_OP_13_groupi_g2721__8246
+fit
+deselectAll
+gui_dump_picture reports/ej1/placement.png -format PNG
+saveDesign dataout/ej1_place.enc
