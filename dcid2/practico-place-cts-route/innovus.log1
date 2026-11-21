@@ -340,3 +340,8 @@ WARNING   TECHLIB-302         24  No function defined for cell '%s'. The c...
 
 <CMD> fit
 <CMD> gui_dump_picture reports/ej1/placement_refinado_legal.png -format PNG
+
+*** Memory Usage v#2 (Current mem = 2967.707M, initial mem = 812.648M) ***
+*** Message Summary: 36 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:50, real=0:08:26, mem=2967.7M) ---

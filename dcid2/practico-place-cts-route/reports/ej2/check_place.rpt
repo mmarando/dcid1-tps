@@ -1,0 +1,7 @@
+Begin checking placement ... (start mem=3609.8M, init mem=3609.8M)
+Overlapping with other instance:	135
+*info: Placed = 2418          
+*info: Unplaced = 0           
+Placement Density:47.01%(7777/16543)
+Placement Density (including fixed std cells):47.01%(7777/16543)
+Finished checkPlace (total: cpu=0:00:00.2, real=0:00:00.0; vio checks: cpu=0:00:00.1, real=0:00:00.0; mem=3609.8M)
