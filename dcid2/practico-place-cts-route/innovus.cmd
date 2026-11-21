@@ -147,3 +147,9 @@ deleteSelectedFromFPlan
 verify_drc > reports/fp40/drc_prueba_stub.rpt
 verify_connectivity -type special -no_antenna -report reports/fp40/conn_prueba_stub.rpt
 saveDesign dataout/fp_40_prueba_stub.enc
+deselectAll
+select_obj {special_wire:0x7fe803e540e0 special_wire:0x7fe803e195b0 special_wire:0x7fe803e18ad0 special_wire:0x7fe803fddfa0 special_wire:0x7fe803fdd4c0 special_wire:0x7fe803fdc9e0 special_wire:0x7fe803fa3eb0 special_wire:0x7fe803fa33d0 special_wire:0x7fe803fa28f0 special_wire:0x7fe803f65dc0 special_wire:0x7fe803f652e0 special_wire:0x7fe803f64800 special_wire:0x7fe803f27cd0 special_wire:0x7fe803f271f0 special_wire:0x7fe8040edbe0 special_wire:0x7fe8040ed100 special_wire:0x7fe8040ec620 special_wire:0x7fe8040b3af0 special_wire:0x7fe8040b3010 special_wire:0x7fe8040b2530 special_wire:0x7fe804077a00 special_wire:0x7fe804076f20 special_wire:0x7fe804076440 special_wire:0x7fe804037910 special_wire:0x7fe804036e30 special_wire:0x7fe804036350 special_wire:0x7fe8041a1820 special_wire:0x7fe8041a0d40}
+deleteSelectedFromFPlan
+verify_drc > reports/fp40/drc_sin_stubs.rpt
+verify_connectivity -type special -no_antenna -report reports/fp40/conn_sin_stubs.rpt
+saveDesign dataout/fp_40_sin_stubs.enc
