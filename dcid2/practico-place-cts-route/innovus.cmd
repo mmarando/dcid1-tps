@@ -134,3 +134,16 @@ selectMarker 198.0100 51.2200 198.2000 51.3800 -1 3 7
 deselectAll
 deselectAll
 selectWire 198.010 51.220 198.200 51.380 3 VSS
+deselectAll
+fit
+selectMarker 2.0000 1.7100 198.2000 100.8900 -1 3 7
+deselectAll
+selectWire 121.3350 1.7100 121.6550 100.8900 6 VDD
+deselectAll
+selectWire 2.0000 39.2700 198.2000 39.3900 1 VDD
+deselectAll
+selectWire 198.010 51.220 198.200 51.380 3 VSS
+deleteSelectedFromFPlan
+verify_drc > reports/fp40/drc_prueba_stub.rpt
+verify_connectivity -type special -no_antenna -report reports/fp40/conn_prueba_stub.rpt
+saveDesign dataout/fp_40_prueba_stub.enc
