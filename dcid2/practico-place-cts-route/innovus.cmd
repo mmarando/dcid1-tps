@@ -286,3 +286,7 @@ verify_drc > reports/ej1/drc_post_route.rpt
 verify_connectivity -type all -no_antenna -report reports/ej1/conn_post_route.rpt
 verify_antenna -report reports/ej1/antenna_post_route.rpt
 gui_dump_picture reports/ej1/route.png -format PNG
+verify_drc > reports/ej1/drc_post_route.rpt
+verify_connectivity -type all -no_antenna -report reports/ej1/conn_post_route.rpt
+verify_antenna -report reports/ej1/antenna_post_route.rpt
+gui_dump_picture reports/ej1/route.png -format PNG

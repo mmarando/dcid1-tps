@@ -37812,3 +37812,68 @@ Verification Complete: 2 Violations
 
 ******* DONE VERIFY ANTENNA ********
 <CMD> gui_dump_picture reports/ej1/route.png -format PNG
+<CMD> verify_drc > reports/ej1/drc_post_route.rpt
+#-check_same_via_cell true               # bool, default=false, user setting
+ *** Starting Verify DRC (MEM: 5913.0) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+**WARN: (IMPVFG-1198):	The number of CPUs requested 8 is larger than that verify_drc used 6. In Multithreading mode, the number of CPUs verify_drc used is not larger than the number of subareas.
+ Use 'setMultiCpuUsage -localCpu' to specify the less cup number if the verify area is not large.
+  VERIFY DRC ...... Using new threading
+ VERIFY DRC ...... Thread : 1 finished.
+ VERIFY DRC ...... Thread : 5 finished.
+ VERIFY DRC ...... Thread : 3 finished.
+ VERIFY DRC ...... Thread : 0 finished.
+ VERIFY DRC ...... Thread : 4 finished.
+ VERIFY DRC ...... Thread : 2 finished.
+
+  Verification Complete : 0 Viols.
+
+ *** End Verify DRC (CPU TIME: 0:00:02.0  ELAPSED TIME: 0:00:02.0  MEM: 256.1M) ***
+
+<CMD> verify_connectivity -type all -no_antenna -report reports/ej1/conn_post_route.rpt
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Sat Nov 21 19:37:04 2026
+
+Design Name: fir_serial_parallel
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (200.2000, 102.6000)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+Use 8 pthreads
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Sat Nov 21 19:37:04 2026
+Time Elapsed: 0:00:00.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.8  MEM: 0.000M)
+
+<CMD> verify_antenna -report reports/ej1/antenna_post_route.rpt
+ *** Starting Verify Antenna (MEM: 6169.1) ***
+
+Report File: reports/ej1/antenna_post_route.rpt
+  VERIFY Antenna ...... Starting Verification
+  VERIFY Antenna ...... Using new threading
+ VERIFY Antenna...... Thread : 7 finished.
+ VERIFY Antenna...... Thread : 1 finished.
+ VERIFY Antenna...... Thread : 3 finished.
+ VERIFY Antenna...... Thread : 4 finished.
+ VERIFY Antenna...... Thread : 2 finished.
+ VERIFY Antenna...... Thread : 5 finished.
+ VERIFY Antenna...... Thread : 6 finished.
+ VERIFY Antenna...... Thread : 0 finished.
+Verification Complete: 2 Violations
+ *** End Verify Antenna (CPU: 0:00:00.7  ELAPSED TIME: 0.00  MEM: 0.0M) ***
+
+******* DONE VERIFY ANTENNA ********
+<CMD> gui_dump_picture reports/ej1/route.png -format PNG
