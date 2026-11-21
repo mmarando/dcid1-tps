@@ -29397,3 +29397,4 @@ viaInitial ends at Sat Nov 21 15:30:19 2026
 
 [11/21 15:47:20    219s] <CMD> fit
 [11/21 15:47:22    219s] <CMD> gui_dump_picture reports/fp40/floorplan.png -format PNG
+[11/21 15:50:05    237s] <CMD> report_clocks > reports/fp40/clocks.rpt

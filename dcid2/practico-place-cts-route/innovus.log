@@ -29030,3 +29030,4 @@ Usage: gui_dump_picture [-help] <name> [-format {BMP GIF JPG JPEG PNG PBM PGM PP
 
 <CMD> fit
 <CMD> gui_dump_picture reports/fp40/floorplan.png -format PNG
+<CMD> report_clocks > reports/fp40/clocks.rpt

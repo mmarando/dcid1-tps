@@ -156,3 +156,4 @@ saveDesign dataout/fp_40_sin_stubs.enc
 gui_dump_picture
 fit
 gui_dump_picture reports/fp40/floorplan.png -format PNG
+report_clocks > reports/fp40/clocks.rpt
