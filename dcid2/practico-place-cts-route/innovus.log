@@ -29021,3 +29021,12 @@ func
 #% End save design ... (date=11/21 15:45:28, total cpu=0:00:01.9, real=0:00:02.0, peak res=2675.8M, current mem=2675.8M)
 *** Message Summary: 0 warning(s), 0 error(s)
 
+couldn't execute "import": no such file or directory
+<CMD> gui_dump_picture
+
+Usage: gui_dump_picture [-help] <name> [-format {BMP GIF JPG JPEG PNG PBM PGM PPM XBM XPM}] [-honor_umask] [-window <string>] [-width <integer> -height <integer>]
+
+**ERROR: (IMPTCM-32):	Wrong number of arguments specified for command "gui_dump_picture".
+
+<CMD> fit
+<CMD> gui_dump_picture reports/fp40/floorplan.png -format PNG

@@ -153,3 +153,6 @@ deleteSelectedFromFPlan
 verify_drc > reports/fp40/drc_sin_stubs.rpt
 verify_connectivity -type special -no_antenna -report reports/fp40/conn_sin_stubs.rpt
 saveDesign dataout/fp_40_sin_stubs.enc
+gui_dump_picture
+fit
+gui_dump_picture reports/fp40/floorplan.png -format PNG

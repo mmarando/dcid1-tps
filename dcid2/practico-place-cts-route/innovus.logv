@@ -29388,3 +29388,12 @@ viaInitial ends at Sat Nov 21 15:30:19 2026
 [11/21 15:45:28    207s] #% End save design ... (date=11/21 15:45:28, total cpu=0:00:01.9, real=0:00:02.0, peak res=2675.8M, current mem=2675.8M)
 [11/21 15:45:28    207s] *** Message Summary: 0 warning(s), 0 error(s)
 [11/21 15:45:28    207s] 
+[11/21 15:46:39    215s] couldn't execute "import": no such file or directory
+[11/21 15:46:45    215s] <CMD> gui_dump_picture
+[11/21 15:46:45    215s] 
+[11/21 15:46:45    215s] Usage: gui_dump_picture [-help] <name> [-format {BMP GIF JPG JPEG PNG PBM PGM PPM XBM XPM}] [-honor_umask] [-window <string>] [-width <integer> -height <integer>]
+[11/21 15:46:45    215s] 
+[11/21 15:46:45    215s] **ERROR: (IMPTCM-32):	Wrong number of arguments specified for command "gui_dump_picture".
+
+[11/21 15:47:20    219s] <CMD> fit
+[11/21 15:47:22    219s] <CMD> gui_dump_picture reports/fp40/floorplan.png -format PNG
