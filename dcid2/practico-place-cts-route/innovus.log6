@@ -89040,3 +89040,341 @@ Done read_parasitics... (cpu: 0:00:00.5 real: 0:00:01.0 mem: 6433.668M)
 #Run Statistics for inst signature:
 #   Cpu time = 00:00:00, elapsed time = 00:00:00 .
 #   Increased memory =    -1.28 (MB), total memory =  5100.93 (MB), peak memory =  5248.14 (MB)
+<CMD> report_timing -late -path_type summary_slack_only -max_paths 50 > reports/ej4_despues/timing_setup.rpt
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE DB initialization (MEM=6348.21 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: fir_serial_parallel
+# Design Mode: 45nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Using master clock 'clock' for generated clock 'clk_div2' in view 'func_setup_ss0p9v_125c_rcworst'
+AAE_INFO: 1 threads acquired from CTE.
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=5127.93)
+Reading RCDB with compressed RC data.
+Total number of fetched objects 3799
+End delay calculation. (MEM=5161.54 CPU=0:00:00.7 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=5111.07 CPU=0:00:01.0 REAL=0:00:01.0)
+<CMD> report_timing -early -path_type summary_slack_only -max_paths 50 > reports/ej4_despues/timing_hold.rpt
+AAE_INFO: opIsDesignInPostRouteState() is 1
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: fir_serial_parallel
+# Design Mode: 45nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Using master clock 'clock' for generated clock 'clk_div2' in view 'func_hold_ff1p1v_0c_rcbest'
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=5130.46)
+Total number of fetched objects 3799
+End delay calculation. (MEM=5151.81 CPU=0:00:00.7 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=5151.81 CPU=0:00:00.8 REAL=0:00:01.0)
+<CMD> report_constraint -all_violators -drv_violation_type max_transition > reports/ej4_despues/max_transition.rpt
+AAE_INFO: opIsDesignInPostRouteState() is 1
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: fir_serial_parallel
+# Design Mode: 45nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Using master clock 'clock' for generated clock 'clk_div2' in view 'func_setup_ss0p9v_125c_rcworst'
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=5142.08)
+Total number of fetched objects 3799
+End delay calculation. (MEM=5151.18 CPU=0:00:00.5 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=5151.18 CPU=0:00:00.6 REAL=0:00:00.0)
+<CMD> report_area > reports/ej4_despues/area.rpt
+<CMD> set_analysis_view -dynamic -hold func_hold_ff1p1v_0c_rcbest -setup func_hold_ff1p1v_0c_rcbest
+Extraction setup Started for TopCell fir_serial_parallel 
+Initializing multi-corner RC extraction with 2 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Completed (cpu: 0:00:00.0 real: 0:00:00.0)
+Set Shrink Factor to 1.00000
+Summary of Active RC-Corners : 
+ 
+ Analysis View: func_hold_ff1p1v_0c_rcbest
+  Late RC-Corner
+    RC-Corner Name        : late_spef_rcbest_0
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 0 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 0.91
+    RC-Corner PreRoute Cap Factor         : 1.11
+    RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+    RC-Corner PostRoute Cap Factor        : 1.06 {1.06 1.06 1}
+    RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+    RC-Corner PreRoute Clock Res Factor   : 0.985
+    RC-Corner PreRoute Clock Cap Factor   : 1.01
+    RC-Corner PostRoute Clock Cap Factor  : 0.948 {0.948 0.948 1} 
+    RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 	[Derived from postRoute_xcap (effortLevel medium)]
+    RC-Corner Technology file: '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/dataout/ej2_route.enc.dat/libs/mmmc/early_spef_rcbest_0/qrcTechFile'
+ 
+  Early RC-Corner
+    RC-Corner Name        : early_spef_rcbest_0
+    RC-Corner Index       : 1
+    RC-Corner Temperature : 0 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 0.91
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+    RC-Corner PostRoute Cap Factor        : 0.961 {0.961 0.961 1}
+    RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+    RC-Corner PreRoute Clock Res Factor   : 0.985
+    RC-Corner PreRoute Clock Cap Factor   : 0.912
+    RC-Corner PostRoute Clock Cap Factor  : 0.857 {0.857 0.857 1} 
+    RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 	[Derived from postRoute_xcap (effortLevel medium)]
+    RC-Corner Technology file: '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/dataout/ej2_route.enc.dat/libs/mmmc/early_spef_rcbest_0/qrcTechFile'
+set_analysis_view/update_rc_corner called to change MMMC setup. New set of RC Corners are a subset of previous MMMC setup and the RC setup information for the new set has remained same. Therefore, parasitic data in the tool brought as per previous MMMC setup is being maintained.
+Reading RCDB with compressed RC data.
+Initializing multi-corner resistance tables ...
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_202205_fiubarh01_mmarando_inoK6v/.mmmciegmTU/modes/func/func.sdc' ...
+Current (total cpu=0:22:54, real=0:27:46, peak res=5248.1M, current mem=5068.9M)
+fir_serial_parallel
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=5085.7M, current mem=5085.7M)
+Current (total cpu=0:22:55, real=0:27:46, peak res=5248.1M, current mem=5085.7M)
+Reading latency file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_202205_fiubarh01_mmarando_inoK6v/.mmmciegmTU/views/func_hold_ff1p1v_0c_rcbest/latency.sdc' ...
+Total number of combinational cells: 954
+Total number of sequential cells: 456
+Total number of tristate cells: 30
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 9
+List of usable buffers: BUFX2LVT BUFX12LVT BUFX16LVT BUFX20LVT CLKBUFX2LVT BUFX3LVT BUFX4LVT BUFX6LVT BUFX8LVT CLKBUFX12LVT CLKBUFX16LVT CLKBUFX20LVT CLKBUFX3LVT CLKBUFX4LVT CLKBUFX6LVT CLKBUFX8LVT DLY1X1LVT DLY1X4LVT BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8 BUFX2HVT BUFX12HVT BUFX16HVT BUFX20HVT CLKBUFX2HVT BUFX3HVT BUFX4HVT BUFX6HVT BUFX8HVT CLKBUFX12HVT CLKBUFX16HVT CLKBUFX20HVT CLKBUFX3HVT CLKBUFX4HVT CLKBUFX6HVT CLKBUFX8HVT
+Total number of usable buffers: 50
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1LVT CLKINVX2LVT CLKINVX12LVT CLKINVX16LVT CLKINVX20LVT CLKINVX4LVT CLKINVX3LVT CLKINVX6LVT CLKINVX8LVT INVX1LVT INVX2LVT INVX12LVT INVX16LVT INVX20LVT INVX3LVT INVX4LVT INVX6LVT INVX8LVT INVXLLVT CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVX3 INVX4 INVX6 INVX8 INVXL CLKINVX1HVT CLKINVX2HVT CLKINVX12HVT CLKINVX16HVT CLKINVX20HVT CLKINVX4HVT CLKINVX3HVT CLKINVX6HVT CLKINVX8HVT INVX1HVT INVX2HVT INVX12HVT INVX16HVT INVX20HVT INVXLHVT INVX3HVT INVX4HVT INVX6HVT INVX8HVT
+Total number of usable inverters: 57
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY2X1LVT DLY2X4LVT DLY3X1LVT DLY3X4LVT DLY4X1LVT DLY4X4LVT DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4 DLY1X1HVT DLY1X4HVT DLY2X1HVT DLY2X4HVT DLY3X1HVT DLY3X4HVT DLY4X1HVT DLY4X4HVT
+Total number of identified usable delay cells: 22
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+<CMD> report_power -view func_hold_ff1p1v_0c_rcbest > reports/ej4_despues/power.rpt
+env CDS_WORKAREA is set to /home/mmarando/dcid-tps/dcid2/practico-place-cts-route
+Using Power View: func_hold_ff1p1v_0c_rcbest.
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE DB initialization (MEM=6342.35 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: fir_serial_parallel
+# Design Mode: 45nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Using master clock 'clock' for generated clock 'clk_div2' in view 'func_hold_ff1p1v_0c_rcbest'
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=5111.37)
+Reading RCDB with compressed RC data.
+Total number of fetched objects 3799
+End delay calculation. (MEM=5145.24 CPU=0:00:00.7 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=5094.7 CPU=0:00:01.0 REAL=0:00:01.0)
+
+Begin Power Analysis
+
+             0V	    VSS
+           1.1V	    VDD
+
+Begin Processing Timing Library for Power Calculation
+
+Ended Processing Timing Library for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=5126.02MB/8393.59MB/5195.07MB)
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=5126.09MB/8393.59MB/5195.07MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=5126.09MB/8393.59MB/5195.07MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=5126.09MB/8393.59MB/5195.07MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT)
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 10%
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 20%
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 30%
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 40%
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 50%
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 60%
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 70%
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 80%
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 90%
+
+Finished Levelizing
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT)
+
+Starting Activity Propagation
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT)
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 10%
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 20%
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 30%
+
+Finished Activity Propagation
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=5126.19MB/8393.59MB/5195.07MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 1
+      # of cell(s) missing leakage table: 0
+      ----------------------------------------------------------
+CellName                                  Missing Table(s)
+TIELOLVT                                  internal power, 
+
+
+
+Starting Calculating power
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT)
+ ... Calculating switching power
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 10%
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 20%
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 30%
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 40%
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 50%
+ ... Calculating internal and leakage power
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 60%
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 70%
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 80%
+2026-Nov-21 21:40:16 (2026-Nov-22 00:40:16 GMT): 90%
+
+Finished Calculating power
+2026-Nov-21 21:40:17 (2026-Nov-22 00:40:17 GMT)
+      # of MSMV cell(s) missing power_level: 0
+Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=5127.21MB/8401.60MB/5195.07MB)
+
+Begin Processing User Attributes
+
+Begin Processing set_power
+Ended Processing set_power: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=5127.21MB/8401.60MB/5195.07MB)
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=5127.21MB/8401.60MB/5195.07MB)
+
+Ended Power Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=5127.21MB/8401.60MB/5195.07MB)
+
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=5127.21MB/8401.60MB/5195.07MB)
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 23.10-p003_1 (64bit) 02/01/2024 13:54 (Linux 3.10.0-693.el7.x86_64)
+*	
+*
+* 	Date & Time:	2026-Nov-21 21:40:17 (2026-Nov-22 00:40:17 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: fir_serial_parallel
+*
+*	Liberty Libraries used:
+*	        func_hold_ff1p1v_0c_rcbest: /home/mmarando/dcid-tps/dcid2/practico-place-cts-route/dataout/ej2_route.enc.dat/libs/mmmc/fast_vdd1v0_basicCells_hvt.lib
+*	        func_hold_ff1p1v_0c_rcbest: /home/mmarando/dcid-tps/dcid2/practico-place-cts-route/dataout/ej2_route.enc.dat/libs/mmmc/fast_vdd1v0_basicCells.lib
+*	        func_hold_ff1p1v_0c_rcbest: /home/mmarando/dcid-tps/dcid2/practico-place-cts-route/dataout/ej2_route.enc.dat/libs/mmmc/fast_vdd1v0_basicCells_lvt.lib
+*
+*	Parasitic Files used:
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power -view func_hold_ff1p1v_0c_rcbest
+*
+-----------------------------------------------------------------------------------------
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        1.50207106 	   53.1823%
+Total Switching Power:       1.32160734 	   46.7928%
+Total Leakage Power:         0.00070517 	    0.0250%
+Total Power:                 2.82438357
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                        0.2405     0.08233   7.002e-05      0.3229       11.43
+Macro                                  0           0           0           0           0
+IO                                     0           0           0           0           0
+Combinational                      1.232       1.161   0.0006305       2.394       84.76
+Clock (Combinational)            0.01936     0.07403   3.622e-06     0.09339       3.307
+Clock (Sequential)               0.01047    0.003757   1.025e-06     0.01423      0.5038
+-----------------------------------------------------------------------------------------
+Total                              1.502       1.322   0.0007052       2.824         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       1.1      1.502       1.322   0.0007052       2.824         100
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clk_div2                         0.01294      0.0578   2.943e-06     0.07074       2.505
+clock                             0.0169     0.01998   1.705e-06     0.03688       1.306
+-----------------------------------------------------------------------------------------
+Total                            0.02983     0.07778   4.647e-06      0.1076        3.81
+-----------------------------------------------------------------------------------------
+Clock: clk_div2
+Clock Period: 0.002400 usec 
+Clock Toggle Rate:   833.3333 Mhz 
+Clock Static Probability:  0.5000
+  
+Clock: clock
+Clock Period: 0.001200 usec 
+Clock Toggle Rate:  1666.6666 Mhz 
+Clock Static Probability:  0.5000
+  
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*              Highest Average Power:                     g3269 (NAND3X8HVT):          0.01854
+*              Highest Leakage Power: u_fir_parallel_csa_tree_ADD_TC_OP_13_groupi148_cdnfadd_008_50 (ADDFXLLVT):        2.509e-06
+*                Total Cap:      7.90655e-12 F
+*                Total instances in design:  2779
+*                Total instances in design with no power:     0
+*                Total instances in design with no activty:     0
+
+*                Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+ 
+** INFO:  (VOLTUS_POWR-3465): There are 0 decaps and 0 fillers in the design
+
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=5128.00MB/8401.60MB/5195.07MB)
+
