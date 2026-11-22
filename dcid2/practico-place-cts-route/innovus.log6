@@ -89690,3 +89690,8 @@ Reading RCDB with compressed RC data.
 Total number of fetched objects 3799
 End delay calculation. (MEM=5194.27 CPU=0:00:00.7 REAL=0:00:00.0)
 End delay calculation (fullDC). (MEM=5143.65 CPU=0:00:01.1 REAL=0:00:01.0)
+
+*** Memory Usage v#2 (Current mem = 6371.809M, initial mem = 820.648M) ***
+*** Message Summary: 187 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:23:33, real=0:31:30, mem=6371.8M) ---
