@@ -350,3 +350,9 @@ WARNING   TECHLIB-302         24  No function defined for cell '%s'. The c...
 <CMD> setLayerPreference cellBlkgObj -isVisible 1
 <CMD> fit
 <CMD> gui_dump_picture reports/ej2/placement_sin_metales.png -format PNG
+<CMD> selectInst u_fir_parallel_csa_tree_ADD_TC_OP_13_groupi148_cdnfadd_006_24
+
+*** Memory Usage v#2 (Current mem = 2974.941M, initial mem = 820.648M) ***
+*** Message Summary: 36 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:23, real=0:07:19, mem=2974.9M) ---

@@ -32,3 +32,4 @@ setLayerPreference inst -isVisible 1
 setLayerPreference cellBlkgObj -isVisible 1
 fit
 gui_dump_picture reports/ej2/placement_sin_metales.png -format PNG
+selectInst u_fir_parallel_csa_tree_ADD_TC_OP_13_groupi148_cdnfadd_006_24
