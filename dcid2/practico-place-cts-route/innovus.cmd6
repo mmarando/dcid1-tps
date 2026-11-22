@@ -2684,3 +2684,5 @@ report_constraint -all_violators -drv_violation_type max_transition > reports/ej
 report_area > reports/ej4_despues/area.rpt
 set_analysis_view -dynamic -hold func_hold_ff1p1v_0c_rcbest -setup func_hold_ff1p1v_0c_rcbest
 report_power -view func_hold_ff1p1v_0c_rcbest > reports/ej4_despues/power.rpt
+set_analysis_view -setup func_setup_ss0p9v_125c_rcworst -hold func_hold_ff1p1v_0c_rcbest
+report_timing -late -max_paths 1 > reports/ej4_despues/setup_detallado.rpt
