@@ -2673,3 +2673,8 @@ ecoChangeCell -inst {u_fir_parallel_data_in_reg_reg[1][4]} -cell DFFX4HVT
 ecoChangeCell -inst {u_fir_parallel_shift_reg_reg[6][5]} -cell DFFX2HVT
 ecoChangeCell -inst g3269 -cell NAND3X8HVT
 saveDesign dataout/ej4_swap_diagnostico.enc
+set_analysis_view -setup func_setup_ss0p9v_125c_rcworst -hold func_hold_ff1p1v_0c_rcbest
+checkPlace > reports/ej4_despues/check_place.rpt
+verify_connectivity -type all -no_antenna -report reports/ej4_despues/connectivity.rpt
+setExtractRCMode -engine postRoute -effortLevel medium
+extractRC

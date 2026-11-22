@@ -88695,3 +88695,348 @@ func
 #% End save design ... (date=11/21 21:36:36, total cpu=0:00:02.9, real=0:00:04.0, peak res=5127.7M, current mem=5077.4M)
 *** Message Summary: 0 warning(s), 0 error(s)
 
+<CMD> set_analysis_view -setup func_setup_ss0p9v_125c_rcworst -hold func_hold_ff1p1v_0c_rcbest
+Extraction setup Started for TopCell fir_serial_parallel 
+Initializing multi-corner RC extraction with 4 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Completed (cpu: 0:00:00.0 real: 0:00:00.0)
+Set Shrink Factor to 1.00000
+Summary of Active RC-Corners : 
+ 
+ Analysis View: func_setup_ss0p9v_125c_rcworst
+  Late RC-Corner
+    RC-Corner Name        : late_spef_rcworst_125
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 0.91
+    RC-Corner PreRoute Cap Factor         : 1.11
+    RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+    RC-Corner PostRoute Cap Factor        : 1.06 {1.06 1.06 1}
+    RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+    RC-Corner PreRoute Clock Res Factor   : 0.985
+    RC-Corner PreRoute Clock Cap Factor   : 1.01
+    RC-Corner PostRoute Clock Cap Factor  : 0.948 {0.948 0.948 1} 
+    RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 	[Derived from postRoute_xcap (effortLevel medium)]
+    RC-Corner Technology file: '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/dataout/ej2_route.enc.dat/libs/mmmc/early_spef_rcworst_125/qrcTechFile'
+ 
+  Early RC-Corner
+    RC-Corner Name        : early_spef_rcworst_125
+    RC-Corner Index       : 1
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 0.91
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+    RC-Corner PostRoute Cap Factor        : 0.961 {0.961 0.961 1}
+    RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+    RC-Corner PreRoute Clock Res Factor   : 0.985
+    RC-Corner PreRoute Clock Cap Factor   : 0.912
+    RC-Corner PostRoute Clock Cap Factor  : 0.857 {0.857 0.857 1} 
+    RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 	[Derived from postRoute_xcap (effortLevel medium)]
+    RC-Corner Technology file: '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/dataout/ej2_route.enc.dat/libs/mmmc/early_spef_rcworst_125/qrcTechFile'
+ 
+ Analysis View: func_hold_ff1p1v_0c_rcbest
+  Late RC-Corner
+    RC-Corner Name        : late_spef_rcbest_0
+    RC-Corner Index       : 2
+    RC-Corner Temperature : 0 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 0.91
+    RC-Corner PreRoute Cap Factor         : 1.11
+    RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+    RC-Corner PostRoute Cap Factor        : 1.06 {1.06 1.06 1}
+    RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+    RC-Corner PreRoute Clock Res Factor   : 0.985
+    RC-Corner PreRoute Clock Cap Factor   : 1.01
+    RC-Corner PostRoute Clock Cap Factor  : 0.948 {0.948 0.948 1} 
+    RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 	[Derived from postRoute_xcap (effortLevel medium)]
+    RC-Corner Technology file: '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/dataout/ej2_route.enc.dat/libs/mmmc/early_spef_rcbest_0/qrcTechFile'
+ 
+  Early RC-Corner
+    RC-Corner Name        : early_spef_rcbest_0
+    RC-Corner Index       : 3
+    RC-Corner Temperature : 0 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 0.91
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 0.95 {0.95 0.95 1}
+    RC-Corner PostRoute Cap Factor        : 0.961 {0.961 0.961 1}
+    RC-Corner PostRoute XCap Factor       : 0.874 {0.874 0.874 1}
+    RC-Corner PreRoute Clock Res Factor   : 0.985
+    RC-Corner PreRoute Clock Cap Factor   : 0.912
+    RC-Corner PostRoute Clock Cap Factor  : 0.857 {0.857 0.857 1} 
+    RC-Corner PostRoute Clock Res Factor  : 0.979 {0.979 0.979 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 0.874 {0.874 0.874 1} 	[Derived from postRoute_xcap (effortLevel medium)]
+    RC-Corner Technology file: '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/dataout/ej2_route.enc.dat/libs/mmmc/early_spef_rcbest_0/qrcTechFile'
+set_analysis_view/update_rc_corner called to change MMMC setup. RC Corner setup information has remained the same. Therefore, parasitic data in the tool brought as per the previous MMMC setup is being maintained.
+Reading timing constraints file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_202205_fiubarh01_mmarando_inoK6v/.mmmcSb65Or/modes/func/func.sdc' ...
+Current (total cpu=0:22:31, real=0:26:36, peak res=5127.7M, current mem=5005.9M)
+fir_serial_parallel
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=5022.9M, current mem=5022.9M)
+Current (total cpu=0:22:31, real=0:26:37, peak res=5127.7M, current mem=5022.9M)
+Reading latency file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_202205_fiubarh01_mmarando_inoK6v/.mmmcSb65Or/views/func_setup_ss0p9v_125c_rcworst/latency.sdc' ...
+Reading latency file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_202205_fiubarh01_mmarando_inoK6v/.mmmcSb65Or/views/func_hold_ff1p1v_0c_rcbest/latency.sdc' ...
+Total number of combinational cells: 954
+Total number of sequential cells: 456
+Total number of tristate cells: 30
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 9
+List of usable buffers: BUFX2LVT BUFX12LVT BUFX16LVT BUFX20LVT CLKBUFX2LVT BUFX3LVT BUFX4LVT BUFX6LVT BUFX8LVT CLKBUFX12LVT CLKBUFX16LVT CLKBUFX20LVT CLKBUFX3LVT CLKBUFX4LVT CLKBUFX6LVT CLKBUFX8LVT DLY1X1LVT DLY1X4LVT BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8 BUFX2HVT BUFX12HVT BUFX16HVT BUFX20HVT CLKBUFX2HVT BUFX3HVT BUFX4HVT BUFX6HVT BUFX8HVT CLKBUFX12HVT CLKBUFX16HVT CLKBUFX20HVT CLKBUFX3HVT CLKBUFX4HVT CLKBUFX6HVT CLKBUFX8HVT
+Total number of usable buffers: 50
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1LVT CLKINVX2LVT CLKINVX12LVT CLKINVX16LVT CLKINVX20LVT CLKINVX4LVT CLKINVX3LVT CLKINVX6LVT CLKINVX8LVT INVX1LVT INVX2LVT INVX12LVT INVX16LVT INVX20LVT INVX3LVT INVX4LVT INVX6LVT INVX8LVT INVXLLVT CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVX3 INVX4 INVX6 INVX8 INVXL CLKINVX1HVT CLKINVX2HVT CLKINVX12HVT CLKINVX16HVT CLKINVX20HVT CLKINVX4HVT CLKINVX3HVT CLKINVX6HVT CLKINVX8HVT INVX1HVT INVX2HVT INVX12HVT INVX16HVT INVX20HVT INVXLHVT INVX3HVT INVX4HVT INVX6HVT INVX8HVT
+Total number of usable inverters: 57
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY2X1LVT DLY2X4LVT DLY3X1LVT DLY3X4LVT DLY4X1LVT DLY4X4LVT DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4 DLY1X1HVT DLY1X4HVT DLY2X1HVT DLY2X4HVT DLY3X1HVT DLY3X4HVT DLY4X1HVT DLY4X4HVT
+Total number of identified usable delay cells: 22
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+<CMD> checkPlace > reports/ej4_despues/check_place.rpt
+Begin checking placement ... (start mem=6271.5M, init mem=6271.5M)
+*info: Placed = 2779           (Fixed = 17)
+*info: Unplaced = 0           
+Placement Density:51.02%(8441/16543)
+Placement Density (including fixed std cells):51.02%(8441/16543)
+Finished checkPlace (total: cpu=0:00:00.2, real=0:00:00.0; vio checks: cpu=0:00:00.1, real=0:00:00.0; mem=6271.5M)
+<CMD> verify_connectivity -type all -no_antenna -report reports/ej4_despues/connectivity.rpt
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Sat Nov 21 21:39:04 2026
+
+Design Name: fir_serial_parallel
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (200.2000, 102.6000)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Sat Nov 21 21:39:04 2026
+Time Elapsed: 0:00:00.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.3  MEM: 0.000M)
+
+<CMD> setExtractRCMode -engine postRoute -effortLevel medium
+<CMD> extractRC
+#Start Design Signature (0)
+#Finish Inst Signature in MT(58842044)
+#Finish Net Signature in MT(81709227)
+#Finish SNet Signature in MT (117182223)
+#Run time and memory report for RC extraction:
+#RC extraction running on  Xeon 2.00GHz 28160KB Cache 80CPU.
+#Run Statistics for snet signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.23 (MB), total memory =  5036.18 (MB), peak memory =  5127.66 (MB)
+#Run Statistics for Net Final Signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.00 (MB), total memory =  5035.94 (MB), peak memory =  5127.66 (MB)
+#Run Statistics for Net launch:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.00 (MB), total memory =  5035.94 (MB), peak memory =  5127.66 (MB)
+#Run Statistics for Net init_dbsNet_slist:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.00 (MB), total memory =  5035.94 (MB), peak memory =  5127.66 (MB)
+#Run Statistics for net signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.00 (MB), total memory =  5035.94 (MB), peak memory =  5127.66 (MB)
+#Run Statistics for inst signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =    -4.11 (MB), total memory =  5035.94 (MB), peak memory =  5127.66 (MB)
+#Extract in post route mode
+#Finish check_net_pin_list step Enter extract_rc_in_nr_cmd
+#Fast data preparation for tQuantus.
+#Start routing data preparation on Sat Nov 21 21:39:06 2026
+#
+# Metal1       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.13000
+# Metal2       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal3       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal4       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal5       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal6       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal7       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal8       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal9       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal10      V   Track-Pitch = 0.50000    Line-2-Via Pitch = 0.42000
+# Metal11      H   Track-Pitch = 0.47500    Line-2-Via Pitch = 0.43000
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer Metal3's pitch = 0.19000.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 5039.09 (MB), peak = 5127.66 (MB)
+#Start routing data preparation on Sat Nov 21 21:39:06 2026
+#
+#Bottom routing layer index=2(Metal2), bottom routing layer for shielding=2(Metal2), bottom shield layer=2(Metal2)
+#shield_bottom_stripe_layer=1(Metal1), shield_top_stripe_layer=11(Metal11)
+#pin_access_rlayer=2(Metal2)
+#shield_top_dpt_rlayer=-1 top_rlayer=11 top_trim_metal_rlayer=-1 rlayer_lowest=1 bottom_rlayer=2
+#enable_trim_layer_shield=F enable_dpt_layer_shield=F has_line_end_grid=F
+#enable_dpt_layer_shield=F
+#has_line_end_grid=F
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer Metal3's pitch = 0.19000.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:03, elapsed time = 00:00:03, memory = 5137.48 (MB), peak = 5137.98 (MB)
+#
+#Start tQuantus RC extraction...
+#Start building rc corner(s)...
+#Number of RC Corner = 4
+#Corner early_spef_rcworst_125 /home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile 125.000000 (real) 
+#Corner late_spef_rcworst_125 /home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile 125.000000 (real) 
+#Corner early_spef_rcbest_0 /home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile 0.000000 (real) 
+#Corner late_spef_rcbest_0 /home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile 0.000000 (real) 
+#(i=11, n=11 2000)
+#metal1_conn -> Metal1 (1)
+#metal2_conn -> Metal2 (2)
+#metal3_conn -> Metal3 (3)
+#metal4_conn -> Metal4 (4)
+#metal5_conn -> Metal5 (5)
+#metal6_conn -> Metal6 (6)
+#metal7_conn -> Metal7 (7)
+#metal8_conn -> Metal8 (8)
+#metal9_conn -> Metal9 (9)
+#metal10_conn -> Metal10 (10)
+#metal11_conn -> Metal11 (11)
+#SADV-On
+# Corner(s) : 
+#early_spef_rcworst_125 [125.00] 
+#late_spef_rcworst_125 [125.00] 
+#early_spef_rcbest_0 [ 0.00] 
+#late_spef_rcbest_0 [ 0.00]
+# Corner id: 0
+# Layout Scale: 1.000000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 125.000000
+# Ref. Temp   : 25.000000
+# Corner id: 1
+# Layout Scale: 1.000000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 0.000000
+# Ref. Temp   : 25.000000
+# Corner id: 2
+# Layout Scale: 1.000000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 125.000000
+# Ref. Temp   : 25.000000
+# Corner id: 3
+# Layout Scale: 1.000000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 0.000000
+# Ref. Temp   : 25.000000
+#SADV-Off
+#total pattern=286 [22, 1584]
+#Reading previously stored rc_model file ( /home/mmarando/dcid-tps/dcid2/practico-place-cts-route/dataout/ej2_route.enc.dat/libs/misc/rc_model.bin ) ...
+#found CAPMODEL /home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile
+#found CAPMODEL /home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile
+#found RESMODEL /home/amslib/PDKs/gpdk045v6/qrc/rcworst/qrcTechFile 125.000000 
+#found RESMODEL /home/amslib/PDKs/gpdk045v6/qrc/rcbest/qrcTechFile 0.000000 
+#CCE Version read = IQuantus/TQuantus 22.1.1-s215
+#number model r/c [2,2] [22,1584] read
+#0 rcmodel(s) requires rebuild
+#Build RC corners: cpu time = 00:00:03, elapsed time = 00:00:04, memory = 5172.04 (MB), peak = 5195.07 (MB)
+#Finish check_net_pin_list step Enter extract
+#Start init net ripin tree building
+#Finish init net ripin tree building
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 0.00 (MB)
+#Total memory = 5172.04 (MB)
+#Peak memory = 5195.07 (MB)
+#begin processing metal fill model file
+#end processing metal fill model file
+#Length limit = 200 pitches
+#opt mode = 2
+#Finish check_net_pin_list step Fix net pin list
+#Start generate extraction boxes.
+#
+#Extract using 30 x 30 Hboxes
+#4x3 initial hboxes
+#Use area based hbox pruning.
+#0/0 hboxes pruned.
+#Complete generating extraction boxes.
+#Start step Extraction
+#Extract 5 hboxes with single thread on machine with  Xeon 2.00GHz 28160KB Cache 80CPU...
+#Process 0 special clock nets for rc extraction
+#Total 3797 nets were built. 15 nodes added to break long wires. 0 net(s) have incomplete routes.
+#Run Statistics for Extraction:
+#   Cpu time = 00:00:03, elapsed time = 00:00:03 .
+#   Increased memory =    76.02 (MB), total memory =  5248.13 (MB), peak memory =  5248.14 (MB)
+#Register nets and terms for rcdb /home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_202205_fiubarh01_mmarando_inoK6v/nr202205_RiNkZm.rcdb.d
+#Finish registering nets and terms for rcdb.
+#Simplify RC tree: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 5199.27 (MB), peak = 5248.14 (MB)
+#RC Statistics: 14407 Res, 7948 Ground Cap, 4462 XCap (Edge to Edge)
+#RC V/H edge ratio: 0.36, Avg V/H Edge Length: 4073.22 (6605), Avg L-Edge Length: 9462.93 (5135)
+#Nets and terms are pre-registered for rcdb /home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_202205_fiubarh01_mmarando_inoK6v/nr202205_RiNkZm.rcdb.d.
+#Start writing RC data.
+#Finish writing RC data
+#Finish writing rcdb with 18205 nodes, 14408 edges, and 8930 xcaps
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 5195.61 (MB), peak = 5248.14 (MB)
+Restoring parasitic data from file '/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_202205_fiubarh01_mmarando_inoK6v/nr202205_RiNkZm.rcdb.d' ...
+Reading RCDB with compressed RC data.
+Reading RCDB with compressed RC data.
+Begin read_parasitics... (cpu: 0:00:00.0 real: 0:00:00.0 mem: 6433.668M)
+Following multi-corner parasitics specified:
+	/home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_202205_fiubarh01_mmarando_inoK6v/nr202205_RiNkZm.rcdb.d (rcdb)
+Reading RCDB with compressed RC data.
+		Cell fir_serial_parallel has rcdb /home/mmarando/dcid-tps/dcid2/practico-place-cts-route/innovus_temp_202205_fiubarh01_mmarando_inoK6v/nr202205_RiNkZm.rcdb.d specified
+Cell fir_serial_parallel, hinst 
+Reading RCDB with compressed RC data.
+Done read_parasitics... (cpu: 0:00:00.5 real: 0:00:01.0 mem: 6433.668M)
+#
+#Restore RCDB.
+#
+#Complete tQuantus RC extraction.
+#Cpu time = 00:00:06
+#Elapsed time = 00:00:08
+#Increased memory = 58.10 (MB)
+#Total memory = 5195.58 (MB)
+#Peak memory = 5248.14 (MB)
+#
+#15 inserted nodes are removed
+#Restored 0 tie nets, 0 tie snets, 0 partial nets
+#Start Design Signature (0)
+#Finish Inst Signature in MT(58842044)
+#Finish Net Signature in MT(81709227)
+#Finish SNet Signature in MT (117182223)
+#Run time and memory report for RC extraction:
+#RC extraction running on  Xeon 2.00GHz 28160KB Cache 80CPU.
+#Run Statistics for snet signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.00 (MB), total memory =  5100.93 (MB), peak memory =  5248.14 (MB)
+#Run Statistics for Net Final Signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.00 (MB), total memory =  5100.93 (MB), peak memory =  5248.14 (MB)
+#Run Statistics for Net launch:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.00 (MB), total memory =  5100.93 (MB), peak memory =  5248.14 (MB)
+#Run Statistics for Net init_dbsNet_slist:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.00 (MB), total memory =  5100.93 (MB), peak memory =  5248.14 (MB)
+#Run Statistics for net signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.00 (MB), total memory =  5100.93 (MB), peak memory =  5248.14 (MB)
+#Run Statistics for inst signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =    -1.28 (MB), total memory =  5100.93 (MB), peak memory =  5248.14 (MB)
