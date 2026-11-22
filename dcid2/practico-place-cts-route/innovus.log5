@@ -376,3 +376,8 @@ Clock tree timing engine global stage delay update for setup_rcworst:setup.late 
 <CMD> zoomSelected
 <CMD> deselectObject Net CTS_8
 <CMD> ctd_save_view -file reports/ej2/clock_tree.png -type PNG
+
+*** Memory Usage v#2 (Current mem = 3263.270M, initial mem = 812.648M) ***
+*** Message Summary: 36 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:02:07, real=0:11:55, mem=3263.3M) ---
